@@ -1,0 +1,446 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Linux学习 | jjyaoao's Home</title><meta name="keywords" content="Linux"><meta name="author" content="jjyaoao,jjyaoao@126.com"><meta name="copyright" content="jjyaoao"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="Linux学习之路">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Linux学习">
+<meta property="og:url" content="http://jjyaoao.space/2022/04/15/Linux%E5%AD%A6%E4%B9%A0/index.html">
+<meta property="og:site_name" content="jjyaoao&#39;s Home">
+<meta property="og:description" content="Linux学习之路">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://s2.loli.net/2022/04/15/FltTRVUfbzYIowQ.png">
+<meta property="article:published_time" content="2022-04-15T14:16:51.000Z">
+<meta property="article:modified_time" content="2022-04-15T14:21:22.128Z">
+<meta property="article:author" content="jjyaoao">
+<meta property="article:tag" content="学习笔记">
+<meta property="article:tag" content="遗忘指南">
+<meta property="article:tag" content="收集错误">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://s2.loli.net/2022/04/15/FltTRVUfbzYIowQ.png"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://jjyaoao.space/2022/04/15/Linux%E5%AD%A6%E4%B9%A0/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//hm.baidu.com"/><link rel="preconnect" href="//fonts.googleapis.com" crossorigin=""/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.10.5/dist/instantsearch.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/instantsearch.js@2.10.5/dist/instantsearch.min.js" defer></script><script>var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?06fb7a80772d98cbf9e7beeb76e262e4";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web&amp;display=swap" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: {"appId":"JOZPQM4N5F","apiKey":"42451c032f2166ed9800520810e2d223","indexName":"jjyaoao-blog","hits":{"per_page":10},"languages":{"input_placeholder":"搜索文章","hits_empty":"找不到您查询的内容：${query}","hits_stats":"找到 ${hits} 条结果，用时 ${time} 毫秒"}},
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: true,
+    post: true
+  },
+  runtime: '天',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: {"chs_to_cht":"你已切换为繁体","cht_to_chs":"你已切换为简体","day_to_night":"你已切换为深色模式","night_to_day":"你已切换为浅色模式","bgLight":"#49b1f5","bgDark":"#121212","position":"bottom-left"},
+  source: {
+    jQuery: 'https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js',
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/js/jquery.justifiedGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/css/justifiedGallery.min.css'
+    },
+    fancybox: {
+      js: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isanchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'Linux学习',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2022-04-15 22:21:22'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if (GLOBAL_CONFIG_SITE.isHome && /iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><meta name="generator" content="Hexo 6.0.0"></head><body><div id="loading-box"><div class="loading-left-bg"></div><div class="loading-right-bg"></div><div class="spinner-box"><div class="configure-border-1"><div class="configure-core"></div></div><div class="configure-border-2"><div class="configure-core"></div></div><div class="loading-word">加载中...</div></div></div><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://s2.loli.net/2022/01/09/le6jcmPKuJihDdU.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data"><div class="data-item is-center"><div class="data-item-link"><a href="/archives/"><div class="headline">文章</div><div class="length-num">36</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/tags/"><div class="headline">标签</div><div class="length-num">10</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/categories/"><div class="headline">分类</div><div class="length-num">42</div></a></div></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fa fa-heartbeat"></i><span> 清单</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音樂</span></a></li><li><a class="site-page child" href="/Gallery/"><i class="fa-fw fas fa-images"></i><span> 照片</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://s2.loli.net/2022/04/15/FltTRVUfbzYIowQ.png')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">jjyaoao's Home</a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fa fa-heartbeat"></i><span> 清单</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音樂</span></a></li><li><a class="site-page child" href="/Gallery/"><i class="fa-fw fas fa-images"></i><span> 照片</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">Linux学习</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2022-04-15T14:16:51.000Z" title="发表于 2022-04-15 22:16:51">2022-04-15</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2022-04-15T14:21:22.128Z" title="更新于 2022-04-15 22:21:22">2022-04-15</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E5%90%8E%E7%AB%AF/">后端</a><i class="fas fa-angle-right post-meta-separator"></i><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E5%90%8E%E7%AB%AF/Linux/">Linux</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">3.5k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>10分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="Linux学习"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><blockquote>
+<p>本笔记用作个人学习和查漏补缺使用，欢迎借鉴学习，有一些经验来自于网络上各位大佬的文章，若未注明出处，请提醒，如果不能转载，就删除，转载需标注出处<a target="_blank" rel="noopener" href="http://www.jjyaoao.space/">www.jjyaoao.space</a> </p>
+</blockquote>
+<p>由于做项目需要用到Linux，好像去年做的笔记已经找不到了，鉴于以上情况，决定重启Linux新篇章，首先从遇到的第一个困难vi编辑器开始吧！</p>
+<h1 id="Vi编辑器"><a href="#Vi编辑器" class="headerlink" title="Vi编辑器"></a>Vi编辑器</h1><h2 id="基本操作"><a href="#基本操作" class="headerlink" title="基本操作"></a>基本操作</h2><p>转载自：<a target="_blank" rel="noopener" href="http://blog.csdn.net/u010648555/article/details/50676647">http://blog.csdn.net/u010648555/article/details/50676647</a></p>
+<p>初学<a target="_blank" rel="noopener" href="http://lib.csdn.net/base/linux">Linux</a>的时候，在使用vi 操作时候，有时候可能进入的是一个文件夹，这样子在退出的时候很不好操作！</p>
+<p>下面总结一些vi 命令，学习!</p>
+<p>进入命令行模式 —– Esc   or   Ctrl + [</p>
+<p>进入编辑模式，按 o 进行编辑</p>
+<p>编辑结束，按ESC 键 跳到命令模式，然后输入退出命令：</p>
+<p>:w保存文件但不退出vi 编辑</p>
+<p>:w! 强制保存，不退出vi 编辑</p>
+<p>:w file将修改另存到file中，不退出vi 编辑 </p>
+<p>:wq保存文件并退出vi 编辑</p>
+<p>:wq!强制保存文件并退出vi 编辑</p>
+<p>:q不保存文件并退出vi 编辑</p>
+<p>:q!不保存文件并强制退出vi 编辑</p>
+<p>:e!放弃所有修改，从上次保存文件开始在编辑</p>
+<p><strong>j 向下移动 k 向上移动 h 向左移动 l 向右移动</strong></p>
+<p>二、插入文本或行(vi命令模式下使用，执行下面命令后将进入插入模式，按ESC键可退出插入模式)*</p>
+<p>a   //在当前光标位置的右边添加文本<br>i    //在当前光标位置的左边添加文本<br>A   //在当前行的末尾位置添加文本<br>I   //在当前行的开始处添加文本(非空字符的行首)<br>O   //在当前行的上面新建一行<br>o   //在当前行的下面新建一行<br>R  //替换(覆盖)当前光标位置及后面的若干文本<br>J  //合并光标所在行及下一行为一行(依然在命令模式)</p>
+<p> 返回开头 【【     到结尾 】】</p>
+<h2 id="x-wq"><a href="#x-wq" class="headerlink" title=":x :wq"></a>:x :wq</h2><p>vi文件保存退出命令＂:wq＂和＂:x＂的区别2011-04-08 16:41vi是Unix/Linux系统最常用的编辑器之一，我习惯使用”:x”命令来保</p>
+<p>存文件并退出，不愿意使用”:wq”命令是因为它得多敲一个字母。</p>
+<p>但是，今天我才知道”:x”和”:wq”的真正区别，如下：</p>
+<p>:wq  强制性写入文件并退出。即使文件没有被修改也强制写入，并更新文件的修改时间。</p>
+<p>:x  写入文件并退出。<strong>仅当文件被修改时才写入</strong>，并更新文件修改时间，否则不会更新文件修改时间。</p>
+<p>这两者一般情况下没什么不一样，但是在编程方面，对编辑源文件可能会产生重要影响。因为文件即使没有修改，”:wq”强制更新文件的修改时间，这样会让make编译整个项目时以为文件被修改过了，然后就得重新编译链接生成可执行文件。这可能会产生让人误解的后果，当然也产生了不必要的系统资源花销。</p>
+<h2 id><a href="#" class="headerlink" title></a></h2><h2 id="在正常模式复制，剪切以及粘贴"><a href="#在正常模式复制，剪切以及粘贴" class="headerlink" title="在正常模式复制，剪切以及粘贴"></a>在正常模式复制，剪切以及粘贴</h2><p>当你启动 Vim 编辑器时，默认就进入了正常模式。在这个模式，你可以运行 Vim 命令，并且浏览整个文件。</p>
+<p>从其他任何模式返回正常模式，你只需要按<code>Escc</code>键。</p>
+<p>Vim 对于复制，剪切，粘贴有它自己的一套术语。复制被叫做 yank(y),剪切被叫做 delete（d），以及粘贴被叫做 put（p）。</p>
+<h3 id="复制-Yanking"><a href="#复制-Yanking" class="headerlink" title="复制 (Yanking)"></a>复制 (Yanking)</h3><p>想要复制文本，将光标放到你想要的地方，然后参考下面的命令按键<code>y</code>。下面是一些有用的命令：</p>
+<ul>
+<li><code>yy</code> - 复制当前行，包括换行符</li>
+<li><code>3yy</code> - 复制从光标所在的当前行开始的三行文本</li>
+<li><code>y$</code> - 复制从光标位置到行尾的文本</li>
+<li><code>y^</code> - 复制从光标位置到行首的文本</li>
+<li><code>yw</code> - 复制到下一个词的开头</li>
+<li><code>yiw</code> - 复制当前词</li>
+<li><code>y%</code> - 复制匹配符号范围内容。默认支持的符号对是<code>()</code>,<code>&#123;&#125;</code>,<code>[]</code>.这个在复制括号内内容时，很有用处。</li>
+</ul>
+<h3 id="剪切-Deleting"><a href="#剪切-Deleting" class="headerlink" title="剪切 (Deleting)"></a>剪切 (Deleting)</h3><p>在正常模式下，<code>d</code>按键是用来剪切文本的。把光标移动到想要的位置，参考下面的命令按<code>d</code>按键。下面是一些有帮助的命令：</p>
+<ul>
+<li><code>dd</code> - 剪切当前行，包括换行符</li>
+<li><code>3dd</code> - 剪切从光标位置所在行开始的 3 行文本</li>
+<li><code>d$</code> - 剪切从光标位置到行尾的内容</li>
+</ul>
+<p>这些命令同时适用于删除的场景。例如，<code>dw</code>可以删除到下一个词的开头。而<code>d^</code>可以删除光标位置到行首的内容。</p>
+<h3 id="粘贴-Putting"><a href="#粘贴-Putting" class="headerlink" title="粘贴 (Putting)"></a>粘贴 (Putting)</h3><p>想要粘贴被剪切的内容，先将光标移动到想要的位置，然后按<code>p</code>键可以将内容粘贴到当前光标后面，或者按<code>P</code>按键可以粘贴到当前光标前面。</p>
+<p><strong>在可视模式下复制，剪切，粘贴</strong></p>
+<p><strong>Vim 可视模式下，允许你选择和操作文本。</strong></p>
+<p>01.将光标放到你想要开始复制或者剪切的那一行。</p>
+<p>02.可视模式有三个子类型</p>
+<ul>
+<li>按<code>v</code>进入可视模式</li>
+<li>按<code>v</code>进入可视行模式。该模式下文本可以按行来选择。</li>
+<li>按<code>Ctrl+v</code>进入可视块模式。该模式下文本可以按照文本块来选择。</li>
+</ul>
+<p>进入可视模式当然也标记了你的开始选择点。</p>
+<p>03.将光标移动到你想要复制或者剪切的文本最后面。你可以使用上下左右按键来进行移动。 </p>
+<p><img src="/2022/04/15/Linux%E5%AD%A6%E4%B9%A0/1620.jpeg" alt="img"></p>
+<p>04.按<code>y</code>进行拷贝，按<code>d</code>剪切选择文本。</p>
+<p>05.移动光标到你想要粘贴的位置。</p>
+<p>06 按<code>P</code>将内容粘贴到光标前面，按<code>p</code>将内容粘贴到光标后面。</p>
+<h2 id="替换命令"><a href="#替换命令" class="headerlink" title="替换命令"></a>替换命令</h2><p><a target="_blank" rel="noopener" href="https://so.csdn.net/so/search?q=vim&spm=1001.2101.3001.7020">vim</a>提供了一个简单的替换命令：r命令。r命令用于替换光标所在的字符，做法是先将光标移动到需要替换的字符处，按一下r键，然后输入新的字符。注意，<strong>全程无需进入插入模式，也不会进入插入模式</strong>。</p>
+<p>如果先输入[数字]再输入r，最后输入新的字符，说明从当前<a target="_blank" rel="noopener" href="https://so.csdn.net/so/search?q=%E5%85%89%E6%A0%87&spm=1001.2101.3001.7020">光标</a>的位置开始，替换【数字】个新字符。</p>
+<p><strong>替换模式</strong></p>
+<p>R命令让你一步到位进入替换模式：对于需要替换多个字符，更好的方案是直接进入替换模式。按下大写的R键，屏幕左下角出现–REPLACE–字样，说明你已经处于替换模式。此时输入字符可以连续替换光标及其后边的内容。注意：退格键（Backspace）在替换模式中被解释为<strong>如果左边的内容被替换过，则恢复到原来的样子；如果没有被替换过，则简单的向左移动。</strong>修改完毕后，按下Esc键回到普通模式。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">首先使用查找指令，例如我们要找a1 :/a1+回车，后续用n和N来选择查找下/上一个字符，找到之后点r，然后就可以输入你对应想要替换的了，例如你要替换成a2，就输入a2，然后自动把a1覆盖</span><br></pre></td></tr></table></figure>
+
+<h2 id="删除"><a href="#删除" class="headerlink" title="删除"></a>删除</h2><p>一、命令行模式下简化删除 </p>
+<ol>
+<li>向后删除单个字符：<strong>【x】</strong> </li>
+<li>向前删除单个字符：【X】 </li>
+<li>删除从光标开始到单词结尾：【dw】<br>删除从光标后的2个单词：【d2w】 </li>
+<li>删除整个单词：【daw】<br>仅当光标停留在一个单词开头，【dw】才能删除整个单词，否则只能删除一部分；而【daw】不考虑光标的停留位置，只要在该单词上，则会自动删除整个单词 </li>
+<li>删除光标停留的那整行：【dd】<br>假设想连续删除多行，则用【4dd】连续删除4行 </li>
+<li>从光标处往前删除单词：【db】<br>和【dw】的作用方向正好相反 <ol>
+<li>删除光标位置到本行开头：【d0】 </li>
+<li>点命令【.】含义是重复上次修改，上次修改的单位可以是字符，整行，甚至整个文件。<br>因此如果删除整行【dd】，配合【.】也可以起到重复操作的目的。<br>点命令最大的用处在于，每次从输入模式到命令模式切换时，整个阶段vim会记录每一个按键操作，使用点命令可以重新执行所有的这些按键操作，就好像“一键回放”，我们可以把点命令当成一个宏。<br>比如要给结构体语句添上‘;’号<br>按照常规方法做会比较慢，这时候光标先移动到第一条语句上，【A】【；】【ESC】<br>再反复使用【j】【.】即可。</li>
+</ol>
+</li>
+</ol>
+<h2 id="选中单词"><a href="#选中单词" class="headerlink" title="选中单词"></a>选中单词</h2><p>命令行模式下 按v进入可视模式，后按e可以选择当前光标，及其这个单词的后半段  ，按iw可以选择整个单词</p>
+<p>​        在此基础上，如果我们按j， k或者上，下，可以继续选中后一个单词前一个单词啥的</p>
+<h2 id="撤销与恢复撤销"><a href="#撤销与恢复撤销" class="headerlink" title="撤销与恢复撤销"></a>撤销与恢复撤销</h2><p>在使用VIM的时候，难免会有输错的情况，这个时候我们应该如何撤销，然后回到输错之前的状态呢？答案：使用u（小写，且在命令模式下）命令。</p>
+<p>但如果有时我们一不小心在命令模式下输入了u，然后刚输入的一大片代码都不见了，这个时候我们应该如何恢复刚才的撤销操作呢？答案：使用Ctrl + r命令。</p>
+<p>总结：</p>
+<p>撤销：u</p>
+<p>恢复撤销：Ctrl + r</p>
+<h1 id="常用指令"><a href="#常用指令" class="headerlink" title="常用指令"></a>常用指令</h1><p>ls　　     显示文件或目录</p>
+<p>   -l      列出文件详细信息l(list)</p>
+<p>   -a      列出当前目录下所有文件及目录，包括隐藏的a(all)</p>
+<p>mkdir     创建目录</p>
+<p>   -p      创建目录，若无父目录，则创建p(parent)</p>
+<p>cd        切换目录</p>
+<p>touch      创建空文件</p>
+<p>echo       创建带有内容的文件。</p>
+<p>cat        查看文件内容</p>
+<p>cp         拷贝</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">Eg：cp crtsutfdata1.cpp crtsurfdata2.cpp </span><br><span class="line"></span><br><span class="line">	将1里面的内容复制到2里面</span><br></pre></td></tr></table></figure>
+
+<p>mv        移动或重命名</p>
+<p>rm        删除文件</p>
+<p>   -r       递归删除，可删除子目录及文件</p>
+<p>   -f       强制删除</p>
+<p>find        在文件系统中搜索某文件</p>
+<p>wc         统计文本中行数、字数、字符数</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">wc 命令，这个名字很好记，因为什么，你懂的，对，就是 word count，和我想的一样！</span><br><span class="line"></span><br><span class="line">这个命令的功能也同样很好记，因为它功能很有限。wc 命令的主要作用就是计算一个文件中的字数、单词数和字节数。</span><br></pre></td></tr></table></figure>
+
+<p>grep       在文本文件中查找某个字符串</p>
+<p>rmdir      删除空目录</p>
+<p>tree       树形结构显示目录，需要安装tree包</p>
+<p>pwd        显示当前目录</p>
+<p>ln          创建链接文件</p>
+<p>more、less  分页显示文本文件内容</p>
+<p>head、tail   显示文件头、尾内容</p>
+<p>ctrl+alt+F1  命令行全屏模式</p>
+<p>chown -R jjyaoao:kali /log   root授权普通用户jjyaoao使用/log</p>
+<p>./xxxx   xx为文件名不带 . 文件类型，即为运行程序 ../为上一目录</p>
+<p>ps -ef |grep xxxx为查找进程</p>
+<p>ctrl + c   or   killall 程序名（不带cpp）—– 终止程序运行 </p>
+<h1 id="GDB调试"><a href="#GDB调试" class="headerlink" title="GDB调试"></a>GDB调试</h1><h2 id="实例"><a href="#实例" class="headerlink" title="实例"></a>实例</h2><p>143行写入输出语句</p>
+<p><img src="/2022/04/15/Linux%E5%AD%A6%E4%B9%A0/image-20220411153645117.png" alt="image-20220411153645117"></p>
+<p>启动编译器</p>
+<p><img src="/2022/04/15/Linux%E5%AD%A6%E4%B9%A0/image-20220411153738139.png" alt="image-20220411153738139"></p>
+<p>进入gdb模式，在143行设置断点，设置传入参数，run！</p>
+<p><img src="/2022/04/15/Linux%E5%AD%A6%E4%B9%A0/image-20220411153808674.png" alt="image-20220411153808674"></p>
+<p>断点此时顺利的执行到了143行，然后停下，使得程序未结束，等待命令指示</p>
+<p>​        我们可以查看执行到末尾时，vsurfdata的size和里面存放的东西</p>
+<p><img src="/2022/04/15/Linux%E5%AD%A6%E4%B9%A0/image-20220411154002797.png" alt="image-20220411154002797"></p>
+<p>这里提醒一下，vsurfdata是结构体的一个向量对象</p>
+<p><img src="/2022/04/15/Linux%E5%AD%A6%E4%B9%A0/image-20220411154137902.png" alt="image-20220411154137902"></p>
+<p>我们用这样的方式，和用日志记录的形式大同小异，均能在编写代码的时候反映出程序是否正确执行</p>
+<h1 id="man"><a href="#man" class="headerlink" title="man"></a>man</h1><p>man命令是Linux下最核心的命令之一。而man命令也并不是英文单词“man”的意思，它是单词manual的缩写，即使用手册的意思。</p>
+<p>man命令会列出一份完整的说明。 其内容包括命令语法、各选项的意义及相关命令 。更为强大的是，不仅可以查看Linux中命令的使用帮助，还可以查看软件服务配置文件、系统调用、库函数等帮助信息。</p>
+<p>man手册页文件存放在/usr/share/man目录下。</p>
+<p><strong>语法格式：</strong>man [命令]</p>
+<p><strong>常用参数：</strong></p>
+<table>
+<thead>
+<tr>
+<th align="center">-a</th>
+<th>在所有的man帮助手册中搜索</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">-d</td>
+<td>主要用于检查，如果用户加入了一个新的文件，就可以用这个参数检查是否出错</td>
+</tr>
+<tr>
+<td align="center">-f</td>
+<td>显示给定关键字的简短描述信息</td>
+</tr>
+<tr>
+<td align="center">-p</td>
+<td>指定内容时使用分页程序</td>
+</tr>
+<tr>
+<td align="center">-M</td>
+<td>指定man手册搜索的路径</td>
+</tr>
+<tr>
+<td align="center">-w</td>
+<td>显示文件所在位置</td>
+</tr>
+</tbody></table>
+<p><strong>man命令内容组成的介绍：</strong></p>
+<ol>
+<li>用户命令的使用方法，可以使用的参数等</li>
+<li>系统调用，只有系统才能执行的函数</li>
+<li>库调用，大多是libc函数，如qsort(3)</li>
+<li>设备和特殊文件</li>
+<li>文件格式和约定</li>
+<li>游戏</li>
+<li>宏命令包和约定</li>
+<li>系统管理命令，多数只有root可以执行</li>
+<li>内核程序</li>
+<li>Tcl或Tk指令</li>
+</ol>
+<h1 id="配置汉语输入法"><a href="#配置汉语输入法" class="headerlink" title="配置汉语输入法"></a>配置汉语输入法</h1><p>难以想象居然整好了</p>
+<p><a target="_blank" rel="noopener" href="https://blog.csdn.net/qq1225308337/article/details/119087128">(20条消息) Kali 2021 设置中文输入法_@Mr.mark的博客-CSDN博客_kali输入中文</a></p>
+<p><a target="_blank" rel="noopener" href="https://blog.csdn.net/wanglolaini/article/details/82845748">(20条消息) kali 安装中文中文输入法（一遍成功无错误）_Linux-tuomasi的博客-CSDN博客_kali输入法</a></p>
+<h1 id="CLION-VIM-CMAKE"><a href="#CLION-VIM-CMAKE" class="headerlink" title="CLION + VIM + CMAKE"></a>CLION + VIM + CMAKE</h1><p><a target="_blank" rel="noopener" href="https://blog.csdn.net/wfei101/article/details/82193140">(20条消息) Linux软件安装：安装Clion和运行使用总结_BigCowPeking的博客-CSDN博客_clion linux</a></p>
+<p><a target="_blank" rel="noopener" href="https://blog.csdn.net/cchd0001/article/details/50264631">(20条消息) CLION + VIM + CMAKE__RTFSC的博客-CSDN博客_clion vim插件</a></p>
+<p><img src="/2022/04/15/Linux%E5%AD%A6%E4%B9%A0/image-20220412194904505.png" alt="image-20220412194904505"></p>
+<p><img src="/2022/04/15/Linux%E5%AD%A6%E4%B9%A0/image-20220412194958817.png" alt="image-20220412194958817"></p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="mailto:jjyaoao@126.com">jjyaoao</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="http://jjyaoao.space/2022/04/15/Linux%E5%AD%A6%E4%B9%A0/">http://jjyaoao.space/2022/04/15/Linux%E5%AD%A6%E4%B9%A0/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="http://jjyaoao.space" target="_blank">jjyaoao's Home</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">学习笔记</a><a class="post-meta__tags" href="/tags/%E9%81%97%E5%BF%98%E6%8C%87%E5%8D%97/">遗忘指南</a><a class="post-meta__tags" href="/tags/%E6%94%B6%E9%9B%86%E9%94%99%E8%AF%AF/">收集错误</a></div><div class="post_share"><div class="addthis_inline_share_toolbox"></div><script src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-61dbf69078ce19aa" async="async"></script></div></div><div class="post-reward"><div class="reward-button button--animated"><i class="fas fa-qrcode"></i> 打赏</div><div class="reward-main"><ul class="reward-all"><li class="reward-item"><a href="https://s2.loli.net/2022/01/09/HMjygFAKr2nPWdJ.jpg" target="_blank"><img class="post-qr-code-img" src="https://s2.loli.net/2022/01/09/HMjygFAKr2nPWdJ.jpg" alt="微信"/></a><div class="post-qr-code-desc">微信</div></li><li class="reward-item"><a href="https://s2.loli.net/2022/01/09/JL43sbhxUEOuVeM.jpg" target="_blank"><img class="post-qr-code-img" src="https://s2.loli.net/2022/01/09/JL43sbhxUEOuVeM.jpg" alt="支付宝"/></a><div class="post-qr-code-desc">支付宝</div></li></ul></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/2022/04/15/C++%E9%A1%B9%E7%9B%AE%E5%AE%9E%E6%88%98/"><img class="prev-cover" src="https://s2.loli.net/2022/04/15/YXoFfbxgWZIn1SM.png" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">C++第一个项目实战</div></div></a></div><div class="next-post pull-right"><a href="/2022/04/05/OS-04%E6%96%87%E4%BB%B6%E7%AE%A1%E7%90%86/"><img class="next-cover" src="https://s2.loli.net/2022/04/06/gUCqjhsOneK5DH7.png" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">文件管理</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>相关推荐</span></div><div class="relatedPosts-list"><div><a href="/2022/01/31/matlab/" title="Matlab使用介绍"><img class="cover" src="https://s2.loli.net/2022/01/31/B4ikAOp8HDSPnhF.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-01-31</div><div class="title">Matlab使用介绍</div></div></a></div><div><a href="/2022/01/31/python/" title="Python语法学习"><img class="cover" src="https://s2.loli.net/2022/01/31/kAyIhgdZpPabzBU.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-01-31</div><div class="title">Python语法学习</div></div></a></div><div><a href="/2022/02/04/%E5%A4%87%E6%88%98%E7%BE%8E%E8%B5%9B/" title="美赛备战"><img class="cover" src="https://s2.loli.net/2022/02/04/OM8sdkEACyqLvrb.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-02-04</div><div class="title">美赛备战</div></div></a></div><div><a href="/2022/01/31/%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1%E7%AE%97%E6%B3%95/" title="数学建模算法"><img class="cover" src="https://s2.loli.net/2022/01/31/DsJXQy9EhURdotO.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-01-31</div><div class="title">数学建模算法</div></div></a></div><div><a href="/2022/02/09/%E8%AE%BA%E6%96%87%E5%86%99%E4%BD%9C/" title="论文写作"><img class="cover" src="https://s2.loli.net/2022/02/09/F6T8Y9l5fJeLEIC.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-02-09</div><div class="title">论文写作</div></div></a></div><div><a href="/2022/03/09/%E5%A4%87%E6%88%98%E8%93%9D%E6%A1%A5/" title="备战蓝桥"><img class="cover" src="https://s2.loli.net/2022/03/09/pYhMVWCFN4BiqAJ.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-03-09</div><div class="title">备战蓝桥</div></div></a></div></div></div><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div><div id="comment-switch"><span class="first-comment">Livere</span><span class="switch-btn"></span><span class="second-comment">Valine</span></div></div><div class="comment-wrap"><div><div id="lv-container" data-id="city" data-uid="MTAyMC81NTM1OC8zMTgyNQ=="></div></div><div><div class="vcomment" id="vcomment"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Vi%E7%BC%96%E8%BE%91%E5%99%A8"><span class="toc-number">1.</span> <span class="toc-text">Vi编辑器</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C"><span class="toc-number">1.1.</span> <span class="toc-text">基本操作</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#x-wq"><span class="toc-number">1.2.</span> <span class="toc-text">:x :wq</span></a></li><li class="toc-item toc-level-2"><a class="toc-link"><span class="toc-number">1.3.</span> <span class="toc-text"></span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9C%A8%E6%AD%A3%E5%B8%B8%E6%A8%A1%E5%BC%8F%E5%A4%8D%E5%88%B6%EF%BC%8C%E5%89%AA%E5%88%87%E4%BB%A5%E5%8F%8A%E7%B2%98%E8%B4%B4"><span class="toc-number">1.4.</span> <span class="toc-text">在正常模式复制，剪切以及粘贴</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%A4%8D%E5%88%B6-Yanking"><span class="toc-number">1.4.1.</span> <span class="toc-text">复制 (Yanking)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%89%AA%E5%88%87-Deleting"><span class="toc-number">1.4.2.</span> <span class="toc-text">剪切 (Deleting)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%B2%98%E8%B4%B4-Putting"><span class="toc-number">1.4.3.</span> <span class="toc-text">粘贴 (Putting)</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%9B%BF%E6%8D%A2%E5%91%BD%E4%BB%A4"><span class="toc-number">1.5.</span> <span class="toc-text">替换命令</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%88%A0%E9%99%A4"><span class="toc-number">1.6.</span> <span class="toc-text">删除</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%80%89%E4%B8%AD%E5%8D%95%E8%AF%8D"><span class="toc-number">1.7.</span> <span class="toc-text">选中单词</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%92%A4%E9%94%80%E4%B8%8E%E6%81%A2%E5%A4%8D%E6%92%A4%E9%94%80"><span class="toc-number">1.8.</span> <span class="toc-text">撤销与恢复撤销</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%B8%B8%E7%94%A8%E6%8C%87%E4%BB%A4"><span class="toc-number">2.</span> <span class="toc-text">常用指令</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#GDB%E8%B0%83%E8%AF%95"><span class="toc-number">3.</span> <span class="toc-text">GDB调试</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%9E%E4%BE%8B"><span class="toc-number">3.1.</span> <span class="toc-text">实例</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#man"><span class="toc-number">4.</span> <span class="toc-text">man</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E9%85%8D%E7%BD%AE%E6%B1%89%E8%AF%AD%E8%BE%93%E5%85%A5%E6%B3%95"><span class="toc-number">5.</span> <span class="toc-text">配置汉语输入法</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#CLION-VIM-CMAKE"><span class="toc-number">6.</span> <span class="toc-text">CLION + VIM + CMAKE</span></a></li></ol></div></div></div></div></main><footer id="footer" style="background-image: url('https://s2.loli.net/2022/04/15/FltTRVUfbzYIowQ.png')"><div id="footer-wrap"><div class="copyright">&copy;2022 By jjyaoao</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div><div class="footer_custom_text">Hi, welcome to my <a target="_blank" rel="noopener" href="https://butterfly.js.org/">blog</a>!</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="chat_btn" type="button" title="rightside.chat_btn"><i class="fas fa-sms"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div id="algolia-search"><div class="search-dialog"><div class="search-dialog__title" id="algolia-search-title">Algolia</div><div id="algolia-input-panel"><div id="algolia-search-input"></div></div><hr/><div id="algolia-search-results"><div id="algolia-hits"></div><div id="algolia-pagination"></div><div id="algolia-stats"></div></div><span class="search-close-button"><i class="fas fa-times"></i></span></div><div id="search-mask"></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.js"></script><script src="/js/search/algolia.js"></script><script>var preloader = {
+  endLoading: () => {
+    document.body.style.overflow = 'auto';
+    document.getElementById('loading-box').classList.add("loaded")
+  },
+  initLoading: () => {
+    document.body.style.overflow = '';
+    document.getElementById('loading-box').classList.remove("loaded")
+
+  }
+}
+window.addEventListener('load',preloader.endLoading())</script><div class="js-pjax"><script>function loadLivere () {
+  if (typeof LivereTower === 'object') {
+    window.LivereTower.init()
+  }
+  else {
+    (function(d, s) {
+        var j, e = d.getElementsByTagName(s)[0];
+        if (typeof LivereTower === 'function') { return; }
+        j = d.createElement(s);
+        j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+        j.async = true;
+        e.parentNode.insertBefore(j, e);
+    })(document, 'script');
+  }
+}
+
+if ('Livere' === 'Livere' || !true) {
+  if (true) btf.loadComment(document.getElementById('lv-container'), loadLivere)
+  else loadLivere()
+}
+else {
+  function loadOtherComment () {
+    loadLivere()
+  }
+}</script><script>function loadValine () {
+  function initValine () {
+    const valine = new Valine(Object.assign({
+      el: '#vcomment',
+      appId: 'cFvw1zyA64uttBS5jbYY7pwH-gzGzoHsz',
+      appKey: '14rOjAUNzRyJSQt983q6gdza',
+      placeholder: 'Please leave your footprints',
+      avatar: 'monsterid',
+      meta: 'nick,mail,link'.split(','),
+      pageSize: '10',
+      lang: 'en',
+      recordIP: false,
+      serverURLs: '',
+      emojiCDN: '',
+      emojiMaps: "",
+      enableQQ: false,
+      path: window.location.pathname,
+      requiredFields: ["nick,mail"],
+      visitor: false
+    }, null))
+  }
+
+  if (typeof Valine === 'function') initValine() 
+  else getScript('https://cdn.jsdelivr.net/npm/valine/dist/Valine.min.js').then(initValine)
+}
+
+if ('Livere' === 'Valine' || !true) {
+  if (true) btf.loadComment(document.getElementById('vcomment'),loadValine)
+  else setTimeout(loadValine, 0)
+} else {
+  function loadOtherComment () {
+    loadValine()
+  }
+}</script></div><script defer="defer" id="fluttering_ribbon" mobile="true" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/canvas-fluttering-ribbon.min.js"></script><script id="canvas_nest" defer="defer" color="0,0,255" opacity="0.7" zIndex="-1" count="99" mobile="true" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/canvas-nest.min.js"></script><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/activate-power-mode.min.js"></script><script>POWERMODE.colorful = true;
+POWERMODE.shake = false;
+POWERMODE.mobile = false;
+document.body.addEventListener('input', POWERMODE);
+</script><script id="click-show-text" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/click-show-text.min.js" data-mobile="false" data-text="富强,民主,文明,和谐,自由,平等,公正,法治,爱国,敬业,诚信,友善,感谢" data-fontsize="15px" data-random="false" async="async"></script><script>(function(d, w, c) {
+    w.ChatraID = 'zgYNWkNCSATLRhpg4';
+    var s = d.createElement('script');
+    w[c] = w[c] || function() {
+        (w[c].q = w[c].q || []).push(arguments);
+    };
+    s.async = true;
+    s.src = 'https://call.chatra.io/chatra.js';
+    if (d.head) d.head.appendChild(s);
+})(document, window, 'Chatra');
+
+if (true) {
+  var chatBtnFn = () => {
+    var chatBtn = document.getElementById("chat_btn")
+    chatBtn.addEventListener("click", function(){
+      Chatra('openChat')
+    });
+  }
+  chatBtnFn()
+} else {
+  if (true) {
+    function chatBtnHide () {
+      Chatra('hide')
+    }
+    function chatBtnShow () {
+      Chatra('show')
+    }
+  }
+}</script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
