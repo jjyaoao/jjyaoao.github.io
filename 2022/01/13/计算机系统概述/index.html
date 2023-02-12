@@ -1,0 +1,555 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>计算机系统概述 | jjyaoao's Home</title><meta name="keywords" content="计组第一章"><meta name="author" content="jjyaoao,jjyaoao@126.com"><meta name="copyright" content="jjyaoao"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="计组第一章">
+<meta property="og:type" content="article">
+<meta property="og:title" content="计算机系统概述">
+<meta property="og:url" content="http://jjyaoao.space/2022/01/13/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E6%A6%82%E8%BF%B0/index.html">
+<meta property="og:site_name" content="jjyaoao&#39;s Home">
+<meta property="og:description" content="计组第一章">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://s2.loli.net/2022/01/13/TFLYzUAxGcRmW6C.jpg">
+<meta property="article:published_time" content="2022-01-13T13:10:50.000Z">
+<meta property="article:modified_time" content="2022-02-26T13:48:50.491Z">
+<meta property="article:author" content="jjyaoao">
+<meta property="article:tag" content="学习笔记">
+<meta property="article:tag" content="思维导图">
+<meta property="article:tag" content="教程">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://s2.loli.net/2022/01/13/TFLYzUAxGcRmW6C.jpg"><link rel="shortcut icon" href="https://s2.loli.net/2022/01/09/le6jcmPKuJihDdU.jpg"><link rel="canonical" href="http://jjyaoao.space/2022/01/13/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E6%A6%82%E8%BF%B0/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//hm.baidu.com"/><link rel="preconnect" href="//fonts.googleapis.com" crossorigin=""/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.10.5/dist/instantsearch.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/instantsearch.js@2.10.5/dist/instantsearch.min.js" defer></script><script>var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?06fb7a80772d98cbf9e7beeb76e262e4";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web&amp;display=swap" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: {"appId":"JOZPQM4N5F","apiKey":"42451c032f2166ed9800520810e2d223","indexName":"jjyaoao-blog","hits":{"per_page":10},"languages":{"input_placeholder":"搜索文章","hits_empty":"找不到您查询的内容：${query}","hits_stats":"找到 ${hits} 条结果，用时 ${time} 毫秒"}},
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: true,
+    post: true
+  },
+  runtime: '天',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: {"chs_to_cht":"你已切换为繁体","cht_to_chs":"你已切换为简体","day_to_night":"你已切换为深色模式","night_to_day":"你已切换为浅色模式","bgLight":"#49b1f5","bgDark":"#121212","position":"bottom-left"},
+  source: {
+    jQuery: 'https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js',
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/js/jquery.justifiedGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/css/justifiedGallery.min.css'
+    },
+    fancybox: {
+      js: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isanchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '计算机系统概述',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: false,
+  postUpdate: '2022-02-26 21:48:50'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if (GLOBAL_CONFIG_SITE.isHome && /iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><meta name="generator" content="Hexo 6.0.0"></head><body><div id="loading-box"><div class="loading-left-bg"></div><div class="loading-right-bg"></div><div class="spinner-box"><div class="configure-border-1"><div class="configure-core"></div></div><div class="configure-border-2"><div class="configure-core"></div></div><div class="loading-word">加载中...</div></div></div><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://s2.loli.net/2022/01/09/le6jcmPKuJihDdU.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data"><div class="data-item is-center"><div class="data-item-link"><a href="/archives/"><div class="headline">文章</div><div class="length-num">64</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/tags/"><div class="headline">标签</div><div class="length-num">10</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/categories/"><div class="headline">分类</div><div class="length-num">80</div></a></div></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fa fa-heartbeat"></i><span> 清单</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音樂</span></a></li><li><a class="site-page child" href="/Gallery/"><i class="fa-fw fas fa-images"></i><span> 照片</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://s2.loli.net/2022/01/13/TFLYzUAxGcRmW6C.jpg')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">jjyaoao's Home</a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fa fa-heartbeat"></i><span> 清单</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音樂</span></a></li><li><a class="site-page child" href="/Gallery/"><i class="fa-fw fas fa-images"></i><span> 照片</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">计算机系统概述</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2022-01-13T13:10:50.000Z" title="发表于 2022-01-13 21:10:50">2022-01-13</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2022-02-26T13:48:50.491Z" title="更新于 2022-02-26 21:48:50">2022-02-26</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86/">计算机组成原理</a><i class="fas fa-angle-right post-meta-separator"></i><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86/%E8%AE%A1%E7%BB%84-%E7%B3%BB%E7%BB%9F%E6%A6%82%E8%BF%B0/">计组-系统概述</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">2.1k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>6分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="计算机系统概述"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><blockquote>
+<p>以下具体框架来自华中科技大学 谭志虎 老师，本人根据框架补充自己的一些体会和见解。仅当作学习笔记使用</p>
+</blockquote>
+<p><em>Target：</em></p>
+<p><img src="/2022/01/13/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E6%A6%82%E8%BF%B0/image-20220113203814604.png" alt="image-20220113203814604"></p>
+<p><strong>一、计算机系统概述</strong></p>
+<ul>
+<li><p><strong>计算机系统层次结构</strong></p>
+<ul>
+<li><p><strong>计算机系统的基本组成</strong></p>
+<ul>
+<li><strong>硬件系统</strong><ul>
+<li>看得见的物理实体，电子线路和电子元件等</li>
+</ul>
+</li>
+<li><strong>软件系统</strong><ul>
+<li>解决问题的思想、方法，包括程序和数据</li>
+<li>分为</li>
+</ul>
+</li>
+<li><strong>固件</strong><ul>
+<li>固化的软件，firmware，本质是软件</li>
+</ul>
+</li>
+<li><strong>软硬件功能逻辑等效</strong><ul>
+<li>同一功能即可软件实现，也可以硬件实现</li>
+<li>软件灵活性高，性能差，成本低</li>
+<li>硬件效率高，成本高</li>
+<li>功能划分要折中考虑</li>
+</ul>
+</li>
+<li><strong>分层结构</strong><ul>
+<li><strong>软件层（虚拟计算机）</strong><ul>
+<li>高级语言层 </li>
+<li>汇编语言层    </li>
+<li>操作系统层</li>
+</ul>
+</li>
+<li><strong>硬件层</strong><ul>
+<li>指令集架构层（机器语言层）</li>
+<li>微代码层（可选）（微程序解释机器指令）</li>
+<li>逻辑门层  （实体硬件）</li>
+</ul>
+</li>
+<li>图解<ul>
+<li><img src="/2022/01/13/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E6%A6%82%E8%BF%B0/e582b4cf-04cd-44ed-a905-f5cac0e939be-329792.jpg" alt="e582b4cf-04cd-44ed-a905-f5cac0e939be-329792"></li>
+<li>ps：先编译后汇编</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><strong>计算机硬件的基本组成</strong></p>
+<ul>
+<li><p><strong>冯·诺依曼结构</strong></p>
+<ul>
+<li>思想：存储程序&amp;程序控制<ul>
+<li>存储程序：将解题步骤编制成程序，然后将程序和运行程序所需要的数据储存到存储器中（以二进制），方便执行。</li>
+<li>程序控制则是计算机中控制器逐条去除存储器中的指令，并按照<strong>顺序执行</strong>，控制各部件完成相应操作，完成数据的加工处理。</li>
+</ul>
+</li>
+<li>组成：5大功能部件<ul>
+<li>存储器：存放程序和数据，按地址访问</li>
+<li>运算器：执行算术运算和逻辑运算</li>
+<li>控制器：根据指令的操作码、指令执行过程中的条件状态、时序系统等三方面的因素来产生指令执行过程中所需要的控制信号，控制指令的执行；</li>
+<li>输入设备：将信息输入到计算机的外部设备，如键盘、鼠标等。</li>
+<li>输出设备：输出计算机处理结果的外部设备。如显示器、打印机等</li>
+</ul>
+</li>
+<li>图解：<strong>早期</strong>计算机以<strong>运算器</strong>为中心，<strong>现代</strong>计算机以<strong>存储器</strong>为中心<ul>
+<li>reason：早期主要是运算速度慢，现在瓶颈在于存储器</li>
+<li><img src="/2022/01/13/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E6%A6%82%E8%BF%B0/39e0c26d-5c2c-427f-8ba1-124ad989c0d5-329792.jpg" alt="39e0c26d-5c2c-427f-8ba1-124ad989c0d5-329792"></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><u><strong>冯</strong>·<strong>诺依曼计算机特点</strong></u> </p>
+<ul>
+<li><p>组成：运算器、控制器、存储器、输入和输出设备</p>
+</li>
+<li><p><strong>存储程序</strong></p>
+<ul>
+<li>指令和数据以<strong>二进制</strong>形式存放在存储器中</li>
+<li>指令顺序存放，存储器按地址访问</li>
+</ul>
+</li>
+<li><p><strong>程序控制</strong></p>
+<ul>
+<li>程序运行时，控制器逐条从主存中取出指令，控制全机相关部件执行相应操作，完成指令的功能直至完成程序的功能。</li>
+<li>由指令控制计算机的运行</li>
+<li>由控制器来控制数据的存取及程序的执行<ul>
+<li>程序顺序执行，遇到分支指令可能改变顺序</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><strong>计算机软件系统分类</strong></p>
+<ul>
+<li><strong>应用软件</strong><ul>
+<li>解决应用问题的程序集合</li>
+<li>如数据处理程序、情报检索程序等</li>
+</ul>
+</li>
+<li><strong>系统软件</strong><ul>
+<li>管理和调度计算机，方便用户使用计算机并提高使用效率的程序的集合</li>
+<li>操作系统、数据库管理系统</li>
+<li>分布式软件系统、网络软件系统、标准库程序</li>
+<li>语言处理程序<ul>
+<li>编译器：将高级语言转换成汇编语言</li>
+<li>汇编器：将汇编语言转换成机器指令</li>
+<li>解释器：将高级语言直接翻译成机器指令 如JAVA</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><strong>计算机系统的工作过程</strong></p>
+<ul>
+<li><u><strong>工作过程</strong></u><ul>
+<li>CPU不断从主存中逐条取出指令，控制器对指令进行译码分析，计算下条指令地址，并生成完成指令所需各种操作信号序列，控制功能部件依序形成对应数据通路，从而实现指令功能，再取下条指令，执行直至程序中全部指令执行结束</li>
+</ul>
+</li>
+<li><strong>CPU如何执行程序</strong><ul>
+<li>将可执行程序和数据存放在主存中（存储程序）<ul>
+<li>可执行程序为机器语言编写的代码</li>
+</ul>
+</li>
+<li>CPU上电后即开始取指令、执行指令的死循环（程序控制）<ul>
+<li>上电后从固定位置开始取指令</li>
+<li>第一条指令是固化的BIOS程序</li>
+<li>BIOS负责硬件自检，最后引导OS</li>
+<li>OS负责加载可执行目标程序</li>
+</ul>
+</li>
+<li>单条指令执行过程<ul>
+<li>取指令</li>
+<li>指令译码（分析指令功能，计算下条指令地址）</li>
+<li>指令执行</li>
+</ul>
+</li>
+<li>程序执行的过程<ul>
+<li>循环取指令执行机器指令的过程</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>高级语言程序→可执行目标程序</strong><ul>
+<li>编译型高级语言转换流程<ul>
+<li><img src="/2022/01/13/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E6%A6%82%E8%BF%B0/cc2c31e9-4569-4af1-8c7f-7b228e455027-329792.jpg" alt="cc2c31e9-4569-4af1-8c7f-7b228e455027-329792"></li>
+</ul>
+</li>
+<li>预处理<ul>
+<li>预处理器对源程序中以#开头的命令进行处理</li>
+<li>如#include命令后面的.h文件内容插入程序文件</li>
+<li>输出是一个以.i为扩展名的源文件hello.i，还是C程序</li>
+</ul>
+</li>
+<li>编译<ul>
+<li>编译器对预处理后的源程序进行编译</li>
+<li>生成一个汇编语言程序hello.s，文本文件</li>
+</ul>
+</li>
+<li>汇编<ul>
+<li>汇编器将hello.s 翻译成机器语言指令</li>
+<li>输出为可重定位目标文件的hello.o，二进制文件</li>
+</ul>
+</li>
+<li>链接<ul>
+<li>链接器将多个可重定位目标文件和标准库函数合并</li>
+<li>输出为一个可执行目标程序hello，二进制文件</li>
+</ul>
+</li>
+<li>解释性高级语言边解释，边执行，不生成目标代码</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><strong>计算机系统性能指标</strong></p>
+<ul>
+<li> <strong>静态性能指标</strong></li>
+<li><strong>机器字长</strong><ul>
+<li>CPU一次处理的数据位数</li>
+<li>与寄存器、运算器、数据总线的位宽相等</li>
+<li>决定数据表示范围和精度</li>
+</ul>
+</li>
+<li><strong>主存容量</strong><ul>
+<li>主存储器所能存储信息的最大容量</li>
+</ul>
+</li>
+<li> <strong>时间相关性能指标</strong></li>
+<li><strong>吞吐量</strong><ul>
+<li>系统在单位时间内处理请求的数量</li>
+</ul>
+</li>
+<li><strong>响应时间</strong><ul>
+<li>用户向计算机发送一个请求，到系统对该请求做出相应并获得结果所用的时间</li>
+<li>响应时间越短，吞吐率越大</li>
+<li>程序执行时间=CPU时间+等待时间（磁盘、存储器访问、I/O操作、OS开销）</li>
+</ul>
+</li>
+<li><strong>CPU时钟周期</strong><ul>
+<li>CPU仅完成一个最基本的动作。是时钟频率的倒数，是处理操作最基本的时间单位</li>
+</ul>
+</li>
+<li><strong>主频</strong><ul>
+<li>时钟周期的倒数，同等条件下，频率越高，性能越好</li>
+<li>频率不可能无限提升，散热问题，串扰问题等</li>
+</ul>
+</li>
+<li><strong>CPI</strong><ul>
+<li>执行每条指令所需的平均时钟周期数；clock cycle per instruction</li>
+<li>CPI= {\displaystyle \sum_{i=1}^{n}{(CPI_i× P_i)} }= {\displaystyle \sum_{i=1}^{n}{(CPI_i×  \frac{IC_i}{IC})} }  <em>C<strong>P</strong>I</em>=<em>i</em>=1∑<em>n</em>(<em>C<strong>P</strong>I**i</em>×<em>P**i</em>)=<em>i</em>=1∑<em>n</em>(<em>C<strong>P</strong>I**i</em>×<em>I<strong>C</strong>I<strong>C</strong>i</em>)</li>
+</ul>
+</li>
+<li><strong>IPC</strong><ul>
+<li>每个时钟执行的指令条数</li>
+<li> IPC=1/CPI<em>I<strong>P</strong>C</em>=1/<em>C<strong>P</strong>I</em></li>
+</ul>
+</li>
+<li><strong>CPU执行时间</strong><ul>
+<li>程序执行期间真正消耗CPU的时间<ul>
+<li><em>*T_{cpu}= CPI× IC× T *T<strong>c</strong>p<strong>u*=*C</strong>P<strong>I*×*I</strong>C*×*T**</em></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>MIPS</strong><ul>
+<li>每秒执行多少百万条指令数量 Million Instructions Per Second</li>
+<li><em>*MIPS= f/(CPI× 10^6 ) *M<strong>I</strong>P<strong>S*=*f*/(*C</strong>P**I*×106)*</em></li>
+<li>全性能公式<ul>
+<li>MIPS=IPC× f <em>M<strong>I</strong>P**S</em>=<em>I<strong>P</strong>C</em>×<em>f</em></li>
+<li>时钟频率 f 的单位为 MHz</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>MFLOPS</strong><ul>
+<li>每秒执行多少百万次浮点操作</li>
+<li>Million Floating-Point Operations Per Second</li>
+<li>用于衡量科学计算性能</li>
+<li>更大单位：TFLOPS、PFLOPS、EFLOPS、ZFLOPS </li>
+<li>每个单位相差1000倍</li>
+<li>磁存储，网络数传率也使用10进制为单位，计算时需注意<ul>
+<li>1TB硬盘=10^91<em>T**B</em>硬盘=109Byte</li>
+<li>100M宽带=100×10^6100<em>M</em>宽带=100×106Bit/s</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>单一指标都不能准确评价性能，基准测试程序更靠谱</li>
+<li>考研真题<ul>
+<li>真题1<ul>
+<li><img src="/2022/01/13/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E6%A6%82%E8%BF%B0/ac963c6e-678d-4fe9-8f2e-fe6f6168e019-329792.jpg" alt="ac963c6e-678d-4fe9-8f2e-fe6f6168e019-329792"></li>
+</ul>
+</li>
+<li>真题2<ul>
+<li><img src="/2022/01/13/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E6%A6%82%E8%BF%B0/a693f5f6-f4b9-4339-a265-7eda4d500c95-329792.jpg" alt="a693f5f6-f4b9-4339-a265-7eda4d500c95-329792"></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><strong>计组学习建议</strong></p>
+<ul>
+<li><p>构造观</p>
+<ul>
+<li>理解并掌握运算器，控制器等核心部件的结构和工作原理</li>
+<li>实现简单的设计</li>
+</ul>
+</li>
+<li><p>系统观</p>
+<ul>
+<li>就是要研究硬件系统与软件系统的协同与互动。</li>
+<li>从原理上说，可以对任何硬件都从程序员的角度来审视。</li>
+<li>另一方面，从硬件工程师的角度来审视程序设计的优化问题，即探究如何利用硬件的特性提升程序运行的性能和效率</li>
+</ul>
+</li>
+<li><p>工程观</p>
+<ul>
+<li>培养软硬件协同视角下的计算机系统开发和实现能力</li>
+<li>考虑工程的制约因素</li>
+<li>能有选择恰当技术和工具进行工程优化的意识</li>
+</ul>
+</li>
+</ul>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="mailto:jjyaoao@126.com">jjyaoao</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="http://jjyaoao.space/2022/01/13/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E6%A6%82%E8%BF%B0/">http://jjyaoao.space/2022/01/13/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E6%A6%82%E8%BF%B0/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="http://jjyaoao.space" target="_blank">jjyaoao's Home</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">学习笔记</a><a class="post-meta__tags" href="/tags/%E6%80%9D%E7%BB%B4%E5%AF%BC%E5%9B%BE/">思维导图</a><a class="post-meta__tags" href="/tags/%E6%95%99%E7%A8%8B/">教程</a></div><div class="post_share"><div class="addthis_inline_share_toolbox"></div><script src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-61dbf69078ce19aa" async="async"></script></div></div><div class="post-reward"><div class="reward-button button--animated"><i class="fas fa-qrcode"></i> 打赏</div><div class="reward-main"><ul class="reward-all"><li class="reward-item"><a href="https://s2.loli.net/2022/01/09/HMjygFAKr2nPWdJ.jpg" target="_blank"><img class="post-qr-code-img" src="https://s2.loli.net/2022/01/09/HMjygFAKr2nPWdJ.jpg" alt="微信"/></a><div class="post-qr-code-desc">微信</div></li><li class="reward-item"><a href="https://s2.loli.net/2022/01/09/JL43sbhxUEOuVeM.jpg" target="_blank"><img class="post-qr-code-img" src="https://s2.loli.net/2022/01/09/JL43sbhxUEOuVeM.jpg" alt="支付宝"/></a><div class="post-qr-code-desc">支付宝</div></li></ul></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/2022/01/14/%E6%95%B0%E6%8D%AE%E8%A1%A8%E7%A4%BA/"><img class="prev-cover" src="https://s2.loli.net/2022/01/13/TFLYzUAxGcRmW6C.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">数据表示</div></div></a></div><div class="next-post pull-right"><a href="/2022/01/09/hello-world/"><img class="next-cover" src="https://s2.loli.net/2022/01/09/lRNGUFm3eZ4HYiu.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">Hello World</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>相关推荐</span></div><div class="relatedPosts-list"><div><a href="/2022/01/22/IO%E7%B3%BB%E7%BB%9F/" title="IO系统"><img class="cover" src="https://s2.loli.net/2022/01/13/TFLYzUAxGcRmW6C.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-01-22</div><div class="title">IO系统</div></div></a></div><div><a href="/2022/01/18/%E4%B8%AD%E5%A4%AE%E5%A4%84%E7%90%86%E5%99%A8/" title="中央处理器"><img class="cover" src="https://s2.loli.net/2022/01/13/TFLYzUAxGcRmW6C.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-01-18</div><div class="title">中央处理器</div></div></a></div><div><a href="/2022/01/16/%E5%AD%98%E5%82%A8%E7%B3%BB%E7%BB%9F/" title="存储系统"><img class="cover" src="https://s2.loli.net/2022/01/13/TFLYzUAxGcRmW6C.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-01-16</div><div class="title">存储系统</div></div></a></div><div><a href="/2022/01/20/%E6%80%BB%E7%BA%BF/" title="总线"><img class="cover" src="https://s2.loli.net/2022/01/13/TFLYzUAxGcRmW6C.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-01-20</div><div class="title">总线</div></div></a></div><div><a href="/2022/01/17/%E6%8C%87%E4%BB%A4%E7%B3%BB%E7%BB%9F/" title="指令系统"><img class="cover" src="https://s2.loli.net/2022/01/13/TFLYzUAxGcRmW6C.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-01-17</div><div class="title">指令系统</div></div></a></div><div><a href="/2022/01/14/%E6%95%B0%E6%8D%AE%E8%A1%A8%E7%A4%BA/" title="数据表示"><img class="cover" src="https://s2.loli.net/2022/01/13/TFLYzUAxGcRmW6C.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-01-14</div><div class="title">数据表示</div></div></a></div></div></div><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div><div id="comment-switch"><span class="first-comment">Livere</span><span class="switch-btn"></span><span class="second-comment">Valine</span></div></div><div class="comment-wrap"><div><div id="lv-container" data-id="city" data-uid="MTAyMC81NTM1OC8zMTgyNQ=="></div></div><div><div class="vcomment" id="vcomment"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://s2.loli.net/2022/01/09/le6jcmPKuJihDdU.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">jjyaoao</div><div class="author-info__description"></div></div><div class="card-info-data"><div class="card-info-data-item is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">64</div></a></div><div class="card-info-data-item is-center"><a href="/tags/"><div class="headline">标签</div><div class="length-num">10</div></a></div><div class="card-info-data-item is-center"><a href="/categories/"><div class="headline">分类</div><div class="length-num">80</div></a></div></div><a class="button--animated" id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/jjyaoao/"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn card-announcement-animation"></i><span>公告</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2022/12/14/LATEX%E6%95%B0%E5%AD%A6%E7%AC%A6%E5%8F%B7%E5%85%AC%E5%BC%8F/" title="LATEX数学符号公式"><img src="https://s2.loli.net/2022/12/14/i6f7xErHjKnmLSZ.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="LATEX数学符号公式"/></a><div class="content"><a class="title" href="/2022/12/14/LATEX%E6%95%B0%E5%AD%A6%E7%AC%A6%E5%8F%B7%E5%85%AC%E5%BC%8F/" title="LATEX数学符号公式">LATEX数学符号公式</a><time datetime="2022-12-14T13:43:22.000Z" title="发表于 2022-12-14 21:43:22">2022-12-14</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/12/03/Spring+mvc+boot+maven+mybatis-plus/" title="Spring+mvc+boot+maven+mybatis-plus"><img src="https://s2.loli.net/2022/12/03/xfdS62aWHo4ewRO.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Spring+mvc+boot+maven+mybatis-plus"/></a><div class="content"><a class="title" href="/2022/12/03/Spring+mvc+boot+maven+mybatis-plus/" title="Spring+mvc+boot+maven+mybatis-plus">Spring+mvc+boot+maven+mybatis-plus</a><time datetime="2022-12-03T07:13:22.000Z" title="发表于 2022-12-03 15:13:22">2022-12-03</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/11/21/PPDE%E6%8C%87%E5%AF%BC%E8%AE%A1%E5%88%92/" title="PPDE指导计划"><img src="https://s2.loli.net/2022/12/04/MpKnmUgZf5uNGws.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="PPDE指导计划"/></a><div class="content"><a class="title" href="/2022/11/21/PPDE%E6%8C%87%E5%AF%BC%E8%AE%A1%E5%88%92/" title="PPDE指导计划">PPDE指导计划</a><time datetime="2022-11-21T11:06:22.000Z" title="发表于 2022-11-21 19:06:22">2022-11-21</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/11/10/%E5%BA%94%E7%94%A8%E5%AF%86%E7%A0%81%E5%AD%A6%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/" title="应用密码学期末冲刺"><img src="https://s2.loli.net/2022/11/10/zjOrhLsVd8Ttu3v.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="应用密码学期末冲刺"/></a><div class="content"><a class="title" href="/2022/11/10/%E5%BA%94%E7%94%A8%E5%AF%86%E7%A0%81%E5%AD%A6%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/" title="应用密码学期末冲刺">应用密码学期末冲刺</a><time datetime="2022-11-10T13:22:22.000Z" title="发表于 2022-11-10 21:22:22">2022-11-10</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/10/20/%E6%84%9F%E7%9F%A5%E6%9C%BA/" title="感知机+白板推导系列"><img src="https://s2.loli.net/2022/10/31/Sl5WoGUL1RakV67.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="感知机+白板推导系列"/></a><div class="content"><a class="title" href="/2022/10/20/%E6%84%9F%E7%9F%A5%E6%9C%BA/" title="感知机+白板推导系列">感知机+白板推导系列</a><time datetime="2022-10-19T17:22:22.000Z" title="发表于 2022-10-20 01:22:22">2022-10-20</time></div></div></div></div></div></div></main><footer id="footer" style="background-image: url('https://s2.loli.net/2022/01/13/TFLYzUAxGcRmW6C.jpg')"><div id="footer-wrap"><div class="copyright">&copy;2022 - 2023 By jjyaoao</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div><div class="footer_custom_text">Hi, welcome to my <a target="_blank" rel="noopener" href="https://butterfly.js.org/">blog</a>!</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button id="chat_btn" type="button" title="rightside.chat_btn"><i class="fas fa-sms"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div id="algolia-search"><div class="search-dialog"><div class="search-dialog__title" id="algolia-search-title">Algolia</div><div id="algolia-input-panel"><div id="algolia-search-input"></div></div><hr/><div id="algolia-search-results"><div id="algolia-hits"></div><div id="algolia-pagination"></div><div id="algolia-stats"></div></div><span class="search-close-button"><i class="fas fa-times"></i></span></div><div id="search-mask"></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.js"></script><script src="/js/search/algolia.js"></script><script>var preloader = {
+  endLoading: () => {
+    document.body.style.overflow = 'auto';
+    document.getElementById('loading-box').classList.add("loaded")
+  },
+  initLoading: () => {
+    document.body.style.overflow = '';
+    document.getElementById('loading-box').classList.remove("loaded")
+
+  }
+}
+window.addEventListener('load',preloader.endLoading())</script><div class="js-pjax"><script>function loadLivere () {
+  if (typeof LivereTower === 'object') {
+    window.LivereTower.init()
+  }
+  else {
+    (function(d, s) {
+        var j, e = d.getElementsByTagName(s)[0];
+        if (typeof LivereTower === 'function') { return; }
+        j = d.createElement(s);
+        j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+        j.async = true;
+        e.parentNode.insertBefore(j, e);
+    })(document, 'script');
+  }
+}
+
+if ('Livere' === 'Livere' || !true) {
+  if (true) btf.loadComment(document.getElementById('lv-container'), loadLivere)
+  else loadLivere()
+}
+else {
+  function loadOtherComment () {
+    loadLivere()
+  }
+}</script><script>function loadValine () {
+  function initValine () {
+    const valine = new Valine(Object.assign({
+      el: '#vcomment',
+      appId: 'cFvw1zyA64uttBS5jbYY7pwH-gzGzoHsz',
+      appKey: '14rOjAUNzRyJSQt983q6gdza',
+      placeholder: 'Please leave your footprints',
+      avatar: 'monsterid',
+      meta: 'nick,mail,link'.split(','),
+      pageSize: '10',
+      lang: 'en',
+      recordIP: false,
+      serverURLs: '',
+      emojiCDN: '',
+      emojiMaps: "",
+      enableQQ: false,
+      path: window.location.pathname,
+      requiredFields: ["nick,mail"],
+      visitor: false
+    }, null))
+  }
+
+  if (typeof Valine === 'function') initValine() 
+  else getScript('https://cdn.jsdelivr.net/npm/valine/dist/Valine.min.js').then(initValine)
+}
+
+if ('Livere' === 'Valine' || !true) {
+  if (true) btf.loadComment(document.getElementById('vcomment'),loadValine)
+  else setTimeout(loadValine, 0)
+} else {
+  function loadOtherComment () {
+    loadValine()
+  }
+}</script></div><script defer="defer" id="fluttering_ribbon" mobile="true" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/canvas-fluttering-ribbon.min.js"></script><script id="canvas_nest" defer="defer" color="0,0,255" opacity="0.7" zIndex="-1" count="99" mobile="true" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/canvas-nest.min.js"></script><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/activate-power-mode.min.js"></script><script>POWERMODE.colorful = true;
+POWERMODE.shake = false;
+POWERMODE.mobile = false;
+document.body.addEventListener('input', POWERMODE);
+</script><script id="click-show-text" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/click-show-text.min.js" data-mobile="false" data-text="富强,民主,文明,和谐,自由,平等,公正,法治,爱国,敬业,诚信,友善,感谢" data-fontsize="15px" data-random="false" async="async"></script><script>(function(d, w, c) {
+    w.ChatraID = 'zgYNWkNCSATLRhpg4';
+    var s = d.createElement('script');
+    w[c] = w[c] || function() {
+        (w[c].q = w[c].q || []).push(arguments);
+    };
+    s.async = true;
+    s.src = 'https://call.chatra.io/chatra.js';
+    if (d.head) d.head.appendChild(s);
+})(document, window, 'Chatra');
+
+if (true) {
+  var chatBtnFn = () => {
+    var chatBtn = document.getElementById("chat_btn")
+    chatBtn.addEventListener("click", function(){
+      Chatra('openChat')
+    });
+  }
+  chatBtnFn()
+} else {
+  if (true) {
+    function chatBtnHide () {
+      Chatra('hide')
+    }
+    function chatBtnShow () {
+      Chatra('show')
+    }
+  }
+}</script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>

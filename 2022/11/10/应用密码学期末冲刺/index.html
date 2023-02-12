@@ -1,0 +1,497 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>应用密码学期末冲刺 | jjyaoao's Home</title><meta name="keywords" content="应用密码学期末冲刺"><meta name="author" content="jjyaoao,jjyaoao@126.com"><meta name="copyright" content="jjyaoao"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="还有5天期末考试，加油！！！奇迹！！！">
+<meta property="og:type" content="article">
+<meta property="og:title" content="应用密码学期末冲刺">
+<meta property="og:url" content="http://jjyaoao.space/2022/11/10/%E5%BA%94%E7%94%A8%E5%AF%86%E7%A0%81%E5%AD%A6%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/index.html">
+<meta property="og:site_name" content="jjyaoao&#39;s Home">
+<meta property="og:description" content="还有5天期末考试，加油！！！奇迹！！！">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://s2.loli.net/2022/11/10/zjOrhLsVd8Ttu3v.jpg">
+<meta property="article:published_time" content="2022-11-10T13:22:22.000Z">
+<meta property="article:modified_time" content="2022-11-14T10:31:53.787Z">
+<meta property="article:author" content="jjyaoao">
+<meta property="article:tag" content="遗忘指南">
+<meta property="article:tag" content="学习笔记">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://s2.loli.net/2022/11/10/zjOrhLsVd8Ttu3v.jpg"><link rel="shortcut icon" href="https://s2.loli.net/2022/01/09/le6jcmPKuJihDdU.jpg"><link rel="canonical" href="http://jjyaoao.space/2022/11/10/%E5%BA%94%E7%94%A8%E5%AF%86%E7%A0%81%E5%AD%A6%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//hm.baidu.com"/><link rel="preconnect" href="//fonts.googleapis.com" crossorigin=""/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.10.5/dist/instantsearch.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/instantsearch.js@2.10.5/dist/instantsearch.min.js" defer></script><script>var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?06fb7a80772d98cbf9e7beeb76e262e4";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web&amp;display=swap" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: {"appId":"JOZPQM4N5F","apiKey":"42451c032f2166ed9800520810e2d223","indexName":"jjyaoao-blog","hits":{"per_page":10},"languages":{"input_placeholder":"搜索文章","hits_empty":"找不到您查询的内容：${query}","hits_stats":"找到 ${hits} 条结果，用时 ${time} 毫秒"}},
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: true,
+    post: true
+  },
+  runtime: '天',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: {"chs_to_cht":"你已切换为繁体","cht_to_chs":"你已切换为简体","day_to_night":"你已切换为深色模式","night_to_day":"你已切换为浅色模式","bgLight":"#49b1f5","bgDark":"#121212","position":"bottom-left"},
+  source: {
+    jQuery: 'https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js',
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/js/jquery.justifiedGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/css/justifiedGallery.min.css'
+    },
+    fancybox: {
+      js: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isanchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '应用密码学期末冲刺',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2022-11-14 18:31:53'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if (GLOBAL_CONFIG_SITE.isHome && /iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><meta name="generator" content="Hexo 6.0.0"></head><body><div id="loading-box"><div class="loading-left-bg"></div><div class="loading-right-bg"></div><div class="spinner-box"><div class="configure-border-1"><div class="configure-core"></div></div><div class="configure-border-2"><div class="configure-core"></div></div><div class="loading-word">加载中...</div></div></div><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://s2.loli.net/2022/01/09/le6jcmPKuJihDdU.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data"><div class="data-item is-center"><div class="data-item-link"><a href="/archives/"><div class="headline">文章</div><div class="length-num">64</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/tags/"><div class="headline">标签</div><div class="length-num">10</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/categories/"><div class="headline">分类</div><div class="length-num">80</div></a></div></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fa fa-heartbeat"></i><span> 清单</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音樂</span></a></li><li><a class="site-page child" href="/Gallery/"><i class="fa-fw fas fa-images"></i><span> 照片</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://s2.loli.net/2022/11/10/zjOrhLsVd8Ttu3v.jpg')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">jjyaoao's Home</a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fa fa-heartbeat"></i><span> 清单</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音樂</span></a></li><li><a class="site-page child" href="/Gallery/"><i class="fa-fw fas fa-images"></i><span> 照片</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">应用密码学期末冲刺</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2022-11-10T13:22:22.000Z" title="发表于 2022-11-10 21:22:22">2022-11-10</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2022-11-14T10:31:53.787Z" title="更新于 2022-11-14 18:31:53">2022-11-14</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E8%AF%BE%E7%A8%8B/">课程</a><i class="fas fa-angle-right post-meta-separator"></i><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E8%AF%BE%E7%A8%8B/%E5%BA%94%E7%94%A8%E5%AF%86%E7%A0%81%E5%AD%A6%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/">应用密码学期末冲刺</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">4.4k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>13分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="应用密码学期末冲刺"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h1 id="大纲"><a href="#大纲" class="headerlink" title="大纲"></a>大纲</h1><p>选择，填空，判断题，解答题</p>
+<p>计算题（实验）</p>
+<p>RSA算法基础原理，每一步怎么算的，流程，会算加密，解密</p>
+<blockquote>
+<p>1、选pq</p>
+<p>2、计算n和φ(n)</p>
+<p>3、选公钥e，1 &lt; e &lt; φ(n)</p>
+<p>4、计算私钥d，满足d * e 等价于 1 mod φ(n)</p>
+<p>5、以{e、n}为公开钥，{d、n}为秘密钥</p>
+<p>加密：对明文进行分组，使得对应的十进制数小于n，即分组长度小于$log_{2}^{n}$，对每个明文分组m作加密运算。</p>
+<p>密文C 等价于 m^e^ mod n   m:分组后明文  C：加密后信息</p>
+<p>解密：m 等价于 c^d^ mod n                  n：两素数乘积</p>
+</blockquote>
+<p>SHA-1算法，填充扩充，扩展w</p>
+<blockquote>
+<p>看sha-1位置</p>
+</blockquote>
+<p>维吉尼亚密码</p>
+<blockquote>
+<p>明文e 密钥4 密文i（e+4）</p>
+</blockquote>
+<p>DES和DES双重多重变形，结果是多少bit</p>
+<blockquote>
+<p>DES有效密钥56bits，2DES有效密钥112bits，3DES-EEE3有效密钥168bits</p>
+</blockquote>
+<p>AES算法</p>
+<blockquote>
+<p>4*4字节矩阵    1、字节替换 2、循环左移 3、列混合 4、轮密钥加（异或）</p>
+</blockquote>
+<p>几种分组密码的模式，每种的意思，差错传递情况</p>
+<blockquote>
+<p>ECB无错误传播  CBC有，仅影响该组和下一组，后面的不会受影响 CFB会影响到当前组和后面[n / j]组（n为总组数，j为当前组数）  OFB错误不会传播，但更易受到对信息流的篡改  CTR较为简单，不依赖明文和密文输入，可以并行处理</p>
+</blockquote>
+<p>DH密钥协商算法（自学）</p>
+<blockquote>
+<p><img src="/2022/11/10/%E5%BA%94%E7%94%A8%E5%AF%86%E7%A0%81%E5%AD%A6%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20221113221414769.png" alt="image-20221113221414769"></p>
+<p><img src="/2022/11/10/%E5%BA%94%E7%94%A8%E5%AF%86%E7%A0%81%E5%AD%A6%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20221113221444836.png" alt="image-20221113221444836"></p>
+</blockquote>
+<p>几种典型的古典密码，如何变化，特点</p>
+<blockquote>
+<p>传统隐写法：隐藏信息在大段文字  替换：例如数字替换为文字  换位：index=1位置的数字换成index=5的数字</p>
+</blockquote>
+<p>现代密码学特点概念，分类，每种算法基于什么困难，常用的国密算法</p>
+<blockquote>
+<p>概念：明文 密文 加密 解密 加密算法 解密算法 分类：对称密钥密码体制 非对称密钥密码体制 分组密码体制 序列密码体制 确定型密码体制 概率密码体制 单向变换密码体制 双向变换密码体制 </p>
+<p>国密：SM系列+祖冲之+SSF33</p>
+</blockquote>
+<p>计算安全性概念等</p>
+<blockquote>
+<p><strong>被动</strong>攻击：是未经用户同意和认可的情况下将信息或数据文件泄露给系统攻击者，但<strong>不对数据</strong>信息进行任何<strong>修改</strong></p>
+<p><strong>主动</strong>攻击：主要涉及某些<strong>数据流</strong>的<strong>篡改</strong>或虚假数据流的<strong>产生</strong>。主动攻击常分为假冒（或伪造）、重放、篡改信息和拒绝服务四类。</p>
+</blockquote>
+<p>分组密码，序列密码相关基础知识、线性反馈（自学）</p>
+<blockquote>
+<p>分组：1、直接扩充法（指定填充长度）2、密文挪用扩充</p>
+<p>序列：线性反馈移位寄存器（LFSR）</p>
+<p><img src="/2022/11/10/%E5%BA%94%E7%94%A8%E5%AF%86%E7%A0%81%E5%AD%A6%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20221112143744746.png" alt="image-20221112143744746"></p>
+<p>每一状态对应于GF(2)上的一个n维向量，共有2^n^ 种可能的状态。每一时刻的状态可用n长序列</p>
+<p>n级线性反馈移位寄存器的状态周期小于等于2^n^-1。输出序列的周期与状态周期相等，也小于等于2^n^-1。只要选择合适的反馈函数便可使序列的周期达到最大值2^n^-1</p>
+</blockquote>
+<p>哈希函数基础，概念，特点</p>
+<blockquote>
+<p>Hash函数是一公开函数，可以将任意长的消息m映射为较短的、固定长度的一个值，记为H(m)，函数值H(m)的值称为哈希值。</p>
+<p>可以看作是一种<strong>单向</strong>密码体制，即它从一个明文到密文是<strong>不可逆</strong>映射</p>
+</blockquote>
+<p>几类哈希函数，不同哈希函数的意思，多少bit，特点</p>
+<blockquote>
+<p>SHA-<strong>256</strong>与SHA-1算法一样，以<strong>512</strong>-bit分块为基本处理单位，每分块又划分为<strong>16</strong>个<strong>32</strong>-bit字进入哈希函数中处理操作。</p>
+<p>而SHA-<strong>384</strong>、SHA-<strong>512</strong>与SHA-1算法不同，是以<strong>1024</strong>-bit分块为基本处理单位，每分块是划分为<strong>16</strong>个<strong>64</strong>-bit字进入哈希函数中处理操作。</p>
+<p>注意：SHA-xxx，xxx即为生成的信息摘要长度，例如SHA-512生成的信息摘要为512bits</p>
+<p><strong>SHA-3</strong>中也提出了4个Hash算法SHA3-224, SHA3-256, SHA3-384, SHA3-512，可完全替换SHA-2。采用了不同于传统MD结构，而选择了<strong>海绵构造</strong>（sponge结构）</p>
+<p><strong>MD5</strong>由RSA的创始人Rivest设计开发的，能<strong>接收任意长度</strong>的消息作为输入，并<strong>生成</strong>其<strong>128 bits哈希值</strong></p>
+<p>MD5散列函数总共两组输入：512 bits 明文分块和上一组128 bits的输出块</p>
+<p><img src="/2022/11/10/%E5%BA%94%E7%94%A8%E5%AF%86%E7%A0%81%E5%AD%A6%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20221112163701308.png" alt="image-20221112163701308"></p>
+</blockquote>
+<p>数字签名概念，模型，特点，过程，如何变化的</p>
+<blockquote>
+<p>数字签名应满足：</p>
+<p>① 签名的产生必须使用发方独有的一些信息以防伪造和否认。</p>
+<p>② 签名的产生应较为容易。</p>
+<p> ③ 签名的识别和验证应较为容易。</p>
+<p>④ 对已知的数字签名构造一新的消息或对已知的消息构造一假冒的数字签名在计算上都是不可行的。</p>
+<p>步骤：</p>
+<p>第一步：将消息按散列算法计算得到一个<strong>固定位数的消息摘要值</strong></p>
+<p>第二步：对消息<strong>摘要</strong>值用发送者的<strong>私有密钥加密</strong>，所产生的<strong>密文即称数字签名</strong>。然后该数字签名同原消息一起<strong>发送</strong>给接收者。</p>
+<p>第三步：接收方收到消息和数字签名后，用<strong>同样的散列算法对消息计算摘要</strong>值，然后与用发送者的<strong>公开密钥对数字签名进行解密</strong>，将解密后的结果与计算的摘要值<strong>相比较</strong>。如<strong>相等</strong>则说明报文<strong>确实</strong>来自发送者。</p>
+<p><img src="/2022/11/10/%E5%BA%94%E7%94%A8%E5%AF%86%E7%A0%81%E5%AD%A6%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20221112230019516.png" alt="image-20221112230019516"></p>
+</blockquote>
+<p>基于RSA的数字签名</p>
+<blockquote>
+<p>一个普通的数字签名算法通常包括2个部分：签名算法和验证算法。  </p>
+<ul>
+<li>在签名阶段，签名者用自己的私钥对消息进行签名；</li>
+<li>在验证阶段，验证者则通过签名者对应的公开钥进行验证。</li>
+</ul>
+<p>差别</p>
+<p> RSA<strong>加密</strong>算法 “<strong>公钥加密</strong>，私钥解密”</p>
+<p> RSA<strong>签名</strong>算法 “<strong>私钥签名</strong>，公钥验证”</p>
+</blockquote>
+<p>消息认证码的概念，与数字签名的异同</p>
+<blockquote>
+<p>​    消息认证码MAC(Message Authentication Code，MAC)：由以消息和密钥作为输入的公开函数产生的认证信息。</p>
+<p>C是MAC函数，它利用密钥K和任意长度的消息M来生成一个固定长度的短数据块MAC。$MAC = C_{k}(M)$</p>
+<p>​    消息认证其作用是保护通信双方以防第三方的攻击，然而却<strong>不能保护</strong>通信双方中的一方防止另一方的<strong>欺骗</strong>或伪造。</p>
+<p> 数字签名与消息认证的区别     </p>
+<ul>
+<li>数字签名——第三者可以确认收发双方的消息传送（数字签名必须与所签文件捆绑在一起。）       </li>
+<li>消息认证——只有收发双方才能确认消息的传送</li>
+</ul>
+</blockquote>
+<p>数字证书基础</p>
+<blockquote>
+<p>​    <strong>数字证书</strong>就是标志网络用户身份信息的一系列数据，用来在网络通讯中识别通讯各方的身份，即要在Internet上解决“我是谁”的问题，就如同现实中我们每一个人都要拥有一张<strong>证明个人身份的身份证</strong>或驾驶执照一样，以表明我们的身份或某种资格。</p>
+<p>​    一张数字证书通过一个公钥和与之对应的私钥来证明身份的唯一性</p>
+<p>​    基于非对称密码体制和对称密码体制都可以产生数字签名。不过，基于对称密码体制的数字签名一般都要求有可信任的第三方，在发生纠纷的时候作为仲裁者。</p>
+<p><img src="/2022/11/10/%E5%BA%94%E7%94%A8%E5%AF%86%E7%A0%81%E5%AD%A6%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20221112224721893.png" alt="image-20221112224721893"></p>
+</blockquote>
+<p>密钥管理，层次化密钥管理，结构特点，为什么需要密钥管理</p>
+<blockquote>
+<p>密钥管理：就是在<strong>一定的安全策略</strong>指导下完成密钥从产生到最终销毁的整个过程，包括密钥的<strong>生成、建立（分配和协商）、存储、托管、使用、备份/恢复、更新、撤销和销毁</strong>等.</p>
+<p>层次化的密钥结构：<img src="/2022/11/10/%E5%BA%94%E7%94%A8%E5%AF%86%E7%A0%81%E5%AD%A6%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20221113215304877.png" alt="image-20221113215304877"></p>
+<p>为什么需要密钥管理？</p>
+<p>但当密钥丢失时，非法用户将有可能窃取保密信息。</p>
+</blockquote>
+<h1 id="最后复盘笔记"><a href="#最后复盘笔记" class="headerlink" title="最后复盘笔记"></a>最后复盘笔记</h1><h2 id="密码学在信息安全中的作用"><a href="#密码学在信息安全中的作用" class="headerlink" title="密码学在信息安全中的作用"></a>密码学在信息安全中的作用</h2><p>密码学绝不是保证信息安全的唯一技术，也不能解决所有安全问题，除了技术，管理也是重要的方面，密码编码与密码分析一直处于动态平衡</p>
+<h2 id="密码学的基本概念"><a href="#密码学的基本概念" class="headerlink" title="密码学的基本概念"></a>密码学的基本概念</h2><p>密码编码学寻找生成高强度密码的有效算法，以满足对信息进行加密                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              </p>
+<p>密码分析学是破译密码或者伪造认证密码，窃取机密</p>
+<p>现代密码学除了密码编码和密码分析，现在还有密钥密码学</p>
+<p>截取密文叫做被动攻击，注入假信息的攻击称为主动攻击</p>
+<h2 id="密码体制构成与分类"><a href="#密码体制构成与分类" class="headerlink" title="密码体制构成与分类"></a>密码体制构成与分类</h2><h3 id="密码体制构成"><a href="#密码体制构成" class="headerlink" title="密码体制构成"></a>密码体制构成</h3><p>构成：（一个密码算法由五部分构成）</p>
+<p>铭文空间M 密文空间C 密钥空间K  （均为全体xx的集合）</p>
+<p>加密器（加密变换）E   由加密秘钥控制的加密变换的集合</p>
+<p>解密器（解密变换） D  同上，加密改成解密就行</p>
+<p>完整的密码系统由密码体质，信源，信宿和攻击者构成</p>
+<p>传统密码采用的加密秘钥和解密密钥相同</p>
+<h3 id="密码体制分类"><a href="#密码体制分类" class="headerlink" title="密码体制分类"></a>密码体制分类</h3><p>替换密码体制：明文中每个元素重新排列，映射到另外一个元素</p>
+<p>根据密文数据段和明文数据段在整个明文中的位置，可以将密码体制其分为分组密码体制和序列密码体制</p>
+<p>加密变换是否可逆：单向和双向密码变换体制    单向可以将明文加密成密文，却不能从密文转换为明文。</p>
+<p>是否引入客观随机因素：确定性密码体制和概率密码体制  概率密码保密强度大，但加密开销大，密文比明文长的多</p>
+<h2 id="密码体制安全的方法与条件"><a href="#密码体制安全的方法与条件" class="headerlink" title="密码体制安全的方法与条件"></a>密码体制安全的方法与条件</h2><p>三种方法：</p>
+<p>1、无条件安全：提供无穷资源仍然无法破译</p>
+<p>2、可证明安全性：与数学题挂钩，因为数学题难以破解，所以算法目前难以破解，有风险</p>
+<p>3、计算安全性：用最好的方法破解超过了破译者的资源，也就是耗不起，即有计算安全性。</p>
+<p>要使得密码安全需要满足的条件：</p>
+<p>1、每一个加密函数和解密函数都有有效的解</p>
+<p>2、取得秘闻不能再有效时间中破译出密钥和明文</p>
+<p>3、穷举破译将是不可行的，密钥空间非常大。</p>
+<h2 id="了解古代密码体制-Vigenere必考"><a href="#了解古代密码体制-Vigenere必考" class="headerlink" title="了解古代密码体制(Vigenere必考)"></a>了解古代密码体制(Vigenere必考)</h2><p>1、单字符单表替换密码技术</p>
+<p>1.1、乘法密码技术：对所有密码都使用一个固定映射</p>
+<p>1.2、加法：对密码+固定数字并取模</p>
+<p>1.3、仿射密码：一个字母被另外一个字母替换，Vigenere的雏形，不过所用的密钥是同一个</p>
+<p>2、单字符多表替换密码技术</p>
+<p>2.1、<strong>Vigenere密码</strong></p>
+<p>使用一个词组作为密钥，词组中的每个字母都作为以为替换密码的密钥，并确定一个替换表</p>
+<p>利用一个替换表，完成明文到密文字母的转换，其实就是向后推移</p>
+<p>明文 e  密钥 4 密文 i    e + 4 = i</p>
+<p>2.2、Hill（希尔）密码</p>
+<p>线性变换。将n个明文字母通过线性变换为n个密文字母，利用矩阵的思想</p>
+<h2 id="DES"><a href="#DES" class="headerlink" title="DES"></a><strong>DES</strong></h2><p>DES是Feistel密码结构，轮数通常取16轮，过程就是多个阶段的代替与置换</p>
+<p>明文分组都是64bit 有效密钥长度56bit 四种运行模式：电码本（ECB）模式，分组链接（CBC）模式，密码反馈（CFB）模式，输出反馈（OFB）模式</p>
+<p>密钥的生成是由初始化密钥64bit  -&gt; 28 + 28（八位留作校验位）  -&gt; 循环左移位 -&gt; ip置换为48bit子密钥</p>
+<p>关键步骤：初始化IP 与 F函数（E扩 轮或 S压 P置） </p>
+<p>其中，初始化IP与P置基本上用途类似</p>
+<p><img src="/2022/11/10/%E5%BA%94%E7%94%A8%E5%AF%86%E7%A0%81%E5%AD%A6%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20221110221302076.png" alt="image-20221110221302076"></p>
+<h2 id="AES"><a href="#AES" class="headerlink" title="AES"></a><strong>AES</strong></h2><p>明文分组128bits，密钥有128、192、256bits三种选择</p>
+<p>代替-置换网络（S[substitute] - P[Permutation]）结构</p>
+<p>关键步骤：SubBytes替换 – 》循环左移（0,1,2,3） – 》 列混合 –》 轮密钥加 </p>
+<p><img src="/2022/11/10/%E5%BA%94%E7%94%A8%E5%AF%86%E7%A0%81%E5%AD%A6%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20221110222325292.png" alt="image-20221110222325292"></p>
+<blockquote>
+<p>域有分配率，可以拆开。</p>
+</blockquote>
+<p><img src="/2022/11/10/%E5%BA%94%E7%94%A8%E5%AF%86%E7%A0%81%E5%AD%A6%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20221112131652919.png" alt="image-20221112131652919"></p>
+<h2 id="分组密码的工作模式"><a href="#分组密码的工作模式" class="headerlink" title="分组密码的工作模式"></a>分组密码的工作模式</h2><p>电码本（ECB）模式：利用加密算法各分组数据组加密</p>
+<p>分组链接（CBC）模式，</p>
+<p>密码反馈（CFB）模式，</p>
+<p>输出反馈（OFB）模式</p>
+<p>计数器（CTR）模式 </p>
+<h2 id="RSA"><a href="#RSA" class="headerlink" title="RSA"></a><strong>RSA</strong></h2><p>1、选pq</p>
+<p>2、计算n和φ(n)</p>
+<p>3、选公钥e，1 &lt; e &lt; φ(n)</p>
+<p>4、计算私钥d，满足d * e 等价于 1 mod φ(n)</p>
+<p>5、以{e、n}为公开钥，{d、n}为秘密钥</p>
+<p>加密：对明文进行分组，使得对应的十进制数小于n，即分组长度小于$log_{2}^{n}$，对每个明文分组m作加密运算。</p>
+<p>密文C 等价于 m^e^ mod n   m:分组后明文  C：加密后信息</p>
+<p>解密：m 等价于 c^d^ mod n                  n：两素数乘积</p>
+<p>公钥{e, n}  私钥{d, n}</p>
+<h2 id="ELGamal"><a href="#ELGamal" class="headerlink" title="ELGamal"></a>ELGamal</h2><p>与RSA过程类似，但ELGamal是一个非确定性算法，对于相同信息m，由于随机数k（1&lt;k&lt;p)选择不同，所得的密文也不同。</p>
+<p>有一个缺点是信息扩展，即秘闻长度是对应明文长度的两倍，对网络带宽受限的应用尤其不利。</p>
+<h2 id="Hash函数概念与结构"><a href="#Hash函数概念与结构" class="headerlink" title="Hash函数概念与结构"></a>Hash函数概念与结构</h2><p>Hash函数的H是一个公开的函数，不需要密钥，能将任意长的信息m映射为较短的、固定长度的一个值H（m）。</p>
+<p>对他有六个要求</p>
+<p>1、能接受任意长度的信息作为输入</p>
+<p>2、能生成较短的，固定长度的输出</p>
+<p>3、对任何信息输入，都应该容易且快速的计算出哈希值</p>
+<p>4、具有<strong>单向性</strong>，也就是计算上恢复m是不可行的</p>
+<p>5、能抵挡<strong>弱碰撞</strong>，即给定m和 H（m），找到另外一个消息m ≠ m’ ，使H（m） = H（m’）是不可能的。</p>
+<p>6、能抵挡<strong>强冲突</strong>，即m和m’存在时，H(m) = H(m’)是几乎不可能的。</p>
+<h2 id="Hash函数算法"><a href="#Hash函数算法" class="headerlink" title="Hash函数算法"></a>Hash函数算法</h2><blockquote>
+<p>一般哈希函数，不会说成 MD5加密、SHA-1加密，而是说哈希算法。哈希出来的结果，一般也成为摘要值，哈希值，散列值，而不会说“密文”。</p>
+</blockquote>
+<h3 id="SHA-1算法"><a href="#SHA-1算法" class="headerlink" title="SHA-1算法"></a><strong>SHA-1算法</strong></h3><h4 id="扩充"><a href="#扩充" class="headerlink" title="扩充"></a>扩充</h4><p>假设输入消息M， 保证整个消息长度是512bit的倍数</p>
+<p>假设M长度为 l 个bit，在M尾部加一个<strong>1</strong>的比特位，和<strong>k</strong>个0的比特位，并且保证l + <strong>1</strong> + <strong>k</strong> 等价于 448（mod 512） k为最小的非负整数</p>
+<p>然后再在填充消息的末尾添加<strong>64</strong>-bit块，这64位是原始消息变换为<strong>二进制的长度</strong>（abc：共24bit，长度就是24），个数小于64的话，则在左边补0，使得长度刚好等于64</p>
+<p><img src="/2022/11/10/%E5%BA%94%E7%94%A8%E5%AF%86%E7%A0%81%E5%AD%A6%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20221111213914018.png" alt="image-20221111213914018"></p>
+<h4 id="扩展"><a href="#扩展" class="headerlink" title="扩展"></a>扩展</h4><p><img src="/2022/11/10/%E5%BA%94%E7%94%A8%E5%AF%86%E7%A0%81%E5%AD%A6%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20221111223509616.png" alt="image-20221111223509616"></p>
+<p><img src="/2022/11/10/%E5%BA%94%E7%94%A8%E5%AF%86%E7%A0%81%E5%AD%A6%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20221111223523029.png" alt="image-20221111223523029"></p>
+<blockquote>
+<p>其中ROTL表示循环座椅t bit，<strong>ROTL^1^表示循环左移1 bit</strong>。</p>
+<p>例如</p>
+</blockquote>
+<p><img src="/2022/11/10/%E5%BA%94%E7%94%A8%E5%AF%86%E7%A0%81%E5%AD%A6%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20221111223632805.png" alt="image-20221111223632805"></p>
+<blockquote>
+<p><strong>W[16]<strong>其实就等于</strong>61626380循环左移一位</strong>（w[13]w[8]w[2]均为0）</p>
+</blockquote>
+<h3 id="SHA-2"><a href="#SHA-2" class="headerlink" title="SHA-2"></a>SHA-2</h3><p>SHA-256，SHA-384，SHA-512统称为SHA-2，</p>
+<p>SHA-256与SHA-1一样以512bit分块作为基本处理单位，每分块又划分为16个32bit字，而SHA-384，SHA-512与SHA-1算法不同，是以1024bit作为基本处理，然后每分块分为16个64bit</p>
+<h2 id="消息认证"><a href="#消息认证" class="headerlink" title="消息认证"></a>消息认证</h2><p>消息认证是一个过程，用以验证接收消息的真实性、顺序性、时间性</p>
+<p>检验内容应该包括：</p>
+<p>1、证实信息的源和宿</p>
+<p>2、消息内容是否曾收到偶然或有意的篡改</p>
+<p>3、消息的序号和时间先后</p>
+<p>这种认证只在通信双方进行，不允许第三者进行，<strong>不一定是实时</strong>的，可用<strong>消息认证码</strong>对消息做认证。</p>
+<p>消息认证码（MAC Message Authentication Code）是用做认证的固定长度的数值</p>
+<p>但必须持有共享密钥才能计算MAC值，这一点可用理解为单向的哈希函数。</p>
+<p><img src="/2022/11/10/%E5%BA%94%E7%94%A8%E5%AF%86%E7%A0%81%E5%AD%A6%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20221112164008263.png" alt="image-20221112164008263"></p>
+<h2 id="各种攻击手段"><a href="#各种攻击手段" class="headerlink" title="各种攻击手段"></a>各种攻击手段</h2><ul>
+<li><p>唯密文攻击(COA)是指仅仅知道密文的情况下进行分析，求解明文或密钥的密码分析方法。</p>
+</li>
+<li><p>已知明文攻击(KPA)是指攻击者掌握了部分的明文M和对应的密文C，从而求解或破解出对应的密钥和加密算法。</p>
+</li>
+<li><p>选择明文攻击(CPA)是指攻击者除了知道加密算法外，还可以选定明文消息，从而得到加密后的密文，即知道选择的明文和加密的密文，但是不能直接攻破密钥。</p>
+</li>
+<li><p>选择密文攻击(CCA)是指攻击者可以选择密文进行解密，除了知道已知明文攻击的基础上，攻击者可以任意制造或选择一些密文，并得到解密的明文，是一种比已知明文攻击更强的攻击方式。</p>
+</li>
+<li><p>难易程度：选择密文攻击(CCA)＜选择明文攻击(CPA)＜已知明文攻击(KPA)＜唯密文攻击(COA)</p>
+</li>
+</ul>
+<h2 id="对称加密非对称加密小知识点"><a href="#对称加密非对称加密小知识点" class="headerlink" title="对称加密非对称加密小知识点"></a>对称加密非对称加密小知识点</h2><p><img src="/2022/11/10/%E5%BA%94%E7%94%A8%E5%AF%86%E7%A0%81%E5%AD%A6%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20221112161817026.png" alt="image-20221112161817026"></p>
+<p><img src="/2022/11/10/%E5%BA%94%E7%94%A8%E5%AF%86%E7%A0%81%E5%AD%A6%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20221112161812893.png" alt="image-20221112161812893"></p>
+<p><img src="/2022/11/10/%E5%BA%94%E7%94%A8%E5%AF%86%E7%A0%81%E5%AD%A6%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20221112161828969.png" alt="image-20221112161828969"></p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="mailto:jjyaoao@126.com">jjyaoao</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="http://jjyaoao.space/2022/11/10/%E5%BA%94%E7%94%A8%E5%AF%86%E7%A0%81%E5%AD%A6%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/">http://jjyaoao.space/2022/11/10/%E5%BA%94%E7%94%A8%E5%AF%86%E7%A0%81%E5%AD%A6%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="http://jjyaoao.space" target="_blank">jjyaoao's Home</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E9%81%97%E5%BF%98%E6%8C%87%E5%8D%97/">遗忘指南</a><a class="post-meta__tags" href="/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">学习笔记</a></div><div class="post_share"><div class="addthis_inline_share_toolbox"></div><script src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-61dbf69078ce19aa" async="async"></script></div></div><div class="post-reward"><div class="reward-button button--animated"><i class="fas fa-qrcode"></i> 打赏</div><div class="reward-main"><ul class="reward-all"><li class="reward-item"><a href="https://s2.loli.net/2022/01/09/HMjygFAKr2nPWdJ.jpg" target="_blank"><img class="post-qr-code-img" src="https://s2.loli.net/2022/01/09/HMjygFAKr2nPWdJ.jpg" alt="微信"/></a><div class="post-qr-code-desc">微信</div></li><li class="reward-item"><a href="https://s2.loli.net/2022/01/09/JL43sbhxUEOuVeM.jpg" target="_blank"><img class="post-qr-code-img" src="https://s2.loli.net/2022/01/09/JL43sbhxUEOuVeM.jpg" alt="支付宝"/></a><div class="post-qr-code-desc">支付宝</div></li></ul></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/2022/11/21/PPDE%E6%8C%87%E5%AF%BC%E8%AE%A1%E5%88%92/"><img class="prev-cover" src="https://s2.loli.net/2022/12/04/MpKnmUgZf5uNGws.png" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">PPDE指导计划</div></div></a></div><div class="next-post pull-right"><a href="/2022/10/20/%E6%84%9F%E7%9F%A5%E6%9C%BA/"><img class="next-cover" src="https://s2.loli.net/2022/10/31/Sl5WoGUL1RakV67.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">感知机+白板推导系列</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>相关推荐</span></div><div class="relatedPosts-list"><div><a href="/2022/04/15/C++%E9%A1%B9%E7%9B%AE%E5%AE%9E%E6%88%98/" title="C++项目实战"><img class="cover" src="https://s2.loli.net/2022/04/15/YXoFfbxgWZIn1SM.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-04-15</div><div class="title">C++项目实战</div></div></a></div><div><a href="/2022/08/17/22%E5%B9%B4%E5%A4%87%E6%88%98%E6%95%B0%E6%A8%A1%E5%9B%BD%E8%B5%9B/" title="2022备战国赛"><img class="cover" src="https://s2.loli.net/2022/04/15/YXoFfbxgWZIn1SM.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-08-17</div><div class="title">2022备战国赛</div></div></a></div><div><a href="/2022/09/15/Cmake+Vscode+C++%E5%BC%80%E5%8F%91/" title="Cmake+vscode+C++"><img class="cover" src="https://s2.loli.net/2022/04/15/YXoFfbxgWZIn1SM.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-09-15</div><div class="title">Cmake+vscode+C++</div></div></a></div><div><a href="/2022/12/14/LATEX%E6%95%B0%E5%AD%A6%E7%AC%A6%E5%8F%B7%E5%85%AC%E5%BC%8F/" title="LATEX数学符号公式"><img class="cover" src="https://s2.loli.net/2022/12/14/i6f7xErHjKnmLSZ.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-12-14</div><div class="title">LATEX数学符号公式</div></div></a></div><div><a href="/2022/08/23/Geatpy-python%E4%BC%98%E5%8C%96%E5%BA%93/" title="Geatpy-python优化库"><img class="cover" src="https://s2.loli.net/2022/04/15/YXoFfbxgWZIn1SM.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-08-23</div><div class="title">Geatpy-python优化库</div></div></a></div><div><a href="/2022/09/10/Git/" title="Git"><img class="cover" src="https://s2.loli.net/2022/04/15/YXoFfbxgWZIn1SM.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-09-10</div><div class="title">Git</div></div></a></div></div></div><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div><div id="comment-switch"><span class="first-comment">Livere</span><span class="switch-btn"></span><span class="second-comment">Valine</span></div></div><div class="comment-wrap"><div><div id="lv-container" data-id="city" data-uid="MTAyMC81NTM1OC8zMTgyNQ=="></div></div><div><div class="vcomment" id="vcomment"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%A4%A7%E7%BA%B2"><span class="toc-number">1.</span> <span class="toc-text">大纲</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%9C%80%E5%90%8E%E5%A4%8D%E7%9B%98%E7%AC%94%E8%AE%B0"><span class="toc-number">2.</span> <span class="toc-text">最后复盘笔记</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AF%86%E7%A0%81%E5%AD%A6%E5%9C%A8%E4%BF%A1%E6%81%AF%E5%AE%89%E5%85%A8%E4%B8%AD%E7%9A%84%E4%BD%9C%E7%94%A8"><span class="toc-number">2.1.</span> <span class="toc-text">密码学在信息安全中的作用</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AF%86%E7%A0%81%E5%AD%A6%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5"><span class="toc-number">2.2.</span> <span class="toc-text">密码学的基本概念</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AF%86%E7%A0%81%E4%BD%93%E5%88%B6%E6%9E%84%E6%88%90%E4%B8%8E%E5%88%86%E7%B1%BB"><span class="toc-number">2.3.</span> <span class="toc-text">密码体制构成与分类</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AF%86%E7%A0%81%E4%BD%93%E5%88%B6%E6%9E%84%E6%88%90"><span class="toc-number">2.3.1.</span> <span class="toc-text">密码体制构成</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AF%86%E7%A0%81%E4%BD%93%E5%88%B6%E5%88%86%E7%B1%BB"><span class="toc-number">2.3.2.</span> <span class="toc-text">密码体制分类</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AF%86%E7%A0%81%E4%BD%93%E5%88%B6%E5%AE%89%E5%85%A8%E7%9A%84%E6%96%B9%E6%B3%95%E4%B8%8E%E6%9D%A1%E4%BB%B6"><span class="toc-number">2.4.</span> <span class="toc-text">密码体制安全的方法与条件</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%86%E8%A7%A3%E5%8F%A4%E4%BB%A3%E5%AF%86%E7%A0%81%E4%BD%93%E5%88%B6-Vigenere%E5%BF%85%E8%80%83"><span class="toc-number">2.5.</span> <span class="toc-text">了解古代密码体制(Vigenere必考)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#DES"><span class="toc-number">2.6.</span> <span class="toc-text">DES</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#AES"><span class="toc-number">2.7.</span> <span class="toc-text">AES</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%88%86%E7%BB%84%E5%AF%86%E7%A0%81%E7%9A%84%E5%B7%A5%E4%BD%9C%E6%A8%A1%E5%BC%8F"><span class="toc-number">2.8.</span> <span class="toc-text">分组密码的工作模式</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#RSA"><span class="toc-number">2.9.</span> <span class="toc-text">RSA</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#ELGamal"><span class="toc-number">2.10.</span> <span class="toc-text">ELGamal</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Hash%E5%87%BD%E6%95%B0%E6%A6%82%E5%BF%B5%E4%B8%8E%E7%BB%93%E6%9E%84"><span class="toc-number">2.11.</span> <span class="toc-text">Hash函数概念与结构</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Hash%E5%87%BD%E6%95%B0%E7%AE%97%E6%B3%95"><span class="toc-number">2.12.</span> <span class="toc-text">Hash函数算法</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#SHA-1%E7%AE%97%E6%B3%95"><span class="toc-number">2.12.1.</span> <span class="toc-text">SHA-1算法</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%89%A9%E5%85%85"><span class="toc-number">2.12.1.1.</span> <span class="toc-text">扩充</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%89%A9%E5%B1%95"><span class="toc-number">2.12.1.2.</span> <span class="toc-text">扩展</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#SHA-2"><span class="toc-number">2.12.2.</span> <span class="toc-text">SHA-2</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%B6%88%E6%81%AF%E8%AE%A4%E8%AF%81"><span class="toc-number">2.13.</span> <span class="toc-text">消息认证</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%90%84%E7%A7%8D%E6%94%BB%E5%87%BB%E6%89%8B%E6%AE%B5"><span class="toc-number">2.14.</span> <span class="toc-text">各种攻击手段</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AF%B9%E7%A7%B0%E5%8A%A0%E5%AF%86%E9%9D%9E%E5%AF%B9%E7%A7%B0%E5%8A%A0%E5%AF%86%E5%B0%8F%E7%9F%A5%E8%AF%86%E7%82%B9"><span class="toc-number">2.15.</span> <span class="toc-text">对称加密非对称加密小知识点</span></a></li></ol></li></ol></div></div></div></div></main><footer id="footer" style="background-image: url('https://s2.loli.net/2022/11/10/zjOrhLsVd8Ttu3v.jpg')"><div id="footer-wrap"><div class="copyright">&copy;2022 - 2023 By jjyaoao</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div><div class="footer_custom_text">Hi, welcome to my <a target="_blank" rel="noopener" href="https://butterfly.js.org/">blog</a>!</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="chat_btn" type="button" title="rightside.chat_btn"><i class="fas fa-sms"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div id="algolia-search"><div class="search-dialog"><div class="search-dialog__title" id="algolia-search-title">Algolia</div><div id="algolia-input-panel"><div id="algolia-search-input"></div></div><hr/><div id="algolia-search-results"><div id="algolia-hits"></div><div id="algolia-pagination"></div><div id="algolia-stats"></div></div><span class="search-close-button"><i class="fas fa-times"></i></span></div><div id="search-mask"></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.js"></script><script src="/js/search/algolia.js"></script><script>var preloader = {
+  endLoading: () => {
+    document.body.style.overflow = 'auto';
+    document.getElementById('loading-box').classList.add("loaded")
+  },
+  initLoading: () => {
+    document.body.style.overflow = '';
+    document.getElementById('loading-box').classList.remove("loaded")
+
+  }
+}
+window.addEventListener('load',preloader.endLoading())</script><div class="js-pjax"><script>function loadLivere () {
+  if (typeof LivereTower === 'object') {
+    window.LivereTower.init()
+  }
+  else {
+    (function(d, s) {
+        var j, e = d.getElementsByTagName(s)[0];
+        if (typeof LivereTower === 'function') { return; }
+        j = d.createElement(s);
+        j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+        j.async = true;
+        e.parentNode.insertBefore(j, e);
+    })(document, 'script');
+  }
+}
+
+if ('Livere' === 'Livere' || !true) {
+  if (true) btf.loadComment(document.getElementById('lv-container'), loadLivere)
+  else loadLivere()
+}
+else {
+  function loadOtherComment () {
+    loadLivere()
+  }
+}</script><script>function loadValine () {
+  function initValine () {
+    const valine = new Valine(Object.assign({
+      el: '#vcomment',
+      appId: 'cFvw1zyA64uttBS5jbYY7pwH-gzGzoHsz',
+      appKey: '14rOjAUNzRyJSQt983q6gdza',
+      placeholder: 'Please leave your footprints',
+      avatar: 'monsterid',
+      meta: 'nick,mail,link'.split(','),
+      pageSize: '10',
+      lang: 'en',
+      recordIP: false,
+      serverURLs: '',
+      emojiCDN: '',
+      emojiMaps: "",
+      enableQQ: false,
+      path: window.location.pathname,
+      requiredFields: ["nick,mail"],
+      visitor: false
+    }, null))
+  }
+
+  if (typeof Valine === 'function') initValine() 
+  else getScript('https://cdn.jsdelivr.net/npm/valine/dist/Valine.min.js').then(initValine)
+}
+
+if ('Livere' === 'Valine' || !true) {
+  if (true) btf.loadComment(document.getElementById('vcomment'),loadValine)
+  else setTimeout(loadValine, 0)
+} else {
+  function loadOtherComment () {
+    loadValine()
+  }
+}</script></div><script defer="defer" id="fluttering_ribbon" mobile="true" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/canvas-fluttering-ribbon.min.js"></script><script id="canvas_nest" defer="defer" color="0,0,255" opacity="0.7" zIndex="-1" count="99" mobile="true" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/canvas-nest.min.js"></script><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/activate-power-mode.min.js"></script><script>POWERMODE.colorful = true;
+POWERMODE.shake = false;
+POWERMODE.mobile = false;
+document.body.addEventListener('input', POWERMODE);
+</script><script id="click-show-text" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/click-show-text.min.js" data-mobile="false" data-text="富强,民主,文明,和谐,自由,平等,公正,法治,爱国,敬业,诚信,友善,感谢" data-fontsize="15px" data-random="false" async="async"></script><script>(function(d, w, c) {
+    w.ChatraID = 'zgYNWkNCSATLRhpg4';
+    var s = d.createElement('script');
+    w[c] = w[c] || function() {
+        (w[c].q = w[c].q || []).push(arguments);
+    };
+    s.async = true;
+    s.src = 'https://call.chatra.io/chatra.js';
+    if (d.head) d.head.appendChild(s);
+})(document, window, 'Chatra');
+
+if (true) {
+  var chatBtnFn = () => {
+    var chatBtn = document.getElementById("chat_btn")
+    chatBtn.addEventListener("click", function(){
+      Chatra('openChat')
+    });
+  }
+  chatBtnFn()
+} else {
+  if (true) {
+    function chatBtnHide () {
+      Chatra('hide')
+    }
+    function chatBtnShow () {
+      Chatra('show')
+    }
+  }
+}</script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>

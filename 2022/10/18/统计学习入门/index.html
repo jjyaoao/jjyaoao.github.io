@@ -1,0 +1,778 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>统计学习入门 | jjyaoao's Home</title><meta name="keywords" content="统计学习入门"><meta name="author" content="jjyaoao,jjyaoao@126.com"><meta name="copyright" content="jjyaoao"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="统计学习真的很好玩，但这样的博客俺也不想再写啦">
+<meta property="og:type" content="article">
+<meta property="og:title" content="统计学习入门">
+<meta property="og:url" content="http://jjyaoao.space/2022/10/18/%E7%BB%9F%E8%AE%A1%E5%AD%A6%E4%B9%A0%E5%85%A5%E9%97%A8/index.html">
+<meta property="og:site_name" content="jjyaoao&#39;s Home">
+<meta property="og:description" content="统计学习真的很好玩，但这样的博客俺也不想再写啦">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://s2.loli.net/2022/10/31/Sl5WoGUL1RakV67.jpg">
+<meta property="article:published_time" content="2022-10-18T13:28:22.000Z">
+<meta property="article:modified_time" content="2022-10-31T02:16:29.752Z">
+<meta property="article:author" content="jjyaoao">
+<meta property="article:tag" content="遗忘指南">
+<meta property="article:tag" content="学习笔记">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://s2.loli.net/2022/10/31/Sl5WoGUL1RakV67.jpg"><link rel="shortcut icon" href="https://s2.loli.net/2022/01/09/le6jcmPKuJihDdU.jpg"><link rel="canonical" href="http://jjyaoao.space/2022/10/18/%E7%BB%9F%E8%AE%A1%E5%AD%A6%E4%B9%A0%E5%85%A5%E9%97%A8/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//hm.baidu.com"/><link rel="preconnect" href="//fonts.googleapis.com" crossorigin=""/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.10.5/dist/instantsearch.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/instantsearch.js@2.10.5/dist/instantsearch.min.js" defer></script><script>var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?06fb7a80772d98cbf9e7beeb76e262e4";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web&amp;display=swap" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: {"appId":"JOZPQM4N5F","apiKey":"42451c032f2166ed9800520810e2d223","indexName":"jjyaoao-blog","hits":{"per_page":10},"languages":{"input_placeholder":"搜索文章","hits_empty":"找不到您查询的内容：${query}","hits_stats":"找到 ${hits} 条结果，用时 ${time} 毫秒"}},
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: true,
+    post: true
+  },
+  runtime: '天',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: {"chs_to_cht":"你已切换为繁体","cht_to_chs":"你已切换为简体","day_to_night":"你已切换为深色模式","night_to_day":"你已切换为浅色模式","bgLight":"#49b1f5","bgDark":"#121212","position":"bottom-left"},
+  source: {
+    jQuery: 'https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js',
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/js/jquery.justifiedGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/css/justifiedGallery.min.css'
+    },
+    fancybox: {
+      js: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isanchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '统计学习入门',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2022-10-31 10:16:29'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if (GLOBAL_CONFIG_SITE.isHome && /iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><meta name="generator" content="Hexo 6.0.0"></head><body><div id="loading-box"><div class="loading-left-bg"></div><div class="loading-right-bg"></div><div class="spinner-box"><div class="configure-border-1"><div class="configure-core"></div></div><div class="configure-border-2"><div class="configure-core"></div></div><div class="loading-word">加载中...</div></div></div><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://s2.loli.net/2022/01/09/le6jcmPKuJihDdU.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data"><div class="data-item is-center"><div class="data-item-link"><a href="/archives/"><div class="headline">文章</div><div class="length-num">64</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/tags/"><div class="headline">标签</div><div class="length-num">10</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/categories/"><div class="headline">分类</div><div class="length-num">80</div></a></div></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fa fa-heartbeat"></i><span> 清单</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音樂</span></a></li><li><a class="site-page child" href="/Gallery/"><i class="fa-fw fas fa-images"></i><span> 照片</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://s2.loli.net/2022/10/31/Sl5WoGUL1RakV67.jpg')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">jjyaoao's Home</a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fa fa-heartbeat"></i><span> 清单</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音樂</span></a></li><li><a class="site-page child" href="/Gallery/"><i class="fa-fw fas fa-images"></i><span> 照片</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">统计学习入门</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2022-10-18T13:28:22.000Z" title="发表于 2022-10-18 21:28:22">2022-10-18</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2022-10-31T02:16:29.752Z" title="更新于 2022-10-31 10:16:29">2022-10-31</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/AI/">AI</a><i class="fas fa-angle-right post-meta-separator"></i><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/AI/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/">机器学习</a><i class="fas fa-angle-right post-meta-separator"></i><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/AI/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/%E6%A6%82%E5%BF%B5%E5%85%A5%E9%97%A8/">概念入门</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">8.3k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>27分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="统计学习入门"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h1 id="统计学习入门"><a href="#统计学习入门" class="headerlink" title="统计学习入门"></a>统计学习入门</h1><blockquote>
+<p>本系列仅以自己学习过程作为参考，将其学习过的知识与自己的理解用文字的形式记录，希望也能对一同成长的朋友有所帮助，若有错误请各位大佬不吝赐教。</p>
+</blockquote>
+<p><img src="/2022/10/18/%E7%BB%9F%E8%AE%A1%E5%AD%A6%E4%B9%A0%E5%85%A5%E9%97%A8/%E7%BB%9F%E8%AE%A1%E5%AD%A6%E4%B9%A0%E5%85%A5%E9%97%A8.png" alt="统计学习入门"></p>
+<p><img src="/2022/10/18/%E7%BB%9F%E8%AE%A1%E5%AD%A6%E4%B9%A0%E5%85%A5%E9%97%A8/image-20221031101628073.png" alt="image-20221031101628073"></p>
+<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>在本文中，对一些0基础的问题进行讲解，但是由于涉及到知识范围太广，难以全部涉及，建议先对线性代数、高数、概率论的部分内容掌握扎实之后再来阅读，会减少一些阅读的障碍</p>
+<p>线性代数部分</p>
+<ul>
+<li><p>至少先去搞懂矩阵、范数、特征向量和特征值等等</p>
+</li>
+<li><p>推荐资料</p>
+</li>
+<li><p><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1Bp4y1Q7kf/?vd_source=55ffe5143706c86851979f75f0da6acb">名校公开课-线性代数-秦静 | 山东大学_哔哩哔哩_bilibili</a></p>
+</li>
+<li><p><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1ib411t7YR/">-UP主汉语配音-【线性代数的本质】合集-转载于3Blue1Brown官方双语】_哔哩哔哩_bilibili</a></p>
+</li>
+</ul>
+<p>高数部分</p>
+<ul>
+<li>至少搞懂导数/ 微分/ 积分 /梯度 等等，建议都学一下</li>
+<li><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1Eb411u7Fw/">《高等数学》同济版 全程教学视频（宋浩老师）_哔哩哔哩_bilibili</a></li>
+</ul>
+<p>概率论</p>
+<ul>
+<li>条件概率，期望等等</li>
+<li><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1CA411P7bL/">概率论与数理统计全集（统计学）（清楚易懂，看过的都说好！）_哔哩哔哩_bilibili</a></li>
+</ul>
+<p>若想更加深入学习可以自行去找一些优质资源，打好扎实数理基础。</p>
+<h2 id="一、什么是统计学习？"><a href="#一、什么是统计学习？" class="headerlink" title="一、什么是统计学习？"></a>一、什么是统计学习？</h2><ul>
+<li><strong>统计学习</strong>是关于计算机基于<strong>数据构建</strong>概率统计<strong>模型</strong>并运用模型<strong>对数据</strong>进行<strong>预测与分析</strong>的一门学科。</li>
+<li>它的<strong>主要特点</strong>是：<ul>
+<li>建立在计算机与网络</li>
+<li>以数据为研究对象</li>
+<li>对数据进行预测与分析</li>
+<li>为多学科交叉体系</li>
+</ul>
+</li>
+<li>因此统计学习可以称为运用数据及统计方法提高系统性能的机器学习，机器学习的全称往往是指<strong>统计机器学习</strong></li>
+</ul>
+<h2 id="二、分类"><a href="#二、分类" class="headerlink" title="二、分类"></a>二、分类</h2><h3 id="基本分类"><a href="#基本分类" class="headerlink" title="基本分类"></a>基本分类</h3><p>统计学习一般包括监督学习、无监督学习、强化学习。有时还会有监督学习和主动学习。</p>
+<p>在这里，我们<strong>以监督学习为例子</strong>，来熟悉统计学习中一些很常见的概念</p>
+<p>请注意，可能概念有点多，大家适当理解就行，不用刻意记忆，用的多了自然会熟的。</p>
+<h4 id="1-监督学习"><a href="#1-监督学习" class="headerlink" title="1. 监督学习"></a>1. 监督学习</h4><ul>
+<li>监督学习（supervised learning）利用训练数据集学习一个模型，再用模型对测试样本集进行预测，由于过程中需要标注的训练数据集，而标注往往是<strong>人工</strong>进行，所以也可看做是<code>被人监督的机器学习</code>。</li>
+<li>我们将输入变量写作$X$，它对应的每一个取值写作$x$，输出变量定义为$Y$，对应的每一个值看做$y$。每一个具体的<strong>输入变量$x$<strong>我们可以认为是一个</strong>实例（instance）</strong>，每一个<strong>实例</strong>由<strong>特征向量（feature vector）</strong>表示,且所有<strong>特征向量</strong>同处于一个空间，称为<strong>特征空间（feature space）</strong>。</li>
+<li>另外，由于特征向量具有多个维度（类似于一个实体具有很多不同的属性），因此我们通常将其定义为以下形式：<ul>
+<li>$x=\left(x^{(1)}, x^{(2)}, \cdots, x^{(i)}, \cdots, x^{(n)}\right)^{\mathrm{T}}$</li>
+<li>其中：$ x^{(i)}$表示$x$的第 i 个特征，而后文提到的$x_{i}$则为多个输入变量中的一个</li>
+</ul>
+</li>
+<li>基本假设：X和Y具有<code>联合概率分布</code><ul>
+<li>联合概率分布，简单来说就是两个及以上的随机变量组成的关于<strong>随机变量的概率分布</strong>，并且定义在<strong>同一个样本空间</strong></li>
+</ul>
+</li>
+<li><code>数据集</code>：我们上文提到监督学习是利用训练数据集学习，并且对测试样本进行预测，要进行预测任务的前提是，需要有对应的真实数据，因此训练数据集由输入输出对组成，通常表示为：<ul>
+<li>$T=\left{\left(x_{1}, y_{1}\right),\left(x_{2}, y_{2}\right), \cdots,\left(x_{N}, y_{N}\right)\right}$</li>
+</ul>
+</li>
+<li><code>假设空间</code>：这里的假设空间和上述特征空间并不一样，需要区别注意。假设空间是指，所有可能的能满足样本输入与输出映射的集合，也就是所有对应关系的总和，当我们确立了一个假设，那么基于该假设的假设空间及其规模大小就可以确定。例如一个苹果有三种颜色，三种脆度和三种大小，那么一共它有三个属性，若我们的假设红色苹果是一个好苹果，那么假设空间的大小就是3，也就是只有三种可能性，若我们给出的假设是一个瓜是不是好瓜，需要结合三种属性同时判断，那么就有4*4*4种可能性（例如三种颜色+不是这三种颜色的就是好瓜），也就是假设空间的大小为64。</li>
+<li><code>过程</code>：学习 + 预测<ul>
+<li>学习：通过训练模型，得到一个条件概率分布$\hat{P}(Y \mid X)$或决策变量$Y=\hat{f}(X) $<ul>
+<li>P（Y | X）是指在满足X的条件下，Y发生的概率，也称为后验概率</li>
+</ul>
+</li>
+<li>预测：$y_{N+1}=a r g \max \hat{P}\left(y \mid x_{N+1}\right)$或$y_{N+1}=f\left(x_{N+1}\right) $给出相应的输出$y_{N+1}$<ul>
+<li>argmax(f(x))是使得 f(x)取得最大值所对应的变量点x(或x的集合)</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><strong>概率模型（probabilistic model）</strong></p>
+<blockquote>
+<p>条件概率分布模型形式：$P(y|x)$，其中x为输入，y为输出。若在无监督学习中则为$P(z|x)$或$P(x|z)$，其中x是输入，z是输出。</p>
+</blockquote>
+<ul>
+<li><strong>非概率模型（nonprobabilistic model）</strong></li>
+</ul>
+<blockquote>
+<p>又称确定性模型（deterministic model），取函数形式$y=f(x)$，无监督学习中则为$z=g(x)$</p>
+</blockquote>
+<ul>
+<li><p>条件概率分布$P(y|x)$和函数$y=f(x)$可以相互转化，前者一般是<code>生成式</code>模型，输出某个预测的“概率”，后者一般是<code>判别式</code>模型，输出某个预测的“得分”，两者在训练时都是最大化正确预测的概率或得分。</p>
+<ul>
+<li>我们现在先使用一下后面会介绍的模型，来简单的引入，看不懂没关系（以下例子参照xSeeker回答）</li>
+<li>以朴素贝叶斯二分类为例子，条件概率分布最大化后得到函数是指：<ul>
+<li>$y=f(X)=\arg \max P(Y \mid X)=\arg \max _{k} \frac{P(X \mid y=k) P(y=k)}{P(X)}, k \in{0,1}$</li>
+</ul>
+</li>
+<li>以逻辑斯特回归为例，函数归一化后得到条件概率：<ul>
+<li>$\begin{array}{l}f(X)=W X+b \P(y=1 \mid X)=\text { Sigmoid }(f(X))\end{array}$</li>
+</ul>
+</li>
+<li>这里可能有朋友不懂什么是归一化，简单说就是将已有数据去除量纲，比如一个样本有多个特征，但可能大部分特征数值集中1~10之间，突然有一个特征平均数值比另外这些特征高得多，那么它就会严重的影响结果，对判定起主导作用，为了杜绝这样的情况可以将所以特征都通过一些合适的归一化函数，将其数值规定到0-1之间，使得每个特征对结果影响相对平等。</li>
+</ul>
+</li>
+<li><p><strong>监督学习</strong>的<strong>任务</strong>就是学习一个模型，并且应用它，<strong>给定输入预测相应输出</strong></p>
+</li>
+<li><p>一般形式为：</p>
+<ul>
+<li>决策函数$Y = f(X)$或条件概率分布$P(Y|X)$</li>
+</ul>
+</li>
+<li><p>统计学习方法也可以分为<code>生成方法（generative approach）</code>和<code>辨别方法（discriminative approach）</code>，所学到的模型分别是<code>生成模型（generative model）</code>和<code>辨别模型（discriminative model）</code></p>
+<ul>
+<li>在监督学习中，概率模型是生成模型，非概率模型是辨别模型</li>
+</ul>
+</li>
+<li><p>生成方法关系的是给定了输入X产生输出Y，X与Y之间的关系</p>
+<ul>
+<li>特点：还原联合概率分布P（X，Y），辨别方法不能，学习收敛速度往往很快，且样本数量足够大时更能收敛于真实模型。</li>
+<li>典型应用模型有朴素贝叶斯模型和隐马尔卡夫模型..会在今后的文章中提到</li>
+</ul>
+</li>
+<li><p>辨别模型则更侧重于给定输入X，应该预测什么样输出Y</p>
+<ul>
+<li>直接面对预测的模型，学习准确率往往更高，但因为直接学习的是P（Y|X）或者f（X），可以对数据进行抽象，定义特征并使用特征，因此可以简化学习问题。</li>
+<li>典型应用包括K-means，感知机，决策树，逻辑斯谛回归模型，最大熵，支持向量机….同样也会在后面进行讲述</li>
+</ul>
+</li>
+</ul>
+<h4 id="2-无监督学习"><a href="#2-无监督学习" class="headerlink" title="2. 无监督学习"></a>2. 无监督学习</h4><ul>
+<li>从监督学习过渡过来，我们可以自然想到无监督学习即是采用<strong>无标注数据</strong>来学习预测模型的机器学习。<ul>
+<li>本质上是<strong>学习</strong>数据中的统计<strong>规律</strong>或潜在结构。</li>
+</ul>
+</li>
+<li>学习与预测过程和监督学习类似，数据集通常表示为：<ul>
+<li>$U={x_{1},x_{2},…,x_{N}}$</li>
+<li>其中$x_i$，i = 1,2,…,N.</li>
+<li>请注意这里每一个x为一个<strong>样本</strong>，不要和上面的$x^{(1)}$混淆</li>
+</ul>
+</li>
+</ul>
+<h4 id="3-强化学习"><a href="#3-强化学习" class="headerlink" title="3. 强化学习"></a>3. 强化学习</h4><ul>
+<li><p>智能系统在与环境的连续互动（通常指的是不断试错）中学习最优行为策略的机器学习问题</p>
+</li>
+<li><p><strong>本质：学习最优的序贯决策</strong></p>
+</li>
+<li><p><img src="/2022/10/18/%E7%BB%9F%E8%AE%A1%E5%AD%A6%E4%B9%A0%E5%85%A5%E9%97%A8/image-20221005113344046.png" alt="image-20221005113344046"></p>
+<ul>
+<li>智能系统与环境的互动如上图，具体解释起来就是，每迭代一步，首先智能系统从环境观察到一个状态（state）$s_{t}$与一个奖（reward)$r_{t}$，后采取一个动作（action）$a_{t}$，决定下一步的状态与奖励，大概就是一个动态规划的感觉。设置的<strong>目标</strong>不是短期最大化，而是长期<strong>积累奖励最大化</strong>。强化学习就是不断试错（trial and error）以学习到最优策略的过程。</li>
+</ul>
+</li>
+<li><p>一个强化学习的经典案例，是马尔可夫链</p>
+<ul>
+<li><img src="/2022/10/18/%E7%BB%9F%E8%AE%A1%E5%AD%A6%E4%B9%A0%E5%85%A5%E9%97%A8/image-20221006142048598.png" alt="image-20221006142048598"></li>
+<li><img src="/2022/10/18/%E7%BB%9F%E8%AE%A1%E5%AD%A6%E4%B9%A0%E5%85%A5%E9%97%A8/image-20221006142132896.png" alt="image-20221006142132896"><ul>
+<li>总而言之，学习通常就是从一个价值函数开始，通过搜索找到更加好的价值函数，用其中叠加的奖励来表示是否更好。</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h4 id="4-半监督学习与主动学习"><a href="#4-半监督学习与主动学习" class="headerlink" title="4. 半监督学习与主动学习"></a>4. 半监督学习与主动学习</h4><ul>
+<li>半监督学习（semi-supervised learning）即使用少量标注数据和大量未标记数据，旨在利用未标注数据中信息辅助标注数据，进行监督学习，以较低成本达到较好的学习效果。</li>
+<li>主动学习（active learning）是指机器主动给出实例让人工来进行标注，目标是找出对学习最有帮助的实例，利用人工来对其特殊标注，从而耗费较少代价达到较好的学习效果。</li>
+<li>半监督学习和主动学习更接近<strong>监督学习</strong></li>
+</ul>
+<h3 id="其他分类（部分）"><a href="#其他分类（部分）" class="headerlink" title="其他分类（部分）"></a>其他分类（部分）</h3><blockquote>
+<p>这里为简要介绍，大家快速了解即可。</p>
+</blockquote>
+<h4 id="按算法分类"><a href="#按算法分类" class="headerlink" title="按算法分类"></a>按算法分类</h4><p><strong>在线学习（online learning）</strong></p>
+<ul>
+<li>每次接受<strong>一个</strong>样本，进行预测，之后学习模型，并不断重复该操作的机器学习</li>
+<li>在线学习的学习与预测过程在一个系统中，每次接受一个输入$x_{t}$，用已有模型给出预测$\hat{f}\left(x_{t}\right)$，之后得到的结果即为该输入对应的输出$y_{t}$，我们的学习预测系统使用损失函数计算与理论$f\left(x_{t}\right)$的差异，更新模型不断重复的过程叫做在线学习。<ul>
+<li><img src="/2022/10/18/%E7%BB%9F%E8%AE%A1%E5%AD%A6%E4%B9%A0%E5%85%A5%E9%97%A8/image-20221006191358731.png" alt="image-20221006191358731"></li>
+<li>在线学习通常比批量学习更难预测准确率更高的模型，因为迭代过程中可以利用的数据有限。</li>
+<li>但当数据规模量很大以至于不可能一次处理所有数据，又或者数据采取的学习方式动态变化就必须得使用在线学习。</li>
+<li>下文提及的利用随机梯度下降的感知机学习算法就是在线学习算法。</li>
+</ul>
+</li>
+</ul>
+<hr>
+<p><strong>批量学习（batch learning）</strong></p>
+<ul>
+<li>一次接受<strong>所有</strong>数据，学习模型，之后进行预测。<ul>
+<li>优点<ul>
+<li>效率高，学习可以并行</li>
+<li>消除样本顺序的影响</li>
+</ul>
+</li>
+<li>缺点<ul>
+<li>需要对内存容量宽裕，满足一次性加载所有训练集的条件，很多时候并不适合实际问题</li>
+<li>不适合高维度问题（同样也是内存溢出问题）</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h4 id="按参数数量分类"><a href="#按参数数量分类" class="headerlink" title="按参数数量分类"></a>按参数数量分类</h4><blockquote>
+<p>简而言之，就是看<strong>参数个数是否固定</strong>，参数个数固定的就是参数化模型，反之就是非参数化</p>
+</blockquote>
+<p><strong>参数化模型（parametric model）</strong></p>
+<ul>
+<li>假设：模型参数维度<strong>固定</strong>，可以由<strong>有限</strong>维度参数<strong>完全刻画</strong></li>
+<li>后续会介绍的感知机、朴素贝叶斯、逻辑斯谛回归…为参数化模型</li>
+</ul>
+<hr>
+<p><strong>非参数化模型（nonparametric model）</strong></p>
+<ul>
+<li>假设：模型维度<strong>不固定</strong>或者无穷大，随着训练数据量增加<strong>不断增加</strong></li>
+<li>后续会介绍的决策树、支持向量机…是为非参数化模型</li>
+</ul>
+<h4 id="按技巧进行分类"><a href="#按技巧进行分类" class="headerlink" title="按技巧进行分类"></a>按技巧进行分类</h4><p><strong>贝叶斯学习（Bayesian inference）</strong>，是利用贝叶斯定理，计算给定数据条件下模型的条件概率，即后验概率，并运用这个模型进行估计，和对数据进行预测</p>
+<ul>
+<li><p>既然这里提到了贝叶斯定理，那就简单来介绍一下：事件 A 在事件 B 发生的条件下与事件 B 在事件 A 发生的条件下，它们两者的概率并不相同，但是它们两者之间存在一定的相关性，并具有以下公式（称之为“贝叶斯公式”）：</p>
+</li>
+<li><p>$P(A \mid B)=\frac{P(B \mid A) P(A)}{P(B)}$</p>
+<ul>
+<li>其中：</li>
+<li>P（A）就是在全体数据集的基础上，A事件出现的概率，例如一页书有99个单词，问有多少个how，如果出现3个how，那么P（A）为1/33</li>
+<li>P（B|A）是条件概率的符号，由于我们求得目标是在B发生的情况下，A发生的概率，那么这个就不能简单的叫做概率了，在统计学里可以用’’似然度’’来称呼他</li>
+<li>P（A|B）是指在B发生的的情况下，A发生的概率，计算结果被称为后验概率</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>这个公式证明也十分简单，这里可以说一下。<ul>
+<li>P（A，B）代表AB的联合概率分布，那么P（A，B）可以等于P（A|B）*P（B），也可以等于P（B|A）*P（A），那么<ul>
+<li>$P（A|B）<em>P（B）=P（B|A）</em>P（A）$,即上述公式</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>另外，虽然贝叶斯估计和极大似然估计思想上有很大的不同，但是只要假设，先验概率是均匀分布的，取后验概率最大，就能从贝叶斯估计中得到极大似然估计。</p>
+<p><img src="/2022/10/18/%E7%BB%9F%E8%AE%A1%E5%AD%A6%E4%B9%A0%E5%85%A5%E9%97%A8/image-20221015153905246.png" alt="image-20221015153905246"></p>
+<hr>
+<p><strong>核方法（kernel method）</strong>，核方法是一种表示和学习非线性模型的机器学习方法，可以用于监督学习和无监督学习。对一些线性模型，也可以使用，直接的做法是，直接从输入空间（低维）到特征空间（高维）的映射，并在特征空间中进行内积计算，将输入空间的线性不可分问题转化为特征空间的线性可分问题。他的具体技巧可以理解为，并不显示的定义一个一个的映射，而是把这些映射都定义为一个函数，称为核函数（即映射之后的内积），这样可以简化计算以及达到同样效果，节省时间空间。</p>
+<p><img src="/2022/10/18/%E7%BB%9F%E8%AE%A1%E5%AD%A6%E4%B9%A0%E5%85%A5%E9%97%A8/image-20221015154324778.png" alt="image-20221015154324778"></p>
+<h2 id="三、统计学习方法三要素"><a href="#三、统计学习方法三要素" class="headerlink" title="三、统计学习方法三要素"></a>三、统计学习方法三要素</h2><ul>
+<li>统计学习方法由三要素构成：<ul>
+<li>$方法=模型+策略+算法$</li>
+<li>下面仍然以监督学习进行举例学习三要素，非监督学习，强化学习也同样拥有三要素，可以说，<strong>构建</strong>一种统计学习方法，就是确定<strong>具体</strong>的统计学习三要素</li>
+</ul>
+</li>
+</ul>
+<h3 id="策略"><a href="#策略" class="headerlink" title="策略"></a>策略</h3><ul>
+<li>由于策略中的概念在模型中均有体现，因此我们从策略开始学习三要素</li>
+<li>统计学习需要考虑按照什么样的准则学习或选择最优的模型，这个准则就是策略</li>
+</ul>
+<h4 id="损失函数与风险函数"><a href="#损失函数与风险函数" class="headerlink" title="损失函数与风险函数"></a>损失函数与风险函数</h4><ul>
+<li><p>首先引入损失函数（loss function）与风险函数（cost function）的概念。损失函数度量模型一次预测的好坏，风险函数度量平均意义下模型预测的好坏。</p>
+</li>
+<li><p>常用损失</p>
+</li>
+</ul>
+<p><img src="/2022/10/18/%E7%BB%9F%E8%AE%A1%E5%AD%A6%E4%B9%A0%E5%85%A5%E9%97%A8/image-20221016113648793.png" alt="image-20221016113648793"></p>
+<p><img src="/2022/10/18/%E7%BB%9F%E8%AE%A1%E5%AD%A6%E4%B9%A0%E5%85%A5%E9%97%A8/image-20221016113655897.png" alt="image-20221016113655897"></p>
+<ul>
+<li><p>一般来讲损失函数值越小，模型越好。由于模型的输入、输出（X，Y）是随机变量，且遵循联合分布P（X，Y），所以我们可以得到损失函数的期望：</p>
+<ul>
+<li><img src="/2022/10/18/%E7%BB%9F%E8%AE%A1%E5%AD%A6%E4%B9%A0%E5%85%A5%E9%97%A8/image-20221016120359619.png" alt="image-20221016120359619"><ul>
+<li>其实就是把每一次迭代的损失，求平均</li>
+</ul>
+</li>
+<li>这个期望即是风险函数（risk function）或期望损失（expected loss）</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>另外，这个是理想状态下的损失，如果对应到实际的数据集，那么公式变成如下形式<ul>
+<li><img src="/2022/10/18/%E7%BB%9F%E8%AE%A1%E5%AD%A6%E4%B9%A0%E5%85%A5%E9%97%A8/image-20221016120901748.png" alt="image-20221016120901748"><ul>
+<li>Remp就被定义为经验风险（empirical risk）或经验损失（empirical loss）</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>根据大数定律，当N趋于无穷时，经验风险趋近于期望风险，但现实中样本数量有限，常常不能直接这样做，要进行一定的矫正，这里介绍监督学习的两个基本策略：经验风险最小化和结构风险最小化。</li>
+</ul>
+<h4 id="基本策略"><a href="#基本策略" class="headerlink" title="基本策略"></a>基本策略</h4><ul>
+<li>经验风险最小化（empirical riusk minimization， ERM）<ul>
+<li><img src="/2022/10/18/%E7%BB%9F%E8%AE%A1%E5%AD%A6%E4%B9%A0%E5%85%A5%E9%97%A8/image-20221016122140902.png" alt="image-20221016122140902"><ul>
+<li>其中$\mathcal{F}$是假设空间，下面模型会介绍到。</li>
+</ul>
+</li>
+<li>这个就和经验损失的公式基本类似，他是用于样本足够大的情况，找到能使得损失最小的那一种策略。</li>
+<li>但样本容量很<strong>小</strong>的时候，经验风险最小化效果就有待商榷了，可能会产生过拟合（over-fitting）的情况</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li>结构风险最小化（structural risk minimization，SRM）<ul>
+<li><img src="/2022/10/18/%E7%BB%9F%E8%AE%A1%E5%AD%A6%E4%B9%A0%E5%85%A5%E9%97%A8/image-20221016122513009.png" alt="image-20221016122513009"><ul>
+<li>结构风险最小化是在经验风险最小化的条件下做出的补充，也就是增加一个表示模型复杂度的正则化项（regularizer）或罚项（penalty term）（后续会介绍）</li>
+<li>其中：J（f）表示模型复杂度，也称之为泛函，模型越复杂，J（f）就越大，λ&gt;=0，是系数</li>
+</ul>
+</li>
+<li>该策略认为，结构风险最小的模型是最优的模型，所以<strong>求最优</strong>模型就是<strong>求解最优化问题</strong></li>
+<li><img src="/2022/10/18/%E7%BB%9F%E8%AE%A1%E5%AD%A6%E4%B9%A0%E5%85%A5%E9%97%A8/image-20221016123027832.png" alt="image-20221016123027832"></li>
+</ul>
+</li>
+</ul>
+<h3 id="模型"><a href="#模型" class="headerlink" title="模型"></a>模型</h3><ul>
+<li>在监督学习中，<strong>模型就是</strong>所要学习的<strong>决策函数</strong>或者<strong>条件概率分布</strong>，并且模型的假设空间（hypothesis space）包含所有可能的条件概率分布和决策函数。<ul>
+<li>假设空间用$\mathcal{F}$表示，假设空间可以定义为决策函数的集合：<ul>
+<li>$\mathcal{F}={f \mid Y=f(X)}$<ul>
+<li>其中：X和Y是定义在输入空间$\mathcal{X}$和输出空间$\mathcal{Y}$上的变量，此时$\mathcal{F}$通常是参数向量决定的函数族（也就是多个在同一级别的函数）。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>假设空间也可以定义为条件概率的集合：<ul>
+<li>$\mathcal{F}=\left{P \mid P_{\theta}(Y \mid X), \theta \in \mathbf{R}^{n}\right}$<ul>
+<li>这个$\theta$就是1,2,3….这些数嘛，属于$\mathbf{R}^{n}$（n维的欧式空间），这个$\mathbf{R}^{n}$也称作参数空间（parameter space）</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h4 id="模型评估"><a href="#模型评估" class="headerlink" title="模型评估"></a>模型评估</h4><ul>
+<li><p>因为，统计学习的主要<strong>目的</strong>是使学到的模型需要<strong>对未知数据</strong>也能进行良好<strong>预测</strong>，所以说当损失函数给定时，基于损失函数的训练误差（training error）和模型的测试误差（test error）就自然成为学习方法好坏的标准，并且，也要注意训练时的损失函数，<strong>未必</strong>是评估时的损失函数。</p>
+</li>
+<li><p>假设学习到的模型是$Y=\hat{f}(X)$，这里我们在回忆一下，模型其实就是一个能解决问题的数学函数，那么训练误差就是该模型关于训练数据集的平均损失：</p>
+<ul>
+<li>$R_{\mathrm{emp}}(\hat{f})=\frac{1}{N} \sum_{i=1}^{N} L\left(y_{i}, \hat{f}\left(x_{i}\right)\right)$<ul>
+<li>其中：$L\left(y_{i}, \hat{f}\left(x_{i}\right)\right)$为损失函数的意思，也就是把模型估计的值和真实值比对，并将其好坏抽象成一个函数算得分。N就是训练样本容量。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>测试集误差也是同理：</p>
+<ul>
+<li>$R_{\mathrm{emp}}(\hat{f})=\frac{1}{N} \sum_{i=1}^{N} L\left(y_{i}, \hat{f}\left(x_{i}\right)\right)$<ul>
+<li>其中N‘为测试样本容量</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h4 id="模型选择"><a href="#模型选择" class="headerlink" title="模型选择"></a>模型选择</h4><p><strong>过拟合（over-fitting）</strong></p>
+<ul>
+<li>如果一昧仅仅追求对训练数据的预测能力，而使得模型过于复杂（参数十分多，十分复杂的函数），那么往往不能很好的完成对未知数据的预测任务，我们举个例子<ul>
+<li>假设给定一个训练数据集：<ul>
+<li>$T=\left{\left(x_{1}, y_{1}\right),\left(x_{2}, y_{2}\right), \cdots,\left(x_{N}, y_{N}\right)\right}$</li>
+<li>其中，$x_{i} \in \mathbf{R}$是输入x的观测值，$y_{i} \in \mathbf{R}$是输入y的观测值，i = 1,2，…,N。其实T就是一个散点集合嘛。</li>
+</ul>
+</li>
+<li>现在我们考虑对给定的数据，用函数进行拟合，比如下图中空心原点就是一个数据点，我们采用M次多项式进行拟合。</li>
+<li><img src="/2022/10/18/%E7%BB%9F%E8%AE%A1%E5%AD%A6%E4%B9%A0%E5%85%A5%E9%97%A8/image-20221015164428752.png" alt="image-20221015164428752"></li>
+<li>设M次多项式为：<ul>
+<li>$f_{M}(x, w)=w_{0}+w_{1} x+w_{2} x^{2}+\cdots+w_{M} x^{M}=\sum_{j=0}^{M} w_{j} x^{j}$</li>
+</ul>
+</li>
+<li>x为单变量输入，w0、w1…是 M + 1 个权重</li>
+<li>在这里可以运用策略部分学习到的经验风险最小化策略，将模型与训练数据带入，可得<ul>
+<li>$L(w)=\frac{1}{2} \sum_{i=1}^{N}\left(\sum_{j=0}^{M} w_{j} x_{i}^{j}-y_{i}\right)^{2}$<ul>
+<li>损失函数为上述提到的平方损失，系数$\frac{1}{2}$仅仅为了方便计算</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>若要求解可用最小二乘法拟合多项式系数唯一解，有兴趣的同学可以去查阅相关资料，不过我们这里主要是为了解释过拟合的情况</li>
+<li>图1.8给出了M=0，M=1，M=3，M=9，即多项式权重的个数与多项式的次数，不难发现，M的值太大或者太小，都会导致拟合曲线与原曲线严重不符合。通常来讲我们模型的项数不能太高，因为有维度诅咒，感兴趣的同学可以去查找<strong>龙格效应</strong>，所以，虽然模型的损失L会根据模型的维度提升（越复杂的模型确实能更好的拟合训练数据），不断减小，但我们往往遵循简单的原则，只要Loss基本达标即可采用该模型，根据经验，回归模型的维度一般要控制到6~7次方以内。在这里，当 <strong>M = 3</strong> 时，多项式曲线对训练数据拟合效果足够好，模型也比较简单，是一个较好的选择。</li>
+<li><img src="/2022/10/18/%E7%BB%9F%E8%AE%A1%E5%AD%A6%E4%B9%A0%E5%85%A5%E9%97%A8/image-20221018215045053.png" alt="image-20221018215045053"><ul>
+<li>图1.9描述训练误差和测试误差与复杂度的关系。</li>
+</ul>
+</li>
+<li>为了选择复杂度适当且测试误差最小的学习目的，下面介绍两种常用模型选择方法：正则化与交叉验证</li>
+</ul>
+</li>
+</ul>
+<p><strong>正则化（regularization）</strong></p>
+<ul>
+<li><p>正则化可以来理解为结构风险最小化的实现，一般具有如下形式：</p>
+<ul>
+<li><p>$\min <em>{f \in \mathcal{F}} \frac{1}{N} \sum</em>{i=1}^{N} L\left(y_{i}, f\left(x_{i}\right)\right)+\lambda J(f)$</p>
+<ul>
+<li>其中，第一项是经验损失，第二项是正则化项，λ &gt;= 0 为调整两者关系的系数（前面基本策略也有提到）</li>
+</ul>
+</li>
+<li><p>正则化项是有不同形式的，在回归问题中，损失函数是平方损失，正则化项可以是参数w的L2范数、L1范数等等。</p>
+<ul>
+<li><p>$L(w)=\frac{1}{N} \sum_{i=1}^{N}\left(f\left(x_{i} ; w\right)-y_{i}\right)^{2}+\frac{\lambda}{2}|w|^{2}$</p>
+</li>
+<li><p>$L(w)=\frac{1}{N} \sum_{i=1}^{N}\left(f\left(x_{i} ; w\right)-y_{i}\right)^{2}+\lambda|w|_{1}$</p>
+</li>
+<li><p>范数：向量的范数可以简单形象的理解为向量的长度，或者向量到零点的距离，或者相应的两个点之间的距离。以后在论文中会常常出现</p>
+</li>
+<li><p>常用的向量的范数：<br>L1范数:  ||x|| 为x向量各个元素绝对值之和。<br>L2范数:  ||x||为x向量各个元素平方和的1/2次方，L2范数又称Euclidean范数或者Frobenius范数<br>Lp范数:  ||x||为x向量各个元素绝对值p次方和的1/p次方</p>
+<p>L∞范数:  ||x||为x向量各个元素绝对值最大那个元素的绝对值，如下:</p>
+<ul>
+<li>$\lim <em>{k \rightarrow \infty}\left(\sum</em>{i=1}^{n}\left|p_{i}-q_{i}\right|^{k}\right)^{1 / k}$</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>这里可能各位朋友又有疑惑了，这么多范数，怎么选呢？</p>
+<ul>
+<li>这可能得具体情况具体分析，例如W是有多个维度的特征向量，那么你认为可能它里面哪一个维度是最重要的，就可以单独用那个维度来使用范数（L1），若p个维度都很有用，那么就可以选择Lp范数</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>L（w）的第一项经验风险较小的模型可能较复杂（多个非0参数），这时第 2 项模型复杂度较大，就可以使得λ增大，从而loss增加，正则化的用途就是<strong>选择经验风险与模型复杂度同时较小的模型</strong></p>
+</li>
+</ul>
+<hr>
+<p><strong>交叉验证（cross validation）</strong></p>
+<ul>
+<li>当模型足够多时，我们只需要将数据简单随机分配成三部分，<code>训练集（training set）</code>、<code>验证集（validation set）</code>和<code>测试集（test set）</code>。训练集用来<strong>训练模型</strong>，验证集用于<strong>筛选模型</strong>，测试集就是<strong>最终对学习方法的评估</strong>，一般来讲，训练集和验证集都是会提供问题和答案，而测试集不会提供答案，就用预测结果作为答案。</li>
+<li>但是当数据量不够多的时候，为了选择到好的模型，我们可以<strong>将数据重复使用</strong>，就是不断重复同一个数据集，随机切分训练集和测试集，进行迭代，在此基础上反复训练，<strong>重复</strong>就是<strong>交叉验证的本质</strong></li>
+<li>1、简单交叉验证<ul>
+<li>随机将已给数据分为两部分，一部分训练集，一部分测试集（一般7/3开），然后就是正常的</li>
+</ul>
+</li>
+<li>2、S折交叉验证<ul>
+<li>应用最多的是<code>S折交叉验证（S-fold cross validdation)</code>，具体方法就是，将数据切分为等大的S个互不相交、大小相同的子集，利用S-1个子集训练数据，1个用来测试，这样的话一共可以训练S次，最终S次测评中平均误差最小的模型即可</li>
+</ul>
+</li>
+<li>3、留一交叉验证<ul>
+<li>核心思想是：每一条数据为一个子集。适合于S = N的情况（S为折数，N为总样本数），往往在数据十分缺乏的时候使用</li>
+</ul>
+</li>
+</ul>
+<h3 id="算法"><a href="#算法" class="headerlink" title="算法"></a>算法</h3><ul>
+<li>算法是指学习模型的具体计算方法</li>
+<li>统计学习有三步<ul>
+<li>①根据学习策略②从假设空间中选择最优模型③考虑用什么计算方法求解最优模型</li>
+</ul>
+</li>
+<li>有时我们利用已有的最优化算法即可，有时需要独自开发最优化算法。</li>
+<li>下一篇感知机的文章，我们就会提到第一个算法实例：<code>随机梯度下降法（stochastic gradient descent）</code></li>
+</ul>
+<h2 id="四、泛化能力"><a href="#四、泛化能力" class="headerlink" title="四、泛化能力"></a>四、泛化能力</h2><blockquote>
+<p><code>泛化能力（generalization ability）</code>是指方法学习到<strong>模型对数据的预测能力</strong></p>
+</blockquote>
+<p><strong>泛化误差（generalization error）</strong></p>
+<ul>
+<li>现实中，大多评价泛化能力是通过测试数据集的，但是数据集是有限的，这可能导致结果不可靠，因此，统计学习理论试图从<strong>理论对</strong>学习方法的<strong>泛化能力进行分析</strong></li>
+<li>泛化误差其实就是期望损失下加入真实数据的产物（公式基本完全一样，从训练数据更换为了预测数据）<ul>
+<li>$\begin{aligned}<br>R_{\exp }(\hat{f}) &amp;=E_{P}[L(Y, \hat{f}(X))] \<br>&amp;=\int_{\mathcal{X} \times \mathcal{Y}} L(y, \hat{f}(x)) P(x, y) \mathrm{d} x \mathrm{~d} y<br>\end{aligned}$</li>
+</ul>
+</li>
+<li><code>泛化误差上界（generalization error bound）</code><ul>
+<li><p>学习方法的泛化<strong>能力分析</strong>往往是<strong>通过</strong>研究泛化误差的<strong>概率上界</strong>进行的，简称泛化误差上界</p>
+</li>
+<li><p>具体来说就是比较泛化误差上界的大小从而比较泛化能力的优劣</p>
+<ul>
+<li>样本容量的函数，当样本容量十分大时，泛化上界趋于0</li>
+<li>假设空间容量的函数，容量越大，模型越难学，泛化误差上界就越大。</li>
+</ul>
+</li>
+<li><p>下面从有限集合$\mathcal{F}=\left{f_{1}, f_{2}, \cdots, f_{d}\right}$中任意选出函数$f$（F是一个函数集合）分析他的泛化误差上界</p>
+</li>
+<li><p>对二分类任务而言，每一个函数f的概率至少是$ 1-\delta, 0&lt;\delta&lt;1$，那么，有以下不等式成立：</p>
+<ul>
+<li>$R(f) \leqslant \hat{R}(f)+\varepsilon(d, N, \delta)$</li>
+</ul>
+</li>
+<li><p>其中：</p>
+<ul>
+<li>$\varepsilon(d, N, \delta)=\sqrt{\frac{1}{2 N}\left(\log d+\log \frac{1}{\delta}\right)}$</li>
+</ul>
+</li>
+<li><p>这个我认为了解就好，毕竟证明对于初学也过于复杂了，左端R(f)为泛化误差，右端为泛化误差上界。右端第一项是训练误差，训练误差越小，泛化误差会越小。第二项是 N 的单调递减函数，N趋于无穷（样本数量足够多）该项趋于0；同时该项也是$\log d$阶的函数，F包含的函数越多，其值越大。</p>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="五、监督学习应用"><a href="#五、监督学习应用" class="headerlink" title="五、监督学习应用"></a>五、监督学习应用</h2><h3 id="分类问题"><a href="#分类问题" class="headerlink" title="分类问题"></a>分类问题</h3><ul>
+<li>分类问题包括学习和分类两个过程。学习过程中，利用训练数据（x1，y1),(x2，y2)…(xn,yn)学习分类器；分类过程中利用分类器（模型）对测试集数据($x_{n+1}$,$y_{n+1}$)进行预测,即对$x_{n+1}$进行分类，预测其类别为$y_{n+1}$</li>
+</ul>
+<p><img src="/2022/10/18/%E7%BB%9F%E8%AE%A1%E5%AD%A6%E4%B9%A0%E5%85%A5%E9%97%A8/image-20221019104158280.png" alt="image-20221019104158280"></p>
+<ul>
+<li>分类器的性能指标一般是分类准确率(accuracy)，其定义是：分类器正确分类的样本数与总样本数之比。<ul>
+<li>对于二分类问题，常用指标是（precision）与召回率（recall）、通常将关注的类称为正类，其余类为负类，根据在测试数据集上预测的正确与否，将总数记作：<ul>
+<li>TP—将正类预测为正类数（positive）；</li>
+<li>FN—将正类预测为负类数（negative）；</li>
+<li>FP—将负类预测为正类数；</li>
+<li>TN—将负类预测为负类数；<ul>
+<li>T：true；P：positive；F：false；N：Negative。</li>
+<li>以0-1问题举例，TP：预测为1，真实值也为1，TN：预测为0，真实值也为0，FP：预测为1，真实为0……</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>精确率定义为：<ul>
+<li>$P=\frac{\mathrm{TP}}{\mathrm{TP}+\mathrm{FP}}$</li>
+<li>即所有预测为 1 的测试集中，预测准确的概率（也就是该样本确实为1）</li>
+</ul>
+</li>
+<li>召回率定义为：<ul>
+<li>$R=\frac{\mathrm{TP}}{\mathrm{TP}+\mathrm{FN}}$</li>
+<li>即所有真实为 1 的测试集中，预测也为 1 的概率（预测准确）</li>
+</ul>
+</li>
+<li>还有能代表召回率与精确率的调和均值，叫做$F_{1}$<ul>
+<li>$\frac{2}{F_{1}}=\frac{1}{P}+\frac{1}{R}$  —-&gt;   $F_{1}=\frac{2 \mathrm{TP}}{2 \mathrm{TP}+\mathrm{FP}+\mathrm{FN}}$</li>
+<li>与P和R成正比</li>
+</ul>
+</li>
+<li>当精确率和召回率都高时，$F_{1}$也会高。</li>
+</ul>
+</li>
+</ul>
+<h3 id="标注问题"><a href="#标注问题" class="headerlink" title="标注问题"></a>标注问题</h3><ul>
+<li>标注问题包括学习和标注两个过程，<code>标注（tagging）</code>可以认为是分类问题的推广，又是复杂结构预测问题的简单形式。</li>
+<li>并且标注问题与分类问题的评价指标相同，常用的也是标注准确率、精确率和召回率</li>
+<li><img src="/2022/10/18/%E7%BB%9F%E8%AE%A1%E5%AD%A6%E4%B9%A0%E5%85%A5%E9%97%A8/image-20221019105910410.png" alt="image-20221019105910410"></li>
+<li>举一个例子方便理解</li>
+<li><img src="/2022/10/18/%E7%BB%9F%E8%AE%A1%E5%AD%A6%E4%B9%A0%E5%85%A5%E9%97%A8/image-20221019111041530.png" alt="image-20221019111041530"><ul>
+<li>例如我们已经给每一个单词都人工辨别好了他的词性，通过模型训练，预测该句，得到的结果与我们手动的相比较，如果是相同词性，则该单词预测准确，反之则不准确，本质上也可以当成0-1问题</li>
+</ul>
+</li>
+</ul>
+<h3 id="回归问题"><a href="#回归问题" class="headerlink" title="回归问题"></a>回归问题</h3><ul>
+<li><code>回归(regression)</code>用于预测输入变量（自变量）和输出变量（因变量）之间的关系，回归模型正是表示输入变量到输出变量之间映射的函数。回归也等价于拟合问题，具体可以看模型选择部分的过拟合</li>
+<li><img src="/2022/10/18/%E7%BB%9F%E8%AE%A1%E5%AD%A6%E4%B9%A0%E5%85%A5%E9%97%A8/image-20221019111706328.png" alt="image-20221019111706328"></li>
+<li>回归问题按照输入变量个数，可以分为一元回归和多元回归</li>
+<li>按照输入变量和输出变量之间关系的类型，可以分为线性回归和非线性回归</li>
+<li>常用的损失函数是平方损失，在此情况下可以用最小二乘法（least squares）求解</li>
+</ul>
+<h2 id="尾言"><a href="#尾言" class="headerlink" title="尾言"></a>尾言</h2><p>本文为俺第一篇正经的博客，语言组织和表达能力肯定有很多不足之处，可能也会有概念在解释时出现错误，若有大佬看到本篇博客，希望慷慨滴告诉俺有何问题，谢谢大家看到最后，如果可以支持一下，麻烦点个赞吧！</p>
+<hr>
+<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><p>[1] 李航．统计学习方法[M]．第二版.北京: 清华大学出版社, 2019</p>
+<p>[2] <a target="_blank" rel="noopener" href="https://www.zhihu.com/question/272383714/answer/1702474295">为什么逻辑回归的损失函数叫做交叉熵呢？ - 知乎 (zhihu.com)</a></p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="mailto:jjyaoao@126.com">jjyaoao</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="http://jjyaoao.space/2022/10/18/%E7%BB%9F%E8%AE%A1%E5%AD%A6%E4%B9%A0%E5%85%A5%E9%97%A8/">http://jjyaoao.space/2022/10/18/%E7%BB%9F%E8%AE%A1%E5%AD%A6%E4%B9%A0%E5%85%A5%E9%97%A8/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="http://jjyaoao.space" target="_blank">jjyaoao's Home</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E9%81%97%E5%BF%98%E6%8C%87%E5%8D%97/">遗忘指南</a><a class="post-meta__tags" href="/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">学习笔记</a></div><div class="post_share"><div class="addthis_inline_share_toolbox"></div><script src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-61dbf69078ce19aa" async="async"></script></div></div><div class="post-reward"><div class="reward-button button--animated"><i class="fas fa-qrcode"></i> 打赏</div><div class="reward-main"><ul class="reward-all"><li class="reward-item"><a href="https://s2.loli.net/2022/01/09/HMjygFAKr2nPWdJ.jpg" target="_blank"><img class="post-qr-code-img" src="https://s2.loli.net/2022/01/09/HMjygFAKr2nPWdJ.jpg" alt="微信"/></a><div class="post-qr-code-desc">微信</div></li><li class="reward-item"><a href="https://s2.loli.net/2022/01/09/JL43sbhxUEOuVeM.jpg" target="_blank"><img class="post-qr-code-img" src="https://s2.loli.net/2022/01/09/JL43sbhxUEOuVeM.jpg" alt="支付宝"/></a><div class="post-qr-code-desc">支付宝</div></li></ul></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/2022/10/20/%E6%84%9F%E7%9F%A5%E6%9C%BA/"><img class="prev-cover" src="https://s2.loli.net/2022/10/31/Sl5WoGUL1RakV67.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">感知机+白板推导系列</div></div></a></div><div class="next-post pull-right"><a href="/2022/10/15/%E6%88%91%E7%9A%84%E6%88%90%E8%AF%AD%E7%A7%AF%E7%B4%AF/"><img class="next-cover" src="https://s2.loli.net/2022/10/30/a3c9IqlkfEWwTRb.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">每日几个成语计划</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>相关推荐</span></div><div class="relatedPosts-list"><div><a href="/2022/04/15/C++%E9%A1%B9%E7%9B%AE%E5%AE%9E%E6%88%98/" title="C++项目实战"><img class="cover" src="https://s2.loli.net/2022/04/15/YXoFfbxgWZIn1SM.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-04-15</div><div class="title">C++项目实战</div></div></a></div><div><a href="/2022/08/17/22%E5%B9%B4%E5%A4%87%E6%88%98%E6%95%B0%E6%A8%A1%E5%9B%BD%E8%B5%9B/" title="2022备战国赛"><img class="cover" src="https://s2.loli.net/2022/04/15/YXoFfbxgWZIn1SM.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-08-17</div><div class="title">2022备战国赛</div></div></a></div><div><a href="/2022/09/15/Cmake+Vscode+C++%E5%BC%80%E5%8F%91/" title="Cmake+vscode+C++"><img class="cover" src="https://s2.loli.net/2022/04/15/YXoFfbxgWZIn1SM.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-09-15</div><div class="title">Cmake+vscode+C++</div></div></a></div><div><a href="/2022/12/14/LATEX%E6%95%B0%E5%AD%A6%E7%AC%A6%E5%8F%B7%E5%85%AC%E5%BC%8F/" title="LATEX数学符号公式"><img class="cover" src="https://s2.loli.net/2022/12/14/i6f7xErHjKnmLSZ.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-12-14</div><div class="title">LATEX数学符号公式</div></div></a></div><div><a href="/2022/08/23/Geatpy-python%E4%BC%98%E5%8C%96%E5%BA%93/" title="Geatpy-python优化库"><img class="cover" src="https://s2.loli.net/2022/04/15/YXoFfbxgWZIn1SM.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-08-23</div><div class="title">Geatpy-python优化库</div></div></a></div><div><a href="/2022/09/10/Git/" title="Git"><img class="cover" src="https://s2.loli.net/2022/04/15/YXoFfbxgWZIn1SM.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-09-10</div><div class="title">Git</div></div></a></div></div></div><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div><div id="comment-switch"><span class="first-comment">Livere</span><span class="switch-btn"></span><span class="second-comment">Valine</span></div></div><div class="comment-wrap"><div><div id="lv-container" data-id="city" data-uid="MTAyMC81NTM1OC8zMTgyNQ=="></div></div><div><div class="vcomment" id="vcomment"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%BB%9F%E8%AE%A1%E5%AD%A6%E4%B9%A0%E5%85%A5%E9%97%A8"><span class="toc-number">1.</span> <span class="toc-text">统计学习入门</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%89%8D%E8%A8%80"><span class="toc-number">1.1.</span> <span class="toc-text">前言</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%80%E3%80%81%E4%BB%80%E4%B9%88%E6%98%AF%E7%BB%9F%E8%AE%A1%E5%AD%A6%E4%B9%A0%EF%BC%9F"><span class="toc-number">1.2.</span> <span class="toc-text">一、什么是统计学习？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%8C%E3%80%81%E5%88%86%E7%B1%BB"><span class="toc-number">1.3.</span> <span class="toc-text">二、分类</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%9F%BA%E6%9C%AC%E5%88%86%E7%B1%BB"><span class="toc-number">1.3.1.</span> <span class="toc-text">基本分类</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-%E7%9B%91%E7%9D%A3%E5%AD%A6%E4%B9%A0"><span class="toc-number">1.3.1.1.</span> <span class="toc-text">1. 监督学习</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-%E6%97%A0%E7%9B%91%E7%9D%A3%E5%AD%A6%E4%B9%A0"><span class="toc-number">1.3.1.2.</span> <span class="toc-text">2. 无监督学习</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-%E5%BC%BA%E5%8C%96%E5%AD%A6%E4%B9%A0"><span class="toc-number">1.3.1.3.</span> <span class="toc-text">3. 强化学习</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#4-%E5%8D%8A%E7%9B%91%E7%9D%A3%E5%AD%A6%E4%B9%A0%E4%B8%8E%E4%B8%BB%E5%8A%A8%E5%AD%A6%E4%B9%A0"><span class="toc-number">1.3.1.4.</span> <span class="toc-text">4. 半监督学习与主动学习</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%85%B6%E4%BB%96%E5%88%86%E7%B1%BB%EF%BC%88%E9%83%A8%E5%88%86%EF%BC%89"><span class="toc-number">1.3.2.</span> <span class="toc-text">其他分类（部分）</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%8C%89%E7%AE%97%E6%B3%95%E5%88%86%E7%B1%BB"><span class="toc-number">1.3.2.1.</span> <span class="toc-text">按算法分类</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%8C%89%E5%8F%82%E6%95%B0%E6%95%B0%E9%87%8F%E5%88%86%E7%B1%BB"><span class="toc-number">1.3.2.2.</span> <span class="toc-text">按参数数量分类</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%8C%89%E6%8A%80%E5%B7%A7%E8%BF%9B%E8%A1%8C%E5%88%86%E7%B1%BB"><span class="toc-number">1.3.2.3.</span> <span class="toc-text">按技巧进行分类</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%89%E3%80%81%E7%BB%9F%E8%AE%A1%E5%AD%A6%E4%B9%A0%E6%96%B9%E6%B3%95%E4%B8%89%E8%A6%81%E7%B4%A0"><span class="toc-number">1.4.</span> <span class="toc-text">三、统计学习方法三要素</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%AD%96%E7%95%A5"><span class="toc-number">1.4.1.</span> <span class="toc-text">策略</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%8D%9F%E5%A4%B1%E5%87%BD%E6%95%B0%E4%B8%8E%E9%A3%8E%E9%99%A9%E5%87%BD%E6%95%B0"><span class="toc-number">1.4.1.1.</span> <span class="toc-text">损失函数与风险函数</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%9F%BA%E6%9C%AC%E7%AD%96%E7%95%A5"><span class="toc-number">1.4.1.2.</span> <span class="toc-text">基本策略</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%A8%A1%E5%9E%8B"><span class="toc-number">1.4.2.</span> <span class="toc-text">模型</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%A8%A1%E5%9E%8B%E8%AF%84%E4%BC%B0"><span class="toc-number">1.4.2.1.</span> <span class="toc-text">模型评估</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%A8%A1%E5%9E%8B%E9%80%89%E6%8B%A9"><span class="toc-number">1.4.2.2.</span> <span class="toc-text">模型选择</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%AE%97%E6%B3%95"><span class="toc-number">1.4.3.</span> <span class="toc-text">算法</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9B%9B%E3%80%81%E6%B3%9B%E5%8C%96%E8%83%BD%E5%8A%9B"><span class="toc-number">1.5.</span> <span class="toc-text">四、泛化能力</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%94%E3%80%81%E7%9B%91%E7%9D%A3%E5%AD%A6%E4%B9%A0%E5%BA%94%E7%94%A8"><span class="toc-number">1.6.</span> <span class="toc-text">五、监督学习应用</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%86%E7%B1%BB%E9%97%AE%E9%A2%98"><span class="toc-number">1.6.1.</span> <span class="toc-text">分类问题</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%A0%87%E6%B3%A8%E9%97%AE%E9%A2%98"><span class="toc-number">1.6.2.</span> <span class="toc-text">标注问题</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%9B%9E%E5%BD%92%E9%97%AE%E9%A2%98"><span class="toc-number">1.6.3.</span> <span class="toc-text">回归问题</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%B0%BE%E8%A8%80"><span class="toc-number">1.7.</span> <span class="toc-text">尾言</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8F%82%E8%80%83%E8%B5%84%E6%96%99"><span class="toc-number">1.8.</span> <span class="toc-text">参考资料</span></a></li></ol></li></ol></div></div></div></div></main><footer id="footer" style="background-image: url('https://s2.loli.net/2022/10/31/Sl5WoGUL1RakV67.jpg')"><div id="footer-wrap"><div class="copyright">&copy;2022 - 2023 By jjyaoao</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div><div class="footer_custom_text">Hi, welcome to my <a target="_blank" rel="noopener" href="https://butterfly.js.org/">blog</a>!</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="chat_btn" type="button" title="rightside.chat_btn"><i class="fas fa-sms"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div id="algolia-search"><div class="search-dialog"><div class="search-dialog__title" id="algolia-search-title">Algolia</div><div id="algolia-input-panel"><div id="algolia-search-input"></div></div><hr/><div id="algolia-search-results"><div id="algolia-hits"></div><div id="algolia-pagination"></div><div id="algolia-stats"></div></div><span class="search-close-button"><i class="fas fa-times"></i></span></div><div id="search-mask"></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.js"></script><script src="/js/search/algolia.js"></script><script>var preloader = {
+  endLoading: () => {
+    document.body.style.overflow = 'auto';
+    document.getElementById('loading-box').classList.add("loaded")
+  },
+  initLoading: () => {
+    document.body.style.overflow = '';
+    document.getElementById('loading-box').classList.remove("loaded")
+
+  }
+}
+window.addEventListener('load',preloader.endLoading())</script><div class="js-pjax"><script>function loadLivere () {
+  if (typeof LivereTower === 'object') {
+    window.LivereTower.init()
+  }
+  else {
+    (function(d, s) {
+        var j, e = d.getElementsByTagName(s)[0];
+        if (typeof LivereTower === 'function') { return; }
+        j = d.createElement(s);
+        j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+        j.async = true;
+        e.parentNode.insertBefore(j, e);
+    })(document, 'script');
+  }
+}
+
+if ('Livere' === 'Livere' || !true) {
+  if (true) btf.loadComment(document.getElementById('lv-container'), loadLivere)
+  else loadLivere()
+}
+else {
+  function loadOtherComment () {
+    loadLivere()
+  }
+}</script><script>function loadValine () {
+  function initValine () {
+    const valine = new Valine(Object.assign({
+      el: '#vcomment',
+      appId: 'cFvw1zyA64uttBS5jbYY7pwH-gzGzoHsz',
+      appKey: '14rOjAUNzRyJSQt983q6gdza',
+      placeholder: 'Please leave your footprints',
+      avatar: 'monsterid',
+      meta: 'nick,mail,link'.split(','),
+      pageSize: '10',
+      lang: 'en',
+      recordIP: false,
+      serverURLs: '',
+      emojiCDN: '',
+      emojiMaps: "",
+      enableQQ: false,
+      path: window.location.pathname,
+      requiredFields: ["nick,mail"],
+      visitor: false
+    }, null))
+  }
+
+  if (typeof Valine === 'function') initValine() 
+  else getScript('https://cdn.jsdelivr.net/npm/valine/dist/Valine.min.js').then(initValine)
+}
+
+if ('Livere' === 'Valine' || !true) {
+  if (true) btf.loadComment(document.getElementById('vcomment'),loadValine)
+  else setTimeout(loadValine, 0)
+} else {
+  function loadOtherComment () {
+    loadValine()
+  }
+}</script></div><script defer="defer" id="fluttering_ribbon" mobile="true" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/canvas-fluttering-ribbon.min.js"></script><script id="canvas_nest" defer="defer" color="0,0,255" opacity="0.7" zIndex="-1" count="99" mobile="true" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/canvas-nest.min.js"></script><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/activate-power-mode.min.js"></script><script>POWERMODE.colorful = true;
+POWERMODE.shake = false;
+POWERMODE.mobile = false;
+document.body.addEventListener('input', POWERMODE);
+</script><script id="click-show-text" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/click-show-text.min.js" data-mobile="false" data-text="富强,民主,文明,和谐,自由,平等,公正,法治,爱国,敬业,诚信,友善,感谢" data-fontsize="15px" data-random="false" async="async"></script><script>(function(d, w, c) {
+    w.ChatraID = 'zgYNWkNCSATLRhpg4';
+    var s = d.createElement('script');
+    w[c] = w[c] || function() {
+        (w[c].q = w[c].q || []).push(arguments);
+    };
+    s.async = true;
+    s.src = 'https://call.chatra.io/chatra.js';
+    if (d.head) d.head.appendChild(s);
+})(document, window, 'Chatra');
+
+if (true) {
+  var chatBtnFn = () => {
+    var chatBtn = document.getElementById("chat_btn")
+    chatBtn.addEventListener("click", function(){
+      Chatra('openChat')
+    });
+  }
+  chatBtnFn()
+} else {
+  if (true) {
+    function chatBtnHide () {
+      Chatra('hide')
+    }
+    function chatBtnShow () {
+      Chatra('show')
+    }
+  }
+}</script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>

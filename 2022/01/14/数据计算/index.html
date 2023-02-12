@@ -1,0 +1,880 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>数据计算 | jjyaoao's Home</title><meta name="keywords" content="计组第三章"><meta name="author" content="jjyaoao,jjyaoao@126.com"><meta name="copyright" content="jjyaoao"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="计组第三章">
+<meta property="og:type" content="article">
+<meta property="og:title" content="数据计算">
+<meta property="og:url" content="http://jjyaoao.space/2022/01/14/%E6%95%B0%E6%8D%AE%E8%AE%A1%E7%AE%97/index.html">
+<meta property="og:site_name" content="jjyaoao&#39;s Home">
+<meta property="og:description" content="计组第三章">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://s2.loli.net/2022/01/13/TFLYzUAxGcRmW6C.jpg">
+<meta property="article:published_time" content="2022-01-14T13:30:51.000Z">
+<meta property="article:modified_time" content="2022-02-26T13:49:10.022Z">
+<meta property="article:author" content="jjyaoao">
+<meta property="article:tag" content="学习笔记">
+<meta property="article:tag" content="思维导图">
+<meta property="article:tag" content="教程">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://s2.loli.net/2022/01/13/TFLYzUAxGcRmW6C.jpg"><link rel="shortcut icon" href="https://s2.loli.net/2022/01/09/le6jcmPKuJihDdU.jpg"><link rel="canonical" href="http://jjyaoao.space/2022/01/14/%E6%95%B0%E6%8D%AE%E8%AE%A1%E7%AE%97/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//hm.baidu.com"/><link rel="preconnect" href="//fonts.googleapis.com" crossorigin=""/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.10.5/dist/instantsearch.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/instantsearch.js@2.10.5/dist/instantsearch.min.js" defer></script><script>var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?06fb7a80772d98cbf9e7beeb76e262e4";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web&amp;display=swap" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: {"appId":"JOZPQM4N5F","apiKey":"42451c032f2166ed9800520810e2d223","indexName":"jjyaoao-blog","hits":{"per_page":10},"languages":{"input_placeholder":"搜索文章","hits_empty":"找不到您查询的内容：${query}","hits_stats":"找到 ${hits} 条结果，用时 ${time} 毫秒"}},
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: true,
+    post: true
+  },
+  runtime: '天',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: {"chs_to_cht":"你已切换为繁体","cht_to_chs":"你已切换为简体","day_to_night":"你已切换为深色模式","night_to_day":"你已切换为浅色模式","bgLight":"#49b1f5","bgDark":"#121212","position":"bottom-left"},
+  source: {
+    jQuery: 'https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js',
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/js/jquery.justifiedGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/css/justifiedGallery.min.css'
+    },
+    fancybox: {
+      js: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isanchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '数据计算',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: false,
+  postUpdate: '2022-02-26 21:49:10'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if (GLOBAL_CONFIG_SITE.isHome && /iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><meta name="generator" content="Hexo 6.0.0"></head><body><div id="loading-box"><div class="loading-left-bg"></div><div class="loading-right-bg"></div><div class="spinner-box"><div class="configure-border-1"><div class="configure-core"></div></div><div class="configure-border-2"><div class="configure-core"></div></div><div class="loading-word">加载中...</div></div></div><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://s2.loli.net/2022/01/09/le6jcmPKuJihDdU.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data"><div class="data-item is-center"><div class="data-item-link"><a href="/archives/"><div class="headline">文章</div><div class="length-num">64</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/tags/"><div class="headline">标签</div><div class="length-num">10</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/categories/"><div class="headline">分类</div><div class="length-num">80</div></a></div></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fa fa-heartbeat"></i><span> 清单</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音樂</span></a></li><li><a class="site-page child" href="/Gallery/"><i class="fa-fw fas fa-images"></i><span> 照片</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://s2.loli.net/2022/01/13/TFLYzUAxGcRmW6C.jpg')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">jjyaoao's Home</a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fa fa-heartbeat"></i><span> 清单</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音樂</span></a></li><li><a class="site-page child" href="/Gallery/"><i class="fa-fw fas fa-images"></i><span> 照片</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">数据计算</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2022-01-14T13:30:51.000Z" title="发表于 2022-01-14 21:30:51">2022-01-14</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2022-02-26T13:49:10.022Z" title="更新于 2022-02-26 21:49:10">2022-02-26</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86/">计算机组成原理</a><i class="fas fa-angle-right post-meta-separator"></i><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86/%E8%AE%A1%E7%BB%84-%E6%95%B0%E6%8D%AE%E8%AE%A1%E7%AE%97/">计组-数据计算</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">3.5k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>10分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="数据计算"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><blockquote>
+<p>以下具体框架来自华中科技大学 谭志虎 老师，本人根据框架补充自己的一些体会和见解。仅当作学习笔记使用</p>
+</blockquote>
+<p><em>Target：</em></p>
+<p><img src="/2022/01/14/%E6%95%B0%E6%8D%AE%E8%AE%A1%E7%AE%97/image-20220114212211470.png" alt="image-20220114212211470"></p>
+<ul>
+<li><p><strong>定点数的运算</strong></p>
+<ul>
+<li><p><strong>定点数的移位运算</strong></p>
+<ul>
+<li>算术右移：<strong>符号位</strong>保持<strong>不变</strong>，移动数值位<ul>
+<li>符号位不变，且向右移动</li>
+<li> x/2 运算需要考虑向 0 舍入的问题</li>
+<li>有符号时通常会将符号位累加在最低位后再进行算术右移</li>
+</ul>
+</li>
+<li>逻辑移位：将操作数视为无符号数，全移<ul>
+<li>不管左移还是右移，<strong>都补0</strong></li>
+<li> 2x 运算在无符号运算时可能会发生溢出</li>
+</ul>
+</li>
+<li>循环移位<ul>
+<li>带进位标志位CF（大循环）<ul>
+<li>CF参与循环</li>
+</ul>
+</li>
+<li>不带CF（小循环）<ul>
+<li>CF存储最新移出的数字的副本</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>移位运算实例<ul>
+<li><img src="https://api2.mubu.com/v3/document_image/ead29947-833c-4a9e-bd3a-79d13cf658e8-329792.jpg" alt="img"></li>
+</ul>
+</li>
+<li>考研真题<ul>
+<li>真题1<ul>
+<li><img src="https://api2.mubu.com/v3/document_image/c324d6b8-03ba-4242-ab90-81b9cc50eaa5-329792.jpg" alt="img"></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><strong>原码定点数的加减运算（<strong><strong>没考过</strong></strong>）</strong></p>
+<ul>
+<li>符号位不能直接参与运算</li>
+<li>加法运算需要“同号求和，异号求差”</li>
+<li>减法运算需要“异号求和，同号求差”</li>
+<li>求差时还需要先比较大小，然后用大数减去小数</li>
+<li>结果的符号选择也相对复杂，运算复杂</li>
+</ul>
+</li>
+<li><p><strong>补码定点数的加减运算</strong></p>
+<ul>
+<li><strong>运算公式</strong><ul>
+<li>补码加法  <ul>
+<li><img src="https://api2.mubu.com/v3/document_image/585cc886-ac7a-4c82-b253-f3ebe8238dc9-329792.jpg" alt="img"></li>
+</ul>
+</li>
+<li>补码减法  <ul>
+<li><img src="https://api2.mubu.com/v3/document_image/2287c9b3-7617-4332-9324-30e1be69d5f1-329792.jpg" alt="img"></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>运算规则</strong><ul>
+<li>操作数采用补码表示，符号位参加运算</li>
+<li>运算的结果为补码，符号位的进位位（模）直接丢弃</li>
+<li>运算结果就是补码，符号位也是直接运算得到</li>
+</ul>
+</li>
+<li><strong>逻辑实现</strong><ul>
+<li>对于定点数加减法可以首先利用如下公式实现一位全加器FA，再利用<em>n</em>个全加器串联构成<em>n</em>位串行进位加法器<ul>
+<li><img src="https://api2.mubu.com/v3/document_image/d4b7af6f-4584-4804-b25b-82dbe4691705-329792.jpg" alt="img"></li>
+</ul>
+</li>
+<li>全加器FA电路（对称电路，输入可随意连接）<ul>
+<li><img src="https://api2.mubu.com/v3/document_image/e7354005-28dc-4b31-aad7-09d1c2c20423-329792.jpg" alt="img"></li>
+</ul>
+</li>
+<li>半加器HA，没有进位输入，电路更简单</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>*<em>定点数的乘除运算（</em><em><strong>几乎没考</strong></em>*）</p>
+<ul>
+<li><p><strong>原码一位乘法</strong></p>
+<ul>
+<li><p>符号位单独运算</p>
+<ul>
+<li>乘积符号位等于乘数和被乘数符号的异或</li>
+</ul>
+</li>
+<li><p>数值位采用绝对值进行运算</p>
+<ul>
+<li><p>求积过程就是<em>n</em>个<em>n</em>位位积的累加问题</p>
+</li>
+<li><p>采用一个<em>n</em>位加法器进行循环累加进行求解</p>
+</li>
+<li><p>具体运算规则</p>
+<ul>
+<li><p><img src="https://api2.mubu.com/v3/document_image/2a54bd19-e767-4f04-8592-9525761223a2-329792.jpg" alt="img"></p>
+</li>
+<li><p>部分积<em>P</em>的初值为零</p>
+</li>
+<li><p>每次将部分积<em>P</em>累加上y_n|x|<em>y**n</em>∣<em>x</em>∣<em>后连同数据</em>y<em>y</em>一起同步右移得到新的部分积</p>
+</li>
+<li><p>注意进位位参与移位，也就是上溢也可以继续运算</p>
+</li>
+</ul>
+</li>
+<li><p>n次运算和移位操作</p>
+</li>
+<li><p>最终的2n位乘积存放在<em>P</em>和<em>y</em>两个寄存器中。</p>
+</li>
+<li><p>图解</p>
+<ul>
+<li><img src="https://api2.mubu.com/v3/document_image/c8d22af0-0b4d-41f4-8143-a863b1a143b3-329792.jpg" alt="img"></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><strong>补码一位乘法</strong>（乘法用加法实现）</p>
+<ul>
+<li>符号位参加运算</li>
+<li>乘数取单符号位，末位增加一位附加位y_{n+1}<em>y**n</em>+1=0</li>
+<li>部分积P初值为0</li>
+<li>运算规则<ul>
+<li><img src="https://api2.mubu.com/v3/document_image/b9adad2d-b026-45d2-8cfe-491954d2e013-329792.jpg" alt="img"></li>
+</ul>
+</li>
+<li>当y_{n}y_{n+1}＝00或11<em>y<strong>n</strong>y**n</em>+1＝00或11时，部分积加0，当 y_{n}y_{n+1}＝01<em>y<strong>n</strong>y**n</em>+1＝01时，部分积加[<em>x</em>]补；当 y_{n}y_{n+1}＝10<em>y<strong>n</strong>y**n</em>+1＝10时，部分积加[-<em>x</em>]补，部分积计算完毕后连同乘数<em>y</em>一起同步算术右移一位</li>
+<li>移位<em>n</em>次，累加<em>n</em>+1次</li>
+<li>图解<ul>
+<li><img src="https://api2.mubu.com/v3/document_image/97c0f956-aef4-4700-ba77-6ddfe37d4ca4-329792.jpg" alt="img"></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><strong>阵列乘法器</strong></p>
+<ul>
+<li>采用全加器阵列由组合逻辑电路直接完成</li>
+<li>现代CPU中的乘法器<ul>
+<li>采用Booth两位乘法+华莱士树+流水线</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p> <strong>定点除法运算</strong>（除法用减法实现）</p>
+</li>
+<li><p>原码定点小数的<strong>一位</strong>除法</p>
+<ul>
+<li>恢复余数法 (运算时间不固定)<ul>
+<li>减的动就减+商上1，减不动就减了再加减数（变回原来的数），再商上0</li>
+</ul>
+</li>
+<li>不恢复余数法 (运算时间固定)<ul>
+<li>通过观察总结一下思路：</li>
+<li>通过第一轮减法（x，y）以后<ul>
+<li>1.判断该余数&lt;&gt;0，并定商</li>
+<li>2.商和此时的余数同时左移</li>
+<li>3.若此时余数&gt;0，则+（-y补），否则+y补[计算机运算补码完成]</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>要求|x|&lt;|y|，否则运算可能会发生溢出。</p>
+</li>
+<li><p>商的符号单独处理，即由两数的符号异或得到。</p>
+</li>
+<li><p>数值部分的运算规则 </p>
+<ul>
+<li><img src="https://api2.mubu.com/v3/document_image/123049ac-6f23-4de6-8ecf-297f7da5c754-329792.jpg" alt="img"></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><strong>溢出概念和判断方法</strong></p>
+<ul>
+<li><strong>溢出概念</strong><ul>
+<li>上溢（大于最大可以表示的正数）</li>
+<li>下溢（小于最小可以表示的负数）</li>
+<li>精度溢出（超出可表示的精度）</li>
+</ul>
+</li>
+<li><strong>有符号溢出判断</strong><ul>
+<li>1、单符号判断法，利用操作数和运算结果的符号位进行判断。<ul>
+<li>加法溢出规则：“正正得负，负负得正”<ul>
+<li><img src="https://api2.mubu.com/v3/document_image/eb154771-892b-493a-af75-e7b4c4a8cfaa-329792.jpg" alt="img"></li>
+</ul>
+</li>
+<li>减法溢出规则：“正负得负，负正得负”<ul>
+<li><img src="https://api2.mubu.com/v3/document_image/8a78d26b-f6d7-4d4e-95c1-faf6c7d03de7-329792.jpg" alt="img"></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>2、进位位判断法<ul>
+<li>符号位进位和最高数据位进位进行异或操作</li>
+<li>V=C_f \oplus C_d<em>V</em>=<em>C**f</em>⊕<em>C**d</em></li>
+<li>加减法均适用，实际计算机中采用</li>
+</ul>
+</li>
+<li>3、双符号判断法<ul>
+<li>将运算结果的两个符号位进行异或操作</li>
+<li>V=C_{f1} \oplus C_{f2}<em>V</em>=<em>C**f</em>1⊕<em>C**f</em>2</li>
+<li>符号位相同无溢出，01表示上溢，10表示下溢</li>
+<li>最高位用于表示正确的符号位</li>
+<li>用于手工计算，方便肉眼识别，计算机因为成本问题不采用</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>无符号溢出判断</strong><ul>
+<li>V=C \oplus Sub<em>V</em>=<em>C</em>⊕<em>S<strong>u</strong>b</em></li>
+<li>C为进位输出，Sub=1表示减法，0表示加法</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><strong>浮点数的表示</strong></p>
+<ul>
+<li><p><strong>浮点数</strong></p>
+<ul>
+<li><strong>表示方法：</strong>两个定点数分别表示阶码和尾数<ul>
+<li>图解<ul>
+<li><img src="https://api2.mubu.com/v3/document_image/cd169711-f476-485d-8b31-13dc218e6c32-329792.jpg" alt="img"></li>
+</ul>
+</li>
+<li>阶码（决定表示范围）<ul>
+<li>阶符：阶码正负性 </li>
+<li>阶值：指数部分</li>
+</ul>
+</li>
+<li>尾码（和阶码一起决定表示精度）<ul>
+<li>数符：浮点数的符号</li>
+<li>尾数：尾数数字部分</li>
+</ul>
+</li>
+<li>表示范围大和精度高，运算复杂</li>
+</ul>
+</li>
+<li><strong>溢出问题</strong><ul>
+<li>存在上溢和下溢问题（阶码溢出）</li>
+<li>也存在精度溢出问题（无法精确表示，只能舍入处理）</li>
+</ul>
+</li>
+<li><strong>尾数规格化</strong><ul>
+<li>保证表示唯一<ul>
+<li>调整尾数和阶码，保证尾数最高位是有效值1</li>
+<li>提高运算精度，充分利用尾数有效位<ul>
+<li>左归：<ul>
+<li>尾数左边无效位太多，往左移</li>
+<li>左归可多位</li>
+<li>阶码减少，尾数增大</li>
+</ul>
+</li>
+<li>右归<ul>
+<li>尾数运算溢出是要进行右归</li>
+<li>右归最多一位</li>
+<li>阶码增加，尾数减小</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>原码规格化数（绝对值大于等于0.5）<ul>
+<li>正数：0.1xxx</li>
+<li>负数：1.1xxx</li>
+<li>尾数最高位为1</li>
+</ul>
+</li>
+<li>补码规格化数<ul>
+<li>正数：0.1xxx</li>
+<li>负数：1.0xxx  注意﹣0.5补码不是规格化数</li>
+<li>符号位和尾数最高位相反</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>浮点数在数轴上的分布<ul>
+<li>刻度并不均匀，越往右，浮点数越稀疏<ul>
+<li><img src="https://api2.mubu.com/v3/document_image/95e59a35-5996-4253-b34e-dba717048f00-329792.jpg" alt="img"></li>
+</ul>
+</li>
+<li>浮点运算不满足结合律<ul>
+<li><strong>小数a+大数b=大数b（有可能）</strong>精度损失</li>
+<li>编程时浮点数比较要小心</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><strong>IEEE754标准</strong></p>
+<ul>
+<li><p><strong>二进制浮点数</strong></p>
+<ul>
+<li>数符S、阶码E和尾数M</li>
+<li>阶码采用移码表示</li>
+<li>尾数采用原码数据表示，<ul>
+<li>隐藏高位1，运算时还原成1.M形式</li>
+</ul>
+</li>
+<li>二进制浮点数无法精确表示一些十进制小数<ul>
+<li>0.1 0.2 0.4等转换成二进制都是循环小数</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>对32位单精度格式而言：S为1位， E为8位，采用偏移值为127的移码，M为23位</p>
+<ul>
+<li><img src="https://api2.mubu.com/v3/document_image/91eaba8b-3da0-4775-8fb7-ef9e3d1b9949-329792.jpg" alt="img"></li>
+<li>为什么是127而不是128？<ul>
+<li>主要原因是使得任何一个规格化数的倒数能用另外一个浮点数表示，而采用128的偏移量表示的最小规格化数的倒数会发生溢出。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><strong>10进制浮点数</strong></p>
+<ul>
+<li>可精确表示十进制浮点数，保证运算精度</li>
+<li>解决二进制浮点运算引起的误差问题</li>
+<li>IEEE-754 2008标准中有定义</li>
+</ul>
+</li>
+<li><p><strong>IEEE754表示范围</strong></p>
+<ul>
+<li>e为阶码，M为尾数</li>
+<li>阶码为全1时，表示无穷大或非数，浮点数除零不会异常</li>
+<li>阶码和尾码全零时表示机器零</li>
+<li>阶码为零，尾数不为零时表示非规格化数</li>
+<li>其他表示区间为规格化数<ul>
+<li><img src="https://api2.mubu.com/v3/document_image/d5bcad7b-9e5e-4969-921e-a55562f4106f-329792.jpg" alt="img"></li>
+</ul>
+</li>
+<li>最大值，最小值问题<ul>
+<li><img src="https://api2.mubu.com/v3/document_image/b0ed425c-8d6f-4e13-bbad-3b76df3ed2db-329792.jpg" alt="img"></li>
+</ul>
+</li>
+<li>十进制数与浮点数的转换（常考）<ul>
+<li><img src="https://api2.mubu.com/v3/document_image/ef739d93-bd13-46bf-9f9f-9264024031da-329792.jpg" alt="img"></li>
+</ul>
+</li>
+<li>考研真题：多次考察，小题大题都有<ul>
+<li>真题<ul>
+<li><img src="https://api2.mubu.com/v3/document_image/1e56c645-e34d-41cc-8374-a23536c8669b-329792.jpg" alt="img"></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><strong>浮点数加减运算</strong></p>
+<ul>
+<li><strong>对阶</strong><ul>
+<li>小阶向大阶看齐</li>
+<li>阶码增加，尾数右移</li>
+</ul>
+</li>
+<li><strong>尾数运算</strong></li>
+<li><strong>规格化</strong><ul>
+<li>尾数运算上溢：右归最多一位</li>
+<li>尾数规格化下溢：左归处理，可以多位</li>
+</ul>
+</li>
+<li><strong>舍入处理</strong><ul>
+<li>0舍1入：舍去位最高位为1，尾数最低位加1，否则舍去<ul>
+<li>舍入后尾数可能上溢，还需要进行二次规格化</li>
+</ul>
+</li>
+<li>恒置1法：舍去中有一位是 1，尾数最低位置 1</li>
+<li>截断法：移出位全舍去（不常用）</li>
+</ul>
+</li>
+<li><strong>溢出判断</strong><ul>
+<li>阶码溢出时浮点数才会发生溢出</li>
+<li>上溢：进入异常处理</li>
+<li>下溢：按机器零处理</li>
+</ul>
+</li>
+<li>注意IEEE754浮点数与采用补码表示阶码和尾数的浮点运算法则的相同和不同之处</li>
+<li>考研真题<ul>
+<li>真题<ul>
+<li><img src="https://api2.mubu.com/v3/document_image/adbb693a-bd78-48c3-b081-b2fa3e50874f-329792.jpg" alt="img"></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><strong>程序中的数据表示与运算（常考）</strong></p>
+<ul>
+<li><strong>汇编语言中的数据类型</strong><ul>
+<li>寄存器、存储器操作数本没有数据类型</li>
+<li>对该数进行何种数据类型的操作完全取决于指令功能</li>
+<li>有符号运算、无符号运算、定点运算、浮点运算指令</li>
+</ul>
+</li>
+<li><strong>C语言中数据类型</strong><ul>
+<li><strong>整型</strong><ul>
+<li>有符号整型包括<em>char</em>、<em>short</em>、<em>int</em>、<em>long</em></li>
+<li>分别采用8、16、32、64位补码进行表示</li>
+<li>通过<em>unsigned</em>声明为无符号类型</li>
+</ul>
+</li>
+<li><strong>整型运算溢出问题</strong><ul>
+<li>有符号整数和无符号整数、浮点数都存在运算溢出的问题</li>
+<li>C语言不做溢出判断，需要程序员特别注意</li>
+<li>考研真题<ul>
+<li>真题1<ul>
+<li><img src="https://api2.mubu.com/v3/document_image/37703a1a-8fd5-4622-97e6-4d84ca2fe439-329792.jpg" alt="img"></li>
+</ul>
+</li>
+<li>真题2<ul>
+<li><img src="https://api2.mubu.com/v3/document_image/e3e64ea9-758f-4732-8798-c2485e0be336-329792.jpg" alt="img"></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>浮点型</strong><ul>
+<li>C语言中常见的浮点数为<em>float</em>、<em>double</em></li>
+<li>分别对应IEEE 754中的单精度和双精度浮点数</li>
+<li>不同数据类型的运算会在编译器的翻译下变成不同类型的汇编指令</li>
+</ul>
+</li>
+<li><strong>强制类型转换</strong><ul>
+<li>相同位宽的整型数据进行强制转换时机器码保持不变</li>
+<li>小字长转大字长时<ul>
+<li>无符号整型进行零扩展</li>
+<li>有符号整型进行符号扩展</li>
+</ul>
+</li>
+<li>大字长转小字长时直接将机器码截短</li>
+<li>float→double：由于double型数据的尾数、阶码宽度都比float型大，因此其表示范围更大、精度更高，转换后的 double 型数据与原 float 型数据完全相等。</li>
+<li>double→float：大数转换时可能发生溢出，高精度数转换时会发生舍入。</li>
+<li>float/double→int：小数部分会截断，大数转换时可能会溢出。</li>
+<li>int→float：两种类型都是 32 位，所表示的状态数是一样的，在数轴上表示的数据并不完全重叠，float 型用其中一部分状态表示了更大的整数和小数；int 型中一些比较大的整数无法用float型精确表示。浮点数尾数连隐藏位在内一共24位，当int型数据的24～31位数据非0时，无法精确转换成 24 位浮点数的尾数，此时会发生精度溢出，需要进行舍入处理。</li>
+<li>int→double：浮点数尾数字段为 53 位，可以精确表示所有 32 位整数。</li>
+<li>实例<ul>
+<li><img src="https://api2.mubu.com/v3/document_image/27750e8a-60b9-4faa-a47c-60a6d749286e-329792.jpg" alt="img"></li>
+</ul>
+</li>
+<li>考研真题<ul>
+<li>真题1<ul>
+<li><img src="https://api2.mubu.com/v3/document_image/0a8d54af-8e0b-44b4-bc4f-4573be994731-329792.jpg" alt="img"></li>
+</ul>
+</li>
+<li>真题2<ul>
+<li><img src="https://api2.mubu.com/v3/document_image/fb3a17dd-3e5e-4fe7-86f8-1b0d159ef8fc-329792.jpg" alt="img"></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><strong>算术逻辑单元ALU</strong></p>
+<ul>
+<li><p><strong>串行加减法电路</strong></p>
+<ul>
+<li><p><strong>半加器</strong>（x，y为数据位，s为运算和，c+1为进位信号（输出））<strong>不带进位输入</strong></p>
+<ul>
+<li>实现如下</li>
+<li><img src="/2022/01/14/%E6%95%B0%E6%8D%AE%E8%AE%A1%E7%AE%97/image-20220115193451699.png" alt="image-20220115193451699"></li>
+</ul>
+</li>
+<li><p><strong>全加器</strong></p>
+<ul>
+<li>实现如下</li>
+<li>(1)<ul>
+<li><img src="/2022/01/14/%E6%95%B0%E6%8D%AE%E8%AE%A1%E7%AE%97/image-20220115194238292.png" alt="image-20220115194238292"></li>
+</ul>
+</li>
+<li>(2)<ul>
+<li><img src="/2022/01/14/%E6%95%B0%E6%8D%AE%E8%AE%A1%E7%AE%97/image-20220115194551234.png" alt="image-20220115194551234"></li>
+</ul>
+</li>
+<li>PS：<ul>
+<li>1.所需硬件开销是不同的</li>
+<li>2.异或门信号由A非B + AB非组成 需要判断三次，则为3T</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><strong>串行加法器</strong></p>
+<ul>
+<li><p>将<em>n</em>个全加器进位信号串联即可得到<em>n</em>位的加法电路</p>
+<ul>
+<li><p><img src="https://api2.mubu.com/v3/document_image/3eacad7e-b067-4be0-bb28-e2cbb58616f2-329792.jpg" alt="img"></p>
+</li>
+<li><p>注意时间延迟分析，电路内部有并行性，详见教材</p>
+</li>
+<li><p>进位链依赖，运算速度和位数是线性关系，速度较慢</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><strong>可控加减法电路</strong></p>
+<ul>
+<li><p>减法变加法，输入增加异或门，控制位送进位输入，逐位取反，末位加1</p>
+<ul>
+<li><img src="https://api2.mubu.com/v3/document_image/4ab15384-9327-424e-ac65-4785220b98f7-329792.jpg" alt="img"></li>
+<li>有符号无符号运算均适用，区别是溢出检测逻辑</li>
+<li>具体实现效果：</li>
+<li><img src="/2022/01/14/%E6%95%B0%E6%8D%AE%E8%AE%A1%E7%AE%97/image-20220115192645059.png" alt="image-20220115192645059"></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><strong>并行加法器</strong></p>
+<ul>
+<li><p><strong>主要原理</strong></p>
+<ul>
+<li>采用先行进位电路提前得到所有进位位</li>
+<li>各位的求和运算可以并发运算</li>
+<li>注意先行进位电路也有开销和时间延迟</li>
+</ul>
+</li>
+<li><p><strong>进位生成函数</strong></p>
+<ul>
+<li><img src="https://api2.mubu.com/v3/document_image/c28f2020-0709-4abd-8f1b-2032abfb35f8-329792.jpg" alt="img"></li>
+</ul>
+</li>
+<li><p><strong>进位传递函数</strong></p>
+<ul>
+<li><img src="https://api2.mubu.com/v3/document_image/7716ed85-94d2-4f8c-b49a-92ca21c371bc-329792.jpg" alt="img"></li>
+</ul>
+</li>
+<li><p><strong>进位信号仅仅与G，P，C0有关</strong></p>
+<ul>
+<li><img src="https://api2.mubu.com/v3/document_image/7dc167b8-b1ca-43a8-bc56-53a8c603f331-329792.jpg" alt="img"></li>
+</ul>
+</li>
+<li><p><strong>先行进位电路</strong></p>
+<ul>
+<li><img src="https://api2.mubu.com/v3/document_image/a96cee4e-04af-4fd9-8da2-4d699e861e40-329792.jpg" alt="img"></li>
+<li>C为进位信号，进位方式有两种<ul>
+<li>G为1</li>
+<li>P为1（X,Y分别一个1一个0）且上一个C为1</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><strong>四位快速加法器</strong></p>
+<ul>
+<li><img src="https://api2.mubu.com/v3/document_image/4d2ac825-0803-40cf-9ac5-45657dd1977c-329792.jpg" alt="img"></li>
+</ul>
+</li>
+<li><p><strong>先行进位电路级联</strong></p>
+<ul>
+<li><img src="https://api2.mubu.com/v3/document_image/4d959d83-ab59-4a96-9c0e-b602a6faa840-329792.jpg" alt="img"></li>
+<li>多级先行进位方式：组内<strong>并行</strong>，组间<strong>并行</strong>(高效)</li>
+<li>可以尝试进行延迟分析，详见教材、</li>
+<li>目前计算机任采用这种方式进行计算</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><strong>ALU功能和结构</strong></p>
+<ul>
+<li><strong>定点运算器</strong><ul>
+<li>算术逻辑运算单元ALU<ul>
+<li>算术逻辑运算单元是运算器的核心，由它实现算术逻辑运算</li>
+</ul>
+</li>
+<li>通用寄存器组<ul>
+<li>通用寄存器组的作用是暂存参加运算的数据、运算的中间结果或最后结果</li>
+</ul>
+</li>
+<li>输人选择电路<ul>
+<li>输入选择电路的作用是对若干个数据的输入进行选择或控制</li>
+</ul>
+</li>
+<li>输出控制电路<ul>
+<li>输出控制电路对加法器的输出进行控制</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>运算器结构</strong><ul>
+<li>单总线结构:   2个缓冲器，3个时钟完成运算</li>
+<li>双总线结构：1个缓冲器，2个时钟完成运算</li>
+<li>三总线结构：0个缓冲器，1个时钟完成运算</li>
+</ul>
+</li>
+<li><strong>运算流水线</strong><ul>
+<li>浮点流水线，将浮点运算的步骤进行细分<ul>
+<li><img src="https://api2.mubu.com/v3/document_image/dba9a987-352f-4265-b9fa-abe403fc12f8-329792.jpg" alt="img"></li>
+</ul>
+</li>
+<li>不提升单个运算的性能，优化密集型浮点运算性能</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="mailto:jjyaoao@126.com">jjyaoao</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="http://jjyaoao.space/2022/01/14/%E6%95%B0%E6%8D%AE%E8%AE%A1%E7%AE%97/">http://jjyaoao.space/2022/01/14/%E6%95%B0%E6%8D%AE%E8%AE%A1%E7%AE%97/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="http://jjyaoao.space" target="_blank">jjyaoao's Home</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">学习笔记</a><a class="post-meta__tags" href="/tags/%E6%80%9D%E7%BB%B4%E5%AF%BC%E5%9B%BE/">思维导图</a><a class="post-meta__tags" href="/tags/%E6%95%99%E7%A8%8B/">教程</a></div><div class="post_share"><div class="addthis_inline_share_toolbox"></div><script src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-61dbf69078ce19aa" async="async"></script></div></div><div class="post-reward"><div class="reward-button button--animated"><i class="fas fa-qrcode"></i> 打赏</div><div class="reward-main"><ul class="reward-all"><li class="reward-item"><a href="https://s2.loli.net/2022/01/09/HMjygFAKr2nPWdJ.jpg" target="_blank"><img class="post-qr-code-img" src="https://s2.loli.net/2022/01/09/HMjygFAKr2nPWdJ.jpg" alt="微信"/></a><div class="post-qr-code-desc">微信</div></li><li class="reward-item"><a href="https://s2.loli.net/2022/01/09/JL43sbhxUEOuVeM.jpg" target="_blank"><img class="post-qr-code-img" src="https://s2.loli.net/2022/01/09/JL43sbhxUEOuVeM.jpg" alt="支付宝"/></a><div class="post-qr-code-desc">支付宝</div></li></ul></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/2022/01/16/%E5%AD%98%E5%82%A8%E7%B3%BB%E7%BB%9F/"><img class="prev-cover" src="https://s2.loli.net/2022/01/13/TFLYzUAxGcRmW6C.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">存储系统</div></div></a></div><div class="next-post pull-right"><a href="/2022/01/14/%E6%95%B0%E6%8D%AE%E8%A1%A8%E7%A4%BA/"><img class="next-cover" src="https://s2.loli.net/2022/01/13/TFLYzUAxGcRmW6C.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">数据表示</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>相关推荐</span></div><div class="relatedPosts-list"><div><a href="/2022/01/22/IO%E7%B3%BB%E7%BB%9F/" title="IO系统"><img class="cover" src="https://s2.loli.net/2022/01/13/TFLYzUAxGcRmW6C.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-01-22</div><div class="title">IO系统</div></div></a></div><div><a href="/2022/01/18/%E4%B8%AD%E5%A4%AE%E5%A4%84%E7%90%86%E5%99%A8/" title="中央处理器"><img class="cover" src="https://s2.loli.net/2022/01/13/TFLYzUAxGcRmW6C.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-01-18</div><div class="title">中央处理器</div></div></a></div><div><a href="/2022/01/16/%E5%AD%98%E5%82%A8%E7%B3%BB%E7%BB%9F/" title="存储系统"><img class="cover" src="https://s2.loli.net/2022/01/13/TFLYzUAxGcRmW6C.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-01-16</div><div class="title">存储系统</div></div></a></div><div><a href="/2022/01/20/%E6%80%BB%E7%BA%BF/" title="总线"><img class="cover" src="https://s2.loli.net/2022/01/13/TFLYzUAxGcRmW6C.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-01-20</div><div class="title">总线</div></div></a></div><div><a href="/2022/01/17/%E6%8C%87%E4%BB%A4%E7%B3%BB%E7%BB%9F/" title="指令系统"><img class="cover" src="https://s2.loli.net/2022/01/13/TFLYzUAxGcRmW6C.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-01-17</div><div class="title">指令系统</div></div></a></div><div><a href="/2022/01/14/%E6%95%B0%E6%8D%AE%E8%A1%A8%E7%A4%BA/" title="数据表示"><img class="cover" src="https://s2.loli.net/2022/01/13/TFLYzUAxGcRmW6C.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-01-14</div><div class="title">数据表示</div></div></a></div></div></div><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div><div id="comment-switch"><span class="first-comment">Livere</span><span class="switch-btn"></span><span class="second-comment">Valine</span></div></div><div class="comment-wrap"><div><div id="lv-container" data-id="city" data-uid="MTAyMC81NTM1OC8zMTgyNQ=="></div></div><div><div class="vcomment" id="vcomment"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://s2.loli.net/2022/01/09/le6jcmPKuJihDdU.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">jjyaoao</div><div class="author-info__description"></div></div><div class="card-info-data"><div class="card-info-data-item is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">64</div></a></div><div class="card-info-data-item is-center"><a href="/tags/"><div class="headline">标签</div><div class="length-num">10</div></a></div><div class="card-info-data-item is-center"><a href="/categories/"><div class="headline">分类</div><div class="length-num">80</div></a></div></div><a class="button--animated" id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/jjyaoao/"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn card-announcement-animation"></i><span>公告</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2022/12/14/LATEX%E6%95%B0%E5%AD%A6%E7%AC%A6%E5%8F%B7%E5%85%AC%E5%BC%8F/" title="LATEX数学符号公式"><img src="https://s2.loli.net/2022/12/14/i6f7xErHjKnmLSZ.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="LATEX数学符号公式"/></a><div class="content"><a class="title" href="/2022/12/14/LATEX%E6%95%B0%E5%AD%A6%E7%AC%A6%E5%8F%B7%E5%85%AC%E5%BC%8F/" title="LATEX数学符号公式">LATEX数学符号公式</a><time datetime="2022-12-14T13:43:22.000Z" title="发表于 2022-12-14 21:43:22">2022-12-14</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/12/03/Spring+mvc+boot+maven+mybatis-plus/" title="Spring+mvc+boot+maven+mybatis-plus"><img src="https://s2.loli.net/2022/12/03/xfdS62aWHo4ewRO.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Spring+mvc+boot+maven+mybatis-plus"/></a><div class="content"><a class="title" href="/2022/12/03/Spring+mvc+boot+maven+mybatis-plus/" title="Spring+mvc+boot+maven+mybatis-plus">Spring+mvc+boot+maven+mybatis-plus</a><time datetime="2022-12-03T07:13:22.000Z" title="发表于 2022-12-03 15:13:22">2022-12-03</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/11/21/PPDE%E6%8C%87%E5%AF%BC%E8%AE%A1%E5%88%92/" title="PPDE指导计划"><img src="https://s2.loli.net/2022/12/04/MpKnmUgZf5uNGws.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="PPDE指导计划"/></a><div class="content"><a class="title" href="/2022/11/21/PPDE%E6%8C%87%E5%AF%BC%E8%AE%A1%E5%88%92/" title="PPDE指导计划">PPDE指导计划</a><time datetime="2022-11-21T11:06:22.000Z" title="发表于 2022-11-21 19:06:22">2022-11-21</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/11/10/%E5%BA%94%E7%94%A8%E5%AF%86%E7%A0%81%E5%AD%A6%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/" title="应用密码学期末冲刺"><img src="https://s2.loli.net/2022/11/10/zjOrhLsVd8Ttu3v.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="应用密码学期末冲刺"/></a><div class="content"><a class="title" href="/2022/11/10/%E5%BA%94%E7%94%A8%E5%AF%86%E7%A0%81%E5%AD%A6%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/" title="应用密码学期末冲刺">应用密码学期末冲刺</a><time datetime="2022-11-10T13:22:22.000Z" title="发表于 2022-11-10 21:22:22">2022-11-10</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/10/20/%E6%84%9F%E7%9F%A5%E6%9C%BA/" title="感知机+白板推导系列"><img src="https://s2.loli.net/2022/10/31/Sl5WoGUL1RakV67.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="感知机+白板推导系列"/></a><div class="content"><a class="title" href="/2022/10/20/%E6%84%9F%E7%9F%A5%E6%9C%BA/" title="感知机+白板推导系列">感知机+白板推导系列</a><time datetime="2022-10-19T17:22:22.000Z" title="发表于 2022-10-20 01:22:22">2022-10-20</time></div></div></div></div></div></div></main><footer id="footer" style="background-image: url('https://s2.loli.net/2022/01/13/TFLYzUAxGcRmW6C.jpg')"><div id="footer-wrap"><div class="copyright">&copy;2022 - 2023 By jjyaoao</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div><div class="footer_custom_text">Hi, welcome to my <a target="_blank" rel="noopener" href="https://butterfly.js.org/">blog</a>!</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button id="chat_btn" type="button" title="rightside.chat_btn"><i class="fas fa-sms"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div id="algolia-search"><div class="search-dialog"><div class="search-dialog__title" id="algolia-search-title">Algolia</div><div id="algolia-input-panel"><div id="algolia-search-input"></div></div><hr/><div id="algolia-search-results"><div id="algolia-hits"></div><div id="algolia-pagination"></div><div id="algolia-stats"></div></div><span class="search-close-button"><i class="fas fa-times"></i></span></div><div id="search-mask"></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.js"></script><script src="/js/search/algolia.js"></script><script>var preloader = {
+  endLoading: () => {
+    document.body.style.overflow = 'auto';
+    document.getElementById('loading-box').classList.add("loaded")
+  },
+  initLoading: () => {
+    document.body.style.overflow = '';
+    document.getElementById('loading-box').classList.remove("loaded")
+
+  }
+}
+window.addEventListener('load',preloader.endLoading())</script><div class="js-pjax"><script>function loadLivere () {
+  if (typeof LivereTower === 'object') {
+    window.LivereTower.init()
+  }
+  else {
+    (function(d, s) {
+        var j, e = d.getElementsByTagName(s)[0];
+        if (typeof LivereTower === 'function') { return; }
+        j = d.createElement(s);
+        j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+        j.async = true;
+        e.parentNode.insertBefore(j, e);
+    })(document, 'script');
+  }
+}
+
+if ('Livere' === 'Livere' || !true) {
+  if (true) btf.loadComment(document.getElementById('lv-container'), loadLivere)
+  else loadLivere()
+}
+else {
+  function loadOtherComment () {
+    loadLivere()
+  }
+}</script><script>function loadValine () {
+  function initValine () {
+    const valine = new Valine(Object.assign({
+      el: '#vcomment',
+      appId: 'cFvw1zyA64uttBS5jbYY7pwH-gzGzoHsz',
+      appKey: '14rOjAUNzRyJSQt983q6gdza',
+      placeholder: 'Please leave your footprints',
+      avatar: 'monsterid',
+      meta: 'nick,mail,link'.split(','),
+      pageSize: '10',
+      lang: 'en',
+      recordIP: false,
+      serverURLs: '',
+      emojiCDN: '',
+      emojiMaps: "",
+      enableQQ: false,
+      path: window.location.pathname,
+      requiredFields: ["nick,mail"],
+      visitor: false
+    }, null))
+  }
+
+  if (typeof Valine === 'function') initValine() 
+  else getScript('https://cdn.jsdelivr.net/npm/valine/dist/Valine.min.js').then(initValine)
+}
+
+if ('Livere' === 'Valine' || !true) {
+  if (true) btf.loadComment(document.getElementById('vcomment'),loadValine)
+  else setTimeout(loadValine, 0)
+} else {
+  function loadOtherComment () {
+    loadValine()
+  }
+}</script></div><script defer="defer" id="fluttering_ribbon" mobile="true" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/canvas-fluttering-ribbon.min.js"></script><script id="canvas_nest" defer="defer" color="0,0,255" opacity="0.7" zIndex="-1" count="99" mobile="true" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/canvas-nest.min.js"></script><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/activate-power-mode.min.js"></script><script>POWERMODE.colorful = true;
+POWERMODE.shake = false;
+POWERMODE.mobile = false;
+document.body.addEventListener('input', POWERMODE);
+</script><script id="click-show-text" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/click-show-text.min.js" data-mobile="false" data-text="富强,民主,文明,和谐,自由,平等,公正,法治,爱国,敬业,诚信,友善,感谢" data-fontsize="15px" data-random="false" async="async"></script><script>(function(d, w, c) {
+    w.ChatraID = 'zgYNWkNCSATLRhpg4';
+    var s = d.createElement('script');
+    w[c] = w[c] || function() {
+        (w[c].q = w[c].q || []).push(arguments);
+    };
+    s.async = true;
+    s.src = 'https://call.chatra.io/chatra.js';
+    if (d.head) d.head.appendChild(s);
+})(document, window, 'Chatra');
+
+if (true) {
+  var chatBtnFn = () => {
+    var chatBtn = document.getElementById("chat_btn")
+    chatBtn.addEventListener("click", function(){
+      Chatra('openChat')
+    });
+  }
+  chatBtnFn()
+} else {
+  if (true) {
+    function chatBtnHide () {
+      Chatra('hide')
+    }
+    function chatBtnShow () {
+      Chatra('show')
+    }
+  }
+}</script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
