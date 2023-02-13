@@ -1,0 +1,629 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>操作系统期末冲刺 | jjyaoao's Home</title><meta name="keywords" content="操作系统期末冲刺"><meta name="author" content="jjyaoao,jjyaoao@126.com"><meta name="copyright" content="jjyaoao"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="又到一年期末季，那就开冲吧！">
+<meta property="og:type" content="article">
+<meta property="og:title" content="操作系统期末冲刺">
+<meta property="og:url" content="http://jjyaoao.space/2023/02/09/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/index.html">
+<meta property="og:site_name" content="jjyaoao&#39;s Home">
+<meta property="og:description" content="又到一年期末季，那就开冲吧！">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://s2.loli.net/2022/04/06/gUCqjhsOneK5DH7.png">
+<meta property="article:published_time" content="2023-02-09T03:38:11.000Z">
+<meta property="article:modified_time" content="2023-02-13T05:02:20.298Z">
+<meta property="article:author" content="jjyaoao">
+<meta property="article:tag" content="遗忘指南">
+<meta property="article:tag" content="学习笔记">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://s2.loli.net/2022/04/06/gUCqjhsOneK5DH7.png"><link rel="shortcut icon" href="https://s2.loli.net/2022/01/09/le6jcmPKuJihDdU.jpg"><link rel="canonical" href="http://jjyaoao.space/2023/02/09/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//hm.baidu.com"/><link rel="preconnect" href="//fonts.googleapis.com" crossorigin=""/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.10.5/dist/instantsearch.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/instantsearch.js@2.10.5/dist/instantsearch.min.js" defer></script><script>var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?06fb7a80772d98cbf9e7beeb76e262e4";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web&amp;display=swap" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: {"appId":"JOZPQM4N5F","apiKey":"42451c032f2166ed9800520810e2d223","indexName":"jjyaoao-blog","hits":{"per_page":10},"languages":{"input_placeholder":"搜索文章","hits_empty":"找不到您查询的内容：${query}","hits_stats":"找到 ${hits} 条结果，用时 ${time} 毫秒"}},
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: true,
+    post: true
+  },
+  runtime: '天',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: {"chs_to_cht":"你已切换为繁体","cht_to_chs":"你已切换为简体","day_to_night":"你已切换为深色模式","night_to_day":"你已切换为浅色模式","bgLight":"#49b1f5","bgDark":"#121212","position":"bottom-left"},
+  source: {
+    jQuery: 'https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js',
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/js/jquery.justifiedGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/css/justifiedGallery.min.css'
+    },
+    fancybox: {
+      js: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isanchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '操作系统期末冲刺',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2023-02-13 13:02:20'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if (GLOBAL_CONFIG_SITE.isHome && /iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><meta name="generator" content="Hexo 6.0.0"></head><body><div id="loading-box"><div class="loading-left-bg"></div><div class="loading-right-bg"></div><div class="spinner-box"><div class="configure-border-1"><div class="configure-core"></div></div><div class="configure-border-2"><div class="configure-core"></div></div><div class="loading-word">加载中...</div></div></div><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://s2.loli.net/2022/01/09/le6jcmPKuJihDdU.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data"><div class="data-item is-center"><div class="data-item-link"><a href="/archives/"><div class="headline">文章</div><div class="length-num">63</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/tags/"><div class="headline">标签</div><div class="length-num">10</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/categories/"><div class="headline">分类</div><div class="length-num">79</div></a></div></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fa fa-heartbeat"></i><span> 清单</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音樂</span></a></li><li><a class="site-page child" href="/Gallery/"><i class="fa-fw fas fa-images"></i><span> 照片</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://s2.loli.net/2022/04/06/gUCqjhsOneK5DH7.png')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">jjyaoao's Home</a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fa fa-heartbeat"></i><span> 清单</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音樂</span></a></li><li><a class="site-page child" href="/Gallery/"><i class="fa-fw fas fa-images"></i><span> 照片</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">操作系统期末冲刺</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2023-02-09T03:38:11.000Z" title="发表于 2023-02-09 11:38:11">2023-02-09</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-02-13T05:02:20.298Z" title="更新于 2023-02-13 13:02:20">2023-02-13</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E8%AF%BE%E7%A8%8B/">课程</a><i class="fas fa-angle-right post-meta-separator"></i><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E8%AF%BE%E7%A8%8B/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/">操作系统</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">3.1k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>9分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="操作系统期末冲刺"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h1 id="判断题"><a href="#判断题" class="headerlink" title="判断题"></a>判断题</h1><h2 id="第一章"><a href="#第一章" class="headerlink" title="第一章"></a>第一章</h2><p>在批理系统中引入多道程序设计后，会使系统具有以下特征：间断性、失去封闭性、不可再现性</p>
+<p>T</p>
+<p>在现代操作系统中，“虚拟”是指通过某种技术把一个物理实体变为若干个逻辑上的对应物</p>
+<p>T</p>
+<h2 id="第二章"><a href="#第二章" class="headerlink" title="第二章"></a>第二章</h2><p><img src="/2023/02/09/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230210143537277.png" alt="image-20230210143537277"></p>
+<p><strong>临界资源是</strong>一次仅允许一个进程使用的<strong>共享资源</strong>，属于临界资源的硬件有打印机、磁带机等,软件有消息缓冲队列、变量、数组、缓冲区等。诸进程间应<strong>采取互斥</strong>方式，<strong>实现</strong>对这种资源的<strong>共享</strong>。</p>
+<p><img src="/2023/02/09/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230210144049805.png" alt="image-20230210144049805"></p>
+<p><img src="/2023/02/09/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230210144055749.png" alt="image-20230210144055749"></p>
+<p><img src="/2023/02/09/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230210144545852.png" alt="image-20230210144545852"></p>
+<p><img src="/2023/02/09/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230210144555613.png" alt="image-20230210144555613"></p>
+<p>线程中的实体基本上不拥有<strong>系统资源，只是有一点必不可少的、能保证独立运行的资源</strong></p>
+<p><img src="/2023/02/09/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230210144637015.png" alt="image-20230210144637015"></p>
+<p><img src="/2023/02/09/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230210144641625.png" alt="image-20230210144641625"></p>
+<p><strong>线程不拥有 系统资源</strong> ，只有 运行 必须的一些 数据结构 ；它与父进程的其它线程共享该进程所拥有的全部资源。 线程可以创建和 撤消 线程（子线程），从而实现程序的并发执行。</p>
+<p><img src="/2023/02/09/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230210144815089.png" alt="image-20230210144815089"></p>
+<p><img src="/2023/02/09/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230210144820860.png" alt="image-20230210144820860"></p>
+<p><img src="/2023/02/09/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230210144828718.png" alt="image-20230210144828718"></p>
+<p>进程是程序运行的基本单位，对于多内核的计算机，<strong>多个进程可以在多内核上同时运行，提高程序的并发性</strong>。</p>
+<p><img src="/2023/02/09/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230210144906986.png" alt="image-20230210144906986"></p>
+<p><img src="/2023/02/09/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230210144913715.png" alt="image-20230210144913715"></p>
+<p><img src="/2023/02/09/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230210144952253.png" alt="image-20230210144952253"></p>
+<p><strong>PCB</strong>是由<strong>操作系统</strong>初启时<strong>创建</strong>的，并控制进程的执行过程，不是用户创建的</p>
+<p><img src="/2023/02/09/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230210145019344.png" alt="image-20230210145019344"></p>
+<p>完成使命的进程<strong>需要终止自己并告知操作系统</strong>，<strong>操作系统</strong>将对进程进行<strong>善后</strong>处理，之后将回收进程所占有的全部资源，最后撤销其进程控制块</p>
+<p><img src="/2023/02/09/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230210145310749.png" alt="image-20230210145310749"></p>
+<p>当一个进程希望与另一进程通信时，就<strong>创建</strong>一个链接两个进程的<strong>信箱</strong>，发送进程把信件投入信箱，而接收进程可以在任何时刻取走信件。</p>
+<p><img src="/2023/02/09/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230210150523181.png" alt="image-20230210150523181"></p>
+<p><strong>进程</strong>是程序在一个数据集合上运行的过程，它是系统进行<strong>统一资源分配和调度</strong>的一个独立单位。<strong>线程</strong>是进程的一个实体，是<strong>CPU调度和分派的基本单位</strong>，它是比进程更小的<strong>能独立运行</strong>的基本单位。</p>
+<p><img src="/2023/02/09/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230210150932591.png" alt="image-20230210150932591"></p>
+<p><img src="/2023/02/09/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230210151017451.png" alt="image-20230210151017451"></p>
+<p><img src="/2023/02/09/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230210151219465.png" alt="image-20230210151219465"></p>
+<p>响应比=（等待时间+服务时间）/服务时间，当作业的等待时间相同时，则要求服务时间越短，其响应比越高，有利于短作业。对于长作业，作业的响应比可以随等待时间的增加而提高，当其等待时间足够长时，其响应比便可升到很高，从而也可获得处理机。克服了饥饿状态，兼顾了长作业。</p>
+<h2 id="第三章"><a href="#第三章" class="headerlink" title="第三章"></a>第三章</h2><h2 id="第四章"><a href="#第四章" class="headerlink" title="第四章"></a>第四章</h2><p><img src="/2023/02/09/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230210174419914.png" alt="image-20230210174419914"></p>
+<p>信息共享是段式存储管理的优点，<strong>分页不易实现信息共享</strong>。一个<strong>页</strong>可能有<strong>多个程序段</strong></p>
+<p><img src="/2023/02/09/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230210174932393.png" alt="image-20230210174932393"></p>
+<p>分区存储管理要求对作业分配连续的内存单元 </p>
+<p><img src="/2023/02/09/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230210175134325.png" alt="image-20230210175134325"></p>
+<p>动态重定位：在程序运行过程中要访问数据时再进行逻辑地址与物理地址的变换（即在逐条指令执行时完成地址映射）。</p>
+<p><img src="/2023/02/09/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230210175146120.png" alt="image-20230210175146120"></p>
+<p>在计算机操作系统中，作业(Job)是<strong>计算机操作员（或称为作业调度程序的程序）提供给操作系统执行任务的工作单元</strong>。作业通常以批处理(后台)模式运行, 而非普通用户正常使用操作系统的交互式模式。</p>
+<p><img src="/2023/02/09/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230210180012801.png" alt="image-20230210180012801"></p>
+<p>虚拟存储器是指具有请求调入功能和置换功能，能从逻辑上对内存容量加以扩充的一种存储器系统，一般采用请求分页式，请求分段式或段页式虚拟存储器系统，请求分页技术能够支持虚拟存储器的技术</p>
+<p><img src="/2023/02/09/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230210175758626.png" alt="image-20230210175758626"></p>
+<p>3次，第一次：根据<strong>段号</strong>在段表中找到页表长度和对应段页表起始地址，第二次，根据<strong>页号</strong>和页表长度以及页表起始地址找到对应块号，第三次，根据<strong>块号</strong>和页内偏移拼成的物理地址找到数据。</p>
+<p><img src="/2023/02/09/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230210180319173.png" alt="image-20230210180319173"></p>
+<h2 id="第五章"><a href="#第五章" class="headerlink" title="第五章"></a>第五章</h2><p><img src="/2023/02/09/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230212105721491.png" alt="image-20230212105721491"></p>
+<p>对换空间的管理：</p>
+<p>具有对换功能的操作系统通常将外存分为文件区和对换区。 文件区用于存放文件，对换区存放从内存中换出的进程</p>
+<p><img src="/2023/02/09/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230212105936059.png" alt="image-20230212105936059"></p>
+<p><img src="/2023/02/09/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230212110012757.png" alt="image-20230212110012757"></p>
+<h2 id="第六章"><a href="#第六章" class="headerlink" title="第六章"></a>第六章</h2><p><img src="/2023/02/09/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230212164350796.png" alt="image-20230212164350796"></p>
+<p>前半句正确，后半句是通过SPOOLING实现的</p>
+<p><img src="/2023/02/09/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230212164534144.png" alt="image-20230212164534144"></p>
+<p><img src="/2023/02/09/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230212164542996.png" alt="image-20230212164542996"></p>
+<p>设备分配中数据结构要用到：系统设备表（SDT）、设备控制表（DCT）、控制器控制表（COCT）、通道控制表（CHCT）。在整个系统中，有<strong>一张</strong>系统设备表（<strong>SDT</strong>），用于记录系统中全部设备的信息。系统为<strong>每一个设备都配置了一张</strong>设备控制表（<strong>DCT</strong>），用于记录该设备的情况。</p>
+<p>逻辑设备表的设置问题：</p>
+<ol>
+<li>整个系统只设置一张<strong>LUT</strong>，<strong>用于将应用程序中所使用的逻辑设备名映射为物理设备名</strong>，不允许在LUT中具有相同的逻辑设备名，这就要求所有用户都不能使用相同的逻辑设备名，多用户环境下很难做到，所以适用于单用户系统。</li>
+<li>为每个用户设置一张LUT，常用于多用户系统。</li>
+</ol>
+<p><strong>LUT-&gt;SDT-&gt;DCT-&gt;COCT-&gt;CHCT</strong></p>
+<p><img src="/2023/02/09/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230212165151316.png" alt="image-20230212165151316"></p>
+<p><img src="/2023/02/09/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230212165142815.png" alt="image-20230212165142815"></p>
+<p><img src="/2023/02/09/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230212165220409.png" alt="image-20230212165220409"></p>
+<h2 id="第七章"><a href="#第七章" class="headerlink" title="第七章"></a>第七章</h2><p>对顺序文件进行检索时，首先从FCB中读出文件的第一个盘块号；而对索引文件进行检索时，应先从FCB中读出文件索引表的始址。</p>
+<p><img src="/2023/02/09/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230212173958356.png" alt="image-20230212173958356"></p>
+<p><img src="/2023/02/09/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230212174205415.png" alt="image-20230212174205415"></p>
+<p>是物理记录</p>
+<p><img src="/2023/02/09/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230212174239956.png" alt="image-20230212174239956"></p>
+<p><img src="/2023/02/09/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230212174412255.png" alt="image-20230212174412255"></p>
+<p>在利用符号链方式实现文件共享时,只是文件主才拥有指向其索引结点的指针;而共享该文件的其他用户则只有该文件的路径名,并不拥有指向其索引结点的指针。</p>
+<p><img src="/2023/02/09/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230212174616402.png" alt="image-20230212174616402"></p>
+<p><img src="/2023/02/09/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230212174623114.png" alt="image-20230212174623114"></p>
+<p>位示图主要用于磁盘空间的管理，用<strong>二进制表示磁盘的使用的使用情况</strong>，0 表示对应的磁盘块空闲，1表示对应的磁盘块已经分配</p>
+<p><img src="/2023/02/09/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230212174700917.png" alt="image-20230212174700917"></p>
+<p><img src="/2023/02/09/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230212174739348.png" alt="image-20230212174739348"></p>
+<p>存取控制表一共就一张</p>
+<p><img src="/2023/02/09/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230212174850543.png" alt="image-20230212174850543"></p>
+<h1 id="单选题"><a href="#单选题" class="headerlink" title="单选题"></a>单选题</h1><h2 id="第一章-1"><a href="#第一章-1" class="headerlink" title="第一章"></a>第一章</h2><p>操作系统是运行在计算机（ ）系统上的最基本的系统软件</p>
+<p>A.</p>
+<p>数据库</p>
+<p>B.</p>
+<p>硬盘</p>
+<p>C.</p>
+<p><strong>裸机</strong></p>
+<p>D.</p>
+<p>内核</p>
+<p>OS最基本的特征是</p>
+<p>A.</p>
+<p><strong>并发性</strong></p>
+<p>B.</p>
+<p>共享性</p>
+<p>C.</p>
+<p>虚拟性</p>
+<p>D.</p>
+<p>异步性</p>
+<p>若干个事件在同一时刻发生称为</p>
+<p>A.</p>
+<p><strong>并行</strong></p>
+<p>若干个事件在同一时间间隔内发生称为</p>
+<p>并发</p>
+<p>下列哪一项不是分时系统的基本特征</p>
+<p><img src="/2023/02/09/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230209121057654.png" alt="image-20230209121057654"></p>
+<p>A.</p>
+<p>同时性</p>
+<p>B.</p>
+<p>独立性</p>
+<p>C.</p>
+<p>实时性</p>
+<p>D.</p>
+<p>交互性</p>
+<p>实时操作系统追求的目标是</p>
+<p>快速响应</p>
+<p><img src="/2023/02/09/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230209121029263.png" alt="image-20230209121029263"></p>
+<p>批处理系统的主要缺点是</p>
+<p>B.</p>
+<p>失去了交互性</p>
+<p>引入多道程序的目的在于</p>
+<p>A.</p>
+<p>充分利用CPU，减少CPU等待时间</p>
+<p>在分时系统中，时间片一定，（ ），响应时间越长</p>
+<p>B.</p>
+<p>用户数越多</p>
+<p>操作系统中采用缓冲技术的目的是为了增强系统（ ）的能力</p>
+<p>D.</p>
+<p>并行操作</p>
+<p>关于操作系统的叙述下列哪项是不正确的</p>
+<p>能方便用户编程的程序</p>
+<p>操作系统的主要职责是管理计算机硬件资源和管理用户程序的执行。它不直接方便用户编程，但是它提供了一些编程接口和库函数，使得用户可以使用它们来开发自己的程序。</p>
+<p>以下哪个选项不属于多道批处理系统的优点</p>
+<p>C.</p>
+<p>缩短作业周转时间</p>
+<h2 id="第二章-1"><a href="#第二章-1" class="headerlink" title="第二章"></a>第二章</h2><p><img src="/2023/02/09/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230210152141591.png" alt="image-20230210152141591"></p>
+<p><img src="/2023/02/09/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230210152207443.png" alt="image-20230210152207443"></p>
+<p><img src="/2023/02/09/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230210152222374.png" alt="image-20230210152222374"></p>
+<p><img src="/2023/02/09/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230210152628647.png" alt="image-20230210152628647"></p>
+<p><img src="/2023/02/09/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230210152639177.png" alt="image-20230210152639177"></p>
+<p><img src="/2023/02/09/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230210152656608.png" alt="image-20230210152656608"></p>
+<p><img src="/2023/02/09/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230210152716984.png" alt="image-20230210152716984"></p>
+<h2 id="第三章-1"><a href="#第三章-1" class="headerlink" title="第三章"></a>第三章</h2><p><img src="/2023/02/09/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230210162622581.png" alt="image-20230210162622581"></p>
+<p><img src="/2023/02/09/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230210164910121.png" alt="image-20230210164910121"></p>
+<h2 id="第四章-1"><a href="#第四章-1" class="headerlink" title="第四章"></a>第四章</h2><p><strong>首次适应算法</strong> (FF) :将所有空闲分区按照地址递增的次序链接，在申请内存分配时，从链首开始查找，将满足需求的第一个空闲分区分配给作业。</p>
+<p><img src="/2023/02/09/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230210181136241.png" alt="image-20230210181136241"></p>
+<p><img src="/2023/02/09/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230210181255500.png" alt="image-20230210181255500"></p>
+<p><img src="/2023/02/09/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230210181337450.png" alt="image-20230210181337450"></p>
+<p>（1）<strong>绝对装入方式</strong>，只适用于单道程序环境。 （2）可重定位装入方式，适用于多道程序环境。 （3）动态运行时装入方式，用于多道程序环境；不允许程序运行时在内存中移位置。</p>
+<p><img src="/2023/02/09/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230210205827129.png" alt="image-20230210205827129"></p>
+<p><img src="/2023/02/09/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230210205849758.png" alt="image-20230210205849758"></p>
+<p>在采用首次适应算法回收内存时，可能出现哪几种情况？应怎样处理这些情况？</p>
+<p>答：在采用首次适应算法回收内存时可能出现4种情况：</p>
+<p>（1）回收区前邻空闲区。将回收区与前邻空闲区合并，将前邻空闲区大小修改为两者之和。</p>
+<p>（2）回收区后邻空闲区。将两区合并，改后邻空闲区始址为回收区始址，大小为两者之和。</p>
+<p>（3）回收区前后均邻空闲区。将三个分区合并，修改前邻空闲区大小为三者之和。</p>
+<p>（4）回收区前后均不邻空闲区。为回收区设置空闲区表项，填入回收区始址和大小并插入空闲区队列。<br><img src="/2023/02/09/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230210210552495.png" alt="image-20230210210552495"></p>
+<p><img src="/2023/02/09/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230210210615656.png" alt="image-20230210210615656"></p>
+<p><img src="/2023/02/09/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230210210631282.png" alt="image-20230210210631282"></p>
+<p><img src="/2023/02/09/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230210210712424.png" alt="image-20230210210712424"></p>
+<p><img src="/2023/02/09/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230210210726500.png" alt="image-20230210210726500"></p>
+<p><img src="/2023/02/09/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230210210908120.png" alt="image-20230210210908120"></p>
+<p><img src="/2023/02/09/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230210210954725.png" alt="image-20230210210954725"></p>
+<p><img src="/2023/02/09/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230210211227192.png" alt="image-20230210211227192"></p>
+<h2 id="第五章-1"><a href="#第五章-1" class="headerlink" title="第五章"></a>第五章</h2><p><img src="/2023/02/09/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230212110609010.png" alt="image-20230212110609010"></p>
+<p>虚拟存储器的特征</p>
+<ul>
+<li>多次性（<strong>最基本特征</strong>）：多次性是虚拟存储器最重要的特征。指一个作业被分成多次调入内存运行。</li>
+<li>对换性：对换性指允许在作业运行过程中进行换进、换出。换进、换出可提高内存利用率</li>
+<li>虚拟性（最本质特征）：虚拟性是指能够从逻辑上扩充内存容量，使用户所看到的内存容量远大于实际内存容量。虚拟性是虚拟存储器所表现出来的最重要的特征，也是实现虚拟存储器<strong>最重要的目标</strong>。</li>
+<li>注：虚拟性以多次性和对换性为基础，而多次性和对换性又是离散分配为基础。</li>
+</ul>
+<p><img src="/2023/02/09/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230212110429572.png" alt="image-20230212110429572"></p>
+<p><img src="/2023/02/09/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230212110837454.png" alt="image-20230212110837454"></p>
+<p><img src="/2023/02/09/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230212111014196.png" alt="image-20230212111014196"></p>
+<p><img src="/2023/02/09/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230212111143038.png" alt="image-20230212111143038"></p>
+<p><img src="/2023/02/09/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230212111239077.png" alt="image-20230212111239077"></p>
+<p><img src="/2023/02/09/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230212111249669.png" alt="image-20230212111249669"></p>
+<p>页面缓冲也称Clock</p>
+<p><img src="/2023/02/09/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230212111938515.png" alt="image-20230212111938515"></p>
+<h2 id="第六章-1"><a href="#第六章-1" class="headerlink" title="第六章"></a>第六章</h2><p><img src="/2023/02/09/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230212165454286.png" alt="image-20230212165454286"></p>
+<p><img src="/2023/02/09/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230212165540617.png" alt="image-20230212165540617"></p>
+<p><img src="/2023/02/09/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230212165547529.png" alt="image-20230212165547529"></p>
+<p><img src="/2023/02/09/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230212165716609.png" alt="image-20230212165716609"></p>
+<p><img src="/2023/02/09/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230212165738943.png" alt="image-20230212165738943"></p>
+<p><img src="/2023/02/09/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230212165821291.png" alt="image-20230212165821291"></p>
+<p><img src="/2023/02/09/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230212165851006.png" alt="image-20230212165851006"></p>
+<p><img src="/2023/02/09/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230212170008285.png" alt="image-20230212170008285"></p>
+<h2 id="第七章-1"><a href="#第七章-1" class="headerlink" title="第七章"></a>第七章</h2><p><img src="/2023/02/09/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230212180008886.png" alt="image-20230212180008886"></p>
+<p><img src="/2023/02/09/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230212180706264.png" alt="image-20230212180706264"></p>
+<p><img src="/2023/02/09/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230212180758505.png" alt="image-20230212180758505"></p>
+<p><img src="/2023/02/09/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230212180824092.png" alt="image-20230212180824092"></p>
+<p><img src="/2023/02/09/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230212181041855.png" alt="image-20230212181041855"></p>
+<p><img src="/2023/02/09/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230212181903981.png" alt="image-20230212181903981"></p>
+<p><img src="/2023/02/09/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230212182008282.png" alt="image-20230212182008282"></p>
+<p><img src="/2023/02/09/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230212182054698.png" alt="image-20230212182054698"></p>
+<p><img src="/2023/02/09/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230212182706095.png" alt="image-20230212182706095"></p>
+<p><img src="/2023/02/09/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230212182746585.png" alt="image-20230212182746585"></p>
+<h1 id="多选题"><a href="#多选题" class="headerlink" title="多选题"></a>多选题</h1><h2 id="第一章-2"><a href="#第一章-2" class="headerlink" title="第一章"></a>第一章</h2><p>计算机操作系统是方便用户、管理和控制计算机（ ）资源的系统软件</p>
+<p>A.</p>
+<p>文件</p>
+<p>B.</p>
+<p>数据</p>
+<p>C.</p>
+<p><strong>软件</strong></p>
+<p>D.</p>
+<p><strong>硬件</strong></p>
+<p>OS具有哪些基本特征</p>
+<p>A.</p>
+<p><strong>并发性</strong></p>
+<p>B.</p>
+<p><strong>共享性</strong></p>
+<p>C.</p>
+<p><strong>虚拟性</strong></p>
+<p>D.</p>
+<p><strong>异步性</strong></p>
+<p>在微内核中通常提供了哪些功能？</p>
+<p>A.</p>
+<p><strong>进程（线程）管理</strong></p>
+<p>B.</p>
+<p><strong>低级存储器管理</strong></p>
+<p>C.</p>
+<p>文件管理</p>
+<p>D.</p>
+<p><strong>中断</strong></p>
+<p>E.</p>
+<p><strong>陷入处理</strong></p>
+<p>操作系统的几大主要功能是</p>
+<p>A.</p>
+<p><strong>CPU管理</strong></p>
+<p>B.</p>
+<p>硬盘管理</p>
+<p>C.</p>
+<p><strong>用户接口</strong></p>
+<p>D.</p>
+<p><strong>文件系统</strong></p>
+<p>E.</p>
+<p>进程管理</p>
+<p>F.</p>
+<p><strong>存储管理</strong></p>
+<p>G.</p>
+<p><strong>设备管理</strong></p>
+<p>在微内核中通常提供了哪些功能？</p>
+<p>A.</p>
+<p><strong>进程（线程）管理</strong></p>
+<p>B.</p>
+<p><strong>低级存储器管理</strong></p>
+<p>C.</p>
+<p>文件管理</p>
+<p>D.</p>
+<p><strong>中断</strong></p>
+<p>E.</p>
+<p><strong>陷入处理</strong></p>
+<h2 id="第二章-2"><a href="#第二章-2" class="headerlink" title="第二章"></a>第二章</h2><p><img src="/2023/02/09/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230210152838971.png" alt="image-20230210152838971"></p>
+<p><img src="/2023/02/09/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230210152858368.png" alt="image-20230210152858368"></p>
+<p><img src="/2023/02/09/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230210153032311.png" alt="image-20230210153032311"></p>
+<p><img src="/2023/02/09/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230210153108317.png" alt="image-20230210153108317"></p>
+<p><img src="/2023/02/09/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230210153144351.png" alt="image-20230210153144351"></p>
+<p><img src="/2023/02/09/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230210153325653.png" alt="image-20230210153325653"></p>
+<p><img src="/2023/02/09/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230210153451114.png" alt="image-20230210153451114"></p>
+<p><img src="/2023/02/09/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230210153506226.png" alt="image-20230210153506226"></p>
+<p><img src="/2023/02/09/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230210153523629.png" alt="image-20230210153523629"></p>
+<h2 id="第三章-2"><a href="#第三章-2" class="headerlink" title="第三章"></a>第三章</h2><p><img src="/2023/02/09/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230210165310857.png" alt="image-20230210165310857"></p>
+<p><img src="/2023/02/09/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230210165416027.png" alt="image-20230210165416027"></p>
+<p>批处理系统的调度算法：短作业优先、优先权、高响应比优先、多级反馈队列调度算法。</p>
+<p>分时系统的调度算法：时间片轮转法。</p>
+<p>实时系统的调度算法：最早截止时间优先即EDF、最低松弛度优先即LLF算法。</p>
+<p><img src="/2023/02/09/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230210165528093.png" alt="image-20230210165528093"></p>
+<h2 id="第四章-2"><a href="#第四章-2" class="headerlink" title="第四章"></a>第四章</h2><p><img src="/2023/02/09/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230210211255294.png" alt="image-20230210211255294"></p>
+<p><img src="/2023/02/09/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230210211309108.png" alt="image-20230210211309108"></p>
+<p><img src="/2023/02/09/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230210211425454.png" alt="image-20230210211425454"></p>
+<p><img src="/2023/02/09/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230210211529559.png" alt="image-20230210211529559"></p>
+<p><img src="/2023/02/09/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230210211750201.png" alt="image-20230210211750201"></p>
+<p>所谓顺序搜索，是指按表或链的组织顺序， 检索表或链上记录的空闲分区，去寻找一个最符合算法的、大小能满足要求的分区。分区存储管理中常采用的分配策略有：首次适应算法、循环首次适应算法、最佳适应算法、最坏适应算法。</p>
+<p><img src="/2023/02/09/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230210211826394.png" alt="image-20230210211826394"></p>
+<p><img src="/2023/02/09/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230210211857039.png" alt="image-20230210211857039"></p>
+<h2 id="第五章-2"><a href="#第五章-2" class="headerlink" title="第五章"></a>第五章</h2><p><img src="/2023/02/09/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230212112022995.png" alt="image-20230212112022995"></p>
+<p><img src="/2023/02/09/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230212112045792.png" alt="image-20230212112045792"></p>
+<h2 id="第六章-2"><a href="#第六章-2" class="headerlink" title="第六章"></a>第六章</h2><p><img src="/2023/02/09/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230212170606424.png" alt="image-20230212170606424"></p>
+<p><img src="/2023/02/09/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230212170846038.png" alt="image-20230212170846038"></p>
+<p><img src="/2023/02/09/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230212170858230.png" alt="image-20230212170858230"></p>
+<p><img src="/2023/02/09/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230212171010724.png" alt="image-20230212171010724"></p>
+<p><img src="/2023/02/09/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230212171035151.png" alt="image-20230212171035151"></p>
+<p><img src="/2023/02/09/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230212171254840.png" alt="image-20230212171254840"></p>
+<p><img src="/2023/02/09/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230212171354957.png" alt="image-20230212171354957"></p>
+<p><img src="/2023/02/09/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230212171412925.png" alt="image-20230212171412925"></p>
+<p><img src="/2023/02/09/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230212171550157.png" alt="image-20230212171550157"></p>
+<p><img src="/2023/02/09/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230212171716000.png" alt="image-20230212171716000"></p>
+<p><img src="/2023/02/09/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230212171824454.png" alt="image-20230212171824454"></p>
+<p><img src="/2023/02/09/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230212171834814.png" alt="image-20230212171834814"></p>
+<h2 id="第七章-2"><a href="#第七章-2" class="headerlink" title="第七章"></a>第七章</h2><p><img src="/2023/02/09/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230212183040892.png" alt="image-20230212183040892"></p>
+<p><img src="/2023/02/09/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230212183047628.png" alt="image-20230212183047628"></p>
+<p><img src="/2023/02/09/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230212183915388.png" alt="image-20230212183915388"></p>
+<p><img src="/2023/02/09/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230212183921118.png" alt="image-20230212183921118"></p>
+<h1 id="填空题"><a href="#填空题" class="headerlink" title="填空题"></a>填空题</h1><h2 id="第一章-3"><a href="#第一章-3" class="headerlink" title="第一章"></a>第一章</h2><p>为什么说OS实现了对计算机资源的抽象？</p>
+<p>(1) OS首先在裸机上覆盖一层    C  实现了对计算机硬件操作的第一层次抽象</p>
+<p>(2) 在第一层软件上再覆盖 B 实现了对硬件资源操作的第二层次抽象</p>
+<p>(3) OS通过在计算机硬件上安装多层 A，增强了系统功能，隐藏了对硬件操作的细节，由它们共同实现了对计算机资源的抽象</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">(A) 系统软件</span><br><span class="line">(B) 文件管理软件</span><br><span class="line">(C) I/O设备管理软件</span><br><span class="line">(D) 应用软件</span><br></pre></td></tr></table></figure>
+
+<p><img src="/2023/02/09/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230210142353360.png" alt="image-20230210142353360"></p>
+<p><img src="/2023/02/09/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230210142440540.png" alt="image-20230210142440540"></p>
+<p><img src="/2023/02/09/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230210142845056.png" alt="image-20230210142845056"></p>
+<p><img src="/2023/02/09/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230210142927983.png" alt="image-20230210142927983"></p>
+<p><img src="/2023/02/09/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230210143150528.png" alt="image-20230210143150528"></p>
+<h2 id="第二章-3"><a href="#第二章-3" class="headerlink" title="第二章"></a>第二章</h2><p><img src="/2023/02/09/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230210153737062.png" alt="image-20230210153737062"></p>
+<p><img src="/2023/02/09/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230210153848191.png" alt="image-20230210153848191"></p>
+<p><img src="/2023/02/09/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230210154125320.png" alt="image-20230210154125320"></p>
+<p><img src="/2023/02/09/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230210154215624.png" alt="image-20230210154215624"></p>
+<p>D    A    E    B    C</p>
+<p><img src="/2023/02/09/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230210154621898.png" alt="image-20230210154621898"></p>
+<p><img src="/2023/02/09/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230210155044791.png" alt="image-20230210155044791"></p>
+<p><img src="/2023/02/09/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230210161826939.png" alt="image-20230210161826939"></p>
+<p><img src="/2023/02/09/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230210161837283.png" alt="image-20230210161837283"></p>
+<p><img src="/2023/02/09/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230210155912866.png" alt="image-20230210155912866"></p>
+<h2 id="第三章-3"><a href="#第三章-3" class="headerlink" title="第三章"></a>第三章</h2><p><img src="/2023/02/09/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230210170621182.png" alt="image-20230210170621182"></p>
+<p><img src="/2023/02/09/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230210170747375.png" alt="image-20230210170747375"></p>
+<p>一个理想的作业调度算法应该是既能（提高系统效率或吞吐量高）又能使进入系统的作业（及时得到计算结果 周转时间短）.</p>
+<p><img src="/2023/02/09/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230210171230679.png" alt="image-20230210171230679"></p>
+<p><img src="/2023/02/09/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230210171247277.png" alt="image-20230210171247277"></p>
+<p><img src="/2023/02/09/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230210171302476.png" alt="image-20230210171302476"></p>
+<p><img src="/2023/02/09/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230210171351543.png" alt="image-20230210171351543"></p>
+<p><img src="/2023/02/09/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230210172000117.png" alt="image-20230210172000117"></p>
+<p><img src="/2023/02/09/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230210172009385.png" alt="image-20230210172009385"></p>
+<p><img src="/2023/02/09/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230210174205548.png" alt="image-20230210174205548"></p>
+<h2 id="第四章-3"><a href="#第四章-3" class="headerlink" title="第四章"></a>第四章</h2><p><img src="/2023/02/09/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230210212254010.png" alt="image-20230210212254010"></p>
+<p><img src="/2023/02/09/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230210212448737.png" alt="image-20230210212448737"></p>
+<p><img src="/2023/02/09/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230210212521423.png" alt="image-20230210212521423"></p>
+<p><img src="/2023/02/09/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230210212703657.png" alt="image-20230210212703657"></p>
+<p><img src="/2023/02/09/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230210212925493.png" alt="image-20230210212925493"></p>
+<p><img src="/2023/02/09/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230210212948509.png" alt="image-20230210212948509"></p>
+<p><img src="/2023/02/09/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230210213014712.png" alt="image-20230210213014712"></p>
+<p><img src="/2023/02/09/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230210213126623.png" alt="image-20230210213126623"></p>
+<p><img src="/2023/02/09/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230210214608775.png" alt="image-20230210214608775"></p>
+<p><img src="/2023/02/09/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230210214827823.png" alt="image-20230210214827823"></p>
+<p><img src="/2023/02/09/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230210214843694.png" alt="image-20230210214843694"></p>
+<p><img src="/2023/02/09/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230210215053542.png" alt="image-20230210215053542"></p>
+<p><img src="/2023/02/09/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230210215109804.png" alt="image-20230210215109804"></p>
+<p><img src="/2023/02/09/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230210215139208.png" alt="image-20230210215139208"></p>
+<p><img src="/2023/02/09/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230210215147068.png" alt="image-20230210215147068"></p>
+<p><img src="/2023/02/09/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230210215343921.png" alt="image-20230210215343921"></p>
+<p><img src="/2023/02/09/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230210215354169.png" alt="image-20230210215354169"></p>
+<p><img src="/2023/02/09/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230210215420566.png" alt="image-20230210215420566"></p>
+<p><img src="/2023/02/09/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230210215501779.png" alt="image-20230210215501779"></p>
+<p><img src="/2023/02/09/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230210220253636.png" alt="image-20230210220253636"></p>
+<p><img src="/2023/02/09/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230210221323651.png" alt="image-20230210221323651"></p>
+<p><img src="/2023/02/09/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230210223331120.png" alt="image-20230210223331120"></p>
+<h2 id="第五章-3"><a href="#第五章-3" class="headerlink" title="第五章"></a>第五章</h2><p>加载时刻为装入时刻</p>
+<p><img src="/2023/02/09/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230212121240955.png" alt="image-20230212121240955"></p>
+<p><img src="/2023/02/09/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230212121409540.png" alt="image-20230212121409540"></p>
+<p><img src="/2023/02/09/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230212121504808.png" alt="image-20230212121504808"></p>
+<p><img src="/2023/02/09/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230212113125223.png" alt="image-20230212113125223"></p>
+<p><img src="/2023/02/09/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230212113148789.png" alt="image-20230212113148789"><br><img src="/2023/02/09/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230212124459815.png" alt="image-20230212124459815"></p>
+<p><img src="/2023/02/09/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230212150907625.png" alt="image-20230212150907625"></p>
+<p><img src="/2023/02/09/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230212150921239.png" alt="image-20230212150921239"></p>
+<p><img src="/2023/02/09/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230212202117877.png" alt="image-20230212202117877"></p>
+<p><img src="/2023/02/09/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230212163837765.png" alt="image-20230212163837765"></p>
+<p><img src="/2023/02/09/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230212163850419.png" alt="image-20230212163850419"></p>
+<h2 id="第六章-3"><a href="#第六章-3" class="headerlink" title="第六章"></a>第六章</h2><p><img src="/2023/02/09/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230212172032036.png" alt="image-20230212172032036"></p>
+<p><img src="/2023/02/09/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230212172104129.png" alt="image-20230212172104129"></p>
+<p><img src="/2023/02/09/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230212172403213.png" alt="image-20230212172403213"></p>
+<p><img src="/2023/02/09/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230212172428496.png" alt="image-20230212172428496"></p>
+<p><img src="/2023/02/09/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230212172558341.png" alt="image-20230212172558341"></p>
+<p><img src="/2023/02/09/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230212172757148.png" alt="image-20230212172757148"></p>
+<p><img src="/2023/02/09/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230212173037156.png" alt="image-20230212173037156"></p>
+<p><img src="/2023/02/09/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230212173238243.png" alt="image-20230212173238243"></p>
+<p><img src="/2023/02/09/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230212173323696.png" alt="image-20230212173323696"></p>
+<p><img src="/2023/02/09/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230212173537001.png" alt="image-20230212173537001"></p>
+<p><img src="/2023/02/09/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230212173613244.png" alt="image-20230212173613244"></p>
+<p><img src="/2023/02/09/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230212173818651.png" alt="image-20230212173818651"></p>
+<p><img src="/2023/02/09/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230212173835828.png" alt="image-20230212173835828"></p>
+<h2 id="第七章-3"><a href="#第七章-3" class="headerlink" title="第七章"></a>第七章</h2><h1 id="计算题"><a href="#计算题" class="headerlink" title="计算题"></a>计算题</h1><p><img src="/2023/02/09/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230212191324052.png" alt="image-20230212191324052"></p>
+<p>时间片轮转时，注意排队的是一个队列，是有次序的，特别是10s左右的a和e，如果进程的 CPU 执行超过一个时间片，那么该进程会被抢占，并被放回到就绪队列。因此，RR调度算法是抢占的。</p>
+<p><img src="/2023/02/09/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230212191334849.png" alt="image-20230212191334849"></p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="mailto:jjyaoao@126.com">jjyaoao</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="http://jjyaoao.space/2023/02/09/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/">http://jjyaoao.space/2023/02/09/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="http://jjyaoao.space" target="_blank">jjyaoao's Home</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E9%81%97%E5%BF%98%E6%8C%87%E5%8D%97/">遗忘指南</a><a class="post-meta__tags" href="/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">学习笔记</a></div><div class="post_share"><div class="addthis_inline_share_toolbox"></div><script src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-61dbf69078ce19aa" async="async"></script></div></div><div class="post-reward"><div class="reward-button button--animated"><i class="fas fa-qrcode"></i> 打赏</div><div class="reward-main"><ul class="reward-all"><li class="reward-item"><a href="https://s2.loli.net/2022/01/09/HMjygFAKr2nPWdJ.jpg" target="_blank"><img class="post-qr-code-img" src="https://s2.loli.net/2022/01/09/HMjygFAKr2nPWdJ.jpg" alt="微信"/></a><div class="post-qr-code-desc">微信</div></li><li class="reward-item"><a href="https://s2.loli.net/2022/01/09/JL43sbhxUEOuVeM.jpg" target="_blank"><img class="post-qr-code-img" src="https://s2.loli.net/2022/01/09/JL43sbhxUEOuVeM.jpg" alt="支付宝"/></a><div class="post-qr-code-desc">支付宝</div></li></ul></div></div><nav class="pagination-post" id="pagination"><div class="next-post pull-full"><a href="/2022/12/03/Spring+mvc+boot+maven+mybatis-plus/"><img class="next-cover" src="https://s2.loli.net/2022/12/03/xfdS62aWHo4ewRO.png" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">Spring+mvc+boot+maven+mybatis-plus</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>相关推荐</span></div><div class="relatedPosts-list"><div><a href="/2022/04/15/C++%E9%A1%B9%E7%9B%AE%E5%AE%9E%E6%88%98/" title="C++项目实战"><img class="cover" src="https://s2.loli.net/2022/04/15/YXoFfbxgWZIn1SM.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-04-15</div><div class="title">C++项目实战</div></div></a></div><div><a href="/2022/08/17/22%E5%B9%B4%E5%A4%87%E6%88%98%E6%95%B0%E6%A8%A1%E5%9B%BD%E8%B5%9B/" title="2022备战国赛"><img class="cover" src="https://s2.loli.net/2022/04/15/YXoFfbxgWZIn1SM.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-08-17</div><div class="title">2022备战国赛</div></div></a></div><div><a href="/2022/09/15/Cmake+Vscode+C++%E5%BC%80%E5%8F%91/" title="Cmake+vscode+C++"><img class="cover" src="https://s2.loli.net/2022/04/15/YXoFfbxgWZIn1SM.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-09-15</div><div class="title">Cmake+vscode+C++</div></div></a></div><div><a href="/2022/09/10/Git/" title="Git"><img class="cover" src="https://s2.loli.net/2022/04/15/YXoFfbxgWZIn1SM.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-09-10</div><div class="title">Git</div></div></a></div><div><a href="/2022/08/23/Geatpy-python%E4%BC%98%E5%8C%96%E5%BA%93/" title="Geatpy-python优化库"><img class="cover" src="https://s2.loli.net/2022/04/15/YXoFfbxgWZIn1SM.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-08-23</div><div class="title">Geatpy-python优化库</div></div></a></div><div><a href="/2022/04/15/Linux%E5%AD%A6%E4%B9%A0/" title="Linux学习"><img class="cover" src="https://s2.loli.net/2022/04/15/FltTRVUfbzYIowQ.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-04-15</div><div class="title">Linux学习</div></div></a></div></div></div><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div><div id="comment-switch"><span class="first-comment">Livere</span><span class="switch-btn"></span><span class="second-comment">Valine</span></div></div><div class="comment-wrap"><div><div id="lv-container" data-id="city" data-uid="MTAyMC81NTM1OC8zMTgyNQ=="></div></div><div><div class="vcomment" id="vcomment"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%88%A4%E6%96%AD%E9%A2%98"><span class="toc-number">1.</span> <span class="toc-text">判断题</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%B8%80%E7%AB%A0"><span class="toc-number">1.1.</span> <span class="toc-text">第一章</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%BA%8C%E7%AB%A0"><span class="toc-number">1.2.</span> <span class="toc-text">第二章</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%B8%89%E7%AB%A0"><span class="toc-number">1.3.</span> <span class="toc-text">第三章</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E5%9B%9B%E7%AB%A0"><span class="toc-number">1.4.</span> <span class="toc-text">第四章</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%BA%94%E7%AB%A0"><span class="toc-number">1.5.</span> <span class="toc-text">第五章</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E5%85%AD%E7%AB%A0"><span class="toc-number">1.6.</span> <span class="toc-text">第六章</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%B8%83%E7%AB%A0"><span class="toc-number">1.7.</span> <span class="toc-text">第七章</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%8D%95%E9%80%89%E9%A2%98"><span class="toc-number">2.</span> <span class="toc-text">单选题</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%B8%80%E7%AB%A0-1"><span class="toc-number">2.1.</span> <span class="toc-text">第一章</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%BA%8C%E7%AB%A0-1"><span class="toc-number">2.2.</span> <span class="toc-text">第二章</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%B8%89%E7%AB%A0-1"><span class="toc-number">2.3.</span> <span class="toc-text">第三章</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E5%9B%9B%E7%AB%A0-1"><span class="toc-number">2.4.</span> <span class="toc-text">第四章</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%BA%94%E7%AB%A0-1"><span class="toc-number">2.5.</span> <span class="toc-text">第五章</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E5%85%AD%E7%AB%A0-1"><span class="toc-number">2.6.</span> <span class="toc-text">第六章</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%B8%83%E7%AB%A0-1"><span class="toc-number">2.7.</span> <span class="toc-text">第七章</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%A4%9A%E9%80%89%E9%A2%98"><span class="toc-number">3.</span> <span class="toc-text">多选题</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%B8%80%E7%AB%A0-2"><span class="toc-number">3.1.</span> <span class="toc-text">第一章</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%BA%8C%E7%AB%A0-2"><span class="toc-number">3.2.</span> <span class="toc-text">第二章</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%B8%89%E7%AB%A0-2"><span class="toc-number">3.3.</span> <span class="toc-text">第三章</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E5%9B%9B%E7%AB%A0-2"><span class="toc-number">3.4.</span> <span class="toc-text">第四章</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%BA%94%E7%AB%A0-2"><span class="toc-number">3.5.</span> <span class="toc-text">第五章</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E5%85%AD%E7%AB%A0-2"><span class="toc-number">3.6.</span> <span class="toc-text">第六章</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%B8%83%E7%AB%A0-2"><span class="toc-number">3.7.</span> <span class="toc-text">第七章</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%A1%AB%E7%A9%BA%E9%A2%98"><span class="toc-number">4.</span> <span class="toc-text">填空题</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%B8%80%E7%AB%A0-3"><span class="toc-number">4.1.</span> <span class="toc-text">第一章</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%BA%8C%E7%AB%A0-3"><span class="toc-number">4.2.</span> <span class="toc-text">第二章</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%B8%89%E7%AB%A0-3"><span class="toc-number">4.3.</span> <span class="toc-text">第三章</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E5%9B%9B%E7%AB%A0-3"><span class="toc-number">4.4.</span> <span class="toc-text">第四章</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%BA%94%E7%AB%A0-3"><span class="toc-number">4.5.</span> <span class="toc-text">第五章</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E5%85%AD%E7%AB%A0-3"><span class="toc-number">4.6.</span> <span class="toc-text">第六章</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%B8%83%E7%AB%A0-3"><span class="toc-number">4.7.</span> <span class="toc-text">第七章</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E8%AE%A1%E7%AE%97%E9%A2%98"><span class="toc-number">5.</span> <span class="toc-text">计算题</span></a></li></ol></div></div></div></div></main><footer id="footer" style="background-image: url('https://s2.loli.net/2022/04/06/gUCqjhsOneK5DH7.png')"><div id="footer-wrap"><div class="copyright">&copy;2022 - 2023 By jjyaoao</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div><div class="footer_custom_text">Hi, welcome to my <a target="_blank" rel="noopener" href="https://butterfly.js.org/">blog</a>!</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="chat_btn" type="button" title="rightside.chat_btn"><i class="fas fa-sms"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div id="algolia-search"><div class="search-dialog"><div class="search-dialog__title" id="algolia-search-title">Algolia</div><div id="algolia-input-panel"><div id="algolia-search-input"></div></div><hr/><div id="algolia-search-results"><div id="algolia-hits"></div><div id="algolia-pagination"></div><div id="algolia-stats"></div></div><span class="search-close-button"><i class="fas fa-times"></i></span></div><div id="search-mask"></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.js"></script><script src="/js/search/algolia.js"></script><script>var preloader = {
+  endLoading: () => {
+    document.body.style.overflow = 'auto';
+    document.getElementById('loading-box').classList.add("loaded")
+  },
+  initLoading: () => {
+    document.body.style.overflow = '';
+    document.getElementById('loading-box').classList.remove("loaded")
+
+  }
+}
+window.addEventListener('load',preloader.endLoading())</script><div class="js-pjax"><script>function loadLivere () {
+  if (typeof LivereTower === 'object') {
+    window.LivereTower.init()
+  }
+  else {
+    (function(d, s) {
+        var j, e = d.getElementsByTagName(s)[0];
+        if (typeof LivereTower === 'function') { return; }
+        j = d.createElement(s);
+        j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+        j.async = true;
+        e.parentNode.insertBefore(j, e);
+    })(document, 'script');
+  }
+}
+
+if ('Livere' === 'Livere' || !true) {
+  if (true) btf.loadComment(document.getElementById('lv-container'), loadLivere)
+  else loadLivere()
+}
+else {
+  function loadOtherComment () {
+    loadLivere()
+  }
+}</script><script>function loadValine () {
+  function initValine () {
+    const valine = new Valine(Object.assign({
+      el: '#vcomment',
+      appId: 'cFvw1zyA64uttBS5jbYY7pwH-gzGzoHsz',
+      appKey: '14rOjAUNzRyJSQt983q6gdza',
+      placeholder: 'Please leave your footprints',
+      avatar: 'monsterid',
+      meta: 'nick,mail,link'.split(','),
+      pageSize: '10',
+      lang: 'en',
+      recordIP: false,
+      serverURLs: '',
+      emojiCDN: '',
+      emojiMaps: "",
+      enableQQ: false,
+      path: window.location.pathname,
+      requiredFields: ["nick,mail"],
+      visitor: false
+    }, null))
+  }
+
+  if (typeof Valine === 'function') initValine() 
+  else getScript('https://cdn.jsdelivr.net/npm/valine/dist/Valine.min.js').then(initValine)
+}
+
+if ('Livere' === 'Valine' || !true) {
+  if (true) btf.loadComment(document.getElementById('vcomment'),loadValine)
+  else setTimeout(loadValine, 0)
+} else {
+  function loadOtherComment () {
+    loadValine()
+  }
+}</script></div><script defer="defer" id="fluttering_ribbon" mobile="true" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/canvas-fluttering-ribbon.min.js"></script><script id="canvas_nest" defer="defer" color="0,0,255" opacity="0.7" zIndex="-1" count="99" mobile="true" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/canvas-nest.min.js"></script><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/activate-power-mode.min.js"></script><script>POWERMODE.colorful = true;
+POWERMODE.shake = false;
+POWERMODE.mobile = false;
+document.body.addEventListener('input', POWERMODE);
+</script><script id="click-show-text" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/click-show-text.min.js" data-mobile="false" data-text="富强,民主,文明,和谐,自由,平等,公正,法治,爱国,敬业,诚信,友善,感谢" data-fontsize="15px" data-random="false" async="async"></script><script>(function(d, w, c) {
+    w.ChatraID = 'zgYNWkNCSATLRhpg4';
+    var s = d.createElement('script');
+    w[c] = w[c] || function() {
+        (w[c].q = w[c].q || []).push(arguments);
+    };
+    s.async = true;
+    s.src = 'https://call.chatra.io/chatra.js';
+    if (d.head) d.head.appendChild(s);
+})(document, window, 'Chatra');
+
+if (true) {
+  var chatBtnFn = () => {
+    var chatBtn = document.getElementById("chat_btn")
+    chatBtn.addEventListener("click", function(){
+      Chatra('openChat')
+    });
+  }
+  chatBtnFn()
+} else {
+  if (true) {
+    function chatBtnHide () {
+      Chatra('hide')
+    }
+    function chatBtnShow () {
+      Chatra('show')
+    }
+  }
+}</script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>

@@ -1,0 +1,466 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Matlab使用介绍 | jjyaoao's Home</title><meta name="keywords" content="Matlab"><meta name="author" content="jjyaoao,jjyaoao@126.com"><meta name="copyright" content="jjyaoao"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="Matlab">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Matlab使用介绍">
+<meta property="og:url" content="http://jjyaoao.space/2022/01/31/matlab/index.html">
+<meta property="og:site_name" content="jjyaoao&#39;s Home">
+<meta property="og:description" content="Matlab">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://s2.loli.net/2022/01/31/B4ikAOp8HDSPnhF.jpg">
+<meta property="article:published_time" content="2022-01-31T03:31:51.000Z">
+<meta property="article:modified_time" content="2022-02-26T13:50:17.040Z">
+<meta property="article:author" content="jjyaoao">
+<meta property="article:tag" content="遗忘指南">
+<meta property="article:tag" content="学习笔记">
+<meta property="article:tag" content="教程">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://s2.loli.net/2022/01/31/B4ikAOp8HDSPnhF.jpg"><link rel="shortcut icon" href="https://s2.loli.net/2022/01/09/le6jcmPKuJihDdU.jpg"><link rel="canonical" href="http://jjyaoao.space/2022/01/31/matlab/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//hm.baidu.com"/><link rel="preconnect" href="//fonts.googleapis.com" crossorigin=""/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.10.5/dist/instantsearch.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/instantsearch.js@2.10.5/dist/instantsearch.min.js" defer></script><script>var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?06fb7a80772d98cbf9e7beeb76e262e4";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web&amp;display=swap" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: {"appId":"JOZPQM4N5F","apiKey":"42451c032f2166ed9800520810e2d223","indexName":"jjyaoao-blog","hits":{"per_page":10},"languages":{"input_placeholder":"搜索文章","hits_empty":"找不到您查询的内容：${query}","hits_stats":"找到 ${hits} 条结果，用时 ${time} 毫秒"}},
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: true,
+    post: true
+  },
+  runtime: '天',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: {"chs_to_cht":"你已切换为繁体","cht_to_chs":"你已切换为简体","day_to_night":"你已切换为深色模式","night_to_day":"你已切换为浅色模式","bgLight":"#49b1f5","bgDark":"#121212","position":"bottom-left"},
+  source: {
+    jQuery: 'https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js',
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/js/jquery.justifiedGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/css/justifiedGallery.min.css'
+    },
+    fancybox: {
+      js: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isanchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'Matlab使用介绍',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2022-02-26 21:50:17'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if (GLOBAL_CONFIG_SITE.isHome && /iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><meta name="generator" content="Hexo 6.0.0"></head><body><div id="loading-box"><div class="loading-left-bg"></div><div class="loading-right-bg"></div><div class="spinner-box"><div class="configure-border-1"><div class="configure-core"></div></div><div class="configure-border-2"><div class="configure-core"></div></div><div class="loading-word">加载中...</div></div></div><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://s2.loli.net/2022/01/09/le6jcmPKuJihDdU.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data"><div class="data-item is-center"><div class="data-item-link"><a href="/archives/"><div class="headline">文章</div><div class="length-num">63</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/tags/"><div class="headline">标签</div><div class="length-num">10</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/categories/"><div class="headline">分类</div><div class="length-num">79</div></a></div></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fa fa-heartbeat"></i><span> 清单</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音樂</span></a></li><li><a class="site-page child" href="/Gallery/"><i class="fa-fw fas fa-images"></i><span> 照片</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://s2.loli.net/2022/01/31/B4ikAOp8HDSPnhF.jpg')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">jjyaoao's Home</a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fa fa-heartbeat"></i><span> 清单</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音樂</span></a></li><li><a class="site-page child" href="/Gallery/"><i class="fa-fw fas fa-images"></i><span> 照片</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">Matlab使用介绍</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2022-01-31T03:31:51.000Z" title="发表于 2022-01-31 11:31:51">2022-01-31</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2022-02-26T13:50:17.040Z" title="更新于 2022-02-26 21:50:17">2022-02-26</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1/">数学建模</a><i class="fas fa-angle-right post-meta-separator"></i><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1/%E8%AF%AD%E8%A8%80/">语言</a><i class="fas fa-angle-right post-meta-separator"></i><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1/%E8%AF%AD%E8%A8%80/Matlab/">Matlab</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">1.8k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>5分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="Matlab使用介绍"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><blockquote>
+<p>本笔记用作个人学习和查漏补缺使用，欢迎借鉴学习，提出建议，转载需标注出处<a target="_blank" rel="noopener" href="http://www.jjyaoao.space/">www.jjyaoao.space</a> </p>
+</blockquote>
+<h2 id="帮助"><a href="#帮助" class="headerlink" title="帮助"></a>帮助</h2><p><img src="/2022/01/31/matlab/image-20220122155032933.png" alt="image-20220122155032933"></p>
+<p>helpwin现在已经改成doc</p>
+<p><img src="/2022/01/31/matlab/image-20220122160219254.png" alt="image-20220122160219254"></p>
+<p>也不接受中文的符号</p>
+<p>edit test  打开编辑器（txt那种感觉）</p>
+<p>输入指令不加分号,会显示存在的变量的具体值,不然就不显示</p>
+<p><strong>txt批量修改数据</strong></p>
+<p><a target="_blank" rel="noopener" href="https://jingyan.baidu.com/article/636f38bb0a90be97b9461068.html">txt文件怎么批量替换其中的文字-百度经验 (baidu.com)</a></p>
+<h2 id="数据类型"><a href="#数据类型" class="headerlink" title="数据类型"></a>数据类型</h2><p><img src="/2022/01/31/matlab/image-20220122161037169.png" alt="image-20220122161037169"></p>
+<p>注释%    续航号…（三个点以上均可)</p>
+<h2 id="运算符"><a href="#运算符" class="headerlink" title="运算符"></a>运算符</h2><p><img src="/2022/01/31/matlab/image-20220122162212315.png" alt="image-20220122162212315"></p>
+<p>在这里逻辑运算符优先级最低，所以先加间后逻辑</p>
+<p><img src="/2022/01/31/matlab/image-20220122162231479.png" alt="image-20220122162231479"></p>
+<h2 id="向量的生成"><a href="#向量的生成" class="headerlink" title="向量的生成"></a>向量的生成</h2><p><img src="/2022/01/31/matlab/image-20220122162904378.png" alt="image-20220122162904378"></p>
+<p><img src="/2022/01/31/matlab/image-20220122164240875.png" alt="image-20220122164240875"></p>
+<p><img src="/2022/01/31/matlab/image-20220122164303338.png" alt="image-20220122164303338"></p>
+<p><img src="/2022/01/31/matlab/image-20220122164358100.png" alt="image-20220122164358100"></p>
+<p><img src="/2022/01/31/matlab/image-20220122164535178.png" alt="image-20220122164535178"></p>
+<h3 id="向量的加减法"><a href="#向量的加减法" class="headerlink" title="向量的加减法"></a>向量的加减法</h3><p><img src="/2022/01/31/matlab/image-20220122165120077.png" alt="image-20220122165120077"></p>
+<h3 id="向量的乘除法"><a href="#向量的乘除法" class="headerlink" title="向量的乘除法"></a>向量的乘除法</h3><p><img src="/2022/01/31/matlab/image-20220122165333034.png" alt="image-20220122165333034"></p>
+<p>y后面加‘代表转置行向量变成列向量，./代表A矩阵和B矩阵对应元素相处（向量也一样</p>
+<p><img src="/2022/01/31/matlab/image-20220122165922455.png" alt="image-20220122165922455"></p>
+<p><img src="/2022/01/31/matlab/image-20220122165932047.png" alt="image-20220122165932047"></p>
+<p>点乘点除一一对应</p>
+<h3 id="叉积"><a href="#叉积" class="headerlink" title="叉积"></a>叉积</h3><p><strong>也就是两向量的垂直面向量</strong></p>
+<p><img src="/2022/01/31/matlab/image-20220122170529647.png" alt="image-20220122170529647"></p>
+<p><img src="/2022/01/31/matlab/image-20220122170512725.png" alt="image-20220122170512725"></p>
+<h2 id="多项式"><a href="#多项式" class="headerlink" title="多项式"></a>多项式</h2><p><img src="/2022/01/31/matlab/image-20220122171321710.png" alt="image-20220122171321710"></p>
+<p><img src="/2022/01/31/matlab/image-20220122171402981.png" alt="image-20220122171402981"></p>
+<p>如果出现不要的位置，用0代替即可</p>
+<h3 id="多项式乘法"><a href="#多项式乘法" class="headerlink" title="多项式乘法"></a>多项式乘法</h3><p><img src="/2022/01/31/matlab/image-20220122172344209.png" alt="image-20220122172344209"></p>
+<p>conv，计算两多项式的卷积</p>
+<h3 id="多项式除法"><a href="#多项式除法" class="headerlink" title="多项式除法"></a>多项式除法</h3><p><img src="/2022/01/31/matlab/image-20220122172738055.png" alt="image-20220122172738055"></p>
+<p>deconv  解卷，ans除以p1 为2 3</p>
+<p>可以有两个返回值</p>
+<p><img src="/2022/01/31/matlab/image-20220122184039090.png" alt="image-20220122184039090"></p>
+<p>需要接受，第一个返回值为商，第二个为余数</p>
+<h3 id="多项式求导"><a href="#多项式求导" class="headerlink" title="多项式求导"></a>多项式求导</h3><p><img src="/2022/01/31/matlab/image-20220122174453452.png" alt="image-20220122174453452"></p>
+<h2 id="元胞？字典？"><a href="#元胞？字典？" class="headerlink" title="元胞？字典？"></a>元胞？字典？</h2><h4 id="赋值操作"><a href="#赋值操作" class="headerlink" title="赋值操作"></a>赋值操作</h4><h5 id="1"><a href="#1" class="headerlink" title="1."></a>1.</h5><p><img src="/2022/01/31/matlab/image-20220122183138527.png" alt="image-20220122183138527"></p>
+<p><img src="/2022/01/31/matlab/image-20220122183250838.png" alt="image-20220122183250838"></p>
+<p><img src="/2022/01/31/matlab/image-20220122183318737.png" alt="image-20220122183318737"></p>
+<p><img src="/2022/01/31/matlab/image-20220122183344489.png" alt="image-20220122183344489"></p>
+<h5 id="2"><a href="#2" class="headerlink" title="2."></a>2.</h5><p><img src="/2022/01/31/matlab/image-20220122183538706.png" alt="image-20220122183538706"></p>
+<p><img src="/2022/01/31/matlab/image-20220122183750765.png" alt="image-20220122183750765"></p>
+<h6 id="数值转换"><a href="#数值转换" class="headerlink" title="数值转换"></a>数值转换</h6><p>所有的数值转换都像图中这个一样</p>
+<p>2 谐音：to</p>
+<p>例如  str2num</p>
+<h2 id="结构型变量"><a href="#结构型变量" class="headerlink" title="结构型变量"></a>结构型变量</h2><p><img src="/2022/01/31/matlab/image-20220122184345486.png" alt="image-20220122184345486"></p>
+<p>类似于字典<img src="/2022/01/31/matlab/image-20220122184532047.png" alt="image-20220122184532047"></p>
+<h3 id="相关方法"><a href="#相关方法" class="headerlink" title="相关方法"></a>相关方法</h3><p><img src="/2022/01/31/matlab/image-20220122184630981.png" alt="image-20220122184630981"></p>
+<h2 id="矩阵"><a href="#矩阵" class="headerlink" title="矩阵"></a>矩阵</h2><p><img src="/2022/01/31/matlab/image-20220122185355931.png" alt="image-20220122185355931"></p>
+<h3 id="矩阵生成"><a href="#矩阵生成" class="headerlink" title="矩阵生成"></a>矩阵生成</h3><h4 id="1-利用m文件生成"><a href="#1-利用m文件生成" class="headerlink" title="1.利用m文件生成"></a>1.利用m文件生成</h4><p><strong>省事方便！</strong></p>
+<p><img src="/2022/01/31/matlab/image-20220124162334438.png" alt="image-20220124162334438"></p>
+<p><img src="/2022/01/31/matlab/image-20220122185500662.png" alt="image-20220122185500662"></p>
+<p><img src="/2022/01/31/matlab/image-20220122185623464.png" alt="image-20220122185623464"></p>
+<p><strong>注意，test的后缀就是.m</strong>,可按F5一键运行</p>
+<h4 id="2-创建特定矩阵"><a href="#2-创建特定矩阵" class="headerlink" title="2.创建特定矩阵"></a>2.创建特定矩阵</h4><p><img src="/2022/01/31/matlab/image-20220122191036617.png" alt="image-20220122191036617"></p>
+<p><img src="/2022/01/31/matlab/image-20220123082147503.png" alt="image-20220123082147503"></p>
+<h3 id="矩阵删除"><a href="#矩阵删除" class="headerlink" title="矩阵删除"></a>矩阵删除</h3><p><img src="/2022/01/31/matlab/image-20220123082010764.png" alt="image-20220123082010764"></p>
+<h3 id="矩阵的变向"><a href="#矩阵的变向" class="headerlink" title="矩阵的变向"></a>矩阵的变向</h3><p>matlab变维数列优先</p>
+<p><img src="/2022/01/31/matlab/image-20220124093036715.png" alt="image-20220124093036715"></p>
+<h3 id="矩阵的加减乘除"><a href="#矩阵的加减乘除" class="headerlink" title="矩阵的加减乘除"></a>矩阵的加减乘除</h3><p><img src="/2022/01/31/matlab/image-20220124093524488.png" alt="image-20220124093524488"></p>
+<h3 id="常用的矩阵函数"><a href="#常用的矩阵函数" class="headerlink" title="常用的矩阵函数"></a>常用的矩阵函数</h3><p><img src="/2022/01/31/matlab/image-20220124093707536.png" alt="image-20220124093707536"></p>
+<h2 id="matlab绘图"><a href="#matlab绘图" class="headerlink" title="matlab绘图"></a>matlab绘图</h2><h3 id="二维绘图"><a href="#二维绘图" class="headerlink" title="二维绘图"></a>二维绘图</h3><p><img src="/2022/01/31/matlab/image-20220124094350874.png" alt="image-20220124094350874"></p>
+<p>1.基本绘图命令</p>
+<h4 id="plot"><a href="#plot" class="headerlink" title="plot"></a>plot</h4><p><img src="/2022/01/31/matlab/image-20220124094412174.png" alt="image-20220124094412174"></p>
+<p><img src="/2022/01/31/matlab/image-20220124094928047.png" alt="image-20220124094928047"></p>
+<p><strong>注意！！！是plot里面是先放x后放y</strong></p>
+<p><img src="/2022/01/31/matlab/image-20220124095126440.png" alt="image-20220124095126440"></p>
+<p><strong>这个放在plot（，，xxx）xxx的位置</strong></p>
+<h5 id="一个plot画多个曲线"><a href="#一个plot画多个曲线" class="headerlink" title="一个plot画多个曲线"></a>一个plot画多个曲线</h5><p><img src="/2022/01/31/matlab/image-20220124095428680.png" alt="image-20220124095428680"></p>
+<p><strong>figure是错的，删掉（上图） figure是用来创建幕布的</strong></p>
+<p><img src="/2022/01/31/matlab/image-20220124100035317.png" alt="image-20220124100035317"></p>
+<p><img src="/2022/01/31/matlab/image-20220124100322193.png" alt="image-20220124100322193"></p>
+<p><strong>更多功能查帮助文档</strong></p>
+<p><img src="/2022/01/31/matlab/image-20220124100403082.png" alt="image-20220124100403082"></p>
+<h4 id="fplot"><a href="#fplot" class="headerlink" title="fplot"></a>fplot</h4><p><img src="/2022/01/31/matlab/image-20220124100642687.png" alt="image-20220124100642687"></p>
+<p><strong>基本上和fplot操作差不多噢</strong></p>
+<h4 id="subplot"><a href="#subplot" class="headerlink" title="subplot"></a>subplot</h4><p>sub主要用途不是画图，而是瞄准，目的是能把不同的图画在同一个区域内</p>
+<p>剩下的画图就是用plot和fplot来</p>
+<p><img src="/2022/01/31/matlab/image-20220124101044247.png" alt="image-20220124101044247"></p>
+<p><img src="/2022/01/31/matlab/image-20220124101447798.png" alt="image-20220124101447798"></p>
+<p><img src="/2022/01/31/matlab/image-20220124101541630.png" alt="image-20220124101541630"></p>
+<h4 id="polarplot"><a href="#polarplot" class="headerlink" title="polarplot"></a>polarplot</h4><p>​                <strong>绘制极坐标图</strong></p>
+<p><img src="/2022/01/31/matlab/image-20220124101739879.png" alt="image-20220124101739879"></p>
+<p><img src="/2022/01/31/matlab/image-20220124101801859.png" alt="image-20220124101801859"></p>
+<h4 id="极坐标与直角坐标转换"><a href="#极坐标与直角坐标转换" class="headerlink" title="极坐标与直角坐标转换"></a>极坐标与直角坐标转换</h4><p>​                    <strong>（画图不必polarplot）</strong></p>
+<p><img src="/2022/01/31/matlab/image-20220124101951959.png" alt="image-20220124101951959"></p>
+<h4 id="semilogx"><a href="#semilogx" class="headerlink" title="semilogx"></a>semilogx</h4><p>功能与plot完全一样，只是把一个轴（两个也可以）转为log坐标，使得变化很大的曲线平稳一点y = e^x  —&gt; logy = x</p>
+<p><img src="/2022/01/31/matlab/image-20220124102157670.png" alt="image-20220124102157670"></p>
+<h4 id="yyaxis"><a href="#yyaxis" class="headerlink" title="yyaxis"></a>yyaxis</h4><p><u>功能和subplot类似，瞄准左右，剩下随便你用什么plot来画</u></p>
+<p><img src="/2022/01/31/matlab/image-20220124102432095.png" alt="image-20220124102432095"></p>
+<h4 id="条形图-或许可以用excel"><a href="#条形图-或许可以用excel" class="headerlink" title="条形图(或许可以用excel)"></a>条形图(或许可以用excel)</h4><p><img src="/2022/01/31/matlab/image-20220124112355656.png" alt="image-20220124112355656"></p>
+<h4 id="区域图"><a href="#区域图" class="headerlink" title="区域图"></a>区域图</h4><p>plot和area差不多，area只是把不同曲线填充了颜色</p>
+<p>basevalue = -4 把基准线从x轴变成了-4</p>
+<p><img src="/2022/01/31/matlab/image-20220124112551359.png" alt="image-20220124112551359"></p>
+<h4 id="含误差线图"><a href="#含误差线图" class="headerlink" title="含误差线图"></a>含误差线图</h4><p>err，与y的数量对应，应该不需要误差的点就0填充，他的意思是：例如err里为4，则向上下左右都扩展4，实际扩展为8？可以这样理解吧，反正你自己理解就行了，当然也可以让上下误差不一样，下面图里有方式，也就是多一个err2就行了的意思</p>
+<p><img src="/2022/01/31/matlab/image-20220124112908190.png" alt="image-20220124112908190"></p>
+<h4 id="针型图"><a href="#针型图" class="headerlink" title="针型图"></a>针型图</h4><p><img src="/2022/01/31/matlab/image-20220124113349592.png" alt="image-20220124113349592"></p>
+<h4 id="阶梯图"><a href="#阶梯图" class="headerlink" title="阶梯图"></a>阶梯图</h4><p><img src="/2022/01/31/matlab/image-20220124113411860.png" alt="image-20220124113411860"></p>
+<h4 id="罗盘图"><a href="#罗盘图" class="headerlink" title="罗盘图"></a>罗盘图</h4><p><img src="/2022/01/31/matlab/image-20220124113712597.png" alt="image-20220124113712597"></p>
+<p><img src="/2022/01/31/matlab/image-20220124113722731.png" alt="image-20220124113722731"></p>
+<h4 id="箭头图"><a href="#箭头图" class="headerlink" title="箭头图"></a>箭头图</h4><p><img src="/2022/01/31/matlab/image-20220124113607616.png" alt="image-20220124113607616"></p>
+<h3 id="三维绘图"><a href="#三维绘图" class="headerlink" title="三维绘图"></a>三维绘图</h3><h4 id="1-基本函数绘图"><a href="#1-基本函数绘图" class="headerlink" title="1.基本函数绘图"></a>1.基本函数绘图</h4><h5 id="曲线绘图"><a href="#曲线绘图" class="headerlink" title="曲线绘图"></a>曲线绘图</h5><p><img src="/2022/01/31/matlab/image-20220124114021272.png" alt="image-20220124114021272"></p>
+<p><img src="/2022/01/31/matlab/image-20220124114102975.png" alt="image-20220124114102975"></p>
+<h4 id="2-三维网格函数"><a href="#2-三维网格函数" class="headerlink" title="2.三维网格函数"></a>2.三维网格函数</h4><p><img src="/2022/01/31/matlab/image-20220124114330427.png" alt="image-20220124114330427"></p>
+<p>先将xy一一对应，然后用函数得到z即可以生成</p>
+<p><img src="/2022/01/31/matlab/image-20220124114710262.png" alt="image-20220124114710262"></p>
+<p><img src="/2022/01/31/matlab/image-20220124115110316.png" alt="image-20220124115110316"></p>
+<p>hidden on 就是可以看到后面，透过去，这些咋二八经的</p>
+<h4 id="等高线图"><a href="#等高线图" class="headerlink" title="等高线图"></a>等高线图</h4><p><img src="/2022/01/31/matlab/image-20220124161938067.png" alt="image-20220124161938067"></p>
+<p><img src="/2022/01/31/matlab/image-20220124162001352.png" alt="image-20220124162001352"></p>
+<p><img src="/2022/01/31/matlab/image-20220124162048878.png" alt="image-20220124162048878"></p>
+<p><img src="/2022/01/31/matlab/image-20220124162104758.png" alt="image-20220124162104758"></p>
+<p><img src="/2022/01/31/matlab/image-20220124162148720.png" alt="image-20220124162148720"></p>
+<p><img src="/2022/01/31/matlab/image-20220124162210750.png" alt="image-20220124162210750"></p>
+<p><img src="/2022/01/31/matlab/image-20220124162228412.png" alt="image-20220124162228412"></p>
+<h3 id="图形窗口的创建"><a href="#图形窗口的创建" class="headerlink" title="图形窗口的创建"></a>图形窗口的创建</h3><p><img src="/2022/01/31/matlab/image-20220124102723093.png" alt="image-20220124102723093"></p>
+<h4 id="figure属性"><a href="#figure属性" class="headerlink" title="figure属性"></a>figure属性</h4><p><img src="/2022/01/31/matlab/image-20220124103312421.png" alt="image-20220124103312421"></p>
+<p><strong>更多可以参见help帮助文档</strong></p>
+<p><img src="/2022/01/31/matlab/image-20220124103537350.png" alt="image-20220124103537350"></p>
+<p><strong>这个双击，点在轴上，点在线上，点在背景图，都有不一样的显示效果</strong></p>
+<p><img src="/2022/01/31/matlab/image-20220124105120951.png" alt="image-20220124105120951"></p>
+<p><strong>按钮是一次性的，治标不治本</strong>，甚至上面加粗那些，你把图导出以后并不能观看</p>
+<h3 id="坐标系与坐标轴"><a href="#坐标系与坐标轴" class="headerlink" title="坐标系与坐标轴"></a>坐标系与坐标轴</h3><p><img src="/2022/01/31/matlab/image-20220124110152867.png" alt="image-20220124110152867"></p>
+<p>颜色条的范围可以通过这个axis来加</p>
+<h3 id="图形注释"><a href="#图形注释" class="headerlink" title="图形注释"></a>图形注释</h3><p><img src="/2022/01/31/matlab/image-20220124110402196.png" alt="image-20220124110402196"></p>
+<p><img src="/2022/01/31/matlab/image-20220124110834883.png" alt="image-20220124110834883"></p>
+<p><img src="/2022/01/31/matlab/image-20220124111037911.png" alt="image-20220124111037911"></p>
+<p><strong>向放哪放哪，gtext</strong></p>
+<p><img src="/2022/01/31/matlab/image-20220124111543251.png" alt="image-20220124111543251"></p>
+<p><img src="/2022/01/31/matlab/image-20220124111617303.png" alt="image-20220124111617303"></p>
+<p><strong>画了几条曲线，后面就放几个字符串，如果你多放了，按照顺序后面的会省略</strong></p>
+<h3 id="坐标网格线-grid"><a href="#坐标网格线-grid" class="headerlink" title="坐标网格线-grid"></a>坐标网格线-grid</h3><p><img src="/2022/01/31/matlab/image-20220124111842859.png" alt="image-20220124111842859"></p>
+<p>grid on添加灰实线，grid minor添加灰虚线（次要线）</p>
+<h2 id="数列与极限"><a href="#数列与极限" class="headerlink" title="数列与极限"></a>数列与极限</h2><h3 id="求和"><a href="#求和" class="headerlink" title="求和"></a>求和</h3><p><img src="/2022/01/31/matlab/image-20220124135235335.png" alt="image-20220124135235335"></p>
+<p>向量：<strong>整体求和</strong></p>
+<p>矩阵：<strong>按列求和</strong></p>
+<p><img src="/2022/01/31/matlab/image-20220124135826205.png" alt="image-20220124135826205"></p>
+<p><img src="/2022/01/31/matlab/image-20220124140112260.png" alt="image-20220124140112260"></p>
+<p><img src="/2022/01/31/matlab/image-20220124140229243.png" alt="image-20220124140229243"></p>
+<h3 id="导数的计算"><a href="#导数的计算" class="headerlink" title="导数的计算"></a>导数的计算</h3><p><img src="/2022/01/31/matlab/image-20220124140615429.png" alt="image-20220124140615429"></p>
+<p><strong>syms为定义的意思</strong></p>
+<h3 id="级数求和"><a href="#级数求和" class="headerlink" title="级数求和"></a>级数求和</h3><p><img src="/2022/01/31/matlab/image-20220124140905673.png" alt="image-20220124140905673"></p>
+<h3 id="积分"><a href="#积分" class="headerlink" title="积分"></a>积分</h3><p>可能是不定积分</p>
+<p><img src="/2022/01/31/matlab/image-20220124141018919.png" alt="image-20220124141018919"></p>
+<h3 id="泰勒展开"><a href="#泰勒展开" class="headerlink" title="泰勒展开"></a>泰勒展开</h3><p><img src="/2022/01/31/matlab/image-20220124141149755.png" alt="image-20220124141149755"></p>
+<p><strong>exp：以e为底的指数</strong></p>
+<h3 id="”傅里叶变换“"><a href="#”傅里叶变换“" class="headerlink" title="”傅里叶变换“"></a>”傅里叶变换“</h3><p><img src="/2022/01/31/matlab/image-20220124141402122.png" alt="image-20220124141402122"></p>
+<p><img src="/2022/01/31/matlab/image-20220124160848772.png" alt="image-20220124160848772"></p>
+<p><img src="/2022/01/31/matlab/image-20220124161136906.png" alt="image-20220124161136906"></p>
+<p>相当于频率上有两个▲，这里取得是cos的模长，按道理是一个信号正一个信号负</p>
+<p><img src="/2022/01/31/matlab/image-20220124142404342.png" alt="image-20220124142404342"></p>
+<p>右下角的那张图，称为原信号的“近傅里叶变换”吧 ，左下角的图，则是振荡相对于0点摆动出去的幅度不断绕圈，之所以呈现这样子因为3beat/s时候存在唯一山峰和低谷，正好绕唯一一周，常规情况（如下）由于分布平均，则质心位置都是居中<img src="/2022/01/31/matlab/image-20220124143548807.png" alt="image-20220124143548807"></p>
+<p><img src="/2022/01/31/matlab/image-20220124142527999.png" alt="image-20220124142527999"></p>
+<p>其中我们有两个信号，最上面的2hz，3hz是我们的信号频率，而cycles/second则是我们的转圈圈缠绕评率，将图像堪称有质量的东西，右下角的变动就是质心位置的相对摆动</p>
+<p><img src="/2022/01/31/matlab/image-20220124142626551.png" alt="image-20220124142626551"></p>
+<h4 id="傅里叶变换实际运用"><a href="#傅里叶变换实际运用" class="headerlink" title="傅里叶变换实际运用"></a>傅里叶变换实际运用</h4><p>音频分离</p>
+<p><img src="/2022/01/31/matlab/image-20220124143823344.png" alt="image-20220124143823344"></p>
+<p><img src="/2022/01/31/matlab/image-20220124143834612.png" alt="image-20220124143834612"></p>
+<p><img src="/2022/01/31/matlab/image-20220124143910601.png" alt="image-20220124143910601"></p>
+<p>虽然说通常此时是有界的，但在真正描述傅里叶变幻时，积分上下限常常为正负无穷</p>
+<p>含义是：考虑此表达式在每个有限时间区间上的值，然后看看时间区间趋近无穷时候，极限是什么</p>
+<p><img src="/2022/01/31/matlab/image-20220124145645199.png" alt="image-20220124145645199"></p>
+<h4 id="真正的傅里叶变换"><a href="#真正的傅里叶变换" class="headerlink" title="真正的傅里叶变换"></a>真正的傅里叶变换</h4><p>欧拉公式推出</p>
+<p><img src="/2022/01/31/matlab/image-20220124144138039.png" alt="image-20220124144138039"></p>
+<p><img src="/2022/01/31/matlab/image-20220124144207694.png" alt="image-20220124144207694"></p>
+<p>傅里叶变化通常认为旋转是顺时针的（欧拉这个为负）</p>
+<p><img src="/2022/01/31/matlab/image-20220124144425068.png" alt="image-20220124144425068"></p>
+<p><strong>得到复数意义下的质心</strong></p>
+<p><img src="/2022/01/31/matlab/image-20220124144534041.png" alt="image-20220124144534041"></p>
+<p>不再认为是取极限多个点的y，再除以点数得到平均</p>
+<p>而是对函数做积分，再除以时间区间的长度</p>
+<p><img src="/2022/01/31/matlab/image-20220124144736601.png" alt="image-20220124144736601"></p>
+<p><img src="/2022/01/31/matlab/image-20220124144813566.png" alt="image-20220124144813566"></p>
+<p><img src="/2022/01/31/matlab/image-20220124144831101.png" alt="image-20220124144831101"></p>
+<p>而现在的意义不再是质心，而是把质心乘以时间倍，持续了多少秒就乘以多少秒，这样的话一个频率持续了很长的时间，那就在傅里叶变换里被无线放大（这个频率的模长）而对于其他的频率来说，你就算持续时间长了一点，也会被抵消掉，因为此时图上已经有很多均匀分布的点了</p>
+<h2 id="程序设计"><a href="#程序设计" class="headerlink" title="程序设计"></a>程序设计</h2><h3 id="IF"><a href="#IF" class="headerlink" title="IF"></a>IF</h3><p><img src="/2022/01/31/matlab/image-20220124170736935.png" alt="image-20220124170736935"></p>
+<p><img src="/2022/01/31/matlab/image-20220124170752093.png" alt="image-20220124170752093"></p>
+<h3 id="switch"><a href="#switch" class="headerlink" title="switch"></a>switch</h3><p><img src="/2022/01/31/matlab/image-20220124170835732.png" alt="image-20220124170835732"></p>
+<h3 id="For"><a href="#For" class="headerlink" title="For"></a>For</h3><p><img src="/2022/01/31/matlab/image-20220124170948609.png" alt="image-20220124170948609"></p>
+<p><img src="/2022/01/31/matlab/image-20220124171015960.png" alt="image-20220124171015960"></p>
+<p><img src="/2022/01/31/matlab/image-20220124171028338.png" alt="image-20220124171028338"></p>
+<h3 id="函数文件"><a href="#函数文件" class="headerlink" title="函数文件"></a>函数文件</h3><p><img src="/2022/01/31/matlab/image-20220124162435299.png" alt="image-20220124162435299"></p>
+<h3 id="程序结构"><a href="#程序结构" class="headerlink" title="程序结构"></a>程序结构</h3><p><img src="/2022/01/31/matlab/image-20220124162533945.png" alt="image-20220124162533945"></p>
+<h3 id="echo函数"><a href="#echo函数" class="headerlink" title="echo函数"></a>echo函数</h3><p><img src="/2022/01/31/matlab/image-20220124162659901.png" alt="image-20220124162659901"></p>
+<h3 id="warning和error"><a href="#warning和error" class="headerlink" title="warning和error"></a>warning和error</h3><p><img src="/2022/01/31/matlab/image-20220124162727598.png" alt="image-20220124162727598"></p>
+<h3 id="交互时运输"><a href="#交互时运输" class="headerlink" title="交互时运输"></a>交互时运输</h3><p>与Python相似</p>
+<p><img src="/2022/01/31/matlab/image-20220124162807494.png" alt="image-20220124162807494"></p>
+<h3 id="函数句柄"><a href="#函数句柄" class="headerlink" title="函数句柄"></a>函数句柄</h3><p><strong>等于外号</strong></p>
+<p><img src="/2022/01/31/matlab/image-20220124163053699.png" alt="image-20220124163053699"></p>
+<h2 id="文件操作"><a href="#文件操作" class="headerlink" title="文件操作"></a>文件操作</h2><p>A 在其他语言程序中读写MATLAB的数据文件<br>A.a 文件打开与关闭</p>
+<p>打开文件不成功时，函数返回-1</p>
+<p>A.b 文本文件的读写</p>
+<p>例子：</p>
+<p>A.c 二进制文件的读写</p>
+<p>A.d 数据文件的定位</p>
+<p>-4028:每组有两个数据，每个数据是double类型，占8个字节。</p>
+<h2 id="解微分方程"><a href="#解微分方程" class="headerlink" title="解微分方程"></a>解微分方程</h2><p><img src="/2022/01/31/matlab/image-20220206174654383.png" alt="image-20220206174654383"></p>
+<p>所用函数为：dsolve</p>
+<p>cond为定义初值  y（0）为5</p>
+<p>好像这个方法，你help dsolve进去，就是说固定格式eqn = diff（y，t） == a * y（举的例子）</p>
+<p>其中t为默认的变量名（也就是我们常见的x的换种写法）   ==后面就是函数   </p>
+<p>用s得到解以后，再s即可输出解</p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="mailto:jjyaoao@126.com">jjyaoao</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="http://jjyaoao.space/2022/01/31/matlab/">http://jjyaoao.space/2022/01/31/matlab/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="http://jjyaoao.space" target="_blank">jjyaoao's Home</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E9%81%97%E5%BF%98%E6%8C%87%E5%8D%97/">遗忘指南</a><a class="post-meta__tags" href="/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">学习笔记</a><a class="post-meta__tags" href="/tags/%E6%95%99%E7%A8%8B/">教程</a></div><div class="post_share"><div class="addthis_inline_share_toolbox"></div><script src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-61dbf69078ce19aa" async="async"></script></div></div><div class="post-reward"><div class="reward-button button--animated"><i class="fas fa-qrcode"></i> 打赏</div><div class="reward-main"><ul class="reward-all"><li class="reward-item"><a href="https://s2.loli.net/2022/01/09/HMjygFAKr2nPWdJ.jpg" target="_blank"><img class="post-qr-code-img" src="https://s2.loli.net/2022/01/09/HMjygFAKr2nPWdJ.jpg" alt="微信"/></a><div class="post-qr-code-desc">微信</div></li><li class="reward-item"><a href="https://s2.loli.net/2022/01/09/JL43sbhxUEOuVeM.jpg" target="_blank"><img class="post-qr-code-img" src="https://s2.loli.net/2022/01/09/JL43sbhxUEOuVeM.jpg" alt="支付宝"/></a><div class="post-qr-code-desc">支付宝</div></li></ul></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/2022/01/31/python/"><img class="prev-cover" src="https://s2.loli.net/2022/01/31/kAyIhgdZpPabzBU.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">Python语法学习</div></div></a></div><div class="next-post pull-right"><a href="/2022/01/31/%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1%E7%AE%97%E6%B3%95/"><img class="next-cover" src="https://s2.loli.net/2022/01/31/DsJXQy9EhURdotO.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">数学建模算法</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>相关推荐</span></div><div class="relatedPosts-list"><div><a href="/2022/01/31/python/" title="Python语法学习"><img class="cover" src="https://s2.loli.net/2022/01/31/kAyIhgdZpPabzBU.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-01-31</div><div class="title">Python语法学习</div></div></a></div><div><a href="/2022/02/04/%E5%A4%87%E6%88%98%E7%BE%8E%E8%B5%9B/" title="美赛备战"><img class="cover" src="https://s2.loli.net/2022/02/04/OM8sdkEACyqLvrb.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-02-04</div><div class="title">美赛备战</div></div></a></div><div><a href="/2022/03/09/%E5%A4%87%E6%88%98%E8%93%9D%E6%A1%A5/" title="备战蓝桥"><img class="cover" src="https://s2.loli.net/2022/03/09/pYhMVWCFN4BiqAJ.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-03-09</div><div class="title">备战蓝桥</div></div></a></div><div><a href="/2022/01/31/%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1%E7%AE%97%E6%B3%95/" title="数学建模算法"><img class="cover" src="https://s2.loli.net/2022/01/31/DsJXQy9EhURdotO.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-01-31</div><div class="title">数学建模算法</div></div></a></div><div><a href="/2022/02/09/%E8%AE%BA%E6%96%87%E5%86%99%E4%BD%9C/" title="论文写作"><img class="cover" src="https://s2.loli.net/2022/02/09/F6T8Y9l5fJeLEIC.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-02-09</div><div class="title">论文写作</div></div></a></div><div><a href="/2022/04/15/C++%E9%A1%B9%E7%9B%AE%E5%AE%9E%E6%88%98/" title="C++项目实战"><img class="cover" src="https://s2.loli.net/2022/04/15/YXoFfbxgWZIn1SM.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-04-15</div><div class="title">C++项目实战</div></div></a></div></div></div><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div><div id="comment-switch"><span class="first-comment">Livere</span><span class="switch-btn"></span><span class="second-comment">Valine</span></div></div><div class="comment-wrap"><div><div id="lv-container" data-id="city" data-uid="MTAyMC81NTM1OC8zMTgyNQ=="></div></div><div><div class="vcomment" id="vcomment"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%B8%AE%E5%8A%A9"><span class="toc-number">1.</span> <span class="toc-text">帮助</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B"><span class="toc-number">2.</span> <span class="toc-text">数据类型</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%BF%90%E7%AE%97%E7%AC%A6"><span class="toc-number">3.</span> <span class="toc-text">运算符</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%90%91%E9%87%8F%E7%9A%84%E7%94%9F%E6%88%90"><span class="toc-number">4.</span> <span class="toc-text">向量的生成</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%90%91%E9%87%8F%E7%9A%84%E5%8A%A0%E5%87%8F%E6%B3%95"><span class="toc-number">4.1.</span> <span class="toc-text">向量的加减法</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%90%91%E9%87%8F%E7%9A%84%E4%B9%98%E9%99%A4%E6%B3%95"><span class="toc-number">4.2.</span> <span class="toc-text">向量的乘除法</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8F%89%E7%A7%AF"><span class="toc-number">4.3.</span> <span class="toc-text">叉积</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%A4%9A%E9%A1%B9%E5%BC%8F"><span class="toc-number">5.</span> <span class="toc-text">多项式</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%A4%9A%E9%A1%B9%E5%BC%8F%E4%B9%98%E6%B3%95"><span class="toc-number">5.1.</span> <span class="toc-text">多项式乘法</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%A4%9A%E9%A1%B9%E5%BC%8F%E9%99%A4%E6%B3%95"><span class="toc-number">5.2.</span> <span class="toc-text">多项式除法</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%A4%9A%E9%A1%B9%E5%BC%8F%E6%B1%82%E5%AF%BC"><span class="toc-number">5.3.</span> <span class="toc-text">多项式求导</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%85%83%E8%83%9E%EF%BC%9F%E5%AD%97%E5%85%B8%EF%BC%9F"><span class="toc-number">6.</span> <span class="toc-text">元胞？字典？</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%B5%8B%E5%80%BC%E6%93%8D%E4%BD%9C"><span class="toc-number">6.0.1.</span> <span class="toc-text">赋值操作</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#1"><span class="toc-number">6.0.1.1.</span> <span class="toc-text">1.</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#2"><span class="toc-number">6.0.1.2.</span> <span class="toc-text">2.</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#%E6%95%B0%E5%80%BC%E8%BD%AC%E6%8D%A2"><span class="toc-number">6.0.1.2.1.</span> <span class="toc-text">数值转换</span></a></li></ol></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%BB%93%E6%9E%84%E5%9E%8B%E5%8F%98%E9%87%8F"><span class="toc-number">7.</span> <span class="toc-text">结构型变量</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%9B%B8%E5%85%B3%E6%96%B9%E6%B3%95"><span class="toc-number">7.1.</span> <span class="toc-text">相关方法</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%9F%A9%E9%98%B5"><span class="toc-number">8.</span> <span class="toc-text">矩阵</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%9F%A9%E9%98%B5%E7%94%9F%E6%88%90"><span class="toc-number">8.1.</span> <span class="toc-text">矩阵生成</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-%E5%88%A9%E7%94%A8m%E6%96%87%E4%BB%B6%E7%94%9F%E6%88%90"><span class="toc-number">8.1.1.</span> <span class="toc-text">1.利用m文件生成</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-%E5%88%9B%E5%BB%BA%E7%89%B9%E5%AE%9A%E7%9F%A9%E9%98%B5"><span class="toc-number">8.1.2.</span> <span class="toc-text">2.创建特定矩阵</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%9F%A9%E9%98%B5%E5%88%A0%E9%99%A4"><span class="toc-number">8.2.</span> <span class="toc-text">矩阵删除</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%9F%A9%E9%98%B5%E7%9A%84%E5%8F%98%E5%90%91"><span class="toc-number">8.3.</span> <span class="toc-text">矩阵的变向</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%9F%A9%E9%98%B5%E7%9A%84%E5%8A%A0%E5%87%8F%E4%B9%98%E9%99%A4"><span class="toc-number">8.4.</span> <span class="toc-text">矩阵的加减乘除</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%B8%B8%E7%94%A8%E7%9A%84%E7%9F%A9%E9%98%B5%E5%87%BD%E6%95%B0"><span class="toc-number">8.5.</span> <span class="toc-text">常用的矩阵函数</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#matlab%E7%BB%98%E5%9B%BE"><span class="toc-number">9.</span> <span class="toc-text">matlab绘图</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BA%8C%E7%BB%B4%E7%BB%98%E5%9B%BE"><span class="toc-number">9.1.</span> <span class="toc-text">二维绘图</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#plot"><span class="toc-number">9.1.1.</span> <span class="toc-text">plot</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E4%B8%80%E4%B8%AAplot%E7%94%BB%E5%A4%9A%E4%B8%AA%E6%9B%B2%E7%BA%BF"><span class="toc-number">9.1.1.1.</span> <span class="toc-text">一个plot画多个曲线</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#fplot"><span class="toc-number">9.1.2.</span> <span class="toc-text">fplot</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#subplot"><span class="toc-number">9.1.3.</span> <span class="toc-text">subplot</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#polarplot"><span class="toc-number">9.1.4.</span> <span class="toc-text">polarplot</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%9E%81%E5%9D%90%E6%A0%87%E4%B8%8E%E7%9B%B4%E8%A7%92%E5%9D%90%E6%A0%87%E8%BD%AC%E6%8D%A2"><span class="toc-number">9.1.5.</span> <span class="toc-text">极坐标与直角坐标转换</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#semilogx"><span class="toc-number">9.1.6.</span> <span class="toc-text">semilogx</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#yyaxis"><span class="toc-number">9.1.7.</span> <span class="toc-text">yyaxis</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%9D%A1%E5%BD%A2%E5%9B%BE-%E6%88%96%E8%AE%B8%E5%8F%AF%E4%BB%A5%E7%94%A8excel"><span class="toc-number">9.1.8.</span> <span class="toc-text">条形图(或许可以用excel)</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%8C%BA%E5%9F%9F%E5%9B%BE"><span class="toc-number">9.1.9.</span> <span class="toc-text">区域图</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%90%AB%E8%AF%AF%E5%B7%AE%E7%BA%BF%E5%9B%BE"><span class="toc-number">9.1.10.</span> <span class="toc-text">含误差线图</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E9%92%88%E5%9E%8B%E5%9B%BE"><span class="toc-number">9.1.11.</span> <span class="toc-text">针型图</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E9%98%B6%E6%A2%AF%E5%9B%BE"><span class="toc-number">9.1.12.</span> <span class="toc-text">阶梯图</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%BD%97%E7%9B%98%E5%9B%BE"><span class="toc-number">9.1.13.</span> <span class="toc-text">罗盘图</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%AE%AD%E5%A4%B4%E5%9B%BE"><span class="toc-number">9.1.14.</span> <span class="toc-text">箭头图</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%89%E7%BB%B4%E7%BB%98%E5%9B%BE"><span class="toc-number">9.2.</span> <span class="toc-text">三维绘图</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-%E5%9F%BA%E6%9C%AC%E5%87%BD%E6%95%B0%E7%BB%98%E5%9B%BE"><span class="toc-number">9.2.1.</span> <span class="toc-text">1.基本函数绘图</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E6%9B%B2%E7%BA%BF%E7%BB%98%E5%9B%BE"><span class="toc-number">9.2.1.1.</span> <span class="toc-text">曲线绘图</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-%E4%B8%89%E7%BB%B4%E7%BD%91%E6%A0%BC%E5%87%BD%E6%95%B0"><span class="toc-number">9.2.2.</span> <span class="toc-text">2.三维网格函数</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%AD%89%E9%AB%98%E7%BA%BF%E5%9B%BE"><span class="toc-number">9.2.3.</span> <span class="toc-text">等高线图</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%9B%BE%E5%BD%A2%E7%AA%97%E5%8F%A3%E7%9A%84%E5%88%9B%E5%BB%BA"><span class="toc-number">9.3.</span> <span class="toc-text">图形窗口的创建</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#figure%E5%B1%9E%E6%80%A7"><span class="toc-number">9.3.1.</span> <span class="toc-text">figure属性</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%9D%90%E6%A0%87%E7%B3%BB%E4%B8%8E%E5%9D%90%E6%A0%87%E8%BD%B4"><span class="toc-number">9.4.</span> <span class="toc-text">坐标系与坐标轴</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%9B%BE%E5%BD%A2%E6%B3%A8%E9%87%8A"><span class="toc-number">9.5.</span> <span class="toc-text">图形注释</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%9D%90%E6%A0%87%E7%BD%91%E6%A0%BC%E7%BA%BF-grid"><span class="toc-number">9.6.</span> <span class="toc-text">坐标网格线-grid</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%95%B0%E5%88%97%E4%B8%8E%E6%9E%81%E9%99%90"><span class="toc-number">10.</span> <span class="toc-text">数列与极限</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%B1%82%E5%92%8C"><span class="toc-number">10.1.</span> <span class="toc-text">求和</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AF%BC%E6%95%B0%E7%9A%84%E8%AE%A1%E7%AE%97"><span class="toc-number">10.2.</span> <span class="toc-text">导数的计算</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%BA%A7%E6%95%B0%E6%B1%82%E5%92%8C"><span class="toc-number">10.3.</span> <span class="toc-text">级数求和</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%A7%AF%E5%88%86"><span class="toc-number">10.4.</span> <span class="toc-text">积分</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%B3%B0%E5%8B%92%E5%B1%95%E5%BC%80"><span class="toc-number">10.5.</span> <span class="toc-text">泰勒展开</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E2%80%9D%E5%82%85%E9%87%8C%E5%8F%B6%E5%8F%98%E6%8D%A2%E2%80%9C"><span class="toc-number">10.6.</span> <span class="toc-text">”傅里叶变换“</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%82%85%E9%87%8C%E5%8F%B6%E5%8F%98%E6%8D%A2%E5%AE%9E%E9%99%85%E8%BF%90%E7%94%A8"><span class="toc-number">10.6.1.</span> <span class="toc-text">傅里叶变换实际运用</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%9C%9F%E6%AD%A3%E7%9A%84%E5%82%85%E9%87%8C%E5%8F%B6%E5%8F%98%E6%8D%A2"><span class="toc-number">10.6.2.</span> <span class="toc-text">真正的傅里叶变换</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1"><span class="toc-number">11.</span> <span class="toc-text">程序设计</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#IF"><span class="toc-number">11.1.</span> <span class="toc-text">IF</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#switch"><span class="toc-number">11.2.</span> <span class="toc-text">switch</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#For"><span class="toc-number">11.3.</span> <span class="toc-text">For</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%87%BD%E6%95%B0%E6%96%87%E4%BB%B6"><span class="toc-number">11.4.</span> <span class="toc-text">函数文件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%A8%8B%E5%BA%8F%E7%BB%93%E6%9E%84"><span class="toc-number">11.5.</span> <span class="toc-text">程序结构</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#echo%E5%87%BD%E6%95%B0"><span class="toc-number">11.6.</span> <span class="toc-text">echo函数</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#warning%E5%92%8Cerror"><span class="toc-number">11.7.</span> <span class="toc-text">warning和error</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BA%A4%E4%BA%92%E6%97%B6%E8%BF%90%E8%BE%93"><span class="toc-number">11.8.</span> <span class="toc-text">交互时运输</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%87%BD%E6%95%B0%E5%8F%A5%E6%9F%84"><span class="toc-number">11.9.</span> <span class="toc-text">函数句柄</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%96%87%E4%BB%B6%E6%93%8D%E4%BD%9C"><span class="toc-number">12.</span> <span class="toc-text">文件操作</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%A7%A3%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B"><span class="toc-number">13.</span> <span class="toc-text">解微分方程</span></a></li></ol></div></div></div></div></main><footer id="footer" style="background-image: url('https://s2.loli.net/2022/01/31/B4ikAOp8HDSPnhF.jpg')"><div id="footer-wrap"><div class="copyright">&copy;2022 - 2023 By jjyaoao</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div><div class="footer_custom_text">Hi, welcome to my <a target="_blank" rel="noopener" href="https://butterfly.js.org/">blog</a>!</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="chat_btn" type="button" title="rightside.chat_btn"><i class="fas fa-sms"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div id="algolia-search"><div class="search-dialog"><div class="search-dialog__title" id="algolia-search-title">Algolia</div><div id="algolia-input-panel"><div id="algolia-search-input"></div></div><hr/><div id="algolia-search-results"><div id="algolia-hits"></div><div id="algolia-pagination"></div><div id="algolia-stats"></div></div><span class="search-close-button"><i class="fas fa-times"></i></span></div><div id="search-mask"></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.js"></script><script src="/js/search/algolia.js"></script><script>var preloader = {
+  endLoading: () => {
+    document.body.style.overflow = 'auto';
+    document.getElementById('loading-box').classList.add("loaded")
+  },
+  initLoading: () => {
+    document.body.style.overflow = '';
+    document.getElementById('loading-box').classList.remove("loaded")
+
+  }
+}
+window.addEventListener('load',preloader.endLoading())</script><div class="js-pjax"><script>function loadLivere () {
+  if (typeof LivereTower === 'object') {
+    window.LivereTower.init()
+  }
+  else {
+    (function(d, s) {
+        var j, e = d.getElementsByTagName(s)[0];
+        if (typeof LivereTower === 'function') { return; }
+        j = d.createElement(s);
+        j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+        j.async = true;
+        e.parentNode.insertBefore(j, e);
+    })(document, 'script');
+  }
+}
+
+if ('Livere' === 'Livere' || !true) {
+  if (true) btf.loadComment(document.getElementById('lv-container'), loadLivere)
+  else loadLivere()
+}
+else {
+  function loadOtherComment () {
+    loadLivere()
+  }
+}</script><script>function loadValine () {
+  function initValine () {
+    const valine = new Valine(Object.assign({
+      el: '#vcomment',
+      appId: 'cFvw1zyA64uttBS5jbYY7pwH-gzGzoHsz',
+      appKey: '14rOjAUNzRyJSQt983q6gdza',
+      placeholder: 'Please leave your footprints',
+      avatar: 'monsterid',
+      meta: 'nick,mail,link'.split(','),
+      pageSize: '10',
+      lang: 'en',
+      recordIP: false,
+      serverURLs: '',
+      emojiCDN: '',
+      emojiMaps: "",
+      enableQQ: false,
+      path: window.location.pathname,
+      requiredFields: ["nick,mail"],
+      visitor: false
+    }, null))
+  }
+
+  if (typeof Valine === 'function') initValine() 
+  else getScript('https://cdn.jsdelivr.net/npm/valine/dist/Valine.min.js').then(initValine)
+}
+
+if ('Livere' === 'Valine' || !true) {
+  if (true) btf.loadComment(document.getElementById('vcomment'),loadValine)
+  else setTimeout(loadValine, 0)
+} else {
+  function loadOtherComment () {
+    loadValine()
+  }
+}</script></div><script defer="defer" id="fluttering_ribbon" mobile="true" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/canvas-fluttering-ribbon.min.js"></script><script id="canvas_nest" defer="defer" color="0,0,255" opacity="0.7" zIndex="-1" count="99" mobile="true" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/canvas-nest.min.js"></script><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/activate-power-mode.min.js"></script><script>POWERMODE.colorful = true;
+POWERMODE.shake = false;
+POWERMODE.mobile = false;
+document.body.addEventListener('input', POWERMODE);
+</script><script id="click-show-text" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/click-show-text.min.js" data-mobile="false" data-text="富强,民主,文明,和谐,自由,平等,公正,法治,爱国,敬业,诚信,友善,感谢" data-fontsize="15px" data-random="false" async="async"></script><script>(function(d, w, c) {
+    w.ChatraID = 'zgYNWkNCSATLRhpg4';
+    var s = d.createElement('script');
+    w[c] = w[c] || function() {
+        (w[c].q = w[c].q || []).push(arguments);
+    };
+    s.async = true;
+    s.src = 'https://call.chatra.io/chatra.js';
+    if (d.head) d.head.appendChild(s);
+})(document, window, 'Chatra');
+
+if (true) {
+  var chatBtnFn = () => {
+    var chatBtn = document.getElementById("chat_btn")
+    chatBtn.addEventListener("click", function(){
+      Chatra('openChat')
+    });
+  }
+  chatBtnFn()
+} else {
+  if (true) {
+    function chatBtnHide () {
+      Chatra('hide')
+    }
+    function chatBtnShow () {
+      Chatra('show')
+    }
+  }
+}</script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>

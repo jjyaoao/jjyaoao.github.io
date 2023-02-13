@@ -1,0 +1,526 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>数据表示 | jjyaoao's Home</title><meta name="keywords" content="计组第二章"><meta name="author" content="jjyaoao,jjyaoao@126.com"><meta name="copyright" content="jjyaoao"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="计组第二章">
+<meta property="og:type" content="article">
+<meta property="og:title" content="数据表示">
+<meta property="og:url" content="http://jjyaoao.space/2022/01/14/%E6%95%B0%E6%8D%AE%E8%A1%A8%E7%A4%BA/index.html">
+<meta property="og:site_name" content="jjyaoao&#39;s Home">
+<meta property="og:description" content="计组第二章">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://s2.loli.net/2022/01/13/TFLYzUAxGcRmW6C.jpg">
+<meta property="article:published_time" content="2022-01-14T12:40:50.000Z">
+<meta property="article:modified_time" content="2022-02-26T13:49:03.519Z">
+<meta property="article:author" content="jjyaoao">
+<meta property="article:tag" content="学习笔记">
+<meta property="article:tag" content="思维导图">
+<meta property="article:tag" content="教程">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://s2.loli.net/2022/01/13/TFLYzUAxGcRmW6C.jpg"><link rel="shortcut icon" href="https://s2.loli.net/2022/01/09/le6jcmPKuJihDdU.jpg"><link rel="canonical" href="http://jjyaoao.space/2022/01/14/%E6%95%B0%E6%8D%AE%E8%A1%A8%E7%A4%BA/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//hm.baidu.com"/><link rel="preconnect" href="//fonts.googleapis.com" crossorigin=""/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.10.5/dist/instantsearch.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/instantsearch.js@2.10.5/dist/instantsearch.min.js" defer></script><script>var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?06fb7a80772d98cbf9e7beeb76e262e4";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web&amp;display=swap" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: {"appId":"JOZPQM4N5F","apiKey":"42451c032f2166ed9800520810e2d223","indexName":"jjyaoao-blog","hits":{"per_page":10},"languages":{"input_placeholder":"搜索文章","hits_empty":"找不到您查询的内容：${query}","hits_stats":"找到 ${hits} 条结果，用时 ${time} 毫秒"}},
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: true,
+    post: true
+  },
+  runtime: '天',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: {"chs_to_cht":"你已切换为繁体","cht_to_chs":"你已切换为简体","day_to_night":"你已切换为深色模式","night_to_day":"你已切换为浅色模式","bgLight":"#49b1f5","bgDark":"#121212","position":"bottom-left"},
+  source: {
+    jQuery: 'https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js',
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/js/jquery.justifiedGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/css/justifiedGallery.min.css'
+    },
+    fancybox: {
+      js: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isanchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '数据表示',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: false,
+  postUpdate: '2022-02-26 21:49:03'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if (GLOBAL_CONFIG_SITE.isHome && /iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><meta name="generator" content="Hexo 6.0.0"></head><body><div id="loading-box"><div class="loading-left-bg"></div><div class="loading-right-bg"></div><div class="spinner-box"><div class="configure-border-1"><div class="configure-core"></div></div><div class="configure-border-2"><div class="configure-core"></div></div><div class="loading-word">加载中...</div></div></div><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://s2.loli.net/2022/01/09/le6jcmPKuJihDdU.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data"><div class="data-item is-center"><div class="data-item-link"><a href="/archives/"><div class="headline">文章</div><div class="length-num">63</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/tags/"><div class="headline">标签</div><div class="length-num">10</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/categories/"><div class="headline">分类</div><div class="length-num">79</div></a></div></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fa fa-heartbeat"></i><span> 清单</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音樂</span></a></li><li><a class="site-page child" href="/Gallery/"><i class="fa-fw fas fa-images"></i><span> 照片</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://s2.loli.net/2022/01/13/TFLYzUAxGcRmW6C.jpg')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">jjyaoao's Home</a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fa fa-heartbeat"></i><span> 清单</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音樂</span></a></li><li><a class="site-page child" href="/Gallery/"><i class="fa-fw fas fa-images"></i><span> 照片</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">数据表示</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2022-01-14T12:40:50.000Z" title="发表于 2022-01-14 20:40:50">2022-01-14</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2022-02-26T13:49:03.519Z" title="更新于 2022-02-26 21:49:03">2022-02-26</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86/">计算机组成原理</a><i class="fas fa-angle-right post-meta-separator"></i><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86/%E8%AE%A1%E7%BB%84-%E6%95%B0%E6%8D%AE%E8%A1%A8%E7%A4%BA/">计组-数据表示</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">1.4k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>4分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="数据表示"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><blockquote>
+<p>以下具体框架来自华中科技大学 谭志虎 老师，本人根据框架补充自己的一些体会和见解。仅当作学习笔记使用</p>
+</blockquote>
+<p><em>Target：</em></p>
+<p><img src="/2022/01/14/%E6%95%B0%E6%8D%AE%E8%A1%A8%E7%A4%BA/image-20220114203640113.png" alt="image-20220114203640113"></p>
+<p><strong>二、数据表示</strong></p>
+<ul>
+<li><p><strong>数字与编码</strong></p>
+<ul>
+<li><p><strong>进位制数及其相互转换</strong></p>
+<ul>
+<li><strong>二进制编码</strong><ul>
+<li>两种状态，容易与物理状态对应</li>
+<li>可以表示任何信息<ul>
+<li>位数有限时不能表示循环小数</li>
+</ul>
+</li>
+<li>运算规则简单，适合用布尔代数设计电路，制造成本低</li>
+</ul>
+</li>
+<li><strong>数制转换</strong><ul>
+<li>二进制转十进制<ul>
+<li>加权展开</li>
+</ul>
+</li>
+<li>十进制到二进制<ul>
+<li>整数除二取余，先余为低</li>
+<li>小数乘2取整，先整为高</li>
+</ul>
+</li>
+<li>二进制转八进制 或16进制<ul>
+<li> 从小数点向左右3/4位一分组</li>
+<li>(10 011 100 . 01)_2= ( 234 . 2 )_8                           (10011100.01)2=(234.2)8</li>
+<li>(1001 1100 . 01)<em>2  = ( 9C . 4 )</em>{16} (10011100.01)2=(9<em>C</em>.4)16</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><strong>真值和机器数</strong></p>
+<ul>
+<li><p><strong>真值</strong></p>
+<ul>
+<li>用<strong>“＋”、 “－”</strong>表示<strong>符号</strong>的数据格式，是机器数代表的实际值</li>
+<li>用于数据输出</li>
+</ul>
+</li>
+<li><p><strong>机器数(码)</strong></p>
+<ul>
+<li><strong>“0”或“1”</strong>表示的<strong>符号</strong>和<strong>数值</strong>的数据格式</li>
+<li>用于计算机存储，运算</li>
+</ul>
+</li>
+<li><p><strong>常见机器码</strong></p>
+<ul>
+<li><strong>原码</strong><ul>
+<li>符号化的数值，“0”表示正数，“1”表示负数</li>
+<li>最高位符号位，其它是数的绝对值</li>
+<li>在数轴上的表示区间对称</li>
+<li>存在正零和负零两个零</li>
+<li>运算比较复杂，主要用于表示浮点数的尾码</li>
+</ul>
+</li>
+<li><strong>反码</strong><ul>
+<li><strong>符号位与原码相同</strong>，表示范围也相同</li>
+<li>在数轴上的表示区间对称</li>
+<li>当真值为正数时，反码和原码相同</li>
+<li>当真值为负数时，数值部分要逐位取反</li>
+<li>主要用于求补</li>
+</ul>
+</li>
+<li><strong>补码</strong><ul>
+<li>数据表示建立在“模”的概念基础上，模的值即为符号位进位的权值。<ul>
+<li>模2的补码<ul>
+<li>定点小数模值为2</li>
+<li>定点整数模值为2^{n+1}2<em>n</em>+1</li>
+</ul>
+</li>
+<li>模4的补码：变形补码<ul>
+<li>定点小数模值为4</li>
+<li>定点整数模值为2^{n+2}2<em>n</em>+2</li>
+</ul>
+</li>
+<li>其中<em>n</em>为数值位位数</li>
+</ul>
+</li>
+<li>当真值为负数时，补码等于真值加上模</li>
+<li>在数轴上的表示区间不对称<ul>
+<li><strong>唯一的机器零（少一个）</strong></li>
+<li><strong>最左侧</strong>比原码、反码<strong>多</strong>表示<strong>一个</strong><u>最小负数</u></li>
+</ul>
+</li>
+<li>补码符号位可以直接参与加减运算，运算电路实现方便</li>
+<li>计算机中<strong>整数采用补码</strong>进行存储、表示和运算</li>
+</ul>
+</li>
+<li><strong>移码</strong><ul>
+<li>只用于表示整数，也称偏移码，真值+常量</li>
+<li>方便比较大小，数字越大，真值越大</li>
+<li>*****移码和补码的符号位相反，数值位相同<ul>
+<li>​    为了确保所有码都为正，通常加上偏移量后二进制数为000….<ul>
+<li>因此0也是唯一的</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>用于<strong>表示浮点数的阶码</strong></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><strong>机器码表示范围</strong>（只需记住补码公式，加模数）</p>
+<ul>
+<li><p><img src="/2022/01/14/%E6%95%B0%E6%8D%AE%E8%A1%A8%E7%A4%BA/8274186f-11f0-4065-8723-aafe9a0220e4-329792.jpg" alt="8274186f-11f0-4065-8723-aafe9a0220e4-329792"></p>
+</li>
+<li><p>补码机器零唯一，相比其他编码多表示一个绝对值最大的负数，小数为-1，整数为-2^{n}−2<em>n</em></p>
+</li>
+</ul>
+</li>
+<li><p><strong>机器码在数轴上的表示（</strong>对比理解<strong>）</strong></p>
+<ul>
+<li><img src="/2022/01/14/%E6%95%B0%E6%8D%AE%E8%A1%A8%E7%A4%BA/d971313c-94f7-483b-ad4f-a9f500063e43-329792-16422424923951.jpg" alt="d971313c-94f7-483b-ad4f-a9f500063e43-329792"></li>
+</ul>
+</li>
+<li><p><strong>机器码之间的转换</strong></p>
+<ul>
+<li>利用编码特性直接转换</li>
+<li><strong>转换为真值</strong>再转换（简单有效）</li>
+</ul>
+</li>
+<li><p>考研真题</p>
+<ul>
+<li>真题1<ul>
+<li><img src="/2022/01/14/%E6%95%B0%E6%8D%AE%E8%A1%A8%E7%A4%BA/b7fbcd57-4a03-4ab1-9f63-925f2db9dd36-329792.jpg" alt="b7fbcd57-4a03-4ab1-9f63-925f2db9dd36-329792"></li>
+</ul>
+</li>
+<li>真题2<ul>
+<li><img src="/2022/01/14/%E6%95%B0%E6%8D%AE%E8%A1%A8%E7%A4%BA/60c991b6-71e2-49fe-b03d-9e3cbc6c66d1-329792.jpg" alt="60c991b6-71e2-49fe-b03d-9e3cbc6c66d1-329792"></li>
+</ul>
+</li>
+<li>真题3<ul>
+<li><img src="/2022/01/14/%E6%95%B0%E6%8D%AE%E8%A1%A8%E7%A4%BA/9cdb97ba-d7cd-4f65-aa98-375101c72b0d-329792.jpg" alt="9cdb97ba-d7cd-4f65-aa98-375101c72b0d-329792"></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><strong>字符与字符串</strong></p>
+<ul>
+<li><p><strong>ASCII码</strong></p>
+<ul>
+<li>国际通用的字符码，7位表示128个字符</li>
+<li>实际占用1个字节，最高有效位MSB=0(二进制的最左边那位)</li>
+<li>33个控制字符；其余为可打印字符</li>
+<li>常见代码（了解）<ul>
+<li>20H 开始是空格等可打印字符</li>
+<li>0 ～ 9 这 10 个数字是从30H 开始的一个连续区域</li>
+<li>大写英文字母是从 41H 开始的一个连续区域</li>
+<li>小写英文字母是从 61H 开始的一个连续区域</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><strong>汉字编码</strong></p>
+<ul>
+<li><p>分类</p>
+<ul>
+<li>输入码：  汉字的输入<ul>
+<li>拼音，五笔等</li>
+</ul>
+</li>
+<li>机内码：  汉字的存储<ul>
+<li>GB2312、GBK、GB18030、Unicode、BIG5等标准</li>
+</ul>
+</li>
+<li>字形码：  汉字的输出</li>
+</ul>
+</li>
+<li><p>GB2312(国标码)</p>
+<ul>
+<li><p>区位码</p>
+<ul>
+<li>矩阵形式，由4位十进制数构成，前2位<strong>区码</strong>，后2位<strong>位码</strong></li>
+</ul>
+</li>
+<li><p>汉字机内码：国标码 （16进制）+ 8080H</p>
+</li>
+<li><p>汉字机内码：区位码（16进制）+A0A0H</p>
+</li>
+<li><p>国标码：（区位码的十六进制表示）＋2020H</p>
+<ul>
+<li>列：1、区号为20，位号为83</li>
+<li>2、将区位号2083转换为十六进制表示为1453H</li>
+<li>3、1453H＋2020H＝3473H，得到国标码3473H</li>
+<li>4、3473H＋8080H＝B4F3H，得到机内码为B4F3H<ul>
+<li>区分ASCII码，MSB=1</li>
+<li>GB2312汉字占用两个字节，有效位14位</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><strong>字符串</strong></p>
+<ul>
+<li>小端模式：数据<strong>最高</strong>有效字节存放在<strong>高</strong>地址单元中</li>
+<li>大端模式：数据<strong>最高</strong>有效字节存放在<strong>低</strong>地址单元中</li>
+</ul>
+</li>
+<li><p>从低地址到高地址<strong>逐个</strong>字符储存，以”<strong>\0</strong>“结束的字符序列</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><strong>数据表示</strong></p>
+<ul>
+<li><strong>定义</strong><ul>
+<li>将数据按照某种方式组织，以便机器硬件能直接识别和使用。</li>
+</ul>
+</li>
+<li><strong>关键问题</strong><ul>
+<li>数据表示的范围和精度</li>
+<li>数据存储和处理的代价</li>
+<li>软件的可移植性问题</li>
+</ul>
+</li>
+<li><strong>数据格式</strong><ul>
+<li>使用二进制编码表示实际数据的结构形式</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><strong>定点数的表示</strong></p>
+<ul>
+<li><strong>定点数概念</strong><ul>
+<li>小数点位置固定的数</li>
+</ul>
+</li>
+<li><strong>定点数分类</strong><ul>
+<li>有符号数无符号数<ul>
+<li>机器码到底有无符号取决于输出形式</li>
+<li>C语言中printf中%d输出，%u表示无符号</li>
+</ul>
+</li>
+<li>定点整数和定点小数<ul>
+<li>定点小数：小数点隐含在符号位之后，有效数值部分最高位之前</li>
+<li>定点整数：小数点在有效数值部分最低位之后</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>溢出问题</strong>（运算章节继续深入）<ul>
+<li>定点整数存在上溢问题（超出表示范围）</li>
+<li>定点小数存在精度溢出问题（超出表示精度）<ul>
+<li><img src="/2022/01/14/%E6%95%B0%E6%8D%AE%E8%A1%A8%E7%A4%BA/31f8028a-da18-4515-b8df-87d475ee79dc-329792.jpg" alt="31f8028a-da18-4515-b8df-87d475ee79dc-329792"></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="mailto:jjyaoao@126.com">jjyaoao</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="http://jjyaoao.space/2022/01/14/%E6%95%B0%E6%8D%AE%E8%A1%A8%E7%A4%BA/">http://jjyaoao.space/2022/01/14/%E6%95%B0%E6%8D%AE%E8%A1%A8%E7%A4%BA/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="http://jjyaoao.space" target="_blank">jjyaoao's Home</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">学习笔记</a><a class="post-meta__tags" href="/tags/%E6%80%9D%E7%BB%B4%E5%AF%BC%E5%9B%BE/">思维导图</a><a class="post-meta__tags" href="/tags/%E6%95%99%E7%A8%8B/">教程</a></div><div class="post_share"><div class="addthis_inline_share_toolbox"></div><script src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-61dbf69078ce19aa" async="async"></script></div></div><div class="post-reward"><div class="reward-button button--animated"><i class="fas fa-qrcode"></i> 打赏</div><div class="reward-main"><ul class="reward-all"><li class="reward-item"><a href="https://s2.loli.net/2022/01/09/HMjygFAKr2nPWdJ.jpg" target="_blank"><img class="post-qr-code-img" src="https://s2.loli.net/2022/01/09/HMjygFAKr2nPWdJ.jpg" alt="微信"/></a><div class="post-qr-code-desc">微信</div></li><li class="reward-item"><a href="https://s2.loli.net/2022/01/09/JL43sbhxUEOuVeM.jpg" target="_blank"><img class="post-qr-code-img" src="https://s2.loli.net/2022/01/09/JL43sbhxUEOuVeM.jpg" alt="支付宝"/></a><div class="post-qr-code-desc">支付宝</div></li></ul></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/2022/01/14/%E6%95%B0%E6%8D%AE%E8%AE%A1%E7%AE%97/"><img class="prev-cover" src="https://s2.loli.net/2022/01/13/TFLYzUAxGcRmW6C.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">数据计算</div></div></a></div><div class="next-post pull-right"><a href="/2022/01/13/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E6%A6%82%E8%BF%B0/"><img class="next-cover" src="https://s2.loli.net/2022/01/13/TFLYzUAxGcRmW6C.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">计算机系统概述</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>相关推荐</span></div><div class="relatedPosts-list"><div><a href="/2022/01/22/IO%E7%B3%BB%E7%BB%9F/" title="IO系统"><img class="cover" src="https://s2.loli.net/2022/01/13/TFLYzUAxGcRmW6C.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-01-22</div><div class="title">IO系统</div></div></a></div><div><a href="/2022/01/18/%E4%B8%AD%E5%A4%AE%E5%A4%84%E7%90%86%E5%99%A8/" title="中央处理器"><img class="cover" src="https://s2.loli.net/2022/01/13/TFLYzUAxGcRmW6C.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-01-18</div><div class="title">中央处理器</div></div></a></div><div><a href="/2022/01/16/%E5%AD%98%E5%82%A8%E7%B3%BB%E7%BB%9F/" title="存储系统"><img class="cover" src="https://s2.loli.net/2022/01/13/TFLYzUAxGcRmW6C.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-01-16</div><div class="title">存储系统</div></div></a></div><div><a href="/2022/01/20/%E6%80%BB%E7%BA%BF/" title="总线"><img class="cover" src="https://s2.loli.net/2022/01/13/TFLYzUAxGcRmW6C.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-01-20</div><div class="title">总线</div></div></a></div><div><a href="/2022/01/17/%E6%8C%87%E4%BB%A4%E7%B3%BB%E7%BB%9F/" title="指令系统"><img class="cover" src="https://s2.loli.net/2022/01/13/TFLYzUAxGcRmW6C.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-01-17</div><div class="title">指令系统</div></div></a></div><div><a href="/2022/01/14/%E6%95%B0%E6%8D%AE%E8%AE%A1%E7%AE%97/" title="数据计算"><img class="cover" src="https://s2.loli.net/2022/01/13/TFLYzUAxGcRmW6C.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-01-14</div><div class="title">数据计算</div></div></a></div></div></div><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div><div id="comment-switch"><span class="first-comment">Livere</span><span class="switch-btn"></span><span class="second-comment">Valine</span></div></div><div class="comment-wrap"><div><div id="lv-container" data-id="city" data-uid="MTAyMC81NTM1OC8zMTgyNQ=="></div></div><div><div class="vcomment" id="vcomment"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://s2.loli.net/2022/01/09/le6jcmPKuJihDdU.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">jjyaoao</div><div class="author-info__description"></div></div><div class="card-info-data"><div class="card-info-data-item is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">63</div></a></div><div class="card-info-data-item is-center"><a href="/tags/"><div class="headline">标签</div><div class="length-num">10</div></a></div><div class="card-info-data-item is-center"><a href="/categories/"><div class="headline">分类</div><div class="length-num">79</div></a></div></div><a class="button--animated" id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/jjyaoao/"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn card-announcement-animation"></i><span>公告</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2023/02/09/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/" title="操作系统期末冲刺"><img src="https://s2.loli.net/2022/04/06/gUCqjhsOneK5DH7.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="操作系统期末冲刺"/></a><div class="content"><a class="title" href="/2023/02/09/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/" title="操作系统期末冲刺">操作系统期末冲刺</a><time datetime="2023-02-09T03:38:11.000Z" title="发表于 2023-02-09 11:38:11">2023-02-09</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/12/03/Spring+mvc+boot+maven+mybatis-plus/" title="Spring+mvc+boot+maven+mybatis-plus"><img src="https://s2.loli.net/2022/12/03/xfdS62aWHo4ewRO.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Spring+mvc+boot+maven+mybatis-plus"/></a><div class="content"><a class="title" href="/2022/12/03/Spring+mvc+boot+maven+mybatis-plus/" title="Spring+mvc+boot+maven+mybatis-plus">Spring+mvc+boot+maven+mybatis-plus</a><time datetime="2022-12-03T07:13:22.000Z" title="发表于 2022-12-03 15:13:22">2022-12-03</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/11/21/PPDE%E6%8C%87%E5%AF%BC%E8%AE%A1%E5%88%92/" title="PPDE指导计划"><img src="https://s2.loli.net/2023/02/13/i9PATYWgsR36xCq.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="PPDE指导计划"/></a><div class="content"><a class="title" href="/2022/11/21/PPDE%E6%8C%87%E5%AF%BC%E8%AE%A1%E5%88%92/" title="PPDE指导计划">PPDE指导计划</a><time datetime="2022-11-21T11:06:22.000Z" title="发表于 2022-11-21 19:06:22">2022-11-21</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/11/10/%E5%BA%94%E7%94%A8%E5%AF%86%E7%A0%81%E5%AD%A6%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/" title="应用密码学期末冲刺"><img src="https://s2.loli.net/2022/11/10/zjOrhLsVd8Ttu3v.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="应用密码学期末冲刺"/></a><div class="content"><a class="title" href="/2022/11/10/%E5%BA%94%E7%94%A8%E5%AF%86%E7%A0%81%E5%AD%A6%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/" title="应用密码学期末冲刺">应用密码学期末冲刺</a><time datetime="2022-11-10T13:22:22.000Z" title="发表于 2022-11-10 21:22:22">2022-11-10</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/10/20/%E6%84%9F%E7%9F%A5%E6%9C%BA/" title="感知机+白板推导系列"><img src="https://s2.loli.net/2022/10/31/Sl5WoGUL1RakV67.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="感知机+白板推导系列"/></a><div class="content"><a class="title" href="/2022/10/20/%E6%84%9F%E7%9F%A5%E6%9C%BA/" title="感知机+白板推导系列">感知机+白板推导系列</a><time datetime="2022-10-19T17:22:22.000Z" title="发表于 2022-10-20 01:22:22">2022-10-20</time></div></div></div></div></div></div></main><footer id="footer" style="background-image: url('https://s2.loli.net/2022/01/13/TFLYzUAxGcRmW6C.jpg')"><div id="footer-wrap"><div class="copyright">&copy;2022 - 2023 By jjyaoao</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div><div class="footer_custom_text">Hi, welcome to my <a target="_blank" rel="noopener" href="https://butterfly.js.org/">blog</a>!</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button id="chat_btn" type="button" title="rightside.chat_btn"><i class="fas fa-sms"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div id="algolia-search"><div class="search-dialog"><div class="search-dialog__title" id="algolia-search-title">Algolia</div><div id="algolia-input-panel"><div id="algolia-search-input"></div></div><hr/><div id="algolia-search-results"><div id="algolia-hits"></div><div id="algolia-pagination"></div><div id="algolia-stats"></div></div><span class="search-close-button"><i class="fas fa-times"></i></span></div><div id="search-mask"></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.js"></script><script src="/js/search/algolia.js"></script><script>var preloader = {
+  endLoading: () => {
+    document.body.style.overflow = 'auto';
+    document.getElementById('loading-box').classList.add("loaded")
+  },
+  initLoading: () => {
+    document.body.style.overflow = '';
+    document.getElementById('loading-box').classList.remove("loaded")
+
+  }
+}
+window.addEventListener('load',preloader.endLoading())</script><div class="js-pjax"><script>function loadLivere () {
+  if (typeof LivereTower === 'object') {
+    window.LivereTower.init()
+  }
+  else {
+    (function(d, s) {
+        var j, e = d.getElementsByTagName(s)[0];
+        if (typeof LivereTower === 'function') { return; }
+        j = d.createElement(s);
+        j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+        j.async = true;
+        e.parentNode.insertBefore(j, e);
+    })(document, 'script');
+  }
+}
+
+if ('Livere' === 'Livere' || !true) {
+  if (true) btf.loadComment(document.getElementById('lv-container'), loadLivere)
+  else loadLivere()
+}
+else {
+  function loadOtherComment () {
+    loadLivere()
+  }
+}</script><script>function loadValine () {
+  function initValine () {
+    const valine = new Valine(Object.assign({
+      el: '#vcomment',
+      appId: 'cFvw1zyA64uttBS5jbYY7pwH-gzGzoHsz',
+      appKey: '14rOjAUNzRyJSQt983q6gdza',
+      placeholder: 'Please leave your footprints',
+      avatar: 'monsterid',
+      meta: 'nick,mail,link'.split(','),
+      pageSize: '10',
+      lang: 'en',
+      recordIP: false,
+      serverURLs: '',
+      emojiCDN: '',
+      emojiMaps: "",
+      enableQQ: false,
+      path: window.location.pathname,
+      requiredFields: ["nick,mail"],
+      visitor: false
+    }, null))
+  }
+
+  if (typeof Valine === 'function') initValine() 
+  else getScript('https://cdn.jsdelivr.net/npm/valine/dist/Valine.min.js').then(initValine)
+}
+
+if ('Livere' === 'Valine' || !true) {
+  if (true) btf.loadComment(document.getElementById('vcomment'),loadValine)
+  else setTimeout(loadValine, 0)
+} else {
+  function loadOtherComment () {
+    loadValine()
+  }
+}</script></div><script defer="defer" id="fluttering_ribbon" mobile="true" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/canvas-fluttering-ribbon.min.js"></script><script id="canvas_nest" defer="defer" color="0,0,255" opacity="0.7" zIndex="-1" count="99" mobile="true" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/canvas-nest.min.js"></script><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/activate-power-mode.min.js"></script><script>POWERMODE.colorful = true;
+POWERMODE.shake = false;
+POWERMODE.mobile = false;
+document.body.addEventListener('input', POWERMODE);
+</script><script id="click-show-text" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/click-show-text.min.js" data-mobile="false" data-text="富强,民主,文明,和谐,自由,平等,公正,法治,爱国,敬业,诚信,友善,感谢" data-fontsize="15px" data-random="false" async="async"></script><script>(function(d, w, c) {
+    w.ChatraID = 'zgYNWkNCSATLRhpg4';
+    var s = d.createElement('script');
+    w[c] = w[c] || function() {
+        (w[c].q = w[c].q || []).push(arguments);
+    };
+    s.async = true;
+    s.src = 'https://call.chatra.io/chatra.js';
+    if (d.head) d.head.appendChild(s);
+})(document, window, 'Chatra');
+
+if (true) {
+  var chatBtnFn = () => {
+    var chatBtn = document.getElementById("chat_btn")
+    chatBtn.addEventListener("click", function(){
+      Chatra('openChat')
+    });
+  }
+  chatBtnFn()
+} else {
+  if (true) {
+    function chatBtnHide () {
+      Chatra('hide')
+    }
+    function chatBtnShow () {
+      Chatra('show')
+    }
+  }
+}</script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
