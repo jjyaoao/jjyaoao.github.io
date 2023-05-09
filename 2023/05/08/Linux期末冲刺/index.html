@@ -1,0 +1,611 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>linux期末冲刺 | jjyaoao's Home</title><meta name="keywords" content="linux期末冲刺"><meta name="author" content="jjyaoao,jjyaoao@126.com"><meta name="copyright" content="jjyaoao"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="喜闻乐见的期末冲刺环节">
+<meta property="og:type" content="article">
+<meta property="og:title" content="linux期末冲刺">
+<meta property="og:url" content="http://jjyaoao.space/2023/05/08/Linux%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/index.html">
+<meta property="og:site_name" content="jjyaoao&#39;s Home">
+<meta property="og:description" content="喜闻乐见的期末冲刺环节">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://s2.loli.net/2023/05/08/RJmFMvZsr8LO5lt.png">
+<meta property="article:published_time" content="2023-05-08T03:55:11.000Z">
+<meta property="article:modified_time" content="2023-05-09T07:30:10.094Z">
+<meta property="article:author" content="jjyaoao">
+<meta property="article:tag" content="遗忘指南">
+<meta property="article:tag" content="学习笔记">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://s2.loli.net/2023/05/08/RJmFMvZsr8LO5lt.png"><link rel="shortcut icon" href="https://s2.loli.net/2022/01/09/le6jcmPKuJihDdU.jpg"><link rel="canonical" href="http://jjyaoao.space/2023/05/08/Linux%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//hm.baidu.com"/><link rel="preconnect" href="//fonts.googleapis.com" crossorigin=""/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.10.5/dist/instantsearch.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/instantsearch.js@2.10.5/dist/instantsearch.min.js" defer></script><script>var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?06fb7a80772d98cbf9e7beeb76e262e4";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web&amp;display=swap" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: {"appId":"JOZPQM4N5F","apiKey":"42451c032f2166ed9800520810e2d223","indexName":"jjyaoao-blog","hits":{"per_page":10},"languages":{"input_placeholder":"搜索文章","hits_empty":"找不到您查询的内容：${query}","hits_stats":"找到 ${hits} 条结果，用时 ${time} 毫秒"}},
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: true,
+    post: true
+  },
+  runtime: '天',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: {"chs_to_cht":"你已切换为繁体","cht_to_chs":"你已切换为简体","day_to_night":"你已切换为深色模式","night_to_day":"你已切换为浅色模式","bgLight":"#49b1f5","bgDark":"#121212","position":"bottom-left"},
+  source: {
+    jQuery: 'https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js',
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/js/jquery.justifiedGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/css/justifiedGallery.min.css'
+    },
+    fancybox: {
+      js: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isanchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'linux期末冲刺',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2023-05-09 15:30:10'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if (GLOBAL_CONFIG_SITE.isHome && /iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><meta name="generator" content="Hexo 6.0.0"></head><body><div id="loading-box"><div class="loading-left-bg"></div><div class="loading-right-bg"></div><div class="spinner-box"><div class="configure-border-1"><div class="configure-core"></div></div><div class="configure-border-2"><div class="configure-core"></div></div><div class="loading-word">加载中...</div></div></div><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://s2.loli.net/2022/01/09/le6jcmPKuJihDdU.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data"><div class="data-item is-center"><div class="data-item-link"><a href="/archives/"><div class="headline">文章</div><div class="length-num">71</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/tags/"><div class="headline">标签</div><div class="length-num">10</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/categories/"><div class="headline">分类</div><div class="length-num">85</div></a></div></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fa fa-heartbeat"></i><span> 清单</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音樂</span></a></li><li><a class="site-page child" href="/Gallery/"><i class="fa-fw fas fa-images"></i><span> 照片</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://s2.loli.net/2023/05/08/RJmFMvZsr8LO5lt.png')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">jjyaoao's Home</a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fa fa-heartbeat"></i><span> 清单</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音樂</span></a></li><li><a class="site-page child" href="/Gallery/"><i class="fa-fw fas fa-images"></i><span> 照片</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">linux期末冲刺</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2023-05-08T03:55:11.000Z" title="发表于 2023-05-08 11:55:11">2023-05-08</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-05-09T07:30:10.094Z" title="更新于 2023-05-09 15:30:10">2023-05-09</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E8%AF%BE%E7%A8%8B/">课程</a><i class="fas fa-angle-right post-meta-separator"></i><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E8%AF%BE%E7%A8%8B/linux/">linux</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">5.2k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>19分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="linux期末冲刺"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h1 id="得分细则"><a href="#得分细则" class="headerlink" title="得分细则"></a>得分细则</h1><p>第一部分：选择题（30分）（15个，每题2分）</p>
+<p>第二部分：填空题（20分）（10个，每空2分）</p>
+<p>第三部分：编程题（20分）（5题，每题4分）</p>
+<p>第四部分：综合题（30分） （2题，22+8）</p>
+<h1 id="选择题"><a href="#选择题" class="headerlink" title="选择题"></a>选择题</h1><p><img src="/2023/05/08/Linux%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230508112554705.png" alt="image-20230508112554705"></p>
+<p><img src="/2023/05/08/Linux%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230508112603219.png" alt="image-20230508112603219"></p>
+<p><img src="/2023/05/08/Linux%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230508112610618.png" alt="image-20230508112610618"></p>
+<p><img src="/2023/05/08/Linux%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230508112618029.png" alt="image-20230508112618029"></p>
+<p><img src="/2023/05/08/Linux%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230508112629903.png" alt="image-20230508112629903"></p>
+<p><img src="/2023/05/08/Linux%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230508112729610.png" alt="image-20230508112729610"></p>
+<p><img src="/2023/05/08/Linux%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230508113013134.png" alt="image-20230508113013134"></p>
+<ul>
+<li><p><code>-l</code>。该选项会以长格式（long format）显示目录的内容，每个文件或目录占用一行，并列出文件或目录的详细信息，例如权限、所有者、大小、时间戳等。</p>
+</li>
+<li><p><code>-t</code>：按照修改时间（modification time）排序，最新修改的文件或目录会显示在前面。</p>
+</li>
+<li><p><code>-r</code>：按照相反的顺序排序，即倒序排列。</p>
+</li>
+<li><p><code>-s</code>：以文件大小（size）为基准，按照升序排列。这个选项通常用于查找占用磁盘空间较大的文件。</p>
+</li>
+<li><p><code>-A</code>：显示所有文件和目录，包括以<code>.</code>开头的隐藏文件和目录，但不包括<code>.</code>和<code>..</code>目录。这个选项通常用于查看隐藏文件。</p>
+</li>
+</ul>
+<p><img src="/2023/05/08/Linux%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230508113300632.png" alt="image-20230508113300632"></p>
+<ul>
+<li><p><code>-f</code> 选项表示“跟踪”（follow）文件，也就是当文件内容发生变化时，继续输出新的内容。</p>
+</li>
+<li><p><code>-n</code>选项可以指定输出的行数</p>
+</li>
+</ul>
+<p><img src="/2023/05/08/Linux%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230508113602634.png" alt="image-20230508113602634"></p>
+<ul>
+<li><p>选项 A，即 <code>tr</code> 命令(“translate”)，用于转换或删除文件中的字符，不是查看文件的命令。</p>
+</li>
+<li><p>选项 B，即 <code>less</code> 命令，可以用来查看文件内容，并且支持分页显示和滚动查看，但默认只显示文件的一页内容，需要不断按下“空格”键才能逐页查看。</p>
+</li>
+<li><p>选项 C，即 <code>more</code> 命令，也可以用来查看文件内容，并且支持分页显示和滚动查看，但与 <code>less</code> 命令不同的是，<code>more</code> 命令只允许向前翻页，不允许向后滚动查看，而且在查看完一页后，需要按下“空格”键才能查看下一页。</p>
+</li>
+<li><p><code>cat</code> 命令，可以显示文件的全部内容。</p>
+</li>
+</ul>
+<p><img src="/2023/05/08/Linux%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230508113900887.png" alt="image-20230508113900887"></p>
+<p><img src="/2023/05/08/Linux%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230508114134110.png" alt="image-20230508114134110"></p>
+<p><img src="/2023/05/08/Linux%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230508114358387.png" alt="image-20230508114358387"></p>
+<ul>
+<li><p><code>tar</code> 命令用于将多个文件或目录打包成一个文件，称为 tar 归档文件。</p>
+</li>
+<li><p><code>c</code> 选项表示创建归档文件。</p>
+</li>
+<li><p><code>z</code> 选项表示使用 gzip 压缩算法对归档文件进行压缩。</p>
+</li>
+<li><p><code>v</code> 选项表示在归档和压缩过程中显示详细信息，即 verbose 模式。</p>
+</li>
+<li><p><code>f</code> 选项表示指定归档文件的名称。</p>
+</li>
+<li><p><code>x</code> 选项表示从归档文件中提取文件。(解压)</p>
+</li>
+<li><p><code>a</code> 选项表示将文件追加到归档文件中。</p>
+</li>
+</ul>
+<p><img src="/2023/05/08/Linux%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230508114841853.png" alt="image-20230508114841853"></p>
+<ul>
+<li><p><code>*/5 * * * *</code> 表示每隔5分钟执行一次 <code>crontab</code> 任务。</p>
+</li>
+<li><p><code>* */5 * * *</code> 表示每隔5小时执行一次 <code>crontab</code> 任务。</p>
+</li>
+<li><p><code>* * */5 * *</code> 表示每个月的每个5天执行一次 <code>crontab</code> 任务。</p>
+</li>
+<li><p><code>* * * */5 *</code> 表示每隔 5 个月的所有时间点上执行一次 <code>crontab</code> 任务。</p>
+</li>
+<li><p><code>* * * * */5</code> 表示每隔 5 天执行一次 <code>crontab</code> 任务。</p>
+</li>
+</ul>
+<p><img src="/2023/05/08/Linux%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230508115932021.png" alt="image-20230508115932021"></p>
+<p><img src="/2023/05/08/Linux%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230508115954356.png" alt="image-20230508115954356"></p>
+<p><code>$&#123;arr[*]&#125;</code> 是一种数组变量展开的方式，它会将数组 <code>arr</code> 中的所有元素当成一个整体，用空格隔开，并打印出来。</p>
+<p><code>$&#123;arr[@]&#125;</code>，它也可以打印出数组 <code>arr</code> 中的所有元素，但是每个元素会被视为一个独立的单词。</p>
+<p><img src="/2023/05/08/Linux%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230508120301903.png" alt="image-20230508120301903"></p>
+<p><code>let</code> 命令可以用来执行简单的整数运算，例如加减乘除、赋值、自增自减等。它可以直接操作变量，也可以将计算结果赋值给变量。例如：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">cssCopy codea=5</span><br><span class="line">b=3</span><br><span class="line">let c=a+b    # 计算 a+b 的结果并将结果赋值给变量 c</span><br><span class="line">echo $c      # 输出 8</span><br></pre></td></tr></table></figure>
+
+<p><code>&#123;&#125;</code> 和 <code>()</code> 是用来定义命令组的，它们不是用来进行整数运算的。<code>expr</code> 命令可以用来进行数学表达式计算，但它比较麻烦，不如 <code>let</code> 命令方便。</p>
+<p><code>exprs</code> 并不是一个有效的 Linux 命令，它不具备任何实际作用。</p>
+<p><img src="/2023/05/08/Linux%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230508120719017.png" alt="image-20230508120719017"></p>
+<p><img src="/2023/05/08/Linux%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230508120838260.png" alt="image-20230508120838260"></p>
+<p><img src="/2023/05/08/Linux%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230508121021012.png" alt="image-20230508121021012"></p>
+<p><img src="/2023/05/08/Linux%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230508121030453.png" alt="image-20230508121030453"></p>
+<p><code>rm &#123;&#125; \;</code> 意味着对于每个匹配到的文件</p>
+<p><code>\;</code> 用于表示 <code>-exec</code> 选项的结束。</p>
+<p>使用 <code>&#123;&#125;</code> 通常表示要删除多个文件，而 <code>[]</code> 通常表示要删除一组文件</p>
+<p><img src="/2023/05/08/Linux%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230508121933326.png" alt="image-20230508121933326"></p>
+<p><img src="/2023/05/08/Linux%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230508121940460.png" alt="image-20230508121940460"></p>
+<p><img src="/2023/05/08/Linux%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230508121947807.png" alt="image-20230508121947807"></p>
+<ol>
+<li><code>unset</code>命令用于取消或删除环境变量或函数。例如，要取消名为<code>MY_VAR</code>的环境变量，可以使用以下命令：<code>unset MY_VAR</code>。同样的，要取消名为<code>myfunc</code>的函数，可以使用<code>unset -f myfunc</code>。</li>
+<li><code>alias</code>命令用于创建命令别名。使用别名可以简化命令行输入，特别是当你需要经常使用相同的命令，但是命令很长或复杂时，可以通过定义别名来减少输入量。例如，要将<code>ls -l</code>命令定义为别名<code>ll</code>，可以使用以下命令：<code>alias ll=&#39;ls -l&#39;</code>。这样，以后输入<code>ll</code>就相当于输入了<code>ls -l</code>。如果要取消别名，可以使用<code>unalias</code>命令，例如<code>unalias ll</code>将取消<code>ll</code>别名。</li>
+</ol>
+<p><img src="/2023/05/08/Linux%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230508122114159.png" alt="image-20230508122114159"></p>
+<p><img src="/2023/05/08/Linux%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230508122243328.png" alt="image-20230508122243328"></p>
+<p><img src="/2023/05/08/Linux%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230508122319558.png" alt="image-20230508122319558"></p>
+<p>这个命令的作用是：列出 <code>/home</code> 目录下的所有文件和子目录的详细信息，过滤出其中的普通文件（不包括目录和链接等），并统计其数量。</p>
+<p>具体来说，<code>ls -l /home</code> 会以长格式显示 <code>/home</code> 目录下的所有文件和子目录的详细信息，其中以 <code>-</code> 开头的表示普通文件，<code>grep ^-</code> 用于过滤出其中的普通文件，<code>wc -l</code> 用于统计行数，也就是普通文件的数量。</p>
+<p>因此，这个命令的输出结果是 <code>/home</code> 目录下普通文件的数量。</p>
+<p>除了^-(表示普通文件)之外，还可以使用以下标识符来过滤其他类型的文件：</p>
+<ul>
+<li>d：表示目录文件（directory）</li>
+<li>l：表示符号链接文件（link）</li>
+<li>c：表示字符设备文件（character device）</li>
+<li>b：表示块设备文件（block device）</li>
+<li>s：表示套接字文件（socket）</li>
+<li>p：表示命名管道文件（named pipe）</li>
+</ul>
+<p>比如，要过滤出<strong>目录文件</strong>，可以使用grep ^d。</p>
+<p><img src="/2023/05/08/Linux%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230508122610437.png" alt="image-20230508122610437"></p>
+<p><img src="/2023/05/08/Linux%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230508122627253.png" alt="image-20230508122627253"></p>
+<p><img src="/2023/05/08/Linux%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230508122634262.png" alt="image-20230508122634262"></p>
+<ul>
+<li>u 代表用户</li>
+<li>x 代表执行权限</li>
+<li>g 代表用户组.</li>
+<li>o 代表其他.</li>
+<li>a 代表所有.</li>
+<li>+ 表示增加权限</li>
+</ul>
+<p>ower即为文件创建者对文件可操作的权限，group为文件创建者所在组对文件可操作的权限，Others就是其它用户操作的权限了。</p>
+<p>o + x是给其他人加上可执行权限。</p>
+<p>u + x代表给文件创建者（所有者）加上可执行权限</p>
+<p>a + x代表给所有人加上可执行权限</p>
+<p><img src="/2023/05/08/Linux%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230508123133791.png" alt="image-20230508123133791"></p>
+<p><img src="/2023/05/08/Linux%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230508123152651.png" alt="image-20230508123152651"></p>
+<p><code>uniq</code> 命令可以去除文本文件中的重复行，并且它要求输入的文本是按行排序好的，因此通常会与 <code>sort</code> 命令一起使用。<code>tr</code> 命令用于字符替换和字符删除，不适用于去重。<code>diff</code> 命令用于比较文本文件之间的差异。</p>
+<p><img src="/2023/05/08/Linux%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230508123223538.png" alt="image-20230508123223538"></p>
+<p><code>crontab</code> 是一个用于管理 Linux 中定时执行任务的命令，允许用户在指定时间执行指定命令或脚本。通过 <code>crontab</code> 命令，用户可以在系统空闲或指定的时间段执行定期或定时的任务。</p>
+<p><code>mounts</code> 并不是一个有效的命令或工具，正确的命令是 <code>mount</code>，可以用来挂载文件系统。</p>
+<p><img src="/2023/05/08/Linux%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230508123334402.png" alt="image-20230508123334402"></p>
+<p><img src="/2023/05/08/Linux%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230508123343960.png" alt="image-20230508123343960"></p>
+<ul>
+<li><code>f</code>: 用于在当前行中查找下一个出现指定字符的位置。例如，输入 <code>fx</code> 将在当前行中查找下一个出现 <code>x</code> 的位置。</li>
+<li><code>g</code>: 用于执行一些高级命令。例如，输入 <code>gg</code> 将光标移动到文件的第一行，输入 <code>G</code> 将光标移动到文件的最后一行。</li>
+</ul>
+<p><img src="/2023/05/08/Linux%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230508123401583.png" alt="image-20230508123401583"></p>
+<h1 id="填空题"><a href="#填空题" class="headerlink" title="填空题"></a>填空题</h1><ol>
+<li><p>写出以下Shell特殊位置参数变量的含义</p>
+<ul>
+<li><p>$0 获取脚本的名字，包含路径</p>
+</li>
+<li><p>$n $n(n=任意数字)代表脚本在命令行的第几个参数</p>
+</li>
+<li><p>$# 获取脚本参数的个数</p>
+</li>
+<li><p>$* 获取当前shell脚本所有传参的参数，如果不加引号作用同$@相同，如果加上双引号”$*”则表示将所有的参数视为单个字符串 相当于”$1$2$3”</p>
+</li>
+<li><p>$@ 获取当前shell脚本所有传参的参数，不加引号同$*相同，加上双引号则表示把所有的参数视为不同的独立的字符串</p>
+</li>
+<li><p>$? 获取执行上一个指令执行状态返回值，（0为成功，非0为失败）</p>
+</li>
+<li><p>$$ 获取当前shell脚本的进程号PID</p>
+</li>
+<li><p>$! 获取上一个在后台工作脚本进程的进程号PID</p>
+</li>
+</ul>
+</li>
+<li><p>写出下面条件测试的含义</p>
+<ul>
+<li>[-e dir|file] 存在则为真</li>
+<li>[-d dir] 目录是否存在</li>
+<li>[-f file] 文件是否存在</li>
+<li>[-r file] 文件是否有读权限</li>
+<li>[-x file] 文件是否有执行权限</li>
+<li>[-w file] 文件是否有写权限</li>
+</ul>
+</li>
+<li><p>算术测试符</p>
+<ul>
+<li>-eq 等于则为真</li>
+<li>-ne 不等于则为真</li>
+<li>-gt 大于则为真</li>
+<li>-ge 大于等于则为真</li>
+<li>-lt 小于则为真</li>
+<li>-le 小于等于则为真</li>
+</ul>
+</li>
+<li><p>常用命令</p>
+<ul>
+<li><p><code>ls</code>：显示目录中的文件和子目录。</p>
+</li>
+<li><p><code>touch</code>：创建一个新的空文件，或者更新现有文件的时间戳。</p>
+</li>
+<li><p><code>mkdir</code>：创建一个新目录。</p>
+</li>
+<li><p><code>pwd</code>：显示当前工作目录的路径。</p>
+</li>
+<li><p><code>cat</code>：将文件的内容输出到终端。</p>
+</li>
+<li><p><code>more</code>：将文件内容逐页显示到终端上。</p>
+</li>
+<li><p><code>head</code>：显示文件的前几行。</p>
+</li>
+<li><p><code>tail</code>：显示文件的末尾几行。</p>
+</li>
+<li><p><code>mount</code>：将文件系统挂载到指定的目录。</p>
+</li>
+<li><p><code>mkfs</code>：创建一个新的文件系统。</p>
+</li>
+<li><p><code>fdisk</code>：查看和管理磁盘分区。</p>
+</li>
+</ul>
+</li>
+<li><p>参数扩展内容</p>
+</li>
+</ol>
+<ul>
+<li><code>$VAR</code>：当VAR是一个环境变量时，$VAR会被扩展为变量的值。</li>
+<li><code>$&#123;VAR&#125;</code>：与$VAR相同，但是可以在变量名后面添加其他字符，例如${VAR}_suffix。</li>
+<li><code>$(command)</code>：执行命令，并将其输出作为参数扩展的一部分。例如，<code>$(date)</code>会被扩展为当前日期和时间。</li>
+<li><code>*</code>：通配符，可以匹配任意字符。</li>
+<li><code>?</code>：通配符，可以匹配一个单个字符。</li>
+<li><code>[ ]</code>：通配符，可以匹配指定范围内的任意单个字符。</li>
+</ul>
+<p><code>[ ]</code> 是 Linux shell 中的一种通配符，也称为字符类。</p>
+<p>在 shell 命令中使用 <code>[ ]</code>，可以匹配指定范围内的任意单个字符，比如：</p>
+<ul>
+<li><code>[abcd]</code> 匹配字符 a、b、c、d 中的任意一个字符。</li>
+<li><code>[a-z]</code> 匹配所有小写字母中的任意一个字符。</li>
+<li><code>[A-Z]</code> 匹配所有大写字母中的任意一个字符。</li>
+<li><code>[0-9]</code> 匹配所有数字中的任意一个字符。</li>
+</ul>
+<p>使用 <code>[ ]</code> 通配符时，如果在方括号内使用了 <code>^</code>，则表示匹配不在指定范围内的字符。比如 <code>[^abc]</code> 表示匹配除了 a、b、c 之外的任意字符。</p>
+<p>示例：</p>
+<p>假设当前目录下有以下文件：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Copy codefile1.txt</span><br><span class="line">file2.txt</span><br><span class="line">file3.md</span><br><span class="line">file4.py</span><br></pre></td></tr></table></figure>
+
+<p>那么可以使用 <code>[ ]</code> 通配符来匹配文件名中的字符，比如：</p>
+<ul>
+<li><code>ls file[123]*</code>：匹配以 file1、file2 或 file3 开头的文件名，输出结果为 <code>file1.txt file2.txt file3.md</code>。</li>
+<li><code>ls file[!123]*</code>：匹配不以 file1、file2 或 file3 开头的文件名，输出结果为 <code>file4.py</code>。</li>
+</ul>
+<h1 id="编程题"><a href="#编程题" class="headerlink" title="编程题"></a>编程题</h1><h2 id="1-循环结构，条件判断"><a href="#1-循环结构，条件判断" class="headerlink" title="1.循环结构，条件判断"></a>1.循环结构，条件判断</h2><p>1.1 使用for循环编写shell脚本，判断/etc/yp.conf、/etc/nsswitch.conf、/etc/auto.master、/etc/resolv.conf是否存在这四个文件，如果存在，则打印输出“The file  文件名 was found”，否则输出“*** Error: The file 文件名 was missing. ***”</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash">!/bin/bash</span></span><br><span class="line"><span class="meta"></span></span><br><span class="line"><span class="meta">#</span><span class="bash"> 定义待查找的文件列表</span></span><br><span class="line">files=( &quot;/etc/yp.conf&quot; &quot;/etc/nsswitch.conf&quot; &quot;/etc/auto.master&quot; &quot;/etc/resolv.conf&quot; )</span><br><span class="line"><span class="meta"></span></span><br><span class="line"><span class="meta">#</span><span class="bash"> 循环遍历文件列表</span></span><br><span class="line">for file in &quot;$&#123;files[@]&#125;&quot;</span><br><span class="line">do</span><br><span class="line">    # 判断文件是否存在</span><br><span class="line">    if [ -f &quot;$file&quot; ]</span><br><span class="line">    then</span><br><span class="line">        echo &quot;The file $file was found&quot;</span><br><span class="line">    else</span><br><span class="line">        echo &quot;*** Error: The file $file was missing. ***&quot;</span><br><span class="line">    fi</span><br><span class="line">done</span><br></pre></td></tr></table></figure>
+
+<p><img src="/2023/05/08/Linux%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230508175205169.png" alt="image-20230508175205169"></p>
+<p>1.2 使用for循环编写shell脚本，该脚本每行输出六个<em>，</em>之间以空格隔开，一共输出3行。</p>
+<p>* * * * * *</p>
+<p>* * * * * *</p>
+<p>* * * * * *</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash">!/bin/bash</span></span><br><span class="line"><span class="meta"></span></span><br><span class="line"><span class="meta">#</span><span class="bash"> 循环输出3行每行6个*</span></span><br><span class="line">for (( i=1; i&lt;=3; i++ ))</span><br><span class="line">do</span><br><span class="line">    for (( j=1; j&lt;=6; j++ ))</span><br><span class="line">    do</span><br><span class="line">        echo -n &quot;* &quot;</span><br><span class="line">    done</span><br><span class="line">    echo &quot;&quot;  # 换行</span><br><span class="line">done</span><br></pre></td></tr></table></figure>
+
+<p><img src="/2023/05/08/Linux%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230508175515557.png" alt="image-20230508175515557">  </p>
+<p>1.3 使用for循环编写shell脚本，该脚本打印This is used for replacing string or removing string”中单词字母数大于5的单词。</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash">!/bin/bash</span></span><br><span class="line"><span class="meta"></span></span><br><span class="line"><span class="meta">#</span><span class="bash"> 定义字符串</span></span><br><span class="line">string=&quot;This is used for replacing string or removing string&quot;</span><br><span class="line"><span class="meta"></span></span><br><span class="line"><span class="meta">#</span><span class="bash"> 将字符串拆分为单词</span></span><br><span class="line">words=($string)</span><br><span class="line"><span class="meta"></span></span><br><span class="line"><span class="meta">#</span><span class="bash"> 循环遍历每个单词</span></span><br><span class="line">for word in &quot;$&#123;words[@]&#125;&quot;</span><br><span class="line">do</span><br><span class="line">    # 判断单词的长度是否大于5</span><br><span class="line">    if [ $&#123;#word&#125; -gt 5 ]</span><br><span class="line">    then</span><br><span class="line">        echo $word</span><br><span class="line">    fi</span><br><span class="line">done</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p><img src="/2023/05/08/Linux%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230508180126453.png" alt="image-20230508180126453"> </p>
+<p>1.4 分别使用for循环、while循环、until循环编写shell脚本，实现1到100的求和</p>
+<p>for:</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash">!/bin/bash</span></span><br><span class="line"></span><br><span class="line">sum=0</span><br><span class="line"><span class="meta"></span></span><br><span class="line"><span class="meta">#</span><span class="bash"> 使用 <span class="keyword">for</span> 循环计算1到100的和</span></span><br><span class="line">for (( i=1; i&lt;=100; i++ ))</span><br><span class="line">do</span><br><span class="line">    sum=$((sum+i))</span><br><span class="line">done</span><br><span class="line"></span><br><span class="line">echo &quot;The sum is: $sum&quot;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p> while:</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash">!/bin/bash</span></span><br><span class="line"></span><br><span class="line">sum=0</span><br><span class="line">i=1</span><br><span class="line"><span class="meta"></span></span><br><span class="line"><span class="meta">#</span><span class="bash"> 使用 <span class="keyword">while</span> 循环计算1到100的和</span></span><br><span class="line">while [ $i -le 100 ]</span><br><span class="line">do</span><br><span class="line">    sum=$((sum+i))</span><br><span class="line">    i=$((i+1))</span><br><span class="line">done</span><br><span class="line"></span><br><span class="line">echo &quot;The sum is: $sum&quot;</span><br></pre></td></tr></table></figure>
+
+<p>until:</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash">!/bin/bash</span></span><br><span class="line"></span><br><span class="line">sum=0</span><br><span class="line">i=1</span><br><span class="line"><span class="meta"></span></span><br><span class="line"><span class="meta">#</span><span class="bash"> 使用 until 循环计算1到100的和</span></span><br><span class="line">until [ $i -gt 100 ]</span><br><span class="line">do</span><br><span class="line">    sum=$((sum+i))</span><br><span class="line">    i=$((i+1))</span><br><span class="line">done</span><br><span class="line"></span><br><span class="line">echo &quot;The sum is: $sum&quot;</span><br></pre></td></tr></table></figure>
+
+<p><img src="/2023/05/08/Linux%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230508180606819.png" alt="image-20230508180606819"></p>
+<p>1.5 使用while循环编写脚本，该脚本读取文件/etc/passwd，并打印出/etc/passwd中的每一行</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash">!/bin/bash</span></span><br><span class="line"><span class="meta"></span></span><br><span class="line"><span class="meta">#</span><span class="bash"> 打开文件 /etc/passwd 并读取每一行</span></span><br><span class="line">while read line</span><br><span class="line">do</span><br><span class="line">    echo $line</span><br><span class="line">done &lt; /etc/passwd</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p><img src="/2023/05/08/Linux%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230508180705702.png" alt="image-20230508180705702"> </p>
+<p>1.6 使用for与break编写一脚本，接收输入参数match，遍历etc下的所有文件，如果文件的路径与match相匹配，则打印“The file $match was found!”，并退出for循环</p>
+ <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash">!/bin/bash</span></span><br><span class="line"></span><br><span class="line">match=$1</span><br><span class="line"><span class="meta"></span></span><br><span class="line"><span class="meta">#</span><span class="bash"> 遍历 /etc 目录下的所有文件</span></span><br><span class="line">for file in /etc/*</span><br><span class="line">do</span><br><span class="line">    # 检查文件路径是否与 $match 相同</span><br><span class="line">    if [ &quot;$file&quot; = &quot;$match&quot; ]</span><br><span class="line">    then</span><br><span class="line">        echo &quot;The file $match was found!&quot;</span><br><span class="line">        break  # 如果找到匹配的文件，就退出循环</span><br><span class="line">    fi</span><br><span class="line">done</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p><img src="/2023/05/08/Linux%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230508181425064.png" alt="image-20230508181425064"> </p>
+<p>1.7 使用continue编写一脚本，遍历当前目录下的所有文件，如果文件名包含大写字母，则转换成小写，并输出转换前的文件名和转换后的文件名，如果文件名不包含大写字母，则直接跳过</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash">!/bin/bash</span></span><br><span class="line"><span class="meta"></span></span><br><span class="line"><span class="meta">#</span><span class="bash"> 遍历当前目录下的所有文件</span></span><br><span class="line">for file in *</span><br><span class="line">do</span><br><span class="line">    # 检查文件名是否包含大写字母</span><br><span class="line">    if echo &quot;$file&quot; | grep -q &#x27;[[:upper:]]&#x27;</span><br><span class="line">    then</span><br><span class="line">        # 将文件名转换为小写</span><br><span class="line">        new_file=$(echo &quot;$file&quot; | tr &#x27;[:upper:]&#x27; &#x27;[:lower:]&#x27;)</span><br><span class="line">        echo &quot;Renaming $file to $new_file&quot;</span><br><span class="line">        mv &quot;$file&quot; &quot;$new_file&quot;</span><br><span class="line">    else</span><br><span class="line">        # 如果文件名不包含大写字母，直接跳过</span><br><span class="line">        continue</span><br><span class="line">    fi</span><br><span class="line">done</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p><img src="/2023/05/08/Linux%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230508181833887.png" alt="image-20230508181833887"></p>
+<h2 id="2-正则表达式"><a href="#2-正则表达式" class="headerlink" title="2.正则表达式"></a>2.正则表达式</h2><p>2.1 编写shell脚本，输入参数digit，判断此参数值是否匹配数字0~9中的任何一个数字，如果匹配，则输出$digit is a digit，否则输出Oops!</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash">!/bin/bash</span></span><br><span class="line"><span class="meta"></span></span><br><span class="line"><span class="meta">#</span><span class="bash"> 获取用户输入参数</span></span><br><span class="line">digit=$1</span><br><span class="line"><span class="meta"></span></span><br><span class="line"><span class="meta">#</span><span class="bash"> 使用正则表达式匹配数字0~9中的任何一个数字</span></span><br><span class="line">if [[ $digit =~ ^[0-9]$ ]]; then</span><br><span class="line">  echo &quot;$digit is a digit&quot;</span><br><span class="line">else</span><br><span class="line">  echo &quot;Oops!&quot;</span><br><span class="line">fi</span><br></pre></td></tr></table></figure>
+
+<p><img src="/2023/05/08/Linux%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230508194836288.png" alt="image-20230508194836288"> </p>
+<p>2.2 编写shell脚本，输入参数num，判断此参数值是否为一串数值，如果是，则输出It’s a number，否则输出It’s not a number</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash">!/bin/bash</span></span><br><span class="line"><span class="meta"></span></span><br><span class="line"><span class="meta">#</span><span class="bash"> 获取用户输入参数</span></span><br><span class="line">num=$1</span><br><span class="line"><span class="meta"></span></span><br><span class="line"><span class="meta">#</span><span class="bash"> 使用正则表达式匹配是否为一串数值</span></span><br><span class="line">if [[ $num =~ ^[0-9]+$ ]]; then</span><br><span class="line">  echo &quot;It&#x27;s a number&quot;</span><br><span class="line">else</span><br><span class="line">  echo &quot;It&#x27;s not a number&quot;</span><br><span class="line">fi</span><br></pre></td></tr></table></figure>
+
+<p><img src="/2023/05/08/Linux%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230508195236946.png" alt="image-20230508195236946"></p>
+<p>2.3 编写shell脚本，输入参数email，判断此参数值是否为一个邮箱地址，如果是，则输出This email address looks fine: $email，否则输出no</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash">!/bin/bash</span></span><br><span class="line"><span class="meta"></span></span><br><span class="line"><span class="meta">#</span><span class="bash"> 获取用户输入参数</span></span><br><span class="line">email=$1</span><br><span class="line"><span class="meta"></span></span><br><span class="line"><span class="meta">#</span><span class="bash"> 使用正则表达式匹配是否为一个邮箱地址</span></span><br><span class="line">if [[ $email =~ ^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]&#123;2,&#125;$ ]]; then</span><br><span class="line">  echo &quot;This email address looks fine: $email&quot;</span><br><span class="line">else</span><br><span class="line">  echo &quot;no&quot;</span><br><span class="line">fi</span><br></pre></td></tr></table></figure>
+
+<p><img src="/2023/05/08/Linux%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230508200207369.png" alt="image-20230508200207369"> </p>
+<p>2.4 编写shell脚本，输入参数ip，判断此参数值是否为一个IPv4的地址格式，如果是，则输出Looks like an IPv4 IP address，否则输出Oops!</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash">!/bin/bash</span></span><br><span class="line"><span class="meta"></span></span><br><span class="line"><span class="meta">#</span><span class="bash"> 获取用户输入参数</span></span><br><span class="line">ip=$1</span><br><span class="line"><span class="meta"></span></span><br><span class="line"><span class="meta">#</span><span class="bash"> 使用正则表达式匹配是否为IPv4地址格式</span></span><br><span class="line">if [[ $ip =~ ^([0-9]&#123;1,3&#125;\.)&#123;3&#125;[0-9]&#123;1,3&#125;$ ]]; then</span><br><span class="line">  echo &quot;Looks like an IPv4 IP address&quot;</span><br><span class="line">else</span><br><span class="line">  echo &quot;Oops!&quot;</span><br><span class="line">fi</span><br></pre></td></tr></table></figure>
+
+<p><img src="/2023/05/08/Linux%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230508200342155.png" alt="image-20230508200342155"></p>
+<h2 id="3-管道"><a href="#3-管道" class="headerlink" title="3.管道"></a>3.管道</h2><p>3.1 编写一个管道，将 ls 命令的输出发送到 grep 命令，查看文件 log.txt 是否存在于当前目录下</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ls | grep &quot;log.txt&quot;</span><br></pre></td></tr></table></figure>
+
+<p>3.2 编写一个管道，将who 命令的输出将作为 sort 命令的输入，显示按用户名排序后的当前登录系统的用户的信息，并将输出重定向到文件lis.txt</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">who | sort -k1 &gt; lis.txt</span><br></pre></td></tr></table></figure>
+
+<p><code>-k</code> 参数后，可以通过指定字段位置、起始字符和结束字符来指定排序字段。例如，<code>-k1</code> 意味着使用第一列作为排序关键字。如果输入数据包含多个字段，那么 <code>-k1</code> 指定的就是第一个字段。</p>
+<p><img src="/2023/05/08/Linux%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/wps11-1683548697207-19.jpg" alt="img"></p>
+<p>3.3 编写一个管道，该管道使用 tr 命令将 os.txt 文件中的内容转化为大写，并使用 sort 命令将内容排序</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tr a-z A-Z &lt;os.txt | sort</span><br></pre></td></tr></table></figure>
+
+<p><img src="/2023/05/08/Linux%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230508224312914.png" alt="image-20230508224312914"> </p>
+<p>3.4 编写一个管道，将os.txt文件中的内容排序和去重后，输出到newos.txt</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sort &lt; os.txt | uniq &gt;newos.txt | cat newos.txt</span><br></pre></td></tr></table></figure>
+
+<p><img src="/2023/05/08/Linux%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230508224559234.png" alt="image-20230508224559234"> </p>
+<p>3.5 编写一个管道，删除打印输出文本中的数字</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">echo my number 12345 |tr -d 0-9</span><br></pre></td></tr></table></figure>
+
+<p><img src="/2023/05/08/Linux%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230508225443563.png" alt="image-20230508225443563"></p>
+<p>3.6 编写一个管道，该管道列出当前账号最常使用的10个命令</p>
+<p><img src="/2023/05/08/Linux%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230508225830848.png" alt="image-20230508225830848"></p>
+<ol>
+<li><code>history</code>：列出当前用户执行过的所有命令历史记录。</li>
+<li><code>awk &quot;&#123;print $2&#125;&quot;</code>：从历史记录中提取出第二列，即实际执行的命令。</li>
+<li><code>sort</code>：将实际执行的命令按照字母顺序排序。</li>
+<li><code>uniq -c</code>：统计相同的命令出现的次数，并在每个命令前面显示出现次数。</li>
+<li><code>sort -rn</code>：将命令按照出现次数从多到少排序。</li>
+<li><code>head</code>：只显示前面几行命令，通常用于限制输出结果的数量。</li>
+</ol>
+<h2 id="4-sed"><a href="#4-sed" class="headerlink" title="4.sed"></a>4.sed</h2><p>给定一文件sedtest.txt，文件内容如下：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">Hello</span><br><span class="line"></span><br><span class="line">Word</span><br><span class="line"></span><br><span class="line">Abc</span><br><span class="line"></span><br><span class="line">Jkl</span><br></pre></td></tr></table></figure>
+
+<p>4.1 使用sed向文本sedtest.txt的第三行插入一行数据insertdata</p>
+<p>4.2 使用sed向sedtest.txt文本的第三行追加一行数据appenddata</p>
+<p>4.3 使用sed将sedtest.txt文本的第三行更改为changedata</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">sed &#x27;3i insertdata&#x27; sedtest.txt</span><br><span class="line">sed &#x27;3a insertdata&#x27; sedtest.txt</span><br><span class="line">sed &#x27;3c insertdata&#x27; sedtest.txt</span><br></pre></td></tr></table></figure>
+
+
+
+<p><img src="/2023/05/08/Linux%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230508230053721.png" alt="image-20230508230053721"></p>
+<p>4.4使用sed命令，对sedtest.txt文本进行操作，从Hello所在行到Abc所在行的每行数据前插入insertdata</p>
+<p>4.5使用sed命令，对sedtest.txt文本进行操作，从Hello所在行到Abc所在行的每行数据追加appenddata</p>
+<p>4.6使用sed命令，对sedtest.txt文本进行操作，将Hello所在行到Abc所在行更改为changedata</p>
+<p>4.7使用sed命令，删除sedtest.txt文本第一行数据</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">sed &quot;1,3i insertdata&quot; sedtest.txt</span><br><span class="line">sed &quot;1,3a appenddata&quot; sedtest.txt</span><br><span class="line">sed &quot;1,3c changedata&quot; sedtest.txt</span><br><span class="line">sed &quot;1d&quot; sedtest.txt</span><br></pre></td></tr></table></figure>
+
+
+
+<p><img src="/2023/05/08/Linux%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230508230735383.png" alt="image-20230508230735383"></p>
+<p>4.8使用sed命令，删除sedtest.txt文本第一行到第三行数据</p>
+<p>4.9使用sed命令，对sedtest.txt文本进行操作，将第3行中的’b’替换为’B’</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sed &quot;1,3d&quot; sedtest.txt</span><br><span class="line">sed &quot;3s/b/B/g&quot; sedtest.txt</span><br></pre></td></tr></table></figure>
+
+
+
+<p><img src="/2023/05/08/Linux%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230508230742230.png" alt="image-20230508230742230"></p>
+<h1 id="综合题"><a href="#综合题" class="headerlink" title="综合题"></a>综合题</h1><h2 id="签到系统"><a href="#签到系统" class="headerlink" title="签到系统"></a>签到系统</h2><p><img src="/2023/05/08/Linux%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/image-20230508222054950.png" alt="image-20230508222054950"></p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash">!/bin/bash</span></span><br><span class="line"><span class="meta">#</span><span class="bash">签到</span></span><br><span class="line"></span><br><span class="line">function show()&#123;</span><br><span class="line">        echo &quot;***welcome***&quot;</span><br><span class="line">        echo &quot;**1.check in**&quot;</span><br><span class="line">        echo &quot;**2.The record**&quot;</span><br><span class="line">        echo &quot;**3.Exit**&quot;</span><br><span class="line">        echo &quot;input your choose:&quot;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">function check_in()&#123;</span><br><span class="line">        echo &quot;please input your name:&quot;</span><br><span class="line">        read name</span><br><span class="line">        echo &quot;please input your passwd:&quot;</span><br><span class="line">        read password</span><br><span class="line">        if test -e userinfo.txt</span><br><span class="line"></span><br><span class="line">        then</span><br><span class="line"></span><br><span class="line">             cat userinfo.txt | while read tem_name tem_password</span><br><span class="line"></span><br><span class="line">                do</span><br><span class="line">                    if test &quot;$name&quot; = &quot;$tem_name&quot; &amp;&amp; test &quot;$password&quot; = &quot;$tem_password&quot;</span><br><span class="line"></span><br><span class="line">                        then</span><br><span class="line">                              hour=`date &quot;+%k&quot;`</span><br><span class="line">                              #echo $hour</span><br><span class="line"></span><br><span class="line">                              if [ &quot;$hour&quot; != &quot;8&quot; ]</span><br><span class="line"></span><br><span class="line">                              then</span><br><span class="line">                                      echo &quot;check in successfully but you are late&quot;</span><br><span class="line">                                      echo &quot;$name ---late for class --- Time:`date` &quot; &gt;&gt; check.txt</span><br><span class="line">                              else</span><br><span class="line">                                     echo &quot;check in successfully&quot;</span><br><span class="line"></span><br><span class="line">                              fi</span><br><span class="line">                        else</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">                                continue</span><br><span class="line">                        fi</span><br><span class="line">                done</span><br><span class="line">        else</span><br><span class="line">                echo &quot;NO such file&quot;</span><br><span class="line">        fi</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">function record()&#123;</span><br><span class="line">        if test $# -ne 0</span><br><span class="line"></span><br><span class="line">        then</span><br><span class="line">                echo &quot;$1 here are your records:&quot;</span><br><span class="line">                grep &quot;$name&quot; check.txt</span><br><span class="line">        else</span><br><span class="line">                echo &quot;sorry,please check in first&quot;</span><br><span class="line">        fi</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">function tuichu()&#123;</span><br><span class="line">        echo &quot;Thanks for use&quot;</span><br><span class="line">        exit 1</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">function main()&#123;</span><br><span class="line">        while test &quot;1&quot; = &quot;1&quot;</span><br><span class="line"></span><br><span class="line">        do</span><br><span class="line">                show</span><br><span class="line"></span><br><span class="line">                read choose</span><br><span class="line"></span><br><span class="line">                case $choose in</span><br><span class="line">                        1)check_in</span><br><span class="line">                                ;;</span><br><span class="line"></span><br><span class="line">                        2)record $name</span><br><span class="line">                                ;;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">                        3)tuichu</span><br><span class="line">                                ;;</span><br><span class="line"></span><br><span class="line">                        *)echo &quot;Incorrect input&quot;</span><br><span class="line">                                ;;</span><br><span class="line">                esac</span><br><span class="line">                </span><br><span class="line">        done</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">main</span><br></pre></td></tr></table></figure>
+
+<h2 id="成绩管理系统"><a href="#成绩管理系统" class="headerlink" title="成绩管理系统"></a>成绩管理系统</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> 成绩管理程序：录入成绩，查询成绩两个基本功能，录入成绩时，只将不及格记录进行存储，及格的信息显示提示通过等信息。查询成绩只是查寻某个学生所有的不及格记录。</span></span><br><span class="line"><span class="meta"></span></span><br><span class="line"><span class="meta"></span></span><br><span class="line"><span class="meta">#</span><span class="bash">!/bin/bash</span></span><br><span class="line"></span><br><span class="line">function show()&#123;</span><br><span class="line">        echo &quot;***welcome***&quot;</span><br><span class="line">        echo &quot;**1.录入成绩***&quot;</span><br><span class="line">        echo &quot;**2.查询成绩***&quot;</span><br><span class="line">        echo &quot;**3.exit**&quot;</span><br><span class="line">        echo &quot;input your choose&quot;</span><br><span class="line">&#125;</span><br><span class="line">function luru ()&#123;</span><br><span class="line">        declare -i grade</span><br><span class="line">       </span><br><span class="line">        echo &quot;please input your name:&quot;</span><br><span class="line">        read name</span><br><span class="line">        echo &quot;please input your passwd:&quot;</span><br><span class="line">        read password</span><br><span class="line">        echo &quot;please input your grade:&quot;</span><br><span class="line">        read grade</span><br><span class="line"></span><br><span class="line">        if test -e userinfo.txt</span><br><span class="line">                then</span><br><span class="line">                  cat userinfo.txt | while read tem_name tem_password</span><br><span class="line">                      do</span><br><span class="line">                        if test &quot;$name&quot; = &quot;$tem_name&quot; &amp;&amp; test &quot;$password&quot; = &quot;$tem_password&quot;</span><br><span class="line">                        then</span><br><span class="line"></span><br><span class="line">                          if [ $grade -le 60 ]</span><br><span class="line">                             then</span><br><span class="line"></span><br><span class="line">                              echo &quot;sorry, you don’t pass&quot;</span><br><span class="line">                              echo &quot;$name ---grade$n --- $grade &quot; &gt;&gt; check11.txt</span><br><span class="line">                           else</span><br><span class="line">                                   echo &quot; you pass&quot;</span><br><span class="line">								echo &quot;$name ---grade$n --- $grade &quot; &gt;&gt; check11.txt</span><br><span class="line">                           fi</span><br><span class="line">                      else</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">                         continue</span><br><span class="line">                     fi</span><br><span class="line">                      done</span><br><span class="line">                else</span><br><span class="line">                        echo &quot;NO such file&quot;</span><br><span class="line">                fi</span><br><span class="line">&#125;</span><br><span class="line">function chaxun()&#123;</span><br><span class="line">        if test $# -ne 0</span><br><span class="line"></span><br><span class="line">        then</span><br><span class="line">                echo &quot;$1 here are your records:&quot;</span><br><span class="line">                grep &quot;$name&quot; check11.txt</span><br><span class="line">        else</span><br><span class="line">                echo &quot;sorry,please luru first&quot;</span><br><span class="line">        fi</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">function tuichu()&#123;</span><br><span class="line">        echo &quot;Thanks for use&quot;</span><br><span class="line">        exit 1</span><br><span class="line">&#125;</span><br><span class="line">function main()&#123;</span><br><span class="line">        while test &quot;1&quot; = &quot;1&quot;</span><br><span class="line">        do</span><br><span class="line">                show</span><br><span class="line">                read choose</span><br><span class="line">                case $choose in</span><br><span class="line">                        1)luru</span><br><span class="line">                                ;;</span><br><span class="line">                        2)chaxun $name</span><br><span class="line">                                ;;</span><br><span class="line">                        3)tuichu</span><br><span class="line">                                ;;</span><br><span class="line">                        *)</span><br><span class="line">echo &quot;Incorrect input&quot;</span><br><span class="line">                                ;;</span><br><span class="line">                esac</span><br><span class="line"></span><br><span class="line">        done</span><br><span class="line">&#125;</span><br><span class="line">main</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="mailto:jjyaoao@126.com">jjyaoao</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="http://jjyaoao.space/2023/05/08/Linux%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/">http://jjyaoao.space/2023/05/08/Linux%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="http://jjyaoao.space" target="_blank">jjyaoao's Home</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E9%81%97%E5%BF%98%E6%8C%87%E5%8D%97/">遗忘指南</a><a class="post-meta__tags" href="/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">学习笔记</a></div><div class="post_share"><div class="addthis_inline_share_toolbox"></div><script src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-61dbf69078ce19aa" async="async"></script></div></div><div class="post-reward"><div class="reward-button button--animated"><i class="fas fa-qrcode"></i> 打赏</div><div class="reward-main"><ul class="reward-all"><li class="reward-item"><a href="https://s2.loli.net/2022/01/09/HMjygFAKr2nPWdJ.jpg" target="_blank"><img class="post-qr-code-img" src="https://s2.loli.net/2022/01/09/HMjygFAKr2nPWdJ.jpg" alt="微信"/></a><div class="post-qr-code-desc">微信</div></li><li class="reward-item"><a href="https://s2.loli.net/2022/01/09/JL43sbhxUEOuVeM.jpg" target="_blank"><img class="post-qr-code-img" src="https://s2.loli.net/2022/01/09/JL43sbhxUEOuVeM.jpg" alt="支付宝"/></a><div class="post-qr-code-desc">支付宝</div></li></ul></div></div><nav class="pagination-post" id="pagination"><div class="next-post pull-full"><a href="/2023/04/27/ospp/"><img class="next-cover" src="https://s2.loli.net/2022/01/09/5AZcxFLwyiXJ6ln.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info"></div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>相关推荐</span></div><div class="relatedPosts-list"><div><a href="/2022/04/15/C++%E9%A1%B9%E7%9B%AE%E5%AE%9E%E6%88%98/" title="C++项目实战"><img class="cover" src="https://s2.loli.net/2022/04/15/YXoFfbxgWZIn1SM.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-04-15</div><div class="title">C++项目实战</div></div></a></div><div><a href="/2022/08/17/22%E5%B9%B4%E5%A4%87%E6%88%98%E6%95%B0%E6%A8%A1%E5%9B%BD%E8%B5%9B/" title="2022备战国赛"><img class="cover" src="https://s2.loli.net/2022/04/15/YXoFfbxgWZIn1SM.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-08-17</div><div class="title">2022备战国赛</div></div></a></div><div><a href="/2022/09/15/Cmake+Vscode+C++%E5%BC%80%E5%8F%91/" title="Cmake+vscode+C++"><img class="cover" src="https://s2.loli.net/2022/04/15/YXoFfbxgWZIn1SM.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-09-15</div><div class="title">Cmake+vscode+C++</div></div></a></div><div><a href="/2022/09/10/Git/" title="Git"><img class="cover" src="https://s2.loli.net/2022/04/15/YXoFfbxgWZIn1SM.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-09-10</div><div class="title">Git</div></div></a></div><div><a href="/2022/08/23/Geatpy-python%E4%BC%98%E5%8C%96%E5%BA%93/" title="Geatpy-python优化库"><img class="cover" src="https://s2.loli.net/2022/04/15/YXoFfbxgWZIn1SM.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-08-23</div><div class="title">Geatpy-python优化库</div></div></a></div><div><a href="/2022/04/15/Linux%E5%AD%A6%E4%B9%A0/" title="Linux学习"><img class="cover" src="https://s2.loli.net/2022/04/15/FltTRVUfbzYIowQ.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-04-15</div><div class="title">Linux学习</div></div></a></div></div></div><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div><div id="comment-switch"><span class="first-comment">Livere</span><span class="switch-btn"></span><span class="second-comment">Valine</span></div></div><div class="comment-wrap"><div><div id="lv-container" data-id="city" data-uid="MTAyMC81NTM1OC8zMTgyNQ=="></div></div><div><div class="vcomment" id="vcomment"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%BE%97%E5%88%86%E7%BB%86%E5%88%99"><span class="toc-number">1.</span> <span class="toc-text">得分细则</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E9%80%89%E6%8B%A9%E9%A2%98"><span class="toc-number">2.</span> <span class="toc-text">选择题</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%A1%AB%E7%A9%BA%E9%A2%98"><span class="toc-number">3.</span> <span class="toc-text">填空题</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%BC%96%E7%A8%8B%E9%A2%98"><span class="toc-number">4.</span> <span class="toc-text">编程题</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-%E5%BE%AA%E7%8E%AF%E7%BB%93%E6%9E%84%EF%BC%8C%E6%9D%A1%E4%BB%B6%E5%88%A4%E6%96%AD"><span class="toc-number">4.1.</span> <span class="toc-text">1.循环结构，条件判断</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F"><span class="toc-number">4.2.</span> <span class="toc-text">2.正则表达式</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-%E7%AE%A1%E9%81%93"><span class="toc-number">4.3.</span> <span class="toc-text">3.管道</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-sed"><span class="toc-number">4.4.</span> <span class="toc-text">4.sed</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%BB%BC%E5%90%88%E9%A2%98"><span class="toc-number">5.</span> <span class="toc-text">综合题</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AD%BE%E5%88%B0%E7%B3%BB%E7%BB%9F"><span class="toc-number">5.1.</span> <span class="toc-text">签到系统</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%88%90%E7%BB%A9%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F"><span class="toc-number">5.2.</span> <span class="toc-text">成绩管理系统</span></a></li></ol></li></ol></div></div></div></div></main><footer id="footer" style="background-image: url('https://s2.loli.net/2023/05/08/RJmFMvZsr8LO5lt.png')"><div id="footer-wrap"><div class="copyright">&copy;2022 - 2023 By jjyaoao</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div><div class="footer_custom_text">Hi, welcome to my <a target="_blank" rel="noopener" href="https://butterfly.js.org/">blog</a>!</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="chat_btn" type="button" title="rightside.chat_btn"><i class="fas fa-sms"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div id="algolia-search"><div class="search-dialog"><div class="search-dialog__title" id="algolia-search-title">Algolia</div><div id="algolia-input-panel"><div id="algolia-search-input"></div></div><hr/><div id="algolia-search-results"><div id="algolia-hits"></div><div id="algolia-pagination"></div><div id="algolia-stats"></div></div><span class="search-close-button"><i class="fas fa-times"></i></span></div><div id="search-mask"></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.js"></script><script src="/js/search/algolia.js"></script><script>var preloader = {
+  endLoading: () => {
+    document.body.style.overflow = 'auto';
+    document.getElementById('loading-box').classList.add("loaded")
+  },
+  initLoading: () => {
+    document.body.style.overflow = '';
+    document.getElementById('loading-box').classList.remove("loaded")
+
+  }
+}
+window.addEventListener('load',preloader.endLoading())</script><div class="js-pjax"><script>function loadLivere () {
+  if (typeof LivereTower === 'object') {
+    window.LivereTower.init()
+  }
+  else {
+    (function(d, s) {
+        var j, e = d.getElementsByTagName(s)[0];
+        if (typeof LivereTower === 'function') { return; }
+        j = d.createElement(s);
+        j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+        j.async = true;
+        e.parentNode.insertBefore(j, e);
+    })(document, 'script');
+  }
+}
+
+if ('Livere' === 'Livere' || !true) {
+  if (true) btf.loadComment(document.getElementById('lv-container'), loadLivere)
+  else loadLivere()
+}
+else {
+  function loadOtherComment () {
+    loadLivere()
+  }
+}</script><script>function loadValine () {
+  function initValine () {
+    const valine = new Valine(Object.assign({
+      el: '#vcomment',
+      appId: 'cFvw1zyA64uttBS5jbYY7pwH-gzGzoHsz',
+      appKey: '14rOjAUNzRyJSQt983q6gdza',
+      placeholder: 'Please leave your footprints',
+      avatar: 'monsterid',
+      meta: 'nick,mail,link'.split(','),
+      pageSize: '10',
+      lang: 'en',
+      recordIP: false,
+      serverURLs: '',
+      emojiCDN: '',
+      emojiMaps: "",
+      enableQQ: false,
+      path: window.location.pathname,
+      requiredFields: ["nick,mail"],
+      visitor: false
+    }, null))
+  }
+
+  if (typeof Valine === 'function') initValine() 
+  else getScript('https://cdn.jsdelivr.net/npm/valine/dist/Valine.min.js').then(initValine)
+}
+
+if ('Livere' === 'Valine' || !true) {
+  if (true) btf.loadComment(document.getElementById('vcomment'),loadValine)
+  else setTimeout(loadValine, 0)
+} else {
+  function loadOtherComment () {
+    loadValine()
+  }
+}</script></div><script defer="defer" id="fluttering_ribbon" mobile="true" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/canvas-fluttering-ribbon.min.js"></script><script id="canvas_nest" defer="defer" color="0,0,255" opacity="0.7" zIndex="-1" count="99" mobile="true" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/canvas-nest.min.js"></script><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/activate-power-mode.min.js"></script><script>POWERMODE.colorful = true;
+POWERMODE.shake = false;
+POWERMODE.mobile = false;
+document.body.addEventListener('input', POWERMODE);
+</script><script id="click-show-text" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/click-show-text.min.js" data-mobile="false" data-text="富强,民主,文明,和谐,自由,平等,公正,法治,爱国,敬业,诚信,友善,感谢" data-fontsize="15px" data-random="false" async="async"></script><script>(function(d, w, c) {
+    w.ChatraID = 'zgYNWkNCSATLRhpg4';
+    var s = d.createElement('script');
+    w[c] = w[c] || function() {
+        (w[c].q = w[c].q || []).push(arguments);
+    };
+    s.async = true;
+    s.src = 'https://call.chatra.io/chatra.js';
+    if (d.head) d.head.appendChild(s);
+})(document, window, 'Chatra');
+
+if (true) {
+  var chatBtnFn = () => {
+    var chatBtn = document.getElementById("chat_btn")
+    chatBtn.addEventListener("click", function(){
+      Chatra('openChat')
+    });
+  }
+  chatBtnFn()
+} else {
+  if (true) {
+    function chatBtnHide () {
+      Chatra('hide')
+    }
+    function chatBtnShow () {
+      Chatra('show')
+    }
+  }
+}</script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
