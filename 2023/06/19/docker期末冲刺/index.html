@@ -1,0 +1,382 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>docker期末冲刺 | jjyaoao's Home</title><meta name="keywords" content="docker期末冲刺"><meta name="author" content="jjyaoao,jjyaoao@126.com"><meta name="copyright" content="jjyaoao"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="喜闻乐见的期末冲刺环节，三连考第一考，docker">
+<meta property="og:type" content="article">
+<meta property="og:title" content="docker期末冲刺">
+<meta property="og:url" content="http://jjyaoao.space/2023/06/19/docker%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/index.html">
+<meta property="og:site_name" content="jjyaoao&#39;s Home">
+<meta property="og:description" content="喜闻乐见的期末冲刺环节，三连考第一考，docker">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://s2.loli.net/2023/06/19/ACVf5JQdvaPZkRT.jpg">
+<meta property="article:published_time" content="2023-06-19T11:54:11.000Z">
+<meta property="article:modified_time" content="2023-06-19T14:24:23.409Z">
+<meta property="article:author" content="jjyaoao">
+<meta property="article:tag" content="遗忘指南">
+<meta property="article:tag" content="学习笔记">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://s2.loli.net/2023/06/19/ACVf5JQdvaPZkRT.jpg"><link rel="shortcut icon" href="https://s2.loli.net/2022/01/09/le6jcmPKuJihDdU.jpg"><link rel="canonical" href="http://jjyaoao.space/2023/06/19/docker%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//hm.baidu.com"/><link rel="preconnect" href="//fonts.googleapis.com" crossorigin=""/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.10.5/dist/instantsearch.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/instantsearch.js@2.10.5/dist/instantsearch.min.js" defer></script><script>var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?06fb7a80772d98cbf9e7beeb76e262e4";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web&amp;display=swap" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: {"appId":"JOZPQM4N5F","apiKey":"42451c032f2166ed9800520810e2d223","indexName":"jjyaoao-blog","hits":{"per_page":10},"languages":{"input_placeholder":"搜索文章","hits_empty":"找不到您查询的内容：${query}","hits_stats":"找到 ${hits} 条结果，用时 ${time} 毫秒"}},
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: true,
+    post: true
+  },
+  runtime: '天',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: {"chs_to_cht":"你已切换为繁体","cht_to_chs":"你已切换为简体","day_to_night":"你已切换为深色模式","night_to_day":"你已切换为浅色模式","bgLight":"#49b1f5","bgDark":"#121212","position":"bottom-left"},
+  source: {
+    jQuery: 'https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js',
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/js/jquery.justifiedGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/css/justifiedGallery.min.css'
+    },
+    fancybox: {
+      js: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isanchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'docker期末冲刺',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2023-06-19 22:24:23'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if (GLOBAL_CONFIG_SITE.isHome && /iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><meta name="generator" content="Hexo 6.0.0"></head><body><div id="loading-box"><div class="loading-left-bg"></div><div class="loading-right-bg"></div><div class="spinner-box"><div class="configure-border-1"><div class="configure-core"></div></div><div class="configure-border-2"><div class="configure-core"></div></div><div class="loading-word">加载中...</div></div></div><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://s2.loli.net/2022/01/09/le6jcmPKuJihDdU.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data"><div class="data-item is-center"><div class="data-item-link"><a href="/archives/"><div class="headline">文章</div><div class="length-num">76</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/tags/"><div class="headline">标签</div><div class="length-num">10</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/categories/"><div class="headline">分类</div><div class="length-num">90</div></a></div></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fa fa-heartbeat"></i><span> 清单</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音樂</span></a></li><li><a class="site-page child" href="/Gallery/"><i class="fa-fw fas fa-images"></i><span> 照片</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://s2.loli.net/2023/06/19/ACVf5JQdvaPZkRT.jpg')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">jjyaoao's Home</a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fa fa-heartbeat"></i><span> 清单</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音樂</span></a></li><li><a class="site-page child" href="/Gallery/"><i class="fa-fw fas fa-images"></i><span> 照片</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">docker期末冲刺</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2023-06-19T11:54:11.000Z" title="发表于 2023-06-19 19:54:11">2023-06-19</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-06-19T14:24:23.409Z" title="更新于 2023-06-19 22:24:23">2023-06-19</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E8%AF%BE%E7%A8%8B/">课程</a><i class="fas fa-angle-right post-meta-separator"></i><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E8%AF%BE%E7%A8%8B/docker/">docker</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">3.8k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>11分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="docker期末冲刺"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h1 id="单选题"><a href="#单选题" class="headerlink" title="单选题"></a>单选题</h1><p><img src="/2023/06/19/docker%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/Blog\blog\source_posts\docker期末冲刺\image-20230619195613719.png" alt="image-20230619195613719"></p>
+<p>正确的说法是C. 私有仓库比较适合单位内部的合作场景。</p>
+<p>解析： A. 在任何情况下，都应该搭建自己的私有仓库：这个说法不正确。是否需要搭建私有仓库取决于具体的需求和情况。在某些情况下，使用公共的 Docker Hub 或其他公共仓库已经能够满足需求，无需搭建私有仓库。 B. 私有仓库可以完全替代 Docker Hub：这个说法不正确。私有仓库主要用于存储和管理私有镜像，但 Docker Hub 提供了更广泛的功能和公共镜像资源，私有仓库无法完全替代 Docker Hub。 C. 私有仓库比较适合单位内部的合作场景：这个说法是正确的。私有仓库可以在单位内部提供一个集中的镜像存储和共享平台，方便团队成员之间的合作和镜像的管理。 D. 私有仓库必须先登录才能下载镜像：这个说法不正确。私有仓库可以设置访问权限，但并不是所有私有仓库都需要登录才能下载镜像，这取决于私有仓库的配置和访问控制设置。</p>
+<p><img src="/2023/06/19/docker%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/Blog\blog\source_posts\docker期末冲刺\image-20230619195646188.png" alt="image-20230619195646188"></p>
+<p>D. 卷没有绕过联合文件系统，其读写性能不如绑定挂载。</p>
+<p>正确的说法是D. 卷没有绕过联合文件系统，其读写性能不如绑定挂载。</p>
+<p>解析： A. 卷是在 Docker 中持久化数据存储的最佳方式：这个说法是正确的。卷是一种特殊的 Docker 功能，它允许将数据存储到独立于容器的持久化存储区域中，使得数据在容器销毁和重新创建时仍然可访问。使用卷是常见的持久化数据存储方式。 B. 容器的外部存储位于 Docker 主机本地存储区域之外：这个说法是正确的。外部存储可以是 Docker 主机上的文件系统、网络存储或云存储等，它们通常位于 Docker 主机本地存储区域之外。 C. 绑定挂载限制容器的可移植性：这个说法是正确的。绑定挂载将主机上的目录或文件直接映射到容器中，使容器依赖于主机的特定路径和文件结构，从而降低了容器的可移植性。 D. 卷没有绕过联合文件系统，其读写性能不如绑定挂载：这个说法是不正确的。卷是通过在容器内部创建一个指向主机上的目录或文件的符号链接来实现的，并且与绑定挂载相比，卷的读写性能通常是相近的，不会明显降低。</p>
+<p><img src="/2023/06/19/docker%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/Blog\blog\source_posts\docker期末冲刺\image-20230619195654060.png" alt="image-20230619195654060"></p>
+<p>正确的描述是C. 一个镜像可以创建多个容器。</p>
+<p>解析： A. 没有镜像，也可以创建容器：这个说法是不正确的。在 Docker 中，容器是基于镜像创建的，镜像包含了容器运行所需的文件系统和应用程序等内容。没有可用的镜像，是无法创建容器的。 B. 一个容器可以来自多个镜像：这个说法是不正确的。每个容器只能基于一个镜像创建。容器是镜像的一个实例，它运行在镜像提供的文件系统和环境中。 C. 一个镜像可以创建多个容器：这个说法是正确的。通过使用同一个镜像，可以创建多个相互独立的容器实例，每个容器都运行在自己的隔离环境中。 D. 容器不能生成镜像：这个说法是不正确的。在容器运行时，你可以对容器所做的更改（例如安装软件、修改文件等）可以通过 <code>docker commit</code> 命令生成一个新的镜像，以便将这些更改保存下来并复用。因此，容器可以生成新的镜像。</p>
+<p><img src="/2023/06/19/docker%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/Blog\blog\source_posts\docker期末冲刺\image-20230619195702351.png" alt="image-20230619195702351"></p>
+<p>正确的说法是A. 使用不带任何选项的 <code>docker ps</code> 命令可以列出本地主机上的全部容器。</p>
+<p>解析： A. 使用不带任何选项的 <code>docker ps</code> 命令可以列出本地主机上的全部容器：这个说法是正确的。<code>docker ps</code> 命令用于列出当前正在运行的容器。如果不提供选项，它会列出正在运行的容器的基本信息。</p>
+<p>B. 使用 <code>docker rm -f</code> 命令删除正在运行的容器：这个说法是不正确的。<code>docker rm -f</code> 命令用于删除指定的容器，但是要删除正在运行的容器，需要先停止容器，然后再删除。</p>
+<p>C. 使用 <code>docker start</code> 命令可以创建并启动一个新的容器：这个说法是不正确的。<code>docker start</code> 命令用于启动已经创建但处于停止状态的容器，而不是创建新的容器。</p>
+<p>D. 使用 <code>docker attach</code> 命令可以连接未运行的容器：这个说法是不正确的。<code>docker attach</code> 命令用于连接到正在运行的容器并查看其输出。它并不能连接到未运行的容器。要连接到未运行的容器，可以使用 <code>docker exec -it</code> 命令。</p>
+<p><img src="/2023/06/19/docker%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/Blog\blog\source_posts\docker期末冲刺\image-20230619195710498.png" alt="image-20230619195710498"></p>
+<p><img src="/2023/06/19/docker%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/Blog\blog\source_posts\docker期末冲刺\image-20230619195719751.png" alt="image-20230619195719751"></p>
+<p><img src="/2023/06/19/docker%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/Blog\blog\source_posts\docker期末冲刺\image-20230619195725575.png" alt="image-20230619195725575"></p>
+<p><img src="/2023/06/19/docker%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/Blog\blog\source_posts\docker期末冲刺\image-20230619195730948.png" alt="image-20230619195730948"></p>
+<p><img src="/2023/06/19/docker%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/Blog\blog\source_posts\docker期末冲刺\image-20230619195737508.png" alt="image-20230619195737508"></p>
+<p><img src="/2023/06/19/docker%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/Blog\blog\source_posts\docker期末冲刺\image-20230619195743458.png" alt="image-20230619195743458"></p>
+<p><img src="/2023/06/19/docker%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/Blog\blog\source_posts\docker期末冲刺\image-20230619195751261.png" alt="image-20230619195751261"></p>
+<p><img src="/2023/06/19/docker%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/Blog\blog\source_posts\docker期末冲刺\image-20230619195846066.png" alt="image-20230619195846066"></p>
+<p><img src="/2023/06/19/docker%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/Blog\blog\source_posts\docker期末冲刺\image-20230619195852162.png" alt="image-20230619195852162"></p>
+<p><img src="/2023/06/19/docker%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/Blog\blog\source_posts\docker期末冲刺\image-20230619195858171.png" alt="image-20230619195858171"></p>
+<p><img src="/2023/06/19/docker%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/Blog\blog\source_posts\docker期末冲刺\image-20230619195904681.png" alt="image-20230619195904681"></p>
+<p><img src="/2023/06/19/docker%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/Blog\blog\source_posts\docker期末冲刺\image-20230619195912631.png" alt="image-20230619195912631"></p>
+<p><img src="/2023/06/19/docker%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/Blog\blog\source_posts\docker期末冲刺\image-20230619195919373.png" alt="image-20230619195919373"></p>
+<p><img src="/2023/06/19/docker%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/Blog\blog\source_posts\docker期末冲刺\image-20230619195926323.png" alt="image-20230619195926323"></p>
+<p><img src="/2023/06/19/docker%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/Blog\blog\source_posts\docker期末冲刺\image-20230619195932879.png" alt="image-20230619195932879"></p>
+<p><img src="/2023/06/19/docker%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/Blog\blog\source_posts\docker期末冲刺\image-20230619195939760.png" alt="image-20230619195939760"></p>
+<p><img src="/2023/06/19/docker%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/Blog\blog\source_posts\docker期末冲刺\image-20230619195946390.png" alt="image-20230619195946390"></p>
+<p><img src="/2023/06/19/docker%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/Blog\blog\source_posts\docker期末冲刺\image-20230619195955820.png" alt="image-20230619195955820"></p>
+<p><img src="/2023/06/19/docker%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/Blog\blog\source_posts\docker期末冲刺\image-20230619200000684.png" alt="image-20230619200000684"></p>
+<p><img src="/2023/06/19/docker%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/Blog\blog\source_posts\docker期末冲刺\image-20230619200007220.png" alt="image-20230619200007220"></p>
+<p><img src="/2023/06/19/docker%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/Blog\blog\source_posts\docker期末冲刺\image-20230619200012272.png" alt="image-20230619200012272"></p>
+<p><img src="/2023/06/19/docker%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/Blog\blog\source_posts\docker期末冲刺\image-20230619200017784.png" alt="image-20230619200017784"></p>
+<p><img src="/2023/06/19/docker%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/Blog\blog\source_posts\docker期末冲刺\image-20230619200024202.png" alt="image-20230619200024202"></p>
+<p><img src="/2023/06/19/docker%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/Blog\blog\source_posts\docker期末冲刺\image-20230619200029566.png" alt="image-20230619200029566"></p>
+<h1 id="填空"><a href="#填空" class="headerlink" title="填空"></a>填空</h1><p>1.使用“docker rm <strong>-f</strong> 容器ID”可以强制删除一个容器。</p>
+<p>2.在Docker-Compose 中，使用<strong>version</strong>指令定义版本号。</p>
+<p>3.数据卷绑定可以实现宿主机和容器的<strong>目录</strong>绑定。</p>
+<p>4.启动 Docker Compose 服务的命令是 <code>docker-compose up</code>。</p>
+<p>5.停止 Docker Compose 服务的命令是 <code>docker-compose down</code>。</p>
+<p>6.使用 <strong>HTTPS</strong> 访问模式可以使数据传输更加安全。</p>
+<p>？7.在宿主机中检查客器的 IP 地址，可以使用 Docker <code>inspect</code> 命令加上容器 ID。</p>
+<p>8.绑定一个文件到容器通常用在修改容器应用的<strong>配置</strong>。</p>
+<p>9.Bind 数据绑定可以实现宿主机到容器的<strong>目录</strong>绑定。</p>
+<p>10.<strong>私有</strong>仓库更适合企业内部合作使用。</p>
+<p>11.平时在命令行下载镜像时，使用的是 <strong>Docker Hub</strong> 仓库。</p>
+<p>12.<strong>桥接（Bridge）</strong>网络模式比较适合于容器间频繁通信的场景。</p>
+<p>13.当宿主机目录为空、容器目录数据不为空时，使用数据卷绑定时，宿主机的目录<strong>将会被容器目录的数据填充。</strong></p>
+<p>14.Docker-Compose 的默认模板文件名称是 <code>docker-compose.yml</code>。</p>
+<p>？15.在宿主机中，检查容器的 IP 地址，可以使用 Docker <code>inspect</code> 命令加上容器 ID。</p>
+<p>16.使用 Docker Hub 可以创建公有仓库和<strong>私有</strong>仓库。</p>
+<p>17.面向对象编程中的”对象”类似于Docker中的”<strong>容器</strong>“，而面向对象编程中的”类”类似于Docker中的”<strong>镜像</strong>“。</p>
+<p>18.Macvlan 技术实现了<strong>容器直接访问物理</strong>主机网络的功能。</p>
+<p>19.<strong>主机（Host）</strong>网络模式没有网络栈，一般作为测试使用。</p>
+<p>20.数据卷绑定后，容器的 Mounts 字段中 type 类型的值是 <code>bind</code>。</p>
+<h1 id="判断题"><a href="#判断题" class="headerlink" title="判断题"></a>判断题</h1><p><img src="/2023/06/19/docker%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/Blog\blog\source_posts\docker期末冲刺\image-20230619215845704.png" alt="image-20230619215845704"></p>
+<p>正确</p>
+<p>docker run 命令用于在 Docker 上启动容器，而启动容器的前提是需要一个基于镜像构建的容器实例。在运行 docker run 命令时，需要指定所要使用的镜像的名称或 ID。</p>
+<p>例如，以下是一个使用 docker run 命令启动容器的示例：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">arduinoCopy code</span><br><span class="line">docker run &lt;镜像名称或ID&gt;</span><br></pre></td></tr></table></figure>
+
+<p>在上述命令中，<code>&lt;镜像名称或ID&gt;</code> 指代所要使用的镜像的名称或 ID。基于指定的镜像，docker run 命令会创建并运行相应的容器实例。</p>
+<p>因此，docker run 命令确实需要基于一个镜像来启动容器，这个陈述是正确的。</p>
+<p><img src="/2023/06/19/docker%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/Blog\blog\source_posts\docker期末冲刺\image-20230619215854064.png" alt="image-20230619215854064"></p>
+<p>正确</p>
+<p>Docker Hub 是一个公开的 Docker 镜像仓库，它是由 Docker 公司提供的服务。Docker Hub 提供了一个集中存储、分享和管理 Docker 镜像的平台。</p>
+<p>作为公开的仓库，Docker Hub 上的镜像可以被任何人访问和使用。开发者可以在 Docker Hub 上上传、下载和共享 Docker 镜像，从而方便地获取和使用各种应用程序、服务和工具的容器化版本。</p>
+<p>除了公开的镜像，Docker Hub 还支持私有镜像仓库的功能。通过付费订阅，用户可以在 Docker Hub 上创建私有的镜像仓库，用于存储和管理自己的私有镜像，以便在内部使用或与特定用户共享。</p>
+<p>因此，Docker Hub 是一个公开的 Docker 镜像仓库，为开发者提供了便捷的方式来共享、发现和获取各种 Docker 镜像。</p>
+<p><img src="/2023/06/19/docker%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/Blog\blog\source_posts\docker期末冲刺\image-20230619215902705.png" alt="image-20230619215902705"></p>
+<p>正确</p>
+<p>在不借助编排工具的情况下，Docker 支持在 Linux 系统上安装和运行多个 Docker 引擎。每个 Docker 引擎实例可以通过不同的配置和监听端口来运行，使它们能够独立地管理和运行容器。</p>
+<p>通过在不同的目录下创建不同的 Docker 配置文件和运行 Docker 引擎时指定不同的配置文件路径，可以实现在同一台 Linux 系统上运行多个独立的 Docker 引擎实例。每个 Docker 引擎实例都将有自己的独立环境，包括网络、镜像、容器等。</p>
+<p>这种能力使得在 Linux 系统上可以同时运行多个 Docker 引擎，方便进行不同环境或项目的隔离和管理。然而，需要注意确保每个 Docker 引擎实例的配置和资源之间不会发生冲突。</p>
+<p><img src="/2023/06/19/docker%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/Blog\blog\source_posts\docker期末冲刺\image-20230619215910870.png" alt="image-20230619215910870"></p>
+<p>正确</p>
+<p>Docker 支持在 Windows 和 macOS 系统上本地运行 Linux 容器。这得益于 Docker 的跨平台特性和容器化技术。</p>
+<p>在 Windows 系统上，Docker Desktop 通过使用 Hyper-V 或 WSL 2（Windows Subsystem for Linux 2）技术，在本地提供了运行 Linux 容器的环境。这意味着你可以在 Windows 上使用 Docker 运行 Linux 镜像，并获得与在 Linux 环境中相似的容器体验。</p>
+<p>同样地，在 macOS 系统上，Docker Desktop 使用了 Hypervisor Framework 和 xhyve 虚拟化技术，使得可以在 macOS 上本地运行 Linux 容器。</p>
+<p>因此，无论是在 Windows 还是 macOS 系统上，Docker 都支持本地运行 Linux 容器，让开发人员能够在不同的操作系统上统一开发和部署容器化应用程序。</p>
+<p><img src="/2023/06/19/docker%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/Blog\blog\source_posts\docker期末冲刺\image-20230619215920210.png" alt="image-20230619215920210"></p>
+<p>错误</p>
+<p>在默认情况下，Docker 不支持容器间通过容器 ID 进行通信。每个容器都会被分配一个独立的网络命名空间和 IP 地址，并且它们彼此之间是隔离的。</p>
+<p>要在 Docker 中实现容器间通信，有几种可选的方法：</p>
+<ol>
+<li>使用容器名称：在创建容器时，可以为容器指定一个名称。通过使用容器名称，你可以在容器之间进行通信，而不需要直接使用容器 ID。你可以将容器名称用作主机名或服务地址来建立连接。</li>
+<li>创建自定义网络：可以创建一个 Docker 网络，并将容器连接到该网络中。这样，容器可以通过容器名称或服务名称在网络上进行通信，而不需要使用容器 ID。</li>
+<li>使用链接（Linking）：尽管它已被弃用，但仍然可以使用链接机制来使一个容器与另一个容器建立连接并进行通信。通过链接，一个容器可以访问另一个容器的环境变量和网络连接信息。</li>
+</ol>
+<p>综上所述，不使用自定义网络的情况下，Docker 并不直接支持通过容器 ID 进行容器间通信。需要使用其他方法来实现容器间的通信。</p>
+<p><img src="/2023/06/19/docker%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/Blog\blog\source_posts\docker期末冲刺\image-20230619215925644.png" alt="image-20230619215925644"></p>
+<p>错误</p>
+<p>Docker Compose 不仅仅是用于定义和运行单个容器的 YAML 文件，它是一个用于定义和管理多个容器应用的工具。</p>
+<p>Docker Compose 使用 YAML 文件来定义一个应用程序由哪些服务（即容器）组成以及它们之间的关系和配置。通过编写一个 Compose 文件，你可以定义多个容器、它们的映像、端口映射、网络设置、环境变量等。</p>
+<p>然后，你可以使用 Docker Compose 命令来启动、停止、重建和管理整个应用程序，而不仅仅是单个容器。</p>
+<p>因此，Docker Compose 不仅限于单个容器，它提供了一种方便的方式来定义和管理多个容器的组合应用。</p>
+<p><img src="/2023/06/19/docker%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/Blog\blog\source_posts\docker期末冲刺\image-20230619215932799.png" alt="image-20230619215932799"></p>
+<p>错误</p>
+<p>Docker 容器默认情况下不会使用宿主机的网络，而是会创建自己独立的网络命名空间。每个容器都有自己的网络栈和 IP 地址，并与宿主机以及其他容器进行隔离。</p>
+<p>当你在 Docker 中创建一个容器时，Docker 引擎会为该容器创建一个虚拟网络接口（veth pair），一个端口连接到容器内部的网络栈，另一个端口连接到宿主机的网络栈。这样，容器就能够通过宿主机进行网络通信，但容器的网络是独立的，并不直接使用宿主机的网络。</p>
+<p>如果你需要容器与宿主机共享网络，可以使用 Docker 的网络模式，如 <code>--network host</code> 参数，这样容器就会直接使用宿主机的网络命名空间。</p>
+<p><img src="/2023/06/19/docker%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/Blog\blog\source_posts\docker期末冲刺\image-20230619220659647.png" alt="image-20230619220659647"></p>
+<p>正确</p>
+<p>Docker 支持容器直接挂载到宿主机文件系统。通过在容器创建时使用 <code>-v</code> 或 <code>--volume</code> 参数，可以将宿主机上的目录或文件挂载到容器的指定路径上。这使得容器可以直接访问和操作宿主机文件系统中的内容，方便数据共享和持久化存储。</p>
+<p><img src="/2023/06/19/docker%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/Blog\blog\source_posts\docker期末冲刺\image-20230619220705213.png" alt="image-20230619220705213"></p>
+<p>正确</p>
+<p>Namespace 的功能主要是进行访问隔离。通过使用命名空间，可以将进程或资源隔离到不同的命名空间中，从而实现对其访问的隔离。不同的命名空间可以提供不同的视图和环境，使得进程在各自的命名空间中运行时，相互之间无法感知或干扰对方的资源。这种隔离性对于实现容器化和虚拟化等技术非常重要。</p>
+<p>简答题</p>
+<p>1.什么是 Dockerfile?简述其用途。（10.0分）</p>
+<p>2.说说 Docker 网络的几种类型，并简述其区别。（10.0分）</p>
+<p>3.请简述Docker容器与虚拟机的区别？（10.0分）</p>
+<p>4.Dockerfile分为几部分，每一部分是什么？（10.0分）</p>
+<p>5.unshare 和 setns 的区别是（10.0分）</p>
+<p>6.什么是“悬挂”镜像？（10.0分）</p>
+<p>7.请问Docker编排工具共有几种类型，简述其功能和区别。（10.0分）</p>
+<p>8.通过docker run 进去的容器后，请简述exit 和 “ctrl + p + q”两个退出容器命令的区别？（10.0分）</p>
+<p>9.卸载docker 的命令有几步，每步分别是？（10.0分）</p>
+<p>10.unshare 和 clone 的区别在于（10.0分）</p>
+<p>11.请简述docker search、docker history、docker inspect的区别？（10.0分）</p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="mailto:jjyaoao@126.com">jjyaoao</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="http://jjyaoao.space/2023/06/19/docker%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/">http://jjyaoao.space/2023/06/19/docker%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="http://jjyaoao.space" target="_blank">jjyaoao's Home</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E9%81%97%E5%BF%98%E6%8C%87%E5%8D%97/">遗忘指南</a><a class="post-meta__tags" href="/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">学习笔记</a></div><div class="post_share"><div class="addthis_inline_share_toolbox"></div><script src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-61dbf69078ce19aa" async="async"></script></div></div><div class="post-reward"><div class="reward-button button--animated"><i class="fas fa-qrcode"></i> 打赏</div><div class="reward-main"><ul class="reward-all"><li class="reward-item"><a href="https://s2.loli.net/2022/01/09/HMjygFAKr2nPWdJ.jpg" target="_blank"><img class="post-qr-code-img" src="https://s2.loli.net/2022/01/09/HMjygFAKr2nPWdJ.jpg" alt="微信"/></a><div class="post-qr-code-desc">微信</div></li><li class="reward-item"><a href="https://s2.loli.net/2022/01/09/JL43sbhxUEOuVeM.jpg" target="_blank"><img class="post-qr-code-img" src="https://s2.loli.net/2022/01/09/JL43sbhxUEOuVeM.jpg" alt="支付宝"/></a><div class="post-qr-code-desc">支付宝</div></li></ul></div></div><nav class="pagination-post" id="pagination"><div class="next-post pull-full"><a href="/2023/06/19/%E5%8A%A0%E5%AF%86%E8%B4%A7%E5%B8%81%E6%9C%9F%E6%9C%AB%E5%86%B2%E5%88%BA/"><img class="next-cover" src="https://s2.loli.net/2023/06/05/e6mls5ZAf2oRzb8.png" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">加密货币期末冲刺</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>相关推荐</span></div><div class="relatedPosts-list"><div><a href="/2022/04/15/C++%E9%A1%B9%E7%9B%AE%E5%AE%9E%E6%88%98/" title="C++项目实战"><img class="cover" src="https://s2.loli.net/2022/04/15/YXoFfbxgWZIn1SM.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-04-15</div><div class="title">C++项目实战</div></div></a></div><div><a href="/2022/08/17/22%E5%B9%B4%E5%A4%87%E6%88%98%E6%95%B0%E6%A8%A1%E5%9B%BD%E8%B5%9B/" title="2022备战国赛"><img class="cover" src="https://s2.loli.net/2022/04/15/YXoFfbxgWZIn1SM.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-08-17</div><div class="title">2022备战国赛</div></div></a></div><div><a href="/2022/09/15/Cmake+Vscode+C++%E5%BC%80%E5%8F%91/" title="Cmake+vscode+C++"><img class="cover" src="https://s2.loli.net/2022/04/15/YXoFfbxgWZIn1SM.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-09-15</div><div class="title">Cmake+vscode+C++</div></div></a></div><div><a href="/2022/09/10/Git/" title="Git"><img class="cover" src="https://s2.loli.net/2022/04/15/YXoFfbxgWZIn1SM.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-09-10</div><div class="title">Git</div></div></a></div><div><a href="/2022/08/23/Geatpy-python%E4%BC%98%E5%8C%96%E5%BA%93/" title="Geatpy-python优化库"><img class="cover" src="https://s2.loli.net/2022/04/15/YXoFfbxgWZIn1SM.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-08-23</div><div class="title">Geatpy-python优化库</div></div></a></div><div><a href="/2022/04/15/Linux%E5%AD%A6%E4%B9%A0/" title="Linux学习"><img class="cover" src="https://s2.loli.net/2022/04/15/FltTRVUfbzYIowQ.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-04-15</div><div class="title">Linux学习</div></div></a></div></div></div><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div><div id="comment-switch"><span class="first-comment">Livere</span><span class="switch-btn"></span><span class="second-comment">Valine</span></div></div><div class="comment-wrap"><div><div id="lv-container" data-id="city" data-uid="MTAyMC81NTM1OC8zMTgyNQ=="></div></div><div><div class="vcomment" id="vcomment"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%8D%95%E9%80%89%E9%A2%98"><span class="toc-number">1.</span> <span class="toc-text">单选题</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%A1%AB%E7%A9%BA"><span class="toc-number">2.</span> <span class="toc-text">填空</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%88%A4%E6%96%AD%E9%A2%98"><span class="toc-number">3.</span> <span class="toc-text">判断题</span></a></li></ol></div></div></div></div></main><footer id="footer" style="background-image: url('https://s2.loli.net/2023/06/19/ACVf5JQdvaPZkRT.jpg')"><div id="footer-wrap"><div class="copyright">&copy;2022 - 2023 By jjyaoao</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div><div class="footer_custom_text">Hi, welcome to my <a target="_blank" rel="noopener" href="https://butterfly.js.org/">blog</a>!</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="chat_btn" type="button" title="rightside.chat_btn"><i class="fas fa-sms"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div id="algolia-search"><div class="search-dialog"><div class="search-dialog__title" id="algolia-search-title">Algolia</div><div id="algolia-input-panel"><div id="algolia-search-input"></div></div><hr/><div id="algolia-search-results"><div id="algolia-hits"></div><div id="algolia-pagination"></div><div id="algolia-stats"></div></div><span class="search-close-button"><i class="fas fa-times"></i></span></div><div id="search-mask"></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.js"></script><script src="/js/search/algolia.js"></script><script>var preloader = {
+  endLoading: () => {
+    document.body.style.overflow = 'auto';
+    document.getElementById('loading-box').classList.add("loaded")
+  },
+  initLoading: () => {
+    document.body.style.overflow = '';
+    document.getElementById('loading-box').classList.remove("loaded")
+
+  }
+}
+window.addEventListener('load',preloader.endLoading())</script><div class="js-pjax"><script>function loadLivere () {
+  if (typeof LivereTower === 'object') {
+    window.LivereTower.init()
+  }
+  else {
+    (function(d, s) {
+        var j, e = d.getElementsByTagName(s)[0];
+        if (typeof LivereTower === 'function') { return; }
+        j = d.createElement(s);
+        j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+        j.async = true;
+        e.parentNode.insertBefore(j, e);
+    })(document, 'script');
+  }
+}
+
+if ('Livere' === 'Livere' || !true) {
+  if (true) btf.loadComment(document.getElementById('lv-container'), loadLivere)
+  else loadLivere()
+}
+else {
+  function loadOtherComment () {
+    loadLivere()
+  }
+}</script><script>function loadValine () {
+  function initValine () {
+    const valine = new Valine(Object.assign({
+      el: '#vcomment',
+      appId: 'cFvw1zyA64uttBS5jbYY7pwH-gzGzoHsz',
+      appKey: '14rOjAUNzRyJSQt983q6gdza',
+      placeholder: 'Please leave your footprints',
+      avatar: 'monsterid',
+      meta: 'nick,mail,link'.split(','),
+      pageSize: '10',
+      lang: 'en',
+      recordIP: false,
+      serverURLs: '',
+      emojiCDN: '',
+      emojiMaps: "",
+      enableQQ: false,
+      path: window.location.pathname,
+      requiredFields: ["nick,mail"],
+      visitor: false
+    }, null))
+  }
+
+  if (typeof Valine === 'function') initValine() 
+  else getScript('https://cdn.jsdelivr.net/npm/valine/dist/Valine.min.js').then(initValine)
+}
+
+if ('Livere' === 'Valine' || !true) {
+  if (true) btf.loadComment(document.getElementById('vcomment'),loadValine)
+  else setTimeout(loadValine, 0)
+} else {
+  function loadOtherComment () {
+    loadValine()
+  }
+}</script></div><script defer="defer" id="fluttering_ribbon" mobile="true" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/canvas-fluttering-ribbon.min.js"></script><script id="canvas_nest" defer="defer" color="0,0,255" opacity="0.7" zIndex="-1" count="99" mobile="true" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/canvas-nest.min.js"></script><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/activate-power-mode.min.js"></script><script>POWERMODE.colorful = true;
+POWERMODE.shake = false;
+POWERMODE.mobile = false;
+document.body.addEventListener('input', POWERMODE);
+</script><script id="click-show-text" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/click-show-text.min.js" data-mobile="false" data-text="富强,民主,文明,和谐,自由,平等,公正,法治,爱国,敬业,诚信,友善,感谢" data-fontsize="15px" data-random="false" async="async"></script><script>(function(d, w, c) {
+    w.ChatraID = 'zgYNWkNCSATLRhpg4';
+    var s = d.createElement('script');
+    w[c] = w[c] || function() {
+        (w[c].q = w[c].q || []).push(arguments);
+    };
+    s.async = true;
+    s.src = 'https://call.chatra.io/chatra.js';
+    if (d.head) d.head.appendChild(s);
+})(document, window, 'Chatra');
+
+if (true) {
+  var chatBtnFn = () => {
+    var chatBtn = document.getElementById("chat_btn")
+    chatBtn.addEventListener("click", function(){
+      Chatra('openChat')
+    });
+  }
+  chatBtnFn()
+} else {
+  if (true) {
+    function chatBtnHide () {
+      Chatra('hide')
+    }
+    function chatBtnShow () {
+      Chatra('show')
+    }
+  }
+}</script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
